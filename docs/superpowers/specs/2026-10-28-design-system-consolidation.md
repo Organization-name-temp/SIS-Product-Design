@@ -36,7 +36,7 @@ Exact new motion values are implementation defaults under Adham's authorization.
 ## Archive-first repository
 
 Preserve the initial repository commit and its README history.
-Keep canonical sis-* files at the repository root. Keep the working prototype in sis-foundations-prototype.
+Amended on 28 October 2026 by user request: canonical foundation sources live in foundations/, shared tooling lives in tools/, and the execution plan lives in docs/plans/. Keep the working prototype in sis-foundations-prototype.
 Use docs for decisions, workflow, reports, option references, and Jira records.
 Use assets for generated visual references. Use archive for previous proposals and original supplied text.
 Preserve the earlier prototype through a versioned source archive. Exclude dependencies, build caches, and failed-run temporary files.

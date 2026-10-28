@@ -9,7 +9,7 @@ Adham is the sole design approver. The repository remains private.
 |---|---|
 | Inspect the system | [Workbench guide](sis-foundations-prototype/README.md) |
 | Choose supported options | [Option reference](docs/system-options/active-profile.md) |
-| Read approved rules | [Foundation contract](sis-foundation-contract.md) |
+| Read approved rules | [Foundation contract](foundations/sis-foundation-contract.md) |
 | Understand decisions | [Decision log](docs/decisions/decision-log.md) |
 | Trace this chat | [Curated project record](docs/decisions/project-record.md) |
 | Check delivery evidence | [Current report](docs/reports/2026-10-28-delivery.md) |
@@ -32,9 +32,22 @@ Open http://localhost:4173. The workbench opens Colors and themes.
 Use `npm run verify` for source, token, contrast, build, and runtime checks.
 Use `npm run test:browser` with the preview active for interaction checks.
 
+## Repository structure
+
+```text
+SIS-Product-Design/
+├── foundations/               Canonical foundation sources (tokens, CSS, contracts, guidance)
+├── tools/                     Shared build scripts
+├── sis-foundations-prototype/ Interactive workbench; exports snapshots of foundations/
+├── docs/                      Decisions, plans, workflow, reports, options, and Jira records
+├── assets/visual-references/  Generated visual references
+└── archive/                   Previous proposals and original supplied text
+```
+
 ## Source boundaries
 
-Root `sis-*` files define the current foundation. The workbench generates its snapshots and exports from these files.
+`foundations/` holds the canonical foundation sources. `tools/` holds the shared build scripts.
+The workbench generates its snapshots and exports from these files.
 The archive retains earlier proposals and the earlier three-font, three-language prototype.
 Current decisions supersede those proposals. Historical reports describe their original revision only.
 The workbench uses local sample data. It does not supply production SIS services or university policy.

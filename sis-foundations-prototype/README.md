@@ -16,11 +16,11 @@ Reset clears the selected demonstration. Reload clears all sample interactions.
 ## Sources
 
 - `src/data/catalog.json` defines navigation, translations, specimens, states, token references, guidance, and verification cases.
-- `../sis-ejust-palette.tokens.json` defines reference colors, semantic roles, and component aliases.
-- `../sis-typography.tokens.json` defines IBM Plex, weights, roles, and number rules.
-- `../sis-foundation-decisions.json` records the active foundation decisions.
-- `../sis-motion.tokens.json` defines named motion values and recipes.
-- `../sis-usage-guidance.json` defines each spacing, corner, and icon use.
+- `../foundations/sis-ejust-palette.tokens.json` defines reference colors, semantic roles, and component aliases.
+- `../foundations/sis-typography.tokens.json` defines IBM Plex, weights, roles, and number rules.
+- `../foundations/sis-foundation-decisions.json` records the active foundation decisions.
+- `../foundations/sis-motion.tokens.json` defines named motion values and recipes.
+- `../foundations/sis-usage-guidance.json` defines each spacing, corner, and icon use.
 - `src/foundations.css` defines approved spacing, radii, targets, layout, and motion values.
 - `public/reference/colors-workbench.png` defines the visual structure.
 - `public/exports/sis-foundation-contract.md` contains the approved foundation contract.

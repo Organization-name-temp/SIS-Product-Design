@@ -5,7 +5,7 @@ const catalog = await json("src/data/catalog.json");
 const palette = await json("src/data/palette.json");
 const contrast = await json("src/data/contrast.json");
 for(const [name,file]of [['palette','sis-ejust-palette.tokens.json'],['typography','sis-typography.tokens.json'],['motion','sis-motion.tokens.json'],['usage','sis-usage-guidance.json'],['decisions','sis-foundation-decisions.json']]){
-  try{assert.deepEqual(await json(`src/data/${name}.json`),JSON.parse(await readFile(new URL(`../../${file}`,import.meta.url),'utf8')),`${name}: canonical source drift`);}
+  try{assert.deepEqual(await json(`src/data/${name}.json`),JSON.parse(await readFile(new URL(`../../../foundations/${file}`,import.meta.url),'utf8')),`${name}: canonical source drift`);}
   catch(error){if(error.code!=='ENOENT')throw error;}
 }
 const expected = { Foundations: 9, Components: 16, Patterns: 10, Review: 3 };

@@ -1,6 +1,6 @@
 from pathlib import Path
 import json,csv,io
-R=Path(__file__).resolve().parent
+R=Path(__file__).resolve().parent.parent/'foundations'
 source=json.loads((R/'sis-ejust-palette.tokens.json').read_text())
 p=source['primitives']
 light=source['themes']['light']

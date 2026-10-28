@@ -99,3 +99,4 @@ Adham owns the design review. Deferred output work remains To Do.
 Each epic has a repository link. The preservation stories form a native Blocks dependency chain.
 Points estimate relative size. They do not record measured historical effort.
 The handoff epic stays In Progress because personal acceptance and screen-reader review remain open.
+All 53 added stories sit in KAN Sprint 1 under their epic parents as of 28 October 2026.

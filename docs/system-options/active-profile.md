@@ -43,7 +43,7 @@ Keep the minimum reading sizes. Compact density does not make text smaller.
 | Grid | 4, 8, 12 columns | Choose by available width and content. |
 | Elevation | Flat, low, high | Use borders and surface colors as the main dark-theme separation. |
 
-[Usage guidance](../../sis-usage-guidance.json) gives a use, example, and misuse rule for each scale value.
+[Usage guidance](../../foundations/sis-usage-guidance.json) gives a use, example, and misuse rule for each scale value.
 The workbench renders every value on its foundation page.
 
 ## Motion choices
@@ -55,7 +55,7 @@ The workbench renders every value on its foundation page.
 | Spring | restrained, responsive, expressive | Use bounded continuity. Expressive movement stays in optional demonstrations. |
 | Recipe | action, navigation, selection, disclosure, overlay-enter, overlay-exit, feedback, spring-feedback | Reuse the recipe for equivalent behavior. |
 
-[Motion tokens](../../sis-motion.tokens.json) define exact curves and physical parameters.
+[Motion tokens](../../foundations/sis-motion.tokens.json) define exact curves and physical parameters.
 Identical parameters produce identical sampled keyframes. Replaced and unmounted animations cancel.
 Reduced motion removes nonessential movement. Focus, pending feedback, errors, confirmed data, and theme changes remain immediate.
 The new exact motion values are versioned implementation defaults under Adham's authorization.

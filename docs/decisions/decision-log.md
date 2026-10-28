@@ -24,6 +24,7 @@ Adham controls design approval. User instructions outrank earlier proposals in t
 | D18 | Keep design edits outside the prototype. | Approved plan. Chat requests update canonical sources. |
 | D19 | Publish the complete private archive and Jira backlog. | Explicit approval on 28 October 2026. |
 | D20 | Defer additional output templates and enhancements. | User requested archive and backlog first. |
+| D21 | Group foundation sources in foundations/, tooling in tools/, and plans in docs/plans/. | User-requested restructure on 28 October 2026. Migration verified by tokens:generate and test:catalog. |
 
 ## Acceptance boundaries
 

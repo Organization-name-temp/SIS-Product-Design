@@ -34,9 +34,9 @@ High opacity is 16 percent in light mode and 48 percent in dark mode.
 Invalid and selected controls use a label, icon, or state marker alongside color.
 IBM Plex Sans Arabic is selected, with approved weights 400, 500, 600, and 700.
 The final prototype will also compare Noto Sans Arabic and Cairo so Adham can change the family.
-[Typography decisions and prototype requirements](sis-typography.md) record the selection.
+[Typography decisions and prototype requirements](../../foundations/sis-typography.md) record the selection.
 
-[The current palette and theme contract](sis-ejust-palette.md) records the proposed color values and completed checks.
+[The current palette and theme contract](../../foundations/sis-ejust-palette.md) records the proposed color values and completed checks.
 Earlier team-approval and light-only recommendations below remain historical proposals where these decisions replace them.
 
 ## Recommended action

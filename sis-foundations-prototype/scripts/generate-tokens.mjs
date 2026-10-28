@@ -1,7 +1,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 async function canonical(name,file){
   let data;
-  try{data=JSON.parse(await readFile(new URL(`../../${file}`,import.meta.url),'utf8'));}
+  try{data=JSON.parse(await readFile(new URL(`../../../foundations/${file}`,import.meta.url),'utf8'));}
   catch(error){if(error.code!=='ENOENT')throw error;data=JSON.parse(await readFile(`src/data/${name}.json`,'utf8'));}
   await writeFile(`src/data/${name}.json`,JSON.stringify(data,null,2)+'\n');
   return data;
@@ -187,7 +187,7 @@ await writeFile('src/motion.css',motionCss);await writeFile('public/exports/sis-
 
 await writeFile('public/exports/sis-usage-guidance.json',JSON.stringify(usage,null,2)+'\n');
 
-for(const file of ['sis-foundation-contract.md','sis-ejust-palette.md','sis-foundation-decisions.json','sis-typography.md','sis-theme.js','sis-build-palette.py']){
- try{await writeFile(`public/exports/${file}`,await readFile(new URL(`../../${file}`,import.meta.url)));}
+for(const [file,dir] of [['sis-foundation-contract.md','foundations'],['sis-ejust-palette.md','foundations'],['sis-foundation-decisions.json','foundations'],['sis-typography.md','foundations'],['sis-theme.js','foundations'],['sis-build-palette.py','tools']]){
+ try{await writeFile(`public/exports/${file}`,await readFile(new URL(`../../../${dir}/${file}`,import.meta.url)));}
  catch(error){if(error.code!=='ENOENT')throw error;await readFile(`public/exports/${file}`);}
 }
