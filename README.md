@@ -8,6 +8,7 @@ Adham is the sole design approver. Anyone may use the design system under the [M
 | Need | Reference |
 |---|---|
 | Use the tokens | [Usage guide](docs/usage/use-the-design-system.md) |
+| Onboard a tenant brand | [Tenant brand onboarding](docs/usage/tenant-brand-onboarding.md) |
 | Look up a term | [Glossary](GLOSSARY.md) |
 | Read product requirements | [sis-docs repository](https://github.com/Organization-name-temp/sis-docs) |
 | Inspect the system | [Workbench guide](sis-foundations-prototype/README.md) |
@@ -50,7 +51,8 @@ Use `npm run test:browser` with the preview active for interaction checks.
 
 ```text
 SIS-Product-Design/
-├── foundations/               Canonical foundation sources (tokens, CSS, contracts, guidance)
+├── foundations/               Canonical foundation sources (W3C design tokens format)
+├── packages/sis-tokens/       Style Dictionary package: CSS, TypeScript, Tailwind preset, Figma JSON
 ├── tools/                     Shared build scripts
 ├── sis-foundations-prototype/ Interactive workbench; exports snapshots of foundations/
 ├── docs/                      Decisions, plans, workflow, reports, options, and Jira records

@@ -1,0 +1,6 @@
+{
+  "name": "sis-product-design",
+  "private": true,
+  "type": "module",
+  "workspaces": ["packages/*"]
+}

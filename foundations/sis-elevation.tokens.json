@@ -1,45 +1,147 @@
 {
-  "$description": "SIS elevation shadows. Colors alias the neutral ramp with alpha. Implementation defaults under the design owner's authorization (D15 pattern).",
+  "$description": "SIS elevation and effect tokens. Mirrors the shadow variables the palette generator emits per theme. sys.shadow.flat is 'none' in CSS and stays generator-owned.",
   "sys": {
-    "elevation": {
-      "raised": {
-        "$type": "shadow",
-        "$value": {
-          "offsetX": "0px",
-          "offsetY": "1px",
-          "blur": "3px",
-          "spread": "0px",
-          "color": "#18181B26"
+    "effect": {
+      "light": {
+        "dialog-backdrop": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.03529411764705882,
+              0.03529411764705882,
+              0.043137254901960784
+            ],
+            "alpha": 0.4
+          }
+        },
+        "shadow-raised": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "4px",
+            "blur": "16px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.12
+            }
+          }
         }
       },
-      "hover": {
-        "$type": "shadow",
-        "$value": {
-          "offsetX": "0px",
-          "offsetY": "2px",
-          "blur": "6px",
-          "spread": "0px",
-          "color": "#18181B1A"
+      "dark": {
+        "dialog-backdrop": {
+          "$type": "color",
+          "$value": {
+            "colorSpace": "srgb",
+            "components": [
+              0.03529411764705882,
+              0.03529411764705882,
+              0.043137254901960784
+            ],
+            "alpha": 0.72
+          }
+        },
+        "shadow-raised": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "4px",
+            "blur": "16px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.4
+            }
+          }
+        }
+      }
+    },
+    "shadow": {
+      "light": {
+        "low": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "4px",
+            "blur": "16px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.12
+            }
+          }
+        },
+        "high": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "8px",
+            "blur": "24px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.16
+            }
+          }
         }
       },
-      "dialog": {
-        "$type": "shadow",
-        "$value": {
-          "offsetX": "0px",
-          "offsetY": "8px",
-          "blur": "24px",
-          "spread": "0px",
-          "color": "#18181B2E"
-        }
-      },
-      "overlay": {
-        "$type": "shadow",
-        "$value": {
-          "offsetX": "0px",
-          "offsetY": "12px",
-          "blur": "40px",
-          "spread": "-4px",
-          "color": "#18181B38"
+      "dark": {
+        "low": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "4px",
+            "blur": "16px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.4
+            }
+          }
+        },
+        "high": {
+          "$type": "shadow",
+          "$value": {
+            "offsetX": "0px",
+            "offsetY": "8px",
+            "blur": "24px",
+            "spread": "0px",
+            "color": {
+              "colorSpace": "srgb",
+              "components": [
+                0.03529411764705882,
+                0.03529411764705882,
+                0.043137254901960784
+              ],
+              "alpha": 0.48
+            }
+          }
         }
       }
     }

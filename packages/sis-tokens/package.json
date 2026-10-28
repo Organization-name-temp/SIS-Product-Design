@@ -1,0 +1,21 @@
+{
+  "name": "sis-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "SIS design tokens: Style Dictionary build over the canonical DTCG sources.",
+  "type": "module",
+  "main": "./dist/sis-tokens.css",
+  "exports": {
+    "./css": "./dist/sis-tokens.css",
+    "./tailwind": "./dist/tailwind-preset.js",
+    "./tokens": "./dist/tokens.js",
+    "./figma": "./dist/tokens-studio.json"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "style-dictionary": "^5.7.1"
+  }
+}
