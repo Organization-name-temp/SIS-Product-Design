@@ -1,0 +1,57 @@
+/* AI assistant chat family (Batch D). */
+
+.sis-chat { display: grid; gap: var(--ref-space-12); }
+.sis-chat-log {
+  display: grid;
+  gap: var(--ref-space-8);
+  padding: var(--ref-space-12);
+  background: var(--sys-color-bg-canvas);
+  border: 1px solid var(--sys-color-border-subtle);
+  border-radius: var(--sys-radius-large-container);
+  max-block-size: 420px;
+  overflow-block: auto;
+}
+.sis-chat-message { display: grid; gap: var(--ref-space-4); }
+.sis-chat-message.sis-chat-user { justify-items: end; }
+.sis-chat-message.sis-chat-assistant { justify-items: start; }
+.sis-chat-bubble {
+  max-inline-size: 85%;
+  padding: var(--ref-space-8) var(--ref-space-12);
+  border-radius: var(--sys-radius-panel);
+  font-size: var(--ref-font-size-14);
+}
+.sis-chat-user .sis-chat-bubble {
+  background: var(--sys-color-action-primary-bg);
+  color: var(--sys-color-action-primary-fg);
+  border-end-end-radius: var(--sys-radius-small);
+}
+.sis-chat-assistant .sis-chat-bubble {
+  background: var(--sys-color-bg-raised);
+  border: 1px solid var(--sys-color-border-subtle);
+  border-end-start-radius: var(--sys-radius-small);
+}
+.sis-chat-cursor {
+  display: inline-block;
+  inline-size: 2px;
+  block-size: 1em;
+  margin-inline-start: 2px;
+  background: var(--sys-color-text-primary);
+  vertical-align: text-bottom;
+  animation: sis-blink 1s steps(2) infinite;
+}
+@keyframes sis-blink { 50% { opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .sis-chat-cursor { animation: none; }
+}
+.sis-chat-citations { display: flex; gap: var(--ref-space-4); flex-wrap: wrap; }
+.sis-citation {
+  font-size: var(--ref-font-size-14);
+  color: var(--sys-color-link-default);
+  border: 1px solid var(--sys-color-border-subtle);
+  border-radius: 999px;
+  padding: 2px var(--ref-space-8);
+  background: var(--sys-color-bg-surface);
+}
+.sis-citation:hover { color: var(--sys-color-link-hover); border-color: var(--sys-color-border-default); }
+.sis-chat-inputrow { display: flex; gap: var(--ref-space-8); align-items: center; }
+.sis-chat-input { flex: 1; resize: none; min-block-size: 44px; }
