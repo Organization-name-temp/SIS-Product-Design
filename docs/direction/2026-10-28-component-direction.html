@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIS component direction — three variations</title>
+<link rel="stylesheet" href="../../foundations/sis-ejust-palette.css">
+<link rel="stylesheet" href="../../foundations/sis-typography.css">
+<link rel="stylesheet" href="../../foundations/sis-foundations.css">
+<style>
+  html { background: var(--sys-color-bg-canvas); }
+  body {
+    font-family: var(--sys-font-family-ui);
+    color: var(--sys-color-text-primary);
+    margin: 0;
+    padding: var(--ref-space-32);
+    display: grid;
+    gap: var(--ref-space-64);
+  }
+  .page-intro h1 { font-size: var(--ref-font-size-28); font-weight: 600; margin: 0 0 var(--ref-space-8); }
+  .page-intro p { margin: 0; color: var(--sys-color-text-secondary); max-width: 72ch; }
+  .page-intro code { font-size: 0.85em; background: var(--sys-color-bg-subtle); padding: 2px 6px; border-radius: 4px; }
+
+  .variation { border-top: 2px solid var(--sys-color-border-strong); padding-top: var(--ref-space-24); }
+  .variation > header h2 { font-size: var(--ref-font-size-20); font-weight: 600; margin: 0 0 var(--ref-space-4); }
+  .variation > header p { margin: 0 0 var(--ref-space-16); color: var(--sys-color-text-secondary); max-width: 72ch; }
+
+  .row { display: flex; flex-wrap: wrap; gap: var(--ref-space-12); align-items: center; }
+  .grid { display: grid; gap: var(--ref-space-16); grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+  .panel-light { background: var(--sys-color-bg-canvas); border: 1px solid var(--sys-color-border-subtle); border-radius: var(--sys-radius-large-container); padding: var(--ref-space-24); display: grid; gap: var(--ref-space-16); }
+  .panel-dark { background: var(--sys-color-bg-canvas); border: 1px solid var(--sys-color-border-subtle); border-radius: var(--sys-radius-large-container); padding: var(--ref-space-24); display: grid; gap: var(--ref-space-16); }
+  .panel-label { font-size: var(--ref-font-size-14); font-weight: 600; color: var(--sys-color-text-secondary); text-transform: uppercase; letter-spacing: 0.04em; }
+
+  .demo-h { font-size: var(--ref-font-size-20); font-weight: 600; margin: 0; }
+  .demo-sub { margin: 0; color: var(--sys-color-text-secondary); font-size: var(--ref-font-size-14); }
+
+  /* Shared semantic buttons built on tokens; variations override shape and elevation */
+  .btn {
+    font: inherit; font-weight: 500; font-size: var(--ref-font-size-14);
+    min-height: var(--sys-control-min-height-comfortable);
+    padding: 0 var(--ref-space-16);
+    border-radius: var(--sys-radius-control);
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex; align-items: center; gap: var(--ref-space-8);
+    transition: background-color var(--sys-motion-duration-fast) var(--sys-motion-easing-standard),
+                border-color var(--sys-motion-duration-fast) var(--sys-motion-easing-standard),
+                box-shadow var(--sys-motion-duration-fast) var(--sys-motion-easing-standard),
+                transform var(--sys-motion-duration-fast) var(--sys-motion-easing-standard);
+  }
+  .btn:focus-visible { outline: var(--sys-focus-ring-width) solid var(--sys-color-focus-ring); outline-offset: var(--sys-focus-ring-gap); }
+  .btn-primary { background: var(--sys-color-action-primary-bg); color: var(--sys-color-action-primary-fg); }
+  .btn-primary:hover { background: var(--sys-color-action-primary-hover); }
+  .btn-primary:active { background: var(--sys-color-action-primary-pressed); transform: scale(0.98); }
+  .btn-secondary { background: var(--sys-color-action-secondary-bg); color: var(--sys-color-action-secondary-fg); border-color: var(--sys-color-action-secondary-border); }
+  .btn-secondary:hover { background: var(--sys-color-action-secondary-hover); border-color: var(--sys-color-border-strong); }
+  .btn-secondary:active { background: var(--sys-color-action-secondary-pressed); transform: scale(0.98); }
+  .btn-ghost { background: transparent; color: var(--sys-color-action-ghost-fg); }
+  .btn-ghost:hover { background: var(--sys-color-action-ghost-hover); }
+  .btn-ghost:active { background: var(--sys-color-action-ghost-pressed); transform: scale(0.98); }
+  .btn-destructive { background: var(--sys-color-destructive-bg); color: var(--sys-color-destructive-fg); }
+  .btn-destructive:hover { background: var(--sys-color-destructive-hover); }
+  .btn-destructive:active { background: var(--sys-color-destructive-pressed); transform: scale(0.98); }
+  .btn[disabled] { background: var(--sys-color-action-disabled-bg); color: var(--sys-color-action-disabled-fg); border-color: var(--sys-color-action-disabled-border); cursor: not-allowed; transform: none; }
+  .btn-loading { position: relative; color: transparent !important; }
+  .btn-loading::after {
+    content: ""; position: absolute; inset: 0; margin: auto;
+    width: 1em; height: 1em; border-radius: 50%;
+    border: 2px solid currentColor; border-top-color: transparent;
+    color: var(--sys-color-text-inverse);
+    animation: spin var(--sys-motion-duration-slow) linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .btn, .btn-loading::after { transition: none; animation-duration: 0s; }
+    .btn:active { transform: none; }
+  }
+
+  /* Field */
+  .field { display: grid; gap: var(--ref-space-6); max-width: 320px; }
+  .field label { font-size: var(--ref-font-size-14); font-weight: 500; }
+  .field input {
+    font: inherit; min-height: var(--sys-control-min-height-comfortable);
+    padding: 0 var(--ref-space-12);
+    border-radius: var(--sys-radius-control);
+    border: 1px solid var(--sys-color-input-border);
+    background: var(--sys-color-input-bg); color: var(--sys-color-input-fg);
+    transition: border-color var(--sys-motion-duration-fast) var(--sys-motion-easing-standard), box-shadow var(--sys-motion-duration-fast) var(--sys-motion-easing-standard);
+  }
+  .field input:hover { border-color: var(--sys-color-input-hover-border); }
+  .field input:focus-visible { outline: none; border-color: var(--sys-color-input-focus-border); box-shadow: 0 0 0 2px var(--sys-color-focus-ring); }
+  .field .hint { font-size: var(--ref-font-size-14); color: var(--sys-color-text-muted); margin: 0; }
+  .field.invalid input { border-color: var(--sys-color-input-invalid-border); background: var(--sys-color-input-invalid-bg); }
+  .field.invalid .hint { color: var(--sys-color-danger-text); }
+  .field input[disabled] { background: var(--sys-color-input-disabled-bg); color: var(--sys-color-input-disabled-fg); cursor: not-allowed; }
+
+  /* Badges */
+  .badge {
+    font-size: var(--ref-font-size-14); font-weight: 500;
+    display: inline-flex; align-items: center; gap: var(--ref-space-4);
+    padding: var(--ref-space-2) var(--ref-space-8);
+    border-radius: 999px; border: 1px solid transparent;
+  }
+  .badge-success { background: var(--sys-color-success-bg); color: var(--sys-color-success-text); border-color: var(--sys-color-success-border); }
+  .badge-warning { background: var(--sys-color-warning-bg); color: var(--sys-color-warning-text); border-color: var(--sys-color-warning-border); }
+  .badge-danger { background: var(--sys-color-danger-bg); color: var(--sys-color-danger-text); border-color: var(--sys-color-danger-border); }
+  .badge-info { background: var(--sys-color-info-bg); color: var(--sys-color-info-text); border-color: var(--sys-color-info-border); }
+
+  /* Card */
+  .card {
+    background: var(--sys-color-bg-surface);
+    border: 1px solid var(--sys-color-border-subtle);
+    border-radius: var(--sys-radius-panel);
+    padding: var(--ref-space-16);
+    display: grid; gap: var(--ref-space-8);
+  }
+  .card .actions { display: flex; gap: var(--ref-space-8); justify-content: flex-end; margin-top: var(--ref-space-8); }
+
+  /* Dialog mock */
+  .dialog-mock {
+    background: var(--sys-color-bg-raised);
+    border: 1px solid var(--sys-color-border-default);
+    border-radius: var(--sys-radius-large-container);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    padding: var(--ref-space-24);
+    display: grid; gap: var(--ref-space-12);
+    max-width: 420px;
+  }
+  .dialog-mock .row-end { display: flex; gap: var(--ref-space-8); justify-content: flex-end; }
+
+  /* ============ Variation 2: soft elevation overrides ============ */
+  .v2 .btn { box-shadow: 0 1px 2px rgba(0,0,0,0.06); }
+  .v2 .btn-primary:hover, .v2 .btn-secondary:hover, .v2 .btn-destructive:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.10); transform: translateY(-1px); }
+  .v2 .btn:active { transform: none; box-shadow: none; }
+  .v2 .btn, .v2 .field input { border-radius: 10px; }
+  .v2 .card { border-radius: var(--sys-radius-large-container); border-color: transparent; box-shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 16px rgba(0,0,0,0.06); padding: var(--ref-space-24); }
+  .v2 .card:hover { box-shadow: 0 2px 6px rgba(0,0,0,0.10), 0 8px 24px rgba(0,0,0,0.08); }
+  .v2 .panel-light, .v2 .panel-dark { border-color: transparent; }
+  .v2 .dialog-mock { border-radius: 20px; box-shadow: 0 12px 40px rgba(0,0,0,0.22); }
+  .v2 .demo-h { font-weight: 700; }
+  .v2 .grid { gap: var(--ref-space-24); }
+
+  /* ============ Variation 3: sharp institutional overrides ============ */
+  .v3 .btn, .v3 .field input { border-radius: 2px; min-height: var(--sys-control-min-height-compact); }
+  .v3 .btn { border-width: 1.5px; font-weight: 600; }
+  .v3 .btn-secondary { border-color: var(--sys-color-border-strong); }
+  .v3 .card { border-radius: 2px; border-width: 1.5px; border-color: var(--sys-color-border-default); padding: var(--ref-space-12); }
+  .v3 .demo-h { font-weight: 700; letter-spacing: -0.01em; }
+  .v3 .panel-label { letter-spacing: 0.08em; }
+  .v3 .num { font-variant-numeric: tabular-nums; font-weight: 600; }
+  .v3 .card .meta { display: flex; justify-content: space-between; border-bottom: 1px solid var(--sys-color-border-subtle); padding-bottom: var(--ref-space-8); font-size: var(--ref-font-size-14); }
+  .v3 .badge { border-radius: 2px; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.05em; font-weight: 600; }
+  .v3 .dialog-mock { border-radius: 2px; border-width: 1.5px; box-shadow: 0 4px 16px rgba(0,0,0,0.25); }
+  .v3 .btn-primary:focus-visible { outline-offset: 1px; }
+  .v3 table { border-collapse: collapse; width: 100%; font-size: var(--ref-font-size-14); }
+  .v3 th { text-align: start; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.75rem; color: var(--sys-color-text-secondary); border-bottom: 1.5px solid var(--sys-color-border-strong); padding: var(--ref-space-8); }
+  .v3 td { border-bottom: 1px solid var(--sys-color-border-subtle); padding: var(--ref-space-8); font-variant-numeric: tabular-nums; }
+  .v3 tr:hover td { background: var(--sys-color-bg-hover); }
+
+  [dir="rtl"] .row-end { justify-content: flex-start; }
+</style>
+</head>
+<body>
+
+<section class="page-intro">
+  <h1>SIS component direction</h1>
+  <p>Three variations of one test surface: buttons, fields, badges, cards, a dialog, and a data table. All three use the approved foundations only — E-JUST red <code>#EA232B</code>, IBM Plex Sans Arabic, the canonical token files. Nothing here invents colors. You pick the direction; it becomes the component library’s default face. The variations flex shape, elevation, and density — not brand.</p>
+</section>
+
+<!-- ==================== VARIATION 1 ==================== -->
+<section class="variation v1" aria-labelledby="v1-h">
+  <header>
+    <h2 id="v1-h">Variation 1 — Contract</h2>
+    <p>By the book. The current approved foundations, untouched: 8px control radius, 12px panels, flat surfaces, 1px borders, tokens as written. The safe baseline and today’s workbench face.</p>
+  </header>
+  <div class="grid">
+    <div class="panel-light">
+      <span class="panel-label">Light</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+        <button class="btn btn-primary btn-loading" type="button" aria-busy="true">Enroll student</button>
+        <button class="btn btn-primary" type="button" disabled>Enroll student</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">Registered</span>
+        <span class="badge badge-warning">On hold</span>
+        <span class="badge badge-danger">Failed</span>
+        <span class="badge badge-info">Pending</span>
+      </div>
+      <div class="field">
+        <label for="v1-email">University email</label>
+        <input id="v1-email" type="email" placeholder="name@ejust.edu.eg">
+        <p class="hint">Use your institutional address.</p>
+      </div>
+      <div class="field invalid">
+        <label for="v1-id">Student ID</label>
+        <input id="v1-id" type="text" value="20" aria-invalid="true" aria-describedby="v1-id-hint">
+        <p class="hint" id="v1-id-hint">The student ID has eight digits.</p>
+      </div>
+      <article class="card">
+        <h3 class="demo-h">Course: Applied Mathematics</h3>
+        <p class="demo-sub">MATH 201 · 3 credit hours · Dr. Salma Hassan</p>
+        <div class="actions">
+          <button class="btn btn-ghost" type="button">Details</button>
+          <button class="btn btn-primary" type="button">Register</button>
+        </div>
+      </article>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock">
+        <h3 class="demo-h">Confirm registration</h3>
+        <p class="demo-sub">You are registering for MATH 201, section 4. This action takes effect immediately.</p>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-dark" data-theme="dark">
+      <span class="panel-label">Dark</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">Registered</span>
+        <span class="badge badge-warning">On hold</span>
+        <span class="badge badge-danger">Failed</span>
+        <span class="badge badge-info">Pending</span>
+      </div>
+      <div class="field">
+        <label for="v1-email-dark">University email</label>
+        <input id="v1-email-dark" type="email" placeholder="name@ejust.edu.eg">
+      </div>
+      <article class="card">
+        <h3 class="demo-h">Course: Applied Mathematics</h3>
+        <p class="demo-sub">MATH 201 · 3 credit hours · Dr. Salma Hassan</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button">Register</button>
+        </div>
+      </article>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock dark">
+        <h3 class="demo-h">Confirm registration</h3>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-light" lang="ar" dir="rtl">
+      <span class="panel-label">Arabic RTL</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">تسجيل طالب</button>
+        <button class="btn btn-secondary" type="button">حفظ المسودة</button>
+        <button class="btn btn-ghost" type="button">إلغاء</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">مسجَّل</span>
+        <span class="badge badge-warning">موقوف</span>
+        <span class="badge badge-danger">راسب</span>
+      </div>
+      <div class="field">
+        <label for="v1-ar-email">البريد الجامعي</label>
+        <input id="v1-ar-email" type="email" placeholder="name@ejust.edu.eg">
+        <p class="hint">استخدم البريد المؤسسي.</p>
+      </div>
+      <article class="card">
+        <h3 class="demo-h">مقرر: الرياضيات التطبيقية</h3>
+        <p class="demo-sub">MATH 201 · 3 ساعات معتمدة · د. سلمى حسن</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button">تسجيل</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== VARIATION 2 ==================== -->
+<section class="variation v2" aria-labelledby="v2-h">
+  <header>
+    <h2 id="v2-h">Variation 2 — Soft elevation</h2>
+    <p>Refined. Same structure, pushed elevation: shadows instead of borders on cards, 10px controls, 16 to 20px panels, airy spacing, bolder headings, hover lift. The tonal-depth approach Carbon and Material use.</p>
+  </header>
+  <div class="grid">
+    <div class="panel-light">
+      <span class="panel-label">Light</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+        <button class="btn btn-primary btn-loading" type="button" aria-busy="true">Enroll student</button>
+        <button class="btn btn-primary" type="button" disabled>Enroll student</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">Registered</span>
+        <span class="badge badge-warning">On hold</span>
+        <span class="badge badge-danger">Failed</span>
+        <span class="badge badge-info">Pending</span>
+      </div>
+      <div class="field">
+        <label for="v2-email">University email</label>
+        <input id="v2-email" type="email" placeholder="name@ejust.edu.eg">
+        <p class="hint">Use your institutional address.</p>
+      </div>
+      <article class="card">
+        <h3 class="demo-h">Course: Applied Mathematics</h3>
+        <p class="demo-sub">MATH 201 · 3 credit hours · Dr. Salma Hassan</p>
+        <div class="actions">
+          <button class="btn btn-ghost" type="button">Details</button>
+          <button class="btn btn-primary" type="button">Register</button>
+        </div>
+      </article>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock v2">
+        <h3 class="demo-h">Confirm registration</h3>
+        <p class="demo-sub">You are registering for MATH 201, section 4. This action takes effect immediately.</p>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-dark" data-theme="dark">
+      <span class="panel-label">Dark</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+      </div>
+      <article class="card">
+        <h3 class="demo-h">Course: Applied Mathematics</h3>
+        <p class="demo-sub">MATH 201 · 3 credit hours · Dr. Salma Hassan</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button">Register</button>
+        </div>
+      </article>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock v2 dark">
+        <h3 class="demo-h">Confirm registration</h3>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-light" lang="ar" dir="rtl">
+      <span class="panel-label">Arabic RTL</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">تسجيل طالب</button>
+        <button class="btn btn-secondary" type="button">حفظ المسودة</button>
+        <button class="btn btn-ghost" type="button">إلغاء</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">مسجَّل</span>
+        <span class="badge badge-warning">موقوف</span>
+        <span class="badge badge-danger">راسب</span>
+      </div>
+      <article class="card">
+        <h3 class="demo-h">مقرر: الرياضيات التطبيقية</h3>
+        <p class="demo-sub">MATH 201 · 3 ساعات معتمدة · د. سلمى حسن</p>
+        <div class="actions">
+          <button class="btn btn-primary" type="button">تسجيل</button>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== VARIATION 3 ==================== -->
+<section class="variation v3" aria-labelledby="v3-h">
+  <header>
+    <h2 id="v3-h">Variation 3 — Sharp institutional</h2>
+    <p>Novel. Compact-forward density, 2px radii, strong borders, uppercase tracked labels, tabular numbers, visible table grid. Built for registrar-grade data work. Deliberately off the default AI look.</p>
+  </header>
+  <div class="grid">
+    <div class="panel-light">
+      <span class="panel-label">Light</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+        <button class="btn btn-primary btn-loading" type="button" aria-busy="true">Enroll student</button>
+        <button class="btn btn-primary" type="button" disabled>Enroll student</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">Registered</span>
+        <span class="badge badge-warning">On hold</span>
+        <span class="badge badge-danger">Failed</span>
+        <span class="badge badge-info">Pending</span>
+      </div>
+      <div class="field">
+        <label for="v3-email">University email</label>
+        <input id="v3-email" type="email" placeholder="name@ejust.edu.eg">
+        <p class="hint">Use your institutional address.</p>
+      </div>
+      <article class="card">
+        <div class="meta"><span>Course</span><span class="num">MATH 201</span></div>
+        <h3 class="demo-h">Applied Mathematics</h3>
+        <p class="demo-sub">3 credit hours · Dr. Salma Hassan</p>
+        <div class="actions">
+          <button class="btn btn-ghost" type="button">Details</button>
+          <button class="btn btn-primary" type="button">Register</button>
+        </div>
+      </article>
+      <table>
+        <thead><tr><th scope="col">Student</th><th scope="col">ID</th><th scope="col">Status</th></tr></thead>
+        <tbody>
+          <tr><td>Omar Khaled</td><td class="num">20240081</td><td><span class="badge badge-success">Registered</span></td></tr>
+          <tr><td>Mariam Adel</td><td class="num">20240114</td><td><span class="badge badge-warning">On hold</span></td></tr>
+          <tr><td>Youssef Nabil</td><td class="num">20240233</td><td><span class="badge badge-danger">Failed</span></td></tr>
+        </tbody>
+      </table>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock v3">
+        <h3 class="demo-h">Confirm registration</h3>
+        <p class="demo-sub">You are registering for MATH 201, section 4. This action takes effect immediately.</p>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-dark" data-theme="dark">
+      <span class="panel-label">Dark</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">Enroll student</button>
+        <button class="btn btn-secondary" type="button">Save draft</button>
+        <button class="btn btn-ghost" type="button">Cancel</button>
+        <button class="btn btn-destructive" type="button">Drop course</button>
+      </div>
+      <table>
+        <thead><tr><th scope="col">Student</th><th scope="col">ID</th><th scope="col">Status</th></tr></thead>
+        <tbody>
+          <tr><td>Omar Khaled</td><td class="num">20240081</td><td><span class="badge badge-success">Registered</span></td></tr>
+          <tr><td>Mariam Adel</td><td class="num">20240114</td><td><span class="badge badge-warning">On hold</span></td></tr>
+        </tbody>
+      </table>
+      <div class="dialog-mock" role="dialog" aria-label="Confirm registration dialog mock v3 dark">
+        <h3 class="demo-h">Confirm registration</h3>
+        <div class="row-end">
+          <button class="btn btn-ghost" type="button">Cancel</button>
+          <button class="btn btn-primary" type="button">Confirm</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-light" lang="ar" dir="rtl">
+      <span class="panel-label">Arabic RTL</span>
+      <div class="row">
+        <button class="btn btn-primary" type="button">تسجيل طالب</button>
+        <button class="btn btn-secondary" type="button">حفظ المسودة</button>
+        <button class="btn btn-ghost" type="button">إلغاء</button>
+      </div>
+      <div class="row">
+        <span class="badge badge-success">مسجَّل</span>
+        <span class="badge badge-warning">موقوف</span>
+        <span class="badge badge-danger">راسب</span>
+      </div>
+      <table>
+        <thead><tr><th scope="col">الطالب</th><th scope="col">الرقم</th><th scope="col">الحالة</th></tr></thead>
+        <tbody>
+          <tr><td>عمر خالد</td><td class="num">20240081</td><td><span class="badge badge-success">مسجَّل</span></td></tr>
+          <tr><td>مريم عادل</td><td class="num">20240114</td><td><span class="badge badge-warning">موقوف</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
