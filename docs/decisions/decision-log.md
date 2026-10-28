@@ -25,6 +25,8 @@ Adham controls design approval. User instructions outrank earlier proposals in t
 | D19 | Publish the complete private archive and Jira backlog. | Explicit approval on 28 October 2026. |
 | D20 | Defer additional output templates and enhancements. | User requested archive and backlog first. |
 | D21 | Group foundation sources in foundations/, tooling in tools/, and plans in docs/plans/. | User-requested restructure on 28 October 2026. Migration verified by tokens:generate and test:catalog. |
+| D22 | Adopt "Soft elevation" as the component library default face. | Adham picked Variation 2 from the three direction captures on 28 October 2026. Shadows carry depth, 10px controls, airy spacing, bolder headings, hover lift. |
+| D23 | Canonical tokens use the W3C design tokens format; Style Dictionary v4 builds the package targets. | Adham decision in grilling round two. ADR-0001 records the architecture. |
 
 ## Acceptance boundaries
 
