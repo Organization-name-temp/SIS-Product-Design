@@ -8,6 +8,9 @@ Adham is the sole design approver. Anyone may use the design system under the [M
 | Need | Reference |
 |---|---|
 | Use the tokens | [Usage guide](docs/usage/use-the-design-system.md) |
+| Consume outputs | [Outputs map](docs/usage/outputs.md) |
+| Work by role | Frontend, backend, integration, test, and AI pages under [docs/roles/](docs/roles/) |
+| Feed an AI agent | [llms.txt](llms.txt) and [component reference](docs/ai/sis-react.md) |
 | Onboard a tenant brand | [Tenant brand onboarding](docs/usage/tenant-brand-onboarding.md) |
 | Look up a term | [Glossary](GLOSSARY.md) |
 | Read product requirements | [sis-docs repository](https://github.com/Organization-name-temp/sis-docs) |

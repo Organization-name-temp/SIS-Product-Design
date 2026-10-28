@@ -1,0 +1,28 @@
+# SIS design system
+
+> Token-first design system for the Modern SIS product: W3C DTCG tokens, Style Dictionary build, React 19 component library, dashboard patterns, and an AI assistant family. Multi-tenant theming, WCAG 2.2 AA, Arabic RTL and English LTR, light/dark/system themes, comfortable/compact density. Owner: Adham Haitham Eid. MIT licensed.
+
+Design decisions live in foundations/ and docs/decisions/decision-log.md. Component behavior lives in packages/react/src. Machine docs for each component: docs/ai/sis-react.md.
+
+## Docs
+
+- [Component reference (machine-readable)](docs/ai/sis-react.md): every exported component with props, tokens, and usage.
+- [Usage guide](docs/usage/use-the-design-system.md): load order, token layers, Figma import, fonts.
+- [Tenant brand onboarding](docs/usage/tenant-brand-onboarding.md): map a new university brand onto the semantic roles.
+- [Token pipeline ADR](docs/decisions/adr/0001-token-pipeline.md): architecture of the DTCG-to-targets build.
+- [Decision log](docs/decisions/decision-log.md): D01-D23.
+- [Glossary](GLOSSARY.md): terms of record.
+- [Contributing](CONTRIBUTING.md): quality gates and rules.
+
+## Packages
+
+- packages/sis-tokens: canonical DTCG sources + Style Dictionary build. Outputs: dist/sis-tokens.css, dist/tokens.js, dist/tailwind-preset.js, dist/tokens-studio.json.
+- packages/react: 35 exported components and patterns. Load src/styles/sis-react.css after sis-tokens.css.
+
+## Rules for AI tools
+
+- Use semantic tokens (--sys-color-*) in product code, never raw hex values.
+- Style native elements first; ARIA only where natives cannot express the pattern.
+- Arabic RTL is first-class: use logical properties; test with dir="rtl".
+- Density modes: comfortable and compact via [data-density].
+- The brand layer (--ref-color-brand-*) is swappable per tenant; semantic roles are not.
