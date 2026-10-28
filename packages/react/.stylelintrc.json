@@ -1,0 +1,20 @@
+{
+  "rules": {
+    "declaration-property-value-allowed-list": {
+      "/^color$|^background$|^background-color$|^fill$|^stroke$/": [
+        "/^var\\(--(sys|ref|cmp)-/",
+        "currentColor",
+        "transparent",
+        "inherit",
+        "none",
+        "/^rgb\\(9 9 11 \\//"
+      ],
+      "/^border(-.+-)?color$/": ["/^var\\(--(sys|ref|cmp)-/", "transparent", "inherit"]
+    },
+    "declaration-property-unit-allowed-list": {
+      "font-size": ["rem", "px"],
+      "/^margin|^padding|^inset|gap/": ["rem", "px", "0", "%", "auto"]
+    }
+  },
+  "ignoreFiles": ["node_modules/**", "dist/**"]
+}

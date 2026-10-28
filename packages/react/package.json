@@ -13,13 +13,16 @@
   "scripts": {
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:visual": "playwright test"
+    "test:visual": "playwright test",
+    "lint": "stylelint \"src/styles/*.css\" && eslint src --ext .ts,.tsx"
   },
   "peerDependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@changesets/cli": "^3.0.3",
+    "@eslint/js": "^10.0.1",
     "@playwright/test": "^1.49.0",
     "@testing-library/jest-dom": "^6.6.0",
     "@testing-library/react": "^16.1.0",
@@ -28,11 +31,15 @@
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^4.7.0",
+    "eslint": "^10.13.0",
     "jest-axe": "^9.0.0",
     "jsdom": "^25.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "stylelint": "^17.16.0",
+    "stylelint-declaration-strict-value": "^1.12.1",
     "typescript": "^5.7.0",
+    "typescript-eslint": "^8.72.1",
     "vite": "^6.0.0",
     "vitest": "^2.1.0"
   }

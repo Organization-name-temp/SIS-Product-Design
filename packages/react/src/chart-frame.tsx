@@ -5,7 +5,7 @@ export const PAD_X = 44;
 export const PAD_Y = 28;
 
 export interface ChartFrameProps {
-  data: ChartPoint[];
+  data?: ChartPoint[];
   ariaLabel: string;
   height: number;
   ticks: number[];
@@ -13,7 +13,7 @@ export interface ChartFrameProps {
   children: ReactNode;
 }
 
-export function ChartFrame({ data, ariaLabel, height, ticks, max, children }: ChartFrameProps) {
+export function ChartFrame({ ariaLabel, height, ticks, max, children }: ChartFrameProps) {
   const innerHeight = height - PAD_Y * 2;
   return (
     <svg
