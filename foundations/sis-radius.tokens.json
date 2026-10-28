@@ -1,0 +1,27 @@
+{
+  "$description": "SIS corner radii. Must match --sys-radius-* in foundations/sis-foundations.css.",
+  "sys": {
+    "radius": {
+      "small": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "control": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "panel": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "large-container": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "avatar": {
+        "$type": "dimension",
+        "$value": "50%"
+      }
+    }
+  }
+}

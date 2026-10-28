@@ -1,7 +1,15 @@
 from pathlib import Path
 import json,csv,io
 R=Path(__file__).resolve().parent.parent/'foundations'
-source=json.loads((R/'sis-ejust-palette.tokens.json').read_text())
+_raw=json.loads((R/'sis-ejust-palette.tokens.json').read_text())
+_ext=_raw.get('$extensions',{})
+def _legacy(doc):
+ primitives={family:{step:token['$value'] for step,token in steps.items()} for family,steps in doc['ref']['color'].items()}
+ themes={}
+ for theme,roles in doc['sys']['color'].items():
+  themes[theme]={role:token['$value'][len('{ref.color.'):-1] for role,token in roles.items()}
+ return {'metadata':_ext.get('sis.metadata'),'primitives':primitives,'themes':themes,'components':_ext.get('sis.componentAliases'),'semantic':_ext.get('sis.semantic')}
+source=_legacy(_raw)
 p=source['primitives']
 light=source['themes']['light']
 dark=source['themes']['dark']
@@ -44,8 +52,12 @@ fail=[c for c in checks if not c['passed']]
 if fail:
  print(json.dumps(fail,indent=2));raise SystemExit(1)
 meta=dict(name='SIS E-JUST color system',version=2,date='2026-10-27',status='Proposed values; final foundation visual review pending',brandSource='Adham supplied #EA232B',brand='ejust',themes=['light','dark'],themePreferences=['light','dark','system'],primitiveTokenCount=sum(map(len,p.values())),uniqueSolidColorCount=len({v for family in p.values() for v in family.values()}),semanticRolesPerTheme=len(light),componentAliasCount=len(component),contrastCheckCount=len(checks))
-source={'metadata':meta,'primitives':p,'themes':{'light':light,'dark':dark},'components':component,'semantic':{k:{'reference':v,'hex':value(v)} for k,v in light.items()}}
-(R/'sis-ejust-palette.tokens.json').write_text(json.dumps(source,indent=2)+'\n')
+semantic={k:{'reference':v,'hex':value(v)} for k,v in light.items()}
+dtcg={'$description':'SIS E-JUST color system. W3C design tokens format. Metadata, component aliases, and the derived light-theme lookup live under $extensions.',
+ '$extensions':{'sis.metadata':meta,'sis.componentAliases':component,'sis.semantic':semantic},
+ 'ref':{'color':{family:{step:{'$type':'color','$value':hexv} for step,hexv in vals.items()} for family,vals in p.items()}},
+ 'sys':{'color':{theme:{role:{'$type':'color','$value':'{ref.color.'+alias.split('.')[0]+'.'+alias.split('.')[1]+'}'} for role,alias in roles.items()} for theme,roles in {'light':light,'dark':dark}.items()}}}
+(R/'sis-ejust-palette.tokens.json').write_text(json.dumps(dtcg,indent=2,ensure_ascii=False)+'\n')
 # Reference values stay independent of theme. Semantic and component aliases redeclare together for nested theme scopes.
 css=[':root {']
 for family,vals in p.items():
@@ -73,14 +85,8 @@ def block(selector,theme):
  '  --sys-shadow-high: 0 8px 24px 0 rgb(9 9 11 / '+('0.16' if theme=='light' else '0.48')+');','}']
  return '\n'.join(lines)
 css += [block(':root, [data-theme="light"], [data-theme="system"], [data-theme="ejust-light"]','light'),block('[data-theme="dark"], [data-theme="ejust-dark"]','dark'), '@media (prefers-color-scheme: dark) {',block('[data-theme="system"]','dark'),'}']
-(R/'sis-ejust-palette.css').write_text('\n\n'.join(css)+'\n')
 # Export each mode as a standalone Design Tokens Community Group 2025.10-format token document.
-for theme in ['light','dark']:
- refs={f:{k:{'$type':'color','$value':{'colorSpace':'srgb','components':[int(v[i:i+2],16)/255 for i in (1,3,5)],'alpha':1}} for k,v in vals.items()} for f,vals in p.items()}
- out={'ref':{'color':refs},'sys':{'color':{k:{'$type':'color','$value':'{ref.color.'+v+'}'} for k,v in source['themes'][theme].items()}},'component':{k:{'$type':'color','$value':'{sys.color.'+v+'}'} for k,v in component.items()}}
- (R/f'sis-ejust-{theme}.tokens.json').write_text(json.dumps(out,indent=2)+'\n')
 f=io.StringIO();w=csv.writer(f);w.writerow(['Figma variable','Light reference','Light hex','Dark reference','Dark hex'])
 for k in light:w.writerow(['color/'+k.replace('-','/'),light[k],value(light[k]),dark[k],value(dark[k])])
-(R/'sis-ejust-figma-modes.csv').write_text(f.getvalue())
 (R/'sis-ejust-palette.contrast.json').write_text(json.dumps({'metadata':meta,'method':'WCAG relative luminance; unrounded values decide pass; solid sRGB colors only','checks':checks,'excludedPair':{'foreground':'#FFFFFF','background':'#EA232B','ratio':contrast('#FFFFFF','#EA232B'),'passesNormalText':False}},indent=2)+'\n')
 print(json.dumps(meta,indent=2))

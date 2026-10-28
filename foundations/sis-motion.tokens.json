@@ -1,102 +1,156 @@
 {
+  "$description": "SIS motion tokens. W3C design tokens format. Springs, recipes, and rules live under $extensions. The linear keyword round-trips through cubic-bezier(0, 0, 1, 1).",
   "version": "1.0.0",
-  "authorization": "Adham requested the expanded motion system on 2026-10-28. Exact new values are implementation defaults.",
-  "durationMs": {
-    "immediate": 0,
-    "micro": 80,
-    "fast": 120,
-    "standard": 180,
-    "slow": 240,
-    "deliberate": 320,
-    "emphasis": 480
+  "$extensions": {
+    "sis.authorization": "Adham requested the expanded motion system on 2026-10-28. Exact new values are implementation defaults.",
+    "sis.springs": {
+      "restrained": {
+        "mass": 1,
+        "stiffness": 400,
+        "damping": 40,
+        "durationMs": 600,
+        "sampleRate": 120
+      },
+      "responsive": {
+        "mass": 1,
+        "stiffness": 500,
+        "damping": 32,
+        "durationMs": 560,
+        "sampleRate": 120
+      },
+      "expressive": {
+        "mass": 1,
+        "stiffness": 300,
+        "damping": 18,
+        "durationMs": 800,
+        "sampleRate": 120
+      }
+    },
+    "sis.recipes": {
+      "action": {
+        "duration": "fast",
+        "easing": "ease-out",
+        "use": "Button hover and pressed feedback. No input delay.",
+        "useAr": "استجابة التحويم والضغط للأزرار دون تأخير الإدخال."
+      },
+      "navigation": {
+        "duration": "standard",
+        "easing": "ease-out",
+        "use": "Sidebar and menu transitions. Focus moves immediately.",
+        "useAr": "انتقالات القائمة الجانبية والقوائم مع نقل التركيز فوراً."
+      },
+      "selection": {
+        "duration": "micro",
+        "easing": "ease-out",
+        "use": "Selected-state color and border changes.",
+        "useAr": "تغيّر لون الحالة المحددة وحدودها."
+      },
+      "disclosure": {
+        "duration": "slow",
+        "easing": "ease-out",
+        "use": "Disclosure content entry. Expanded state changes immediately.",
+        "useAr": "دخول المحتوى الموسع مع إعلان الحالة فوراً."
+      },
+      "overlay-enter": {
+        "duration": "slow",
+        "easing": "emphasized",
+        "use": "Dialog and drawer entry, with small logical movement.",
+        "useAr": "دخول الحوار واللوحة بحركة منطقية صغيرة."
+      },
+      "overlay-exit": {
+        "duration": "standard",
+        "easing": "ease-in",
+        "use": "Overlay dismissal. Do not retain stale focus.",
+        "useAr": "إغلاق النافذة دون الاحتفاظ بتركيز قديم."
+      },
+      "feedback": {
+        "duration": "standard",
+        "easing": "ease-out",
+        "use": "Toast entry. The status announcement stays immediate.",
+        "useAr": "دخول الإشعار مع الإعلان الفوري للحالة."
+      },
+      "spring-feedback": {
+        "spring": "restrained",
+        "use": "Optional direct-manipulation settling. Never animate table text or errors.",
+        "useAr": "استقرار اختياري للتفاعل المباشر. لا تحرّك نص الجداول أو الأخطاء."
+      }
+    },
+    "sis.rules": [
+      "Same registry and sample data produce the same animation keyframes.",
+      "Reduced motion removes non-essential movement, including springs.",
+      "Focus, pending indicators, error messages, and confirmed results remain immediate.",
+      "Cancel and replace interrupted animations. Cancel animations on unmount.",
+      "Use motion to explain a change. Do not animate every item continuously.",
+      "Avoid repeated bouncing, parallax, flashing, and unrequested looping.",
+      "Reserve expressive springs for an explicit, optional interaction example.",
+      "Use transforms and opacity where practical. Preserve layout and hit areas."
+    ]
+  },
+  "duration": {
+    "$type": "duration",
+    "immediate": {
+      "$value": "0ms"
+    },
+    "micro": {
+      "$value": "80ms"
+    },
+    "fast": {
+      "$value": "120ms"
+    },
+    "standard": {
+      "$value": "180ms"
+    },
+    "slow": {
+      "$value": "240ms"
+    },
+    "deliberate": {
+      "$value": "320ms"
+    },
+    "emphasis": {
+      "$value": "480ms"
+    }
   },
   "easing": {
-    "linear": "linear",
-    "ease-in": "cubic-bezier(0.4, 0, 1, 1)",
-    "ease-out": "cubic-bezier(0, 0, 0.2, 1)",
-    "ease-in-out": "cubic-bezier(0.4, 0, 0.2, 1)",
-    "emphasized": "cubic-bezier(0.2, 0, 0, 1)"
-  },
-  "springs": {
-    "restrained": {
-      "mass": 1,
-      "stiffness": 400,
-      "damping": 40,
-      "durationMs": 600,
-      "sampleRate": 120
+    "$type": "cubicBezier",
+    "linear": {
+      "$value": [
+        0,
+        0,
+        1,
+        1
+      ]
     },
-    "responsive": {
-      "mass": 1,
-      "stiffness": 500,
-      "damping": 32,
-      "durationMs": 560,
-      "sampleRate": 120
+    "ease-in": {
+      "$value": [
+        0.4,
+        0.0,
+        1.0,
+        1.0
+      ]
     },
-    "expressive": {
-      "mass": 1,
-      "stiffness": 300,
-      "damping": 18,
-      "durationMs": 800,
-      "sampleRate": 120
+    "ease-out": {
+      "$value": [
+        0.0,
+        0.0,
+        0.2,
+        1.0
+      ]
+    },
+    "ease-in-out": {
+      "$value": [
+        0.4,
+        0.0,
+        0.2,
+        1.0
+      ]
+    },
+    "emphasized": {
+      "$value": [
+        0.2,
+        0.0,
+        0.0,
+        1.0
+      ]
     }
-  },
-  "recipes": {
-    "action": {
-      "duration": "fast",
-      "easing": "ease-out",
-      "use": "Button hover and pressed feedback. No input delay.",
-      "useAr": "استجابة التحويم والضغط للأزرار دون تأخير الإدخال."
-    },
-    "navigation": {
-      "duration": "standard",
-      "easing": "ease-out",
-      "use": "Sidebar and menu transitions. Focus moves immediately.",
-      "useAr": "انتقالات القائمة الجانبية والقوائم مع نقل التركيز فوراً."
-    },
-    "selection": {
-      "duration": "micro",
-      "easing": "ease-out",
-      "use": "Selected-state color and border changes.",
-      "useAr": "تغيّر لون الحالة المحددة وحدودها."
-    },
-    "disclosure": {
-      "duration": "slow",
-      "easing": "ease-out",
-      "use": "Disclosure content entry. Expanded state changes immediately.",
-      "useAr": "دخول المحتوى الموسع مع إعلان الحالة فوراً."
-    },
-    "overlay-enter": {
-      "duration": "slow",
-      "easing": "emphasized",
-      "use": "Dialog and drawer entry, with small logical movement.",
-      "useAr": "دخول الحوار واللوحة بحركة منطقية صغيرة."
-    },
-    "overlay-exit": {
-      "duration": "standard",
-      "easing": "ease-in",
-      "use": "Overlay dismissal. Do not retain stale focus.",
-      "useAr": "إغلاق النافذة دون الاحتفاظ بتركيز قديم."
-    },
-    "feedback": {
-      "duration": "standard",
-      "easing": "ease-out",
-      "use": "Toast entry. The status announcement stays immediate.",
-      "useAr": "دخول الإشعار مع الإعلان الفوري للحالة."
-    },
-    "spring-feedback": {
-      "spring": "restrained",
-      "use": "Optional direct-manipulation settling. Never animate table text or errors.",
-      "useAr": "استقرار اختياري للتفاعل المباشر. لا تحرّك نص الجداول أو الأخطاء."
-    }
-  },
-  "rules": [
-    "Same registry and sample data produce the same animation keyframes.",
-    "Reduced motion removes non-essential movement, including springs.",
-    "Focus, pending indicators, error messages, and confirmed results remain immediate.",
-    "Cancel and replace interrupted animations. Cancel animations on unmount.",
-    "Use motion to explain a change. Do not animate every item continuously.",
-    "Avoid repeated bouncing, parallax, flashing, and unrequested looping.",
-    "Reserve expressive springs for an explicit, optional interaction example.",
-    "Use transforms and opacity where practical. Preserve layout and hit areas."
-  ]
+  }
 }

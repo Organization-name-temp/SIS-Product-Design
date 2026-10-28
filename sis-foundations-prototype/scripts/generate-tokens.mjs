@@ -1,8 +1,11 @@
 import { readFile, writeFile } from "node:fs/promises";
+import { legacyPalette, legacyTypography, legacyMotion } from "./dtcg.mjs";
+const toLegacy = { palette: legacyPalette, typography: legacyTypography, motion: legacyMotion };
 async function canonical(name,file){
   let data;
-  try{data=JSON.parse(await readFile(new URL(`../../../foundations/${file}`,import.meta.url),'utf8'));}
+  try{data=JSON.parse(await readFile(new URL(`../../foundations/${file}`,import.meta.url),'utf8'));}
   catch(error){if(error.code!=='ENOENT')throw error;data=JSON.parse(await readFile(`src/data/${name}.json`,'utf8'));}
+  if(toLegacy[name])data=toLegacy[name](data);
   await writeFile(`src/data/${name}.json`,JSON.stringify(data,null,2)+'\n');
   return data;
 }
@@ -62,6 +65,7 @@ css.push(
 css = css.join("\n\n") + "\n";
 await writeFile("src/palette.css", css);
 await writeFile("public/exports/sis-ejust-palette.css", css);
+await writeFile("../foundations/sis-ejust-palette.css", css);
 const sizes = [
   ...new Set(Object.values(type.roles).map((r) => r.sizeReferencePx)),
 ].sort((a, b) => a - b);
@@ -111,6 +115,7 @@ for (const lang of ["ar", "en"])
 typography = typography.join("\n") + "\n";
 await writeFile("src/typography.css", typography);
 await writeFile("public/exports/sis-typography.css", typography);
+await writeFile("../foundations/sis-typography.css", typography);
 for (const [name, data] of [
   ["sis-ejust-palette.tokens.json", palette],
   ["sis-typography.tokens.json", type],
@@ -127,6 +132,7 @@ let csv = "Figma variable,Light reference,Light hex,Dark reference,Dark hex\n";
 for (const key of Object.keys(palette.themes.light))
   csv += `color/${key.replaceAll("-", "/")},${palette.themes.light[key]},${value(palette.themes.light[key])},${palette.themes.dark[key]},${value(palette.themes.dark[key])}\n`;
 await writeFile("public/exports/sis-ejust-figma-modes.csv", csv);
+await writeFile("../foundations/sis-ejust-figma-modes.csv", csv);
 for (const name of ["light", "dark"]) {
   const refs = Object.fromEntries(
     Object.entries(palette.primitives).map(([family, values]) => [
@@ -170,14 +176,17 @@ for (const name of ["light", "dark"]) {
     `public/exports/sis-ejust-${name}.tokens.json`,
     JSON.stringify(exportData, null, 2) + "\n",
   );
+  await writeFile(
+    `../foundations/sis-ejust-${name}.tokens.json`,
+    JSON.stringify(exportData, null, 2) + "\n",
+  );
 }
 const foundations = await readFile("src/foundations.css", "utf8");
-await writeFile(
-  "public/exports/sis-foundations.css",
-  foundations
-    .replace("./palette.css", "./sis-ejust-palette.css")
-    .replace("./typography.css", "./sis-typography.css"),
-);
+const foundationsCss = foundations
+  .replace("./palette.css", "./sis-ejust-palette.css")
+  .replace("./typography.css", "./sis-typography.css");
+await writeFile("public/exports/sis-foundations.css", foundationsCss);
+await writeFile("../foundations/sis-foundations.css", foundationsCss);
 console.log(
   "Generated CSS, JSON modes, and Figma mapping from the canonical sources.",
 );
@@ -188,6 +197,6 @@ await writeFile('src/motion.css',motionCss);await writeFile('public/exports/sis-
 await writeFile('public/exports/sis-usage-guidance.json',JSON.stringify(usage,null,2)+'\n');
 
 for(const [file,dir] of [['sis-foundation-contract.md','foundations'],['sis-ejust-palette.md','foundations'],['sis-foundation-decisions.json','foundations'],['sis-typography.md','foundations'],['sis-theme.js','foundations'],['sis-build-palette.py','tools']]){
- try{await writeFile(`public/exports/${file}`,await readFile(new URL(`../../../${dir}/${file}`,import.meta.url)));}
+ try{await writeFile(`public/exports/${file}`,await readFile(new URL(`../../${dir}/${file}`,import.meta.url)));}
  catch(error){if(error.code!=='ENOENT')throw error;await readFile(`public/exports/${file}`);}
 }

@@ -1,0 +1,31 @@
+{
+  "$description": "SIS z-index scale for layered surfaces.",
+  "sys": {
+    "z": {
+      "dropdown": {
+        "$type": "number",
+        "$value": 1000
+      },
+      "sticky": {
+        "$type": "number",
+        "$value": 1100
+      },
+      "drawer": {
+        "$type": "number",
+        "$value": 1200
+      },
+      "dialog": {
+        "$type": "number",
+        "$value": 1300
+      },
+      "toast": {
+        "$type": "number",
+        "$value": 1400
+      },
+      "tooltip": {
+        "$type": "number",
+        "$value": 1500
+      }
+    }
+  }
+}

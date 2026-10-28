@@ -1,0 +1,15 @@
+{
+  "$description": "SIS layout breakpoints. Must match the layout column media queries in foundations/sis-foundations.css.",
+  "sys": {
+    "breakpoint": {
+      "md": {
+        "$type": "dimension",
+        "$value": "768px"
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "1200px"
+      }
+    }
+  }
+}

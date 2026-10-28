@@ -1,0 +1,15 @@
+{
+  "$description": "SIS opacity steps for scrims and disabled states.",
+  "sys": {
+    "opacity": {
+      "scrim": {
+        "$type": "number",
+        "$value": 0.48
+      },
+      "disabled": {
+        "$type": "number",
+        "$value": 0.6
+      }
+    }
+  }
+}

@@ -100,7 +100,7 @@ Key experience nodes: the role entry pages are the onboarding step. The aha mome
 |---|---|---|
 | Token pipeline v2 | Style Dictionary v4 over canonical foundations; emits CSS, TS types, Tailwind preset, Tokens Studio JSON; contract tests | P0 |
 | Multi-tenant theming | Swappable brand layer over stable semantic roles; tenant onboarding guide | P0 |
-| Component packages | `packages/tokens`, `packages/react`, `packages/tailwind-preset` on npm workspaces; React 19 + TypeScript on React Aria Components | P0 |
+| Component packages | `sis-tokens`, `sis-react`, `sis-tailwind-preset` on npm workspaces; React 19 + TypeScript; hand-rolled keyboard, focus, and ARIA behaviors, no primitive library (grilling round one) | P0 |
 | Pilot families | Buttons, text fields, badges, selection controls, dialog; full state and RTL × theme × density matrices | P0 |
 | Dashboards and admin patterns | KPI cards, filter bars, data-table pages, settings forms, empty, error, loading states | P0 |
 | Docs in the workbench | Role entry pages, API reference, maturity labels, copy-paste examples | P0 |
@@ -137,7 +137,8 @@ npm packages consumed by React web apps and any stack that reads CSS variables. 
 ### 6.2 Technical constraints
 
 - Node.js 24, npm workspaces, TypeScript strict.
-- React 19. Behavior from React Aria Components (ADR to record; alternative considered: Radix).
+- React 19. Behavior is hand-rolled per component (keyboard, focus, ARIA); no primitive library (grilling round one). An ADR records the pattern and the shared behavior hooks.
+- Package names carry no npm scope until the org rename lands (grilling round one).
 - Styling: plain CSS on token variables inside packages; zero runtime styling dependencies; optional Tailwind v4 preset.
 - Canonical tokens stay in `foundations/`; everything else is generated and contract-tested.
 - RTL: logical properties only; every component tests in RTL and LTR.

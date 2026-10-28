@@ -1,0 +1,47 @@
+{
+  "$description": "SIS elevation shadows. Colors alias the neutral ramp with alpha. Implementation defaults under the design owner's authorization (D15 pattern).",
+  "sys": {
+    "elevation": {
+      "raised": {
+        "$type": "shadow",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "1px",
+          "blur": "3px",
+          "spread": "0px",
+          "color": "#18181B26"
+        }
+      },
+      "hover": {
+        "$type": "shadow",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "2px",
+          "blur": "6px",
+          "spread": "0px",
+          "color": "#18181B1A"
+        }
+      },
+      "dialog": {
+        "$type": "shadow",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "8px",
+          "blur": "24px",
+          "spread": "0px",
+          "color": "#18181B2E"
+        }
+      },
+      "overlay": {
+        "$type": "shadow",
+        "$value": {
+          "offsetX": "0px",
+          "offsetY": "12px",
+          "blur": "40px",
+          "spread": "-4px",
+          "color": "#18181B38"
+        }
+      }
+    }
+  }
+}

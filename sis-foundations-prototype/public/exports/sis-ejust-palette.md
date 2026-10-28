@@ -16,7 +16,7 @@ The complete visual comparison remains the final foundation step.
 - [Dark token export](sis-ejust-dark.tokens.json)
 - [Figma mode mapping](sis-ejust-figma-modes.csv)
 - [Computed contrast results](sis-ejust-palette.contrast.json)
-- [Rebuild script](sis-build-palette.py)
+- [Rebuild script](../tools/sis-build-palette.py)
 
 ## Naming contract
 
