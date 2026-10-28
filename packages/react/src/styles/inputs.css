@@ -1,0 +1,77 @@
+/* Inputs, files, identity, and progress (Batch C). */
+
+.sis-upload { display: grid; gap: var(--ref-space-6); }
+.sis-upload-input { position: absolute; inline-size: 1px; block-size: 1px; opacity: 0; }
+.sis-upload-zone {
+  border: 1.5px dashed var(--sys-color-border-default);
+  border-radius: var(--sys-radius-panel);
+  padding: var(--ref-space-24);
+  text-align: center;
+  transition: border-color var(--sys-motion-duration-fast) var(--sys-motion-easing-standard),
+    background-color var(--sys-motion-duration-fast) var(--sys-motion-easing-standard);
+}
+.sis-upload-zone:hover,
+.sis-upload-dragover { border-color: var(--sys-color-input-focus-border); background: var(--sys-color-bg-subtle); }
+.sis-upload-trigger {
+  font: inherit;
+  font-size: var(--ref-font-size-14);
+  font-weight: 500;
+  color: var(--sys-color-link-default);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  min-block-size: var(--sys-target-min-height);
+}
+.sis-upload-trigger:focus-visible {
+  outline: var(--sys-focus-ring-width) solid var(--sys-color-focus-ring);
+  outline-offset: var(--sys-focus-ring-gap);
+}
+.sis-upload-list { list-style: none; margin: 0; padding: 0; display: grid; gap: var(--ref-space-4); }
+.sis-upload-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--ref-space-8);
+  font-size: var(--ref-font-size-14);
+  background: var(--sys-color-bg-subtle);
+  border-radius: var(--sys-radius-control);
+  padding: var(--ref-space-6) var(--ref-space-8);
+}
+.sis-upload-remove {
+  font: inherit;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--sys-color-text-secondary);
+  font-size: var(--ref-font-size-16);
+  line-height: 1;
+}
+
+.sis-number-input { font-variant-numeric: tabular-nums; }
+
+.sis-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--sys-radius-avatar);
+  background: var(--sys-color-bg-selected);
+  color: var(--sys-color-text-brand);
+  font-weight: 600;
+  overflow: hidden;
+  flex: none;
+  user-select: none;
+}
+.sis-avatar-img { inline-size: 100%; block-size: 100%; object-fit: cover; }
+
+.sis-progress {
+  block-size: 8px;
+  border-radius: 999px;
+  background: var(--sys-color-bg-subtle);
+  overflow: hidden;
+}
+.sis-progress-fill {
+  block-size: 100%;
+  background: var(--sys-color-action-primary-bg);
+  border-radius: 999px;
+  transition: inline-size var(--sys-motion-duration-standard) var(--sys-motion-easing-standard);
+}

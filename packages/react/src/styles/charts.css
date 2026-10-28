@@ -1,0 +1,10 @@
+/* Charts (Batch C). */
+
+.sis-chart { display: block; }
+.sis-chart-grid { stroke: var(--sys-color-chart-grid); stroke-width: 1; }
+.sis-chart-bar { fill: var(--sys-color-chart-1); }
+.sis-chart-line { stroke: var(--sys-color-chart-2); }
+.sis-chart-marker { fill: var(--sys-color-chart-2); }
+.sis-chart-axis,
+.sis-chart-tick { fill: var(--sys-color-text-secondary); font-size: 12px; }
+.sis-chart-value { fill: var(--sys-color-text-primary); font-size: 12px; font-variant-numeric: tabular-nums; }
