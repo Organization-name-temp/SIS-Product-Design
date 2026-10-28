@@ -3,9 +3,7 @@ import { DataTable, type Column } from "../../src/DataTable";
 import { Alert } from "../../src/Alert";
 import { Spinner } from "../../src/Spinner";
 import { Skeleton } from "../../src/Skeleton";
-import { Toast } from "../../src/Toast";
 import { Tooltip } from "../../src/Tooltip";
-import { Drawer } from "../../src/Drawer";
 
 type Student = { id: string; name: string; grade: number };
 const columns: Column<Student>[] = [
@@ -19,8 +17,8 @@ const rows: Student[] = [
 ];
 
 export function FeedbackSection() {
-  const [toastOpen, setToastOpen] = useState(true);
-  const [drawerOpen, setDrawerOpen] = useState(true);
+  const [toastOpen, setToastOpen] = useState(false);
+  const [drawerOpen, setDrawerOpen] = useState(false);
   return (
     <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
       <Alert tone="danger" title="Registration blocked">A hold is on this account.</Alert>
@@ -35,10 +33,8 @@ export function FeedbackSection() {
           <button type="button">Enroll</button>
         </Tooltip>
       </div>
-      {toastOpen ? <Toast message="Schedule saved." onDismiss={() => setToastOpen(false)} /> : null}
-      <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title="Course details">
-        MATH 201 · 3 credit hours · Dr. Salma Hassan
-      </Drawer>
+      <button type="button" className="sis-btn sis-btn-secondary" onClick={() => setToastOpen(true)}>Show toast</button>
+      <button type="button" className="sis-btn sis-btn-secondary" onClick={() => setDrawerOpen(true)}>Open drawer</button>
     </div>
   );
 }
