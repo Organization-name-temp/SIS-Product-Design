@@ -100,3 +100,4 @@ Each epic has a repository link. The preservation stories form a native Blocks d
 Points estimate relative size. They do not record measured historical effort.
 The handoff epic stays In Progress because personal acceptance and screen-reader review remain open.
 All 53 added stories sit in KAN Sprint 1 under their epic parents as of 28 October 2026.
+Expansion epic E11 "Expand to the base design system" is KAN-221 (In Progress) with stories KAN-222 (M0-M2, Done), KAN-223 (M3, Done), KAN-224 (M4, Done), KAN-225 (M5-M6, In Progress). Backlog epics: KAN-226 landing kit (E12), KAN-227 email templates (E13), KAN-228 presentation and print profiles (E14), KAN-229 tenant onboarding kit (E15), KAN-230 mobile packages (E16). Delivery report: [2026-10-28-expansion.md](../reports/2026-10-28-expansion.md).

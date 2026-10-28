@@ -19,7 +19,8 @@ Adham is the sole design approver. Anyone may use the design system under the [M
 | Read approved rules | [Foundation contract](foundations/sis-foundation-contract.md) |
 | Understand decisions | [Decision log](docs/decisions/decision-log.md) |
 | Trace this chat | [Curated project record](docs/decisions/project-record.md) |
-| Check delivery evidence | [Current report](docs/reports/2026-10-28-delivery.md) |
+| Check delivery evidence | [Expansion report](docs/reports/2026-10-28-expansion.md) |
+| Run the showcase prototype | `cd apps/showcase && npm run dev` |
 | Find Jira work | [Epics and stories](docs/jira/README.md) |
 | Plan later outputs | [Deterministic output plan](docs/system-options/output-system.md) |
 | Work within 20 hours | [Solo design workflow](docs/workflow/solo-design.md) |
