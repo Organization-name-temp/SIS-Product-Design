@@ -1323,16 +1323,16 @@
     },
     "issuelinks": [],
     "status": {
-      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-      "description": "This work item is being actively worked on at the moment by the assignee.",
-      "name": "In Progress",
-      "id": "10005",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
       "statusCategory": {
-        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "In Progress"
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
       }
     },
     "labels": [
@@ -3276,16 +3276,16 @@
       "fields": {
         "summary": "SIS design: Establish the design foundation",
         "status": {
-          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-          "description": "This work item is being actively worked on at the moment by the assignee.",
-          "name": "In Progress",
-          "id": "10005",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
           "statusCategory": {
-            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-            "id": 4,
-            "key": "indeterminate",
-            "colorName": "yellow",
-            "name": "In Progress"
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
           }
         },
         "priority": {
@@ -3340,16 +3340,16 @@
       "fields": {
         "summary": "SIS design: Establish the design foundation",
         "status": {
-          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-          "description": "This work item is being actively worked on at the moment by the assignee.",
-          "name": "In Progress",
-          "id": "10005",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
           "statusCategory": {
-            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-            "id": 4,
-            "key": "indeterminate",
-            "colorName": "yellow",
-            "name": "In Progress"
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
           }
         },
         "priority": {
@@ -3371,16 +3371,16 @@
     },
     "issuelinks": [],
     "status": {
-      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-      "description": "This work item is being actively worked on at the moment by the assignee.",
-      "name": "In Progress",
-      "id": "10005",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
       "statusCategory": {
-        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "In Progress"
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
       }
     },
     "labels": [
@@ -3404,16 +3404,16 @@
       "fields": {
         "summary": "SIS design: Establish the design foundation",
         "status": {
-          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-          "description": "This work item is being actively worked on at the moment by the assignee.",
-          "name": "In Progress",
-          "id": "10005",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
           "statusCategory": {
-            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-            "id": 4,
-            "key": "indeterminate",
-            "colorName": "yellow",
-            "name": "In Progress"
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
           }
         },
         "priority": {
@@ -3468,16 +3468,16 @@
       "fields": {
         "summary": "SIS design: Establish the design foundation",
         "status": {
-          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-          "description": "This work item is being actively worked on at the moment by the assignee.",
-          "name": "In Progress",
-          "id": "10005",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
           "statusCategory": {
-            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-            "id": 4,
-            "key": "indeterminate",
-            "colorName": "yellow",
-            "name": "In Progress"
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
           }
         },
         "priority": {
@@ -3532,16 +3532,16 @@
       "fields": {
         "summary": "SIS design: Establish the design foundation",
         "status": {
-          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-          "description": "This work item is being actively worked on at the moment by the assignee.",
-          "name": "In Progress",
-          "id": "10005",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
           "statusCategory": {
-            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-            "id": 4,
-            "key": "indeterminate",
-            "colorName": "yellow",
-            "name": "In Progress"
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
           }
         },
         "priority": {
@@ -3843,16 +3843,16 @@
     "summary": "SIS design: Establish the design foundation",
     "issuelinks": [],
     "status": {
-      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
-      "description": "This work item is being actively worked on at the moment by the assignee.",
-      "name": "In Progress",
-      "id": "10005",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
       "statusCategory": {
-        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
-        "id": 4,
-        "key": "indeterminate",
-        "colorName": "yellow",
-        "name": "In Progress"
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
       }
     },
     "labels": [

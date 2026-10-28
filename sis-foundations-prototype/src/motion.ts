@@ -24,6 +24,6 @@ export function playSpring(element:HTMLElement,profile:SpringProfile,distance:nu
   const frames=springSamples(profile).map((progress,index,all)=>({transform:`translateX(${distance*progress}px)`,offset:index/(all.length-1)}));
   const animation=element.animate(frames,{duration:profile.durationMs,easing:'linear',fill:'forwards'});
   active.set(element,animation);
-  animation.finished.then(()=>{if(active.get(element)===animation)active.delete(element);},()=>{});
+  animation.finished.catch(()=>{});
   return animation;
 }

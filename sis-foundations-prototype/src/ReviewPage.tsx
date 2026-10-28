@@ -213,7 +213,7 @@ export function ReviewPage({
           </li>
           <li>
             {t(
-              "The transition easing and workbench layer numbers are prototype proposals. They do not change foundation tokens.",
+              "Motion profiles use a versioned registry. Workbench layer numbers remain a separate prototype proposal.",
               "تستخدم إعدادات الحركة سجلاً ذا إصدار. تبقى أرقام الطبقات تفصيلاً مستقلاً للنموذج.",
               "La courbe de transition et les niveaux de cet atelier sont proposés. Ils ne changent pas les jetons.",
             )}

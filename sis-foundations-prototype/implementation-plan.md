@@ -28,7 +28,7 @@ Approved text sizes and token values take priority over approximate generated im
 
 ## State and presentation
 
-Keep theme, font, language, density, and width independent.
+Keep theme, language, density, and width independent. Use IBM Plex for both active languages.
 Keep the main demonstration mounted during presentation changes.
 Use isolated frames for comparisons and width inspection.
 Reset clears sample values. Reload clears in-memory sample interactions.
@@ -37,7 +37,7 @@ Share selected items, tabs, and presentation settings through URLs.
 Exclude entered values from URLs.
 
 Use international digits in every locale. Preserve record identifiers exactly.
-Load all three font families from local files. Retain their license files.
+Load all four IBM Plex weights from local files. Retain the font license.
 
 ## Verification plan
 
@@ -49,7 +49,7 @@ Exercise sorting, filtering, selection, validation, overlays, uploads, downloads
 Check input retention through presentation changes.
 Check keyboard focus, reduced motion, and mobile navigation.
 
-Inspect desktop light, desktop Arabic dark, French narrow, and table captures together.
+Inspect desktop light, desktop Arabic dark, Arabic narrow, and table captures together.
 Compare the visual source and implementation in combined images.
 Use one batched visual review, one correction batch, and one confirmation pass.
 Record expected differences and remaining limits in design-qa.md.

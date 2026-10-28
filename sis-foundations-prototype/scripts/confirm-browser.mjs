@@ -15,6 +15,7 @@ for (const entry of catalog) {
     `http://localhost:4173/?embed=1&item=${entry.id}&theme=light&lang=en`,
   );
   await page.locator("main").waitFor().catch(async error=>{await writeFile("qa/audit-interrupted.json",JSON.stringify(report,null,2));throw new Error(`${page.url()} failed to render: ${error.message}`);});
+  await page.evaluate(async()=>{await document.fonts.ready;await Promise.all(document.getAnimations().filter(a=>a.playState==='running'&&a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});
   await page.addScriptTag({ content: axe.source });
   const result = await page.evaluate(
     async () =>

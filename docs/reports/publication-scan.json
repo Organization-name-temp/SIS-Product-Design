@@ -2,10 +2,12 @@
   "date": "2026-10-28",
   "method": "Pattern scan of working files, archive members, and every reachable publication commit. This is not a complete secret-detection guarantee.",
   "reachableCommits": [
+    "30f9ccb4fadc5fcd52ad6d5c17a986dc93e7606d",
+    "5f57381f203b1b05f8badd0131e2ce80140ba342",
     "74d9c4ec9ed0988f9d3ca2cabb941ca967a78fa2",
     "c907f1c5e0dca28264cc7cb8b99041e69390862c",
     "e72b4350bc6dcc9f3f5c868ebcbce83bc070f00e"
   ],
-  "scannedObjects": 272,
+  "scannedObjects": 628,
   "findings": []
 }

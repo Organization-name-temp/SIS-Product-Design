@@ -2,7 +2,7 @@
   "E01": {
     "key": "KAN-158",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-158",
-    "status": "In Progress",
+    "status": "Done",
     "parent": null
   },
   "E02": {
@@ -80,7 +80,7 @@
   "S04": {
     "key": "KAN-171",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-171",
-    "status": "In Progress",
+    "status": "Done",
     "parent": "KAN-158"
   },
   "S05": {
@@ -272,7 +272,7 @@
   "S36": {
     "key": "KAN-203",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-203",
-    "status": "In Progress",
+    "status": "Done",
     "parent": "KAN-162"
   },
   "S37": {

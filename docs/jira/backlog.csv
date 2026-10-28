@@ -1,5 +1,5 @@
 Design ID,Jira key,Type,Summary,Status,Parent,Points,URL
-E01,KAN-158,Epic,Establish the design foundation,In Progress,,,https://adhamhaithameid.atlassian.net/browse/KAN-158
+E01,KAN-158,Epic,Establish the design foundation,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-158
 E02,KAN-159,Epic,Inspect reusable foundations,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-159
 E03,KAN-160,Epic,Exercise component behavior,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-160
 E04,KAN-161,Epic,Demonstrate SIS patterns,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-161
@@ -12,7 +12,7 @@ E10,KAN-167,Epic,Process later enhancements,To Do,,,https://adhamhaithameid.atla
 S01,KAN-168,Story,"Apply E-JUST colors across light, dark, and system themes",Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-168
 S02,KAN-169,Story,Use IBM Plex for Arabic RTL and English LTR,Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-169
 S03,KAN-170,Story,Choose readable density and responsive layouts,Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-170
-S04,KAN-171,Story,"Explain every spacing, radius, and icon value",In Progress,KAN-158,5,https://adhamhaithameid.atlassian.net/browse/KAN-171
+S04,KAN-171,Story,"Explain every spacing, radius, and icon value",Done,KAN-158,5,https://adhamhaithameid.atlassian.net/browse/KAN-171
 S05,KAN-172,Story,Apply deterministic motion across interactions,Done,KAN-158,5,https://adhamhaithameid.atlassian.net/browse/KAN-172
 S06,KAN-173,Story,"Inspect colors, contrast, and token layers",Done,KAN-159,3,https://adhamhaithameid.atlassian.net/browse/KAN-173
 S07,KAN-174,Story,"Inspect typography, grids, layers, and accessibility examples",Done,KAN-159,3,https://adhamhaithameid.atlassian.net/browse/KAN-174
@@ -44,7 +44,7 @@ S32,KAN-199,Story,Explain degree requirements and transcript results,Done,KAN-16
 S33,KAN-200,Story,Reconcile sample finance and aid records,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-200
 S34,KAN-201,Story,Recover a sample provisioning step,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-201
 S35,KAN-202,Story,"Verify registry, tokens, and portable exports",Done,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-202
-S36,KAN-203,Story,Verify browser interactions and responsive accessibility,In Progress,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-203
+S36,KAN-203,Story,Verify browser interactions and responsive accessibility,Done,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-203
 S37,KAN-204,Story,Complete Adham visual acceptance,In Progress,KAN-162,2,https://adhamhaithameid.atlassian.net/browse/KAN-204
 S38,KAN-205,Story,Review the system with a screen reader,To Do,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-205
 S39,KAN-206,Story,Preserve source history and its provenance,Done,KAN-163,3,https://adhamhaithameid.atlassian.net/browse/KAN-206

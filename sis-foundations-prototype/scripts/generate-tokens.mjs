@@ -186,3 +186,8 @@ const motionCss=block(':root',[...declarations(motion.durationMs,'sys-motion-dur
 await writeFile('src/motion.css',motionCss);await writeFile('public/exports/sis-motion.css',motionCss);await writeFile('public/exports/sis-motion.tokens.json',JSON.stringify(motion,null,2)+'\n');
 
 await writeFile('public/exports/sis-usage-guidance.json',JSON.stringify(usage,null,2)+'\n');
+
+for(const file of ['sis-foundation-contract.md','sis-ejust-palette.md','sis-foundation-decisions.json','sis-typography.md','sis-theme.js','sis-build-palette.py']){
+ try{await writeFile(`public/exports/${file}`,await readFile(new URL(`../../${file}`,import.meta.url)));}
+ catch(error){if(error.code!=='ENOENT')throw error;await readFile(`public/exports/${file}`);}
+}

@@ -1,6 +1,7 @@
 # Jira design backlog
 
 Native Jira verification on 28 October 2026 confirms 10 epics and 53 stories.
+The live totals are 44 Done, 2 In Progress, and 17 To Do.
 All stories have the expected epic parent and proposed relative points.
 Adham owns the design review. Deferred output work remains To Do.
 
@@ -10,7 +11,7 @@ Adham owns the design review. Deferred output work remains To Do.
 
 | Key | Outcome | Live status |
 |---|---|---|
-| [KAN-158](https://adhamhaithameid.atlassian.net/browse/KAN-158) | Establish the design foundation | In Progress |
+| [KAN-158](https://adhamhaithameid.atlassian.net/browse/KAN-158) | Establish the design foundation | Done |
 | [KAN-159](https://adhamhaithameid.atlassian.net/browse/KAN-159) | Inspect reusable foundations | Done |
 | [KAN-160](https://adhamhaithameid.atlassian.net/browse/KAN-160) | Exercise component behavior | Done |
 | [KAN-161](https://adhamhaithameid.atlassian.net/browse/KAN-161) | Demonstrate SIS patterns | Done |
@@ -28,6 +29,7 @@ Adham owns the design review. Deferred output work remains To Do.
 | [KAN-168](https://adhamhaithameid.atlassian.net/browse/KAN-168) | Apply E-JUST colors across light, dark, and system themes | KAN-158 | 3 |
 | [KAN-169](https://adhamhaithameid.atlassian.net/browse/KAN-169) | Use IBM Plex for Arabic RTL and English LTR | KAN-158 | 3 |
 | [KAN-170](https://adhamhaithameid.atlassian.net/browse/KAN-170) | Choose readable density and responsive layouts | KAN-158 | 3 |
+| [KAN-171](https://adhamhaithameid.atlassian.net/browse/KAN-171) | Explain every spacing, radius, and icon value | KAN-158 | 5 |
 | [KAN-172](https://adhamhaithameid.atlassian.net/browse/KAN-172) | Apply deterministic motion across interactions | KAN-158 | 5 |
 | [KAN-173](https://adhamhaithameid.atlassian.net/browse/KAN-173) | Inspect colors, contrast, and token layers | KAN-159 | 3 |
 | [KAN-174](https://adhamhaithameid.atlassian.net/browse/KAN-174) | Inspect typography, grids, layers, and accessibility examples | KAN-159 | 3 |
@@ -59,6 +61,7 @@ Adham owns the design review. Deferred output work remains To Do.
 | [KAN-200](https://adhamhaithameid.atlassian.net/browse/KAN-200) | Reconcile sample finance and aid records | KAN-161 | 3 |
 | [KAN-201](https://adhamhaithameid.atlassian.net/browse/KAN-201) | Recover a sample provisioning step | KAN-161 | 3 |
 | [KAN-202](https://adhamhaithameid.atlassian.net/browse/KAN-202) | Verify registry, tokens, and portable exports | KAN-162 | 3 |
+| [KAN-203](https://adhamhaithameid.atlassian.net/browse/KAN-203) | Verify browser interactions and responsive accessibility | KAN-162 | 3 |
 | [KAN-206](https://adhamhaithameid.atlassian.net/browse/KAN-206) | Preserve source history and its provenance | KAN-163 | 3 |
 | [KAN-207](https://adhamhaithameid.atlassian.net/browse/KAN-207) | Publish the complete private GitHub archive | KAN-163 | 3 |
 | [KAN-208](https://adhamhaithameid.atlassian.net/browse/KAN-208) | Link the verified Jira delivery record | KAN-163 | 3 |
@@ -67,8 +70,6 @@ Adham owns the design review. Deferred output work remains To Do.
 
 | Key | Story | Epic | Points |
 |---|---|---|---|
-| [KAN-171](https://adhamhaithameid.atlassian.net/browse/KAN-171) | Explain every spacing, radius, and icon value | KAN-158 | 5 |
-| [KAN-203](https://adhamhaithameid.atlassian.net/browse/KAN-203) | Verify browser interactions and responsive accessibility | KAN-162 | 3 |
 | [KAN-204](https://adhamhaithameid.atlassian.net/browse/KAN-204) | Complete Adham visual acceptance | KAN-162 | 2 |
 
 ## To Do stories
@@ -94,6 +95,7 @@ Adham owns the design review. Deferred output work remains To Do.
 [backlog.json](backlog.json) contains every story, acceptance criterion, blocker, and points reason.
 [issue-map.json](issue-map.json) links stable design records to live Jira keys.
 [verified-issues.json](verified-issues.json) records native statuses, parents, and dependency links.
+[verified-repository-links.json](verified-repository-links.json) confirms all ten epic repository links.
 Each epic has a repository link. The preservation stories form a native Blocks dependency chain.
 Points estimate relative size. They do not record measured historical effort.
-The active usage-guide refinement and final browser evidence remain In Progress until confirmation.
+The handoff epic stays In Progress because personal acceptance and screen-reader review remain open.
