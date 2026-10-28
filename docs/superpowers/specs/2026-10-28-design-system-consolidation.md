@@ -61,3 +61,46 @@ Run TypeScript, catalog checks, build, runtime checks, and the complete browser 
 Inspect desktop, Arabic dark, and narrow layouts in a bounded visual review.
 Run separate standards and spec reviews before the final commit.
 Publish the repository and retain the running local preview.
+
+## Acceptance details from spec review
+
+The exact publication target is https://github.com/Organization-name-temp/SIS-Product-Design.
+Keep the initial e72b4350 commit. Verify the remote, branch, published commit, and included archive history.
+Record source paths, SHA-256 hashes, provenance, and exclusions before replacing any local source.
+Test the earlier prototype archive by extraction and hash comparison. Scan all new publication files and commits for credentials.
+
+The spacing scale is 0, 2, 4, 6, 8, 12, 16, 24, 32, 48, and 64px.
+The radius scale is 4, 8, 12, and 16px, plus circular avatars.
+The icon scale is 16, 20, and 24px, with the approved 24px native canvas and 2px native stroke.
+Every scale entry needs a named use, a real example, and a misuse rule.
+IBM Plex Sans Arabic intentionally covers both Arabic and English. Confirm all four local font weights load.
+
+Explicit URL theme selection takes precedence over the saved theme preference. System follows operating-system changes.
+Only the main workbench saves theme preference. Comparison frames do not change it.
+The user can override recommended task density through the utility control. A presentation change does not erase sample input.
+Language, direction, density, and theme changes work without a reload. Old French or alternative-font URLs normalize to the active profile.
+Check all catalog pages for overflow at a 320px viewport. Check English LTR and Arabic RTL in both themes through targeted combinations.
+
+Require identical spring samples for identical parameters. First and last samples equal 0 and 1.
+Require the unsnapped final sample to fall within 0.002 of the target.
+A replacement animation cancels its predecessor. Unmount cancels outstanding animations.
+Reduced motion uses immediate state changes. Essential pending feedback remains visible.
+Map motion recipes to buttons, selected states, sidebar navigation, disclosures, toasts, and dialogs.
+
+## Approved Jira epic groups
+
+1. Establish the design foundation.
+2. Inspect reusable foundations.
+3. Exercise component behavior.
+4. Demonstrate SIS patterns.
+5. Verify and hand off the workbench.
+6. Preserve the design project.
+7. Establish deterministic output rules.
+8. Produce reusable communication assets.
+9. Connect design delivery tools.
+10. Process later enhancements.
+
+An epic is Done only when all its required stories are Done.
+An epic is In Progress when work is active or when completed technical work still awaits required acceptance.
+An epic remains To Do when all its stories are deferred.
+Keep individual technical stories Done when evidence supports completion. Do not merge visual acceptance into their status.
