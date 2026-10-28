@@ -4,10 +4,19 @@ Date: 2026-10-28. Approval gate: Adham reviews before the Figma token import run
 
 ## Live apps
 
+Two apps live here. They are different surfaces:
+
+- **Showcase prototype** (localhost:4680) — today's work: the full component
+  library, patterns, AI assistant family, and live theme, direction, and
+  density switches. Start: `cd apps/showcase && npm run dev`.
+- **Workbench** (localhost:4173) — the foundations catalog from the first
+  delivery: color, typography, spacing, and motion inspection. It does not
+  show the component library; the showcase does.
+
 | App | URL | What to check |
 |---|---|---|
 | Showcase prototype | http://localhost:4680 | Four tabs: Dashboard (KPI cards, filter bar, sortable data table, charts), Admin (settings form, alerts), Assistant (chat with streaming and citations), Gallery (every family). Toggle Theme, Direction (RTL), and Compact at the top — the whole app re-renders live. |
-| Workbench (design catalog) | http://localhost:4173 | The original foundations catalog: colors, typography, spacing, motion, and the review page. |
+| Workbench (foundations catalog) | http://localhost:4173 | The foundations catalog: colors, typography, spacing, motion, and the review page. Unchanged by the expansion. |
 
 ## Documentation to skim
 

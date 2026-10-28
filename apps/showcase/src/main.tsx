@@ -1,3 +1,5 @@
+import "sis-tokens/css";
+import "sis-react/styles.css";
 import { useState, type CSSProperties } from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -48,7 +50,11 @@ const layout: CSSProperties = {
   padding: 24,
   display: "grid",
   gap: 24,
+  alignContent: "start",
+  minHeight: "100vh",
   fontFamily: "var(--sys-font-family-ui)",
+  background: "var(--sys-color-bg-canvas)",
+  color: "var(--sys-color-text-primary)",
 };
 
 function DashboardPage() {
@@ -259,4 +265,9 @@ export default function App() {
       />
     </div>
   );
+}
+
+const rootElement = document.getElementById("root");
+if (rootElement) {
+  createRoot(rootElement).render(<App />);
 }
