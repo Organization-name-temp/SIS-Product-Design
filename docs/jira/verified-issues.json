@@ -1,0 +1,3865 @@
+[
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10229",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10229",
+    "key": "KAN-220",
+    "customfield_10016": 2,
+    "summary": "SIS design: Prioritize a reviewed enhancement slice",
+    "parent": {
+      "id": "10176",
+      "key": "KAN-167",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10176",
+      "fields": {
+        "summary": "SIS design: Process later enhancements",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s53"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-220"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10228",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10228",
+    "key": "KAN-219",
+    "customfield_10016": 2,
+    "summary": "SIS design: Capture enhancement requests without changing the baseline",
+    "parent": {
+      "id": "10176",
+      "key": "KAN-167",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10176",
+      "fields": {
+        "summary": "SIS design: Process later enhancements",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s52"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-219"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10227",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10227",
+    "key": "KAN-218",
+    "customfield_10016": 5,
+    "summary": "SIS design: Distribute reusable production components",
+    "parent": {
+      "id": "10175",
+      "key": "KAN-166",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10175",
+      "fields": {
+        "summary": "SIS design: Connect design delivery tools",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s51"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-218"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10226",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10226",
+    "key": "KAN-217",
+    "customfield_10016": 5,
+    "summary": "SIS design: Publish the reviewed Figma component library",
+    "parent": {
+      "id": "10175",
+      "key": "KAN-166",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10175",
+      "fields": {
+        "summary": "SIS design: Connect design delivery tools",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s50"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-217"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10225",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10225",
+    "key": "KAN-216",
+    "customfield_10016": 5,
+    "summary": "SIS design: Synchronize the approved Figma variables",
+    "parent": {
+      "id": "10175",
+      "key": "KAN-166",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10175",
+      "fields": {
+        "summary": "SIS design: Connect design delivery tools",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s49"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-216"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10224",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10224",
+    "key": "KAN-215",
+    "customfield_10016": 5,
+    "summary": "SIS design: Create accessible print and PDF templates",
+    "parent": {
+      "id": "10174",
+      "key": "KAN-165",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10174",
+      "fields": {
+        "summary": "SIS design: Produce reusable communication assets",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s48"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-215"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10223",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10223",
+    "key": "KAN-214",
+    "customfield_10016": 5,
+    "summary": "SIS design: Create evidence-led report templates",
+    "parent": {
+      "id": "10174",
+      "key": "KAN-165",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10174",
+      "fields": {
+        "summary": "SIS design: Produce reusable communication assets",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s47"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-214"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10222",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10222",
+    "key": "KAN-213",
+    "customfield_10016": 5,
+    "summary": "SIS design: Create documentation templates",
+    "parent": {
+      "id": "10174",
+      "key": "KAN-165",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10174",
+      "fields": {
+        "summary": "SIS design: Produce reusable communication assets",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s46"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-213"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10221",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10221",
+    "key": "KAN-212",
+    "customfield_10016": 5,
+    "summary": "SIS design: Create presentation masters",
+    "parent": {
+      "id": "10174",
+      "key": "KAN-165",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10174",
+      "fields": {
+        "summary": "SIS design: Produce reusable communication assets",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s45"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-212"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10220",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10220",
+    "key": "KAN-211",
+    "customfield_10016": 5,
+    "summary": "SIS design: Verify reproducible output recipes",
+    "parent": {
+      "id": "10173",
+      "key": "KAN-164",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10173",
+      "fields": {
+        "summary": "SIS design: Establish deterministic output rules",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s44"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-211"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10219",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10219",
+    "key": "KAN-210",
+    "customfield_10016": 3,
+    "summary": "SIS design: Release a versioned design baseline",
+    "parent": {
+      "id": "10173",
+      "key": "KAN-164",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10173",
+      "fields": {
+        "summary": "SIS design: Establish deterministic output rules",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s43"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-210"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10218",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10218",
+    "key": "KAN-209",
+    "customfield_10016": 5,
+    "summary": "SIS design: Save an artifact configuration",
+    "parent": {
+      "id": "10173",
+      "key": "KAN-164",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10173",
+      "fields": {
+        "summary": "SIS design: Establish deterministic output rules",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+          "description": "",
+          "name": "To Do",
+          "id": "10004",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+            "id": 2,
+            "key": "new",
+            "colorName": "blue-gray",
+            "name": "To Do"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s42"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-209"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10217",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10217",
+    "key": "KAN-208",
+    "customfield_10016": 3,
+    "summary": "SIS design: Link the verified Jira delivery record",
+    "parent": {
+      "id": "10172",
+      "key": "KAN-163",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10172",
+      "fields": {
+        "summary": "SIS design: Preserve the design project",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [
+      {
+        "id": "10126",
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLink/10126",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "10216",
+          "key": "KAN-207",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10216",
+          "fields": {
+            "summary": "SIS design: Publish the complete private GitHub archive",
+            "status": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+              "description": "",
+              "name": "Done",
+              "id": "10007",
+              "statusCategory": {
+                "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10009",
+              "id": "10009",
+              "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "entityId": "7d7ca14e-7124-4dde-b0a6-130dff7a5f68",
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      }
+    ],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s41"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-208"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10216",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10216",
+    "key": "KAN-207",
+    "customfield_10016": 3,
+    "summary": "SIS design: Publish the complete private GitHub archive",
+    "parent": {
+      "id": "10172",
+      "key": "KAN-163",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10172",
+      "fields": {
+        "summary": "SIS design: Preserve the design project",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [
+      {
+        "id": "10125",
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLink/10125",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLinkType/10000"
+        },
+        "inwardIssue": {
+          "id": "10215",
+          "key": "KAN-206",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10215",
+          "fields": {
+            "summary": "SIS design: Preserve source history and its provenance",
+            "status": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+              "description": "",
+              "name": "Done",
+              "id": "10007",
+              "statusCategory": {
+                "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10009",
+              "id": "10009",
+              "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "entityId": "7d7ca14e-7124-4dde-b0a6-130dff7a5f68",
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "10126",
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLink/10126",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLinkType/10000"
+        },
+        "outwardIssue": {
+          "id": "10217",
+          "key": "KAN-208",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10217",
+          "fields": {
+            "summary": "SIS design: Link the verified Jira delivery record",
+            "status": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+              "description": "",
+              "name": "Done",
+              "id": "10007",
+              "statusCategory": {
+                "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10009",
+              "id": "10009",
+              "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "entityId": "7d7ca14e-7124-4dde-b0a6-130dff7a5f68",
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      }
+    ],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s40"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-207"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10215",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10215",
+    "key": "KAN-206",
+    "customfield_10016": 3,
+    "summary": "SIS design: Preserve source history and its provenance",
+    "parent": {
+      "id": "10172",
+      "key": "KAN-163",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10172",
+      "fields": {
+        "summary": "SIS design: Preserve the design project",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [
+      {
+        "id": "10125",
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLink/10125",
+        "type": {
+          "id": "10000",
+          "name": "Blocks",
+          "inward": "is blocked by",
+          "outward": "blocks",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issueLinkType/10000"
+        },
+        "outwardIssue": {
+          "id": "10216",
+          "key": "KAN-207",
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10216",
+          "fields": {
+            "summary": "SIS design: Publish the complete private GitHub archive",
+            "status": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+              "description": "",
+              "name": "Done",
+              "id": "10007",
+              "statusCategory": {
+                "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+                "id": 3,
+                "key": "done",
+                "colorName": "green",
+                "name": "Done"
+              }
+            },
+            "priority": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+              "name": "Medium",
+              "id": "3"
+            },
+            "issuetype": {
+              "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10009",
+              "id": "10009",
+              "description": "Created by Jira Agile - do not edit or delete. Issue type for a user story.",
+              "name": "Story",
+              "subtask": false,
+              "avatarId": 10315,
+              "entityId": "7d7ca14e-7124-4dde-b0a6-130dff7a5f68",
+              "hierarchyLevel": 0
+            }
+          }
+        }
+      }
+    ],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s39"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-206"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10214",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10214",
+    "key": "KAN-205",
+    "customfield_10016": 3,
+    "summary": "SIS design: Review the system with a screen reader",
+    "parent": {
+      "id": "10171",
+      "key": "KAN-162",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10171",
+      "fields": {
+        "summary": "SIS design: Verify and hand off the workbench",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s38"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-205"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10213",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10213",
+    "key": "KAN-204",
+    "customfield_10016": 2,
+    "summary": "SIS design: Complete Adham visual acceptance",
+    "parent": {
+      "id": "10171",
+      "key": "KAN-162",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10171",
+      "fields": {
+        "summary": "SIS design: Verify and hand off the workbench",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+      "description": "This work item is being actively worked on at the moment by the assignee.",
+      "name": "In Progress",
+      "id": "10005",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s37"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-204"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10212",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10212",
+    "key": "KAN-203",
+    "customfield_10016": 3,
+    "summary": "SIS design: Verify browser interactions and responsive accessibility",
+    "parent": {
+      "id": "10171",
+      "key": "KAN-162",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10171",
+      "fields": {
+        "summary": "SIS design: Verify and hand off the workbench",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+      "description": "This work item is being actively worked on at the moment by the assignee.",
+      "name": "In Progress",
+      "id": "10005",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s36"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-203"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10211",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10211",
+    "key": "KAN-202",
+    "customfield_10016": 3,
+    "summary": "SIS design: Verify registry, tokens, and portable exports",
+    "parent": {
+      "id": "10171",
+      "key": "KAN-162",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10171",
+      "fields": {
+        "summary": "SIS design: Verify and hand off the workbench",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s35"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-202"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10210",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10210",
+    "key": "KAN-201",
+    "customfield_10016": 3,
+    "summary": "SIS design: Recover a sample provisioning step",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s34"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-201"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10209",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10209",
+    "key": "KAN-200",
+    "customfield_10016": 3,
+    "summary": "SIS design: Reconcile sample finance and aid records",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s33"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-200"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10208",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10208",
+    "key": "KAN-199",
+    "customfield_10016": 3,
+    "summary": "SIS design: Explain degree requirements and transcript results",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s32"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-199"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10207",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10207",
+    "key": "KAN-198",
+    "customfield_10016": 3,
+    "summary": "SIS design: Resolve a timetable conflict",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s31"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-198"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10206",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10206",
+    "key": "KAN-197",
+    "customfield_10016": 3,
+    "summary": "SIS design: Inspect versioned academic structure",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s30"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-197"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10205",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10205",
+    "key": "KAN-196",
+    "customfield_10016": 3,
+    "summary": "SIS design: Review scoped access before saving",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s29"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-196"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10204",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10204",
+    "key": "KAN-195",
+    "customfield_10016": 3,
+    "summary": "SIS design: Review evidence and record a sample decision",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s28"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-195"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10203",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10203",
+    "key": "KAN-194",
+    "customfield_10016": 3,
+    "summary": "SIS design: Map and review an import sample",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s27"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-194"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10202",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10202",
+    "key": "KAN-193",
+    "customfield_10016": 3,
+    "summary": "SIS design: Complete a retained multi-step form",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s26"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-193"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10201",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10201",
+    "key": "KAN-192",
+    "customfield_10016": 3,
+    "summary": "SIS design: Review bulk administration outcomes",
+    "parent": {
+      "id": "10170",
+      "key": "KAN-161",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+      "fields": {
+        "summary": "SIS design: Demonstrate SIS patterns",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s25"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-192"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10200",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10200",
+    "key": "KAN-191",
+    "customfield_10016": 3,
+    "summary": "SIS design: Messages, citations, and reviewed extraction",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s24"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-191"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10199",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10199",
+    "key": "KAN-190",
+    "customfield_10016": 3,
+    "summary": "SIS design: Charts, legends, and accessible data",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s23"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-190"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10198",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10198",
+    "key": "KAN-189",
+    "customfield_10016": 5,
+    "summary": "SIS design: Local file validation, cancellation, and retry",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s22"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-189"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10197",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10197",
+    "key": "KAN-188",
+    "customfield_10016": 3,
+    "summary": "SIS design: Dialogs, drawers, menus, and focus return",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s21"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-188"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10196",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10196",
+    "key": "KAN-187",
+    "customfield_10016": 3,
+    "summary": "SIS design: Pending, error, and recovery feedback",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s20"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-187"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10195",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10195",
+    "key": "KAN-186",
+    "customfield_10016": 5,
+    "summary": "SIS design: Table search, sorting, selection, and bulk actions",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s19"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-186"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10194",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10194",
+    "key": "KAN-185",
+    "customfield_10016": 3,
+    "summary": "SIS design: Lists and academic trees",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s18"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-185"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10193",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10193",
+    "key": "KAN-184",
+    "customfield_10016": 3,
+    "summary": "SIS design: Navigation, anchors, and overflow actions",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s17"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-184"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10192",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10192",
+    "key": "KAN-183",
+    "customfield_10016": 3,
+    "summary": "SIS design: Containers and disclosures",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s16"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-183"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10191",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10191",
+    "key": "KAN-182",
+    "customfield_10016": 3,
+    "summary": "SIS design: Identity records and metadata",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s15"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-182"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10190",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10190",
+    "key": "KAN-181",
+    "customfield_10016": 3,
+    "summary": "SIS design: Status badges and removable tags",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s14"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-181"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10189",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10189",
+    "key": "KAN-180",
+    "customfield_10016": 3,
+    "summary": "SIS design: Date, range, and academic-period selection",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s13"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-180"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10188",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10188",
+    "key": "KAN-179",
+    "customfield_10016": 5,
+    "summary": "SIS design: Selection and searchable choices",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s12"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-179"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10187",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10187",
+    "key": "KAN-178",
+    "customfield_10016": 3,
+    "summary": "SIS design: Numeric limits and formatting",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s11"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-178"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10186",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10186",
+    "key": "KAN-177",
+    "customfield_10016": 3,
+    "summary": "SIS design: Text field validation and affixes",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s10"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-177"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10185",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10185",
+    "key": "KAN-176",
+    "customfield_10016": 3,
+    "summary": "SIS design: Actions and button feedback",
+    "parent": {
+      "id": "10169",
+      "key": "KAN-160",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+      "fields": {
+        "summary": "SIS design: Exercise component behavior",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s09"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-176"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10184",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10184",
+    "key": "KAN-175",
+    "customfield_10016": 3,
+    "summary": "SIS design: Compare supported presentation settings without losing input",
+    "parent": {
+      "id": "10168",
+      "key": "KAN-159",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10168",
+      "fields": {
+        "summary": "SIS design: Inspect reusable foundations",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s08"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-175"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10183",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10183",
+    "key": "KAN-174",
+    "customfield_10016": 3,
+    "summary": "SIS design: Inspect typography, grids, layers, and accessibility examples",
+    "parent": {
+      "id": "10168",
+      "key": "KAN-159",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10168",
+      "fields": {
+        "summary": "SIS design: Inspect reusable foundations",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s07"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-174"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10182",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10182",
+    "key": "KAN-173",
+    "customfield_10016": 3,
+    "summary": "SIS design: Inspect colors, contrast, and token layers",
+    "parent": {
+      "id": "10168",
+      "key": "KAN-159",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10168",
+      "fields": {
+        "summary": "SIS design: Inspect reusable foundations",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+          "description": "",
+          "name": "Done",
+          "id": "10007",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+            "id": 3,
+            "key": "done",
+            "colorName": "green",
+            "name": "Done"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s06"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-173"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10181",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10181",
+    "key": "KAN-172",
+    "customfield_10016": 5,
+    "summary": "SIS design: Apply deterministic motion across interactions",
+    "parent": {
+      "id": "10167",
+      "key": "KAN-158",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+      "fields": {
+        "summary": "SIS design: Establish the design foundation",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s05"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-172"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10180",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10180",
+    "key": "KAN-171",
+    "customfield_10016": 5,
+    "summary": "SIS design: Explain every spacing, radius, and icon value",
+    "parent": {
+      "id": "10167",
+      "key": "KAN-158",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+      "fields": {
+        "summary": "SIS design: Establish the design foundation",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+      "description": "This work item is being actively worked on at the moment by the assignee.",
+      "name": "In Progress",
+      "id": "10005",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s04"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-171"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10179",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10179",
+    "key": "KAN-170",
+    "customfield_10016": 3,
+    "summary": "SIS design: Choose readable density and responsive layouts",
+    "parent": {
+      "id": "10167",
+      "key": "KAN-158",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+      "fields": {
+        "summary": "SIS design: Establish the design foundation",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s03"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-170"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10178",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10178",
+    "key": "KAN-169",
+    "customfield_10016": 3,
+    "summary": "SIS design: Use IBM Plex for Arabic RTL and English LTR",
+    "parent": {
+      "id": "10167",
+      "key": "KAN-158",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+      "fields": {
+        "summary": "SIS design: Establish the design foundation",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s02"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-169"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10177",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10177",
+    "key": "KAN-168",
+    "customfield_10016": 3,
+    "summary": "SIS design: Apply E-JUST colors across light, dark, and system themes",
+    "parent": {
+      "id": "10167",
+      "key": "KAN-158",
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+      "fields": {
+        "summary": "SIS design: Establish the design foundation",
+        "status": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+          "description": "This work item is being actively worked on at the moment by the assignee.",
+          "name": "In Progress",
+          "id": "10005",
+          "statusCategory": {
+            "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+            "id": 4,
+            "key": "indeterminate",
+            "colorName": "yellow",
+            "name": "In Progress"
+          }
+        },
+        "priority": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/priority/3",
+          "name": "Medium",
+          "id": "3"
+        },
+        "issuetype": {
+          "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issuetype/10006",
+          "id": "10006",
+          "description": "A collection of related bugs, stories, and tasks.",
+          "name": "Epic",
+          "subtask": false,
+          "avatarId": 10307,
+          "entityId": "ac193fd5-b96b-44f9-b925-910939bb3cba",
+          "hierarchyLevel": 1
+        }
+      }
+    },
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-s01"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-168"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10176",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10176",
+    "key": "KAN-167",
+    "customfield_10016": null,
+    "summary": "SIS design: Process later enhancements",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e10"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-167"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10175",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10175",
+    "key": "KAN-166",
+    "customfield_10016": null,
+    "summary": "SIS design: Connect design delivery tools",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e09"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-166"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10174",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10174",
+    "key": "KAN-165",
+    "customfield_10016": null,
+    "summary": "SIS design: Produce reusable communication assets",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e08"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-165"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10173",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10173",
+    "key": "KAN-164",
+    "customfield_10016": null,
+    "summary": "SIS design: Establish deterministic output rules",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10004",
+      "description": "",
+      "name": "To Do",
+      "id": "10004",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/2",
+        "id": 2,
+        "key": "new",
+        "colorName": "blue-gray",
+        "name": "To Do"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e07"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-164"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10172",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10172",
+    "key": "KAN-163",
+    "customfield_10016": null,
+    "summary": "SIS design: Preserve the design project",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e06"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-163"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10171",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10171",
+    "key": "KAN-162",
+    "customfield_10016": null,
+    "summary": "SIS design: Verify and hand off the workbench",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+      "description": "This work item is being actively worked on at the moment by the assignee.",
+      "name": "In Progress",
+      "id": "10005",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e05"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-162"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10170",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10170",
+    "key": "KAN-161",
+    "customfield_10016": null,
+    "summary": "SIS design: Demonstrate SIS patterns",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e04"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-161"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10169",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10169",
+    "key": "KAN-160",
+    "customfield_10016": null,
+    "summary": "SIS design: Exercise component behavior",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e03"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-160"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10168",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10168",
+    "key": "KAN-159",
+    "customfield_10016": null,
+    "summary": "SIS design: Inspect reusable foundations",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10007",
+      "description": "",
+      "name": "Done",
+      "id": "10007",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/3",
+        "id": 3,
+        "key": "done",
+        "colorName": "green",
+        "name": "Done"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e02"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-159"
+  },
+  {
+    "expand": "renderedFields,names,schema,operations,editmeta,changelog,versionedRepresentations",
+    "id": "10167",
+    "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/issue/10167",
+    "key": "KAN-158",
+    "customfield_10016": null,
+    "summary": "SIS design: Establish the design foundation",
+    "issuelinks": [],
+    "status": {
+      "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/status/10005",
+      "description": "This work item is being actively worked on at the moment by the assignee.",
+      "name": "In Progress",
+      "id": "10005",
+      "statusCategory": {
+        "self": "https://api.atlassian.com/ex/jira/6fff901f-ee4a-45b2-af9d-7b85b66de9df/rest/api/3/statuscategory/4",
+        "id": 4,
+        "key": "indeterminate",
+        "colorName": "yellow",
+        "name": "In Progress"
+      }
+    },
+    "labels": [
+      "sis-design-20261028",
+      "sis-design-system",
+      "sisds-e01"
+    ],
+    "url": "https://adhamhaithameid.atlassian.net/browse/KAN-158"
+  }
+]

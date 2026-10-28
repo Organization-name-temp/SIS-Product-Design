@@ -10,7 +10,7 @@
       "type": "Epic",
       "title": "Establish the design foundation",
       "outcome": "The active bilingual profile uses consistent, documented foundation rules.",
-      "targetStatus": "Done",
+      "targetStatus": "In Progress",
       "scope": [
         "S01",
         "S02",
@@ -249,7 +249,7 @@
       "blockedBy": [],
       "points": 5,
       "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
-      "targetStatus": "Done",
+      "targetStatus": "In Progress",
       "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
       "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
     },
@@ -826,7 +826,7 @@
       "blockedBy": [],
       "points": 3,
       "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
-      "targetStatus": "Done",
+      "targetStatus": "In Progress",
       "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
       "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
     },

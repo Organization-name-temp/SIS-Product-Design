@@ -1,0 +1,94 @@
+{
+  "apiVersion": "v2",
+  "command": "jira.workitem.bulk-transition",
+  "request": {
+    "issueIdsOrKeys": [
+      "KAN-158",
+      "KAN-162",
+      "KAN-171",
+      "KAN-203",
+      "KAN-204"
+    ],
+    "transitionId": "21",
+    "dryRun": true,
+    "sendBulkNotification": false
+  },
+  "data": {
+    "dryRun": true,
+    "submitted": false,
+    "canSubmit": true,
+    "payload": {
+      "bulkTransitionInputs": [
+        {
+          "selectedIssueIdsOrKeys": [
+            "KAN-158",
+            "KAN-162",
+            "KAN-171",
+            "KAN-203",
+            "KAN-204"
+          ],
+          "transitionId": "21"
+        }
+      ],
+      "sendBulkNotification": false
+    },
+    "eligibleIssues": [
+      "KAN-158",
+      "KAN-162",
+      "KAN-171",
+      "KAN-203",
+      "KAN-204"
+    ],
+    "ineligibleIssues": [],
+    "availableTransitions": [
+      {
+        "issues": [
+          "KAN-158",
+          "KAN-162",
+          "KAN-171",
+          "KAN-203",
+          "KAN-204"
+        ],
+        "isTransitionsFiltered": false,
+        "transitions": [
+          {
+            "transitionId": "11",
+            "transitionName": "To Do",
+            "statusId": "10004",
+            "statusName": "To Do"
+          },
+          {
+            "transitionId": "21",
+            "transitionName": "In Progress",
+            "statusId": "10005",
+            "statusName": "In Progress"
+          },
+          {
+            "transitionId": "31",
+            "transitionName": "In Review",
+            "statusId": "10006",
+            "statusName": "In Review"
+          },
+          {
+            "transitionId": "41",
+            "transitionName": "Done",
+            "statusId": "10007",
+            "statusName": "Done"
+          }
+        ]
+      }
+    ]
+  },
+  "meta": {
+    "resourceClass": "entity",
+    "sourceMode": "native",
+    "resourceType": "jira.workitem",
+    "backend": "agg",
+    "meta": {
+      "resourceClass": "entity",
+      "sourceMode": "rest",
+      "apiVersion": "rest-v3",
+      "resourceType": "jira.workitem"
+    }
+  }
+}

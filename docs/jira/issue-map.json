@@ -2,316 +2,379 @@
   "E01": {
     "key": "KAN-158",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-158",
-    "status": "To Do"
+    "status": "In Progress",
+    "parent": null
   },
   "E02": {
     "key": "KAN-159",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-159",
-    "status": "To Do"
+    "status": "Done",
+    "parent": null
   },
   "E03": {
     "key": "KAN-160",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-160",
-    "status": "To Do"
+    "status": "Done",
+    "parent": null
   },
   "E04": {
     "key": "KAN-161",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-161",
-    "status": "To Do"
+    "status": "Done",
+    "parent": null
   },
   "E05": {
     "key": "KAN-162",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-162",
-    "status": "To Do"
+    "status": "In Progress",
+    "parent": null
   },
   "E06": {
     "key": "KAN-163",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-163",
-    "status": "To Do"
+    "status": "Done",
+    "parent": null
   },
   "E07": {
     "key": "KAN-164",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-164",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": null
   },
   "E08": {
     "key": "KAN-165",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-165",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": null
   },
   "E09": {
     "key": "KAN-166",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-166",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": null
   },
   "E10": {
     "key": "KAN-167",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-167",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": null
   },
   "S01": {
     "key": "KAN-168",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-168",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-158"
   },
   "S02": {
     "key": "KAN-169",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-169",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-158"
   },
   "S03": {
     "key": "KAN-170",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-170",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-158"
   },
   "S04": {
     "key": "KAN-171",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-171",
-    "status": "To Do"
+    "status": "In Progress",
+    "parent": "KAN-158"
   },
   "S05": {
     "key": "KAN-172",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-172",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-158"
   },
   "S06": {
     "key": "KAN-173",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-173",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-159"
   },
   "S07": {
     "key": "KAN-174",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-174",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-159"
   },
   "S08": {
     "key": "KAN-175",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-175",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-159"
   },
   "S09": {
     "key": "KAN-176",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-176",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S10": {
     "key": "KAN-177",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-177",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S11": {
     "key": "KAN-178",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-178",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S12": {
     "key": "KAN-179",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-179",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S13": {
     "key": "KAN-180",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-180",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S14": {
     "key": "KAN-181",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-181",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S15": {
     "key": "KAN-182",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-182",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S16": {
     "key": "KAN-183",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-183",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S17": {
     "key": "KAN-184",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-184",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S18": {
     "key": "KAN-185",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-185",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S19": {
     "key": "KAN-186",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-186",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S20": {
     "key": "KAN-187",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-187",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S21": {
     "key": "KAN-188",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-188",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S22": {
     "key": "KAN-189",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-189",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S23": {
     "key": "KAN-190",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-190",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S24": {
     "key": "KAN-191",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-191",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-160"
   },
   "S25": {
     "key": "KAN-192",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-192",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S26": {
     "key": "KAN-193",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-193",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S27": {
     "key": "KAN-194",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-194",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S28": {
     "key": "KAN-195",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-195",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S29": {
     "key": "KAN-196",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-196",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S30": {
     "key": "KAN-197",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-197",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S31": {
     "key": "KAN-198",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-198",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S32": {
     "key": "KAN-199",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-199",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S33": {
     "key": "KAN-200",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-200",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S34": {
     "key": "KAN-201",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-201",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-161"
   },
   "S35": {
     "key": "KAN-202",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-202",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-162"
   },
   "S36": {
     "key": "KAN-203",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-203",
-    "status": "To Do"
+    "status": "In Progress",
+    "parent": "KAN-162"
   },
   "S37": {
     "key": "KAN-204",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-204",
-    "status": "To Do"
+    "status": "In Progress",
+    "parent": "KAN-162"
   },
   "S38": {
     "key": "KAN-205",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-205",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-162"
   },
   "S39": {
     "key": "KAN-206",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-206",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-163"
   },
   "S40": {
     "key": "KAN-207",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-207",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-163"
   },
   "S41": {
     "key": "KAN-208",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-208",
-    "status": "To Do"
+    "status": "Done",
+    "parent": "KAN-163"
   },
   "S42": {
     "key": "KAN-209",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-209",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-164"
   },
   "S43": {
     "key": "KAN-210",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-210",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-164"
   },
   "S44": {
     "key": "KAN-211",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-211",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-164"
   },
   "S45": {
     "key": "KAN-212",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-212",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-165"
   },
   "S46": {
     "key": "KAN-213",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-213",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-165"
   },
   "S47": {
     "key": "KAN-214",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-214",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-165"
   },
   "S48": {
     "key": "KAN-215",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-215",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-165"
   },
   "S49": {
     "key": "KAN-216",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-216",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-166"
   },
   "S50": {
     "key": "KAN-217",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-217",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-166"
   },
   "S51": {
     "key": "KAN-218",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-218",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-166"
   },
   "S52": {
     "key": "KAN-219",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-219",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-167"
   },
   "S53": {
     "key": "KAN-220",
     "url": "https://adhamhaithameid.atlassian.net/browse/KAN-220",
-    "status": "To Do"
+    "status": "To Do",
+    "parent": "KAN-167"
   }
 }

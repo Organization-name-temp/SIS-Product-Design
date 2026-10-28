@@ -1,0 +1,64 @@
+Design ID,Jira key,Type,Summary,Status,Parent,Points,URL
+E01,KAN-158,Epic,Establish the design foundation,In Progress,,,https://adhamhaithameid.atlassian.net/browse/KAN-158
+E02,KAN-159,Epic,Inspect reusable foundations,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-159
+E03,KAN-160,Epic,Exercise component behavior,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-160
+E04,KAN-161,Epic,Demonstrate SIS patterns,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-161
+E05,KAN-162,Epic,Verify and hand off the workbench,In Progress,,,https://adhamhaithameid.atlassian.net/browse/KAN-162
+E06,KAN-163,Epic,Preserve the design project,Done,,,https://adhamhaithameid.atlassian.net/browse/KAN-163
+E07,KAN-164,Epic,Establish deterministic output rules,To Do,,,https://adhamhaithameid.atlassian.net/browse/KAN-164
+E08,KAN-165,Epic,Produce reusable communication assets,To Do,,,https://adhamhaithameid.atlassian.net/browse/KAN-165
+E09,KAN-166,Epic,Connect design delivery tools,To Do,,,https://adhamhaithameid.atlassian.net/browse/KAN-166
+E10,KAN-167,Epic,Process later enhancements,To Do,,,https://adhamhaithameid.atlassian.net/browse/KAN-167
+S01,KAN-168,Story,"Apply E-JUST colors across light, dark, and system themes",Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-168
+S02,KAN-169,Story,Use IBM Plex for Arabic RTL and English LTR,Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-169
+S03,KAN-170,Story,Choose readable density and responsive layouts,Done,KAN-158,3,https://adhamhaithameid.atlassian.net/browse/KAN-170
+S04,KAN-171,Story,"Explain every spacing, radius, and icon value",In Progress,KAN-158,5,https://adhamhaithameid.atlassian.net/browse/KAN-171
+S05,KAN-172,Story,Apply deterministic motion across interactions,Done,KAN-158,5,https://adhamhaithameid.atlassian.net/browse/KAN-172
+S06,KAN-173,Story,"Inspect colors, contrast, and token layers",Done,KAN-159,3,https://adhamhaithameid.atlassian.net/browse/KAN-173
+S07,KAN-174,Story,"Inspect typography, grids, layers, and accessibility examples",Done,KAN-159,3,https://adhamhaithameid.atlassian.net/browse/KAN-174
+S08,KAN-175,Story,Compare supported presentation settings without losing input,Done,KAN-159,3,https://adhamhaithameid.atlassian.net/browse/KAN-175
+S09,KAN-176,Story,Actions and button feedback,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-176
+S10,KAN-177,Story,Text field validation and affixes,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-177
+S11,KAN-178,Story,Numeric limits and formatting,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-178
+S12,KAN-179,Story,Selection and searchable choices,Done,KAN-160,5,https://adhamhaithameid.atlassian.net/browse/KAN-179
+S13,KAN-180,Story,"Date, range, and academic-period selection",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-180
+S14,KAN-181,Story,Status badges and removable tags,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-181
+S15,KAN-182,Story,Identity records and metadata,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-182
+S16,KAN-183,Story,Containers and disclosures,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-183
+S17,KAN-184,Story,"Navigation, anchors, and overflow actions",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-184
+S18,KAN-185,Story,Lists and academic trees,Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-185
+S19,KAN-186,Story,"Table search, sorting, selection, and bulk actions",Done,KAN-160,5,https://adhamhaithameid.atlassian.net/browse/KAN-186
+S20,KAN-187,Story,"Pending, error, and recovery feedback",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-187
+S21,KAN-188,Story,"Dialogs, drawers, menus, and focus return",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-188
+S22,KAN-189,Story,"Local file validation, cancellation, and retry",Done,KAN-160,5,https://adhamhaithameid.atlassian.net/browse/KAN-189
+S23,KAN-190,Story,"Charts, legends, and accessible data",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-190
+S24,KAN-191,Story,"Messages, citations, and reviewed extraction",Done,KAN-160,3,https://adhamhaithameid.atlassian.net/browse/KAN-191
+S25,KAN-192,Story,Review bulk administration outcomes,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-192
+S26,KAN-193,Story,Complete a retained multi-step form,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-193
+S27,KAN-194,Story,Map and review an import sample,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-194
+S28,KAN-195,Story,Review evidence and record a sample decision,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-195
+S29,KAN-196,Story,Review scoped access before saving,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-196
+S30,KAN-197,Story,Inspect versioned academic structure,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-197
+S31,KAN-198,Story,Resolve a timetable conflict,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-198
+S32,KAN-199,Story,Explain degree requirements and transcript results,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-199
+S33,KAN-200,Story,Reconcile sample finance and aid records,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-200
+S34,KAN-201,Story,Recover a sample provisioning step,Done,KAN-161,3,https://adhamhaithameid.atlassian.net/browse/KAN-201
+S35,KAN-202,Story,"Verify registry, tokens, and portable exports",Done,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-202
+S36,KAN-203,Story,Verify browser interactions and responsive accessibility,In Progress,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-203
+S37,KAN-204,Story,Complete Adham visual acceptance,In Progress,KAN-162,2,https://adhamhaithameid.atlassian.net/browse/KAN-204
+S38,KAN-205,Story,Review the system with a screen reader,To Do,KAN-162,3,https://adhamhaithameid.atlassian.net/browse/KAN-205
+S39,KAN-206,Story,Preserve source history and its provenance,Done,KAN-163,3,https://adhamhaithameid.atlassian.net/browse/KAN-206
+S40,KAN-207,Story,Publish the complete private GitHub archive,Done,KAN-163,3,https://adhamhaithameid.atlassian.net/browse/KAN-207
+S41,KAN-208,Story,Link the verified Jira delivery record,Done,KAN-163,3,https://adhamhaithameid.atlassian.net/browse/KAN-208
+S42,KAN-209,Story,Save an artifact configuration,To Do,KAN-164,5,https://adhamhaithameid.atlassian.net/browse/KAN-209
+S43,KAN-210,Story,Release a versioned design baseline,To Do,KAN-164,3,https://adhamhaithameid.atlassian.net/browse/KAN-210
+S44,KAN-211,Story,Verify reproducible output recipes,To Do,KAN-164,5,https://adhamhaithameid.atlassian.net/browse/KAN-211
+S45,KAN-212,Story,Create presentation masters,To Do,KAN-165,5,https://adhamhaithameid.atlassian.net/browse/KAN-212
+S46,KAN-213,Story,Create documentation templates,To Do,KAN-165,5,https://adhamhaithameid.atlassian.net/browse/KAN-213
+S47,KAN-214,Story,Create evidence-led report templates,To Do,KAN-165,5,https://adhamhaithameid.atlassian.net/browse/KAN-214
+S48,KAN-215,Story,Create accessible print and PDF templates,To Do,KAN-165,5,https://adhamhaithameid.atlassian.net/browse/KAN-215
+S49,KAN-216,Story,Synchronize the approved Figma variables,To Do,KAN-166,5,https://adhamhaithameid.atlassian.net/browse/KAN-216
+S50,KAN-217,Story,Publish the reviewed Figma component library,To Do,KAN-166,5,https://adhamhaithameid.atlassian.net/browse/KAN-217
+S51,KAN-218,Story,Distribute reusable production components,To Do,KAN-166,5,https://adhamhaithameid.atlassian.net/browse/KAN-218
+S52,KAN-219,Story,Capture enhancement requests without changing the baseline,To Do,KAN-167,2,https://adhamhaithameid.atlassian.net/browse/KAN-219
+S53,KAN-220,Story,Prioritize a reviewed enhancement slice,To Do,KAN-167,2,https://adhamhaithameid.atlassian.net/browse/KAN-220
