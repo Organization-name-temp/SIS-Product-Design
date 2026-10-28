@@ -1010,7 +1010,7 @@ function TypographyDemo({ locale, notify, variant }: DemoProps) {
               <p data-specimen="typography-language" lang="ar" dir="rtl">
                 الجامعة · مُقَرَّرات · أحمد حسن
               </p>
-              
+
               <p data-specimen="typography-numbers" dir="ltr">
                 0123456789 · CS101 ·{" "}
                 {number(locale, 1250.5, { minimumFractionDigits: 2 })}
@@ -3448,7 +3448,7 @@ function AccessibilityDemo({
             </bdi>{" "}
             · ID <bdi>U-2026-0042</bdi>
           </p>
-          
+
           <p dir="ltr">
             <bdi>0123456789</bdi> · <bdi>CS101</bdi> · <bdi>U-2026-0042</bdi>
           </p>
