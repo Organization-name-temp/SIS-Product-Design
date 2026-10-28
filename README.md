@@ -1,12 +1,15 @@
 # SIS Product Design
 
-This repository preserves Adham's SIS design decisions, foundation sources, interactive workbench, review evidence, and Jira delivery records.
-Adham is the sole design approver. The repository remains private.
+This repository holds the SIS design system: canonical foundation sources, design tokens, an interactive workbench, and the delivery records behind them.
+Adham is the sole design approver. Anyone may use the design system under the [MIT license](LICENSE).
 
 ## Start here
 
 | Need | Reference |
 |---|---|
+| Use the tokens | [Usage guide](docs/usage/use-the-design-system.md) |
+| Look up a term | [Glossary](GLOSSARY.md) |
+| Read product requirements | [sis-docs repository](https://github.com/Organization-name-temp/sis-docs) |
 | Inspect the system | [Workbench guide](sis-foundations-prototype/README.md) |
 | Choose supported options | [Option reference](docs/system-options/active-profile.md) |
 | Read approved rules | [Foundation contract](foundations/sis-foundation-contract.md) |
@@ -17,6 +20,17 @@ Adham is the sole design approver. The repository remains private.
 | Plan later outputs | [Deterministic output plan](docs/system-options/output-system.md) |
 | Work within 20 hours | [Solo design workflow](docs/workflow/solo-design.md) |
 | Inspect original work | [Archive index](archive/README.md) |
+
+## Use the design system
+
+Link the theme helper and the foundation stylesheet:
+
+```html
+<script src="foundations/sis-theme.js"></script>
+<link rel="stylesheet" href="foundations/sis-foundations.css">
+```
+
+The [usage guide](docs/usage/use-the-design-system.md) covers the token layers, the Figma import, the fonts, and the export bundle.
 
 ## Run the workbench
 
@@ -53,3 +67,7 @@ Current decisions supersede those proposals. Historical reports describe their o
 The workbench uses local sample data. It does not supply production SIS services or university policy.
 The repository contains no database, analytics, accounts, or remote font requirement.
 Figma publication, production packages, presentation masters, and document templates remain backlog work.
+
+## License
+
+The repository content uses the [MIT license](LICENSE). The IBM Plex fonts ship under the SIL Open Font License and carry their own notice.
