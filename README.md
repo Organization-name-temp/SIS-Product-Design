@@ -53,6 +53,7 @@ Use `npm run test:browser` with the preview active for interaction checks.
 SIS-Product-Design/
 ├── foundations/               Canonical foundation sources (W3C design tokens format)
 ├── packages/sis-tokens/       Style Dictionary package: CSS, TypeScript, Tailwind preset, Figma JSON
+├── packages/react/            sis-react component library (pilot: Button, TextField, Badge, Checkbox, Radio, Switch, Dialog)
 ├── tools/                     Shared build scripts
 ├── sis-foundations-prototype/ Interactive workbench; exports snapshots of foundations/
 ├── docs/                      Decisions, plans, workflow, reports, options, and Jira records
