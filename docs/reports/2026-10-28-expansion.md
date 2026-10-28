@@ -30,9 +30,12 @@ on `main`.
 
 ## Open items
 
-1. Figma tokens import: guide and files delivered (`docs/usage/figma-import.md`,
-   `~/Downloads/sis-tokens-studio.json`); the automated import in the in-app
-   browser stopped at Figma login, which requires Adham's credentials.
+1. Figma tokens import: COMPLETE on 29 October 2026. Tokens Studio for Figma
+   (desktop) imported the token document and exported 462 native Figma
+   variables into the workspace file: ref (100), sys light+dark (278), and
+   component aliases (84). The legacy-format token file ships at
+   `packages/sis-tokens/dist/tokens-studio-legacy.json`. Light/dark Figma
+   modes and style creation remain optional follow-ups inside Tokens Studio.
 2. npm publishing stays gated on the GitHub org rename; one config value flips it.
 3. Personal visual acceptance and the screen-reader review (KAN-162 epic) remain open.
 4. Backlog epics: landing kit (KAN-226), email templates (KAN-227),
