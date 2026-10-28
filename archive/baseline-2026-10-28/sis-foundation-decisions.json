@@ -1,0 +1,239 @@
+{
+  "updatedOn": "2026-10-27",
+  "designApprover": "Adham",
+  "workOrder": "Foundations first, visual comparison last",
+  "direction": [
+    "formal",
+    "friendly",
+    "practical"
+  ],
+  "brand": {
+    "referenceUniversity": "E-JUST",
+    "referenceRed": "#EA232B",
+    "paletteSource": "sis-ejust-palette.tokens.json"
+  },
+  "themes": [
+    "light",
+    "dark"
+  ],
+  "spacing": {
+    "basePx": 2,
+    "rule": "Use named tokens from the approved scale",
+    "approvedValuesPx": [
+      0,
+      2,
+      4,
+      6,
+      8,
+      12,
+      16,
+      24,
+      32,
+      48,
+      64
+    ],
+    "cssUnit": "rem, with px reference values at a 16px browser root",
+    "status": "approved prototype baseline; final visual review pending"
+  },
+  "density": {
+    "default": "comfortable",
+    "staffTables": "compact without smaller text or inaccessible controls"
+  },
+  "radiusPx": {
+    "small": 4,
+    "control": 8,
+    "panel": 12,
+    "largeContainer": 16,
+    "avatar": "circle"
+  },
+  "typographySource": "sis-typography.tokens.json",
+  "icons": {
+    "style": "outline",
+    "sizePx": {
+      "compact": 16,
+      "default": 20,
+      "prominent": 24
+    },
+    "usage": [
+      "Use icons when they support recognition or meaning",
+      "Keep text labels where useful",
+      "Give icon-only controls an accessible name and a larger interaction area"
+    ],
+    "family": "Lucide",
+    "strokeSpecification": {
+      "nativeCanvasPx": 24,
+      "nativeStrokePx": 2,
+      "lineJoin": "round",
+      "lineCap": "round for open paths",
+      "sizeBehavior": "Native proportional scaling; smaller-size clarity remains subject to final visual review"
+    },
+    "source": "https://lucide.dev/contribute/icons/specification",
+    "status": "approved prototype baseline"
+  },
+  "visualReview": {
+    "timing": "Final foundation step",
+    "fontCandidates": [
+      "IBM Plex Sans Arabic",
+      "Noto Sans Arabic",
+      "Cairo"
+    ],
+    "status": "pending"
+  },
+  "interaction": {
+    "minimumTargetPx": {
+      "width": 44,
+      "height": 44
+    },
+    "appliesTo": [
+      "comfortable density",
+      "compact density",
+      "light theme",
+      "dark theme"
+    ],
+    "rules": [
+      "Visible icons may be smaller than their interaction area",
+      "Adjacent interaction areas must not overlap"
+    ],
+    "status": "approved"
+  },
+  "controls": {
+    "minimumHeightPx": {
+      "comfortable": 48,
+      "compact": 44
+    },
+    "growth": "Controls grow for wrapped labels or larger text",
+    "status": "approved prototype baseline"
+  },
+  "bordersAndFocus": {
+    "standardBorderPx": 1,
+    "keyboardFocusRingPx": 2,
+    "keyboardFocusGapPx": 2,
+    "stateRule": "Invalid and selected controls include an icon, label, or state marker alongside color",
+    "spacingScope": "The 2px base governs spacing, not every stroke thickness",
+    "status": "approved"
+  },
+  "elevation": {
+    "status": "approved prototype baseline; final visual review pending",
+    "color": "#09090B",
+    "levels": {
+      "flat": {
+        "shadow": "none",
+        "use": [
+          "pages",
+          "fields",
+          "tables",
+          "ordinary cards"
+        ]
+      },
+      "low": {
+        "offsetXPx": 0,
+        "offsetYPx": 4,
+        "blurPx": 16,
+        "spreadPx": 0,
+        "opacity": {
+          "light": 0.12,
+          "dark": 0.4
+        },
+        "use": [
+          "dropdowns",
+          "menus",
+          "popovers"
+        ]
+      },
+      "high": {
+        "offsetXPx": 0,
+        "offsetYPx": 8,
+        "blurPx": 24,
+        "spreadPx": 0,
+        "opacity": {
+          "light": 0.16,
+          "dark": 0.48
+        },
+        "use": [
+          "dialogs",
+          "floating panels"
+        ]
+      }
+    },
+    "darkModeRule": "Raised surface colors and clear borders provide the main separation"
+  },
+  "responsive": {
+    "status": "approved prototype baseline; final visual review pending",
+    "breakpointBasis": "viewport width in CSS pixels",
+    "layouts": {
+      "narrow": {
+        "minWidthPx": 0,
+        "columns": 4,
+        "outerPaddingPx": 16,
+        "columnGapPx": 16
+      },
+      "medium": {
+        "minWidthPx": 768,
+        "columns": 8,
+        "outerPaddingPx": 24,
+        "columnGapPx": 24
+      },
+      "wide": {
+        "minWidthPx": 1200,
+        "columns": 12,
+        "outerPaddingPx": 32,
+        "columnGapPx": 24
+      }
+    },
+    "rules": [
+      "Grids guide alignment; forms and tables may span multiple columns",
+      "Layouts follow Arabic direction and permit text wrapping",
+      "Navbar and sidebar behavior belongs to component design"
+    ]
+  },
+  "motion": {
+    "status": "approved prototype baseline; final visual review pending",
+    "durationMs": {
+      "fast": 120,
+      "standard": 180,
+      "slow": 240
+    },
+    "use": {
+      "fast": [
+        "hover",
+        "pressed",
+        "non-essential focus-related transitions"
+      ],
+      "standard": [
+        "menus",
+        "dropdowns",
+        "small expanding sections"
+      ],
+      "slow": [
+        "dialog entry and exit",
+        "panel entry and exit"
+      ]
+    },
+    "rules": [
+      "Focus indicators appear immediately",
+      "Pending feedback appears immediately",
+      "Animation never delays interaction or confirmed results",
+      "Theme switching is immediate",
+      "Reduced-motion preference removes non-essential movement"
+    ],
+    "easing": "not yet specified"
+  },
+  "numbers": {
+    "status": "approved",
+    "digits": "0123456789",
+    "numberingSystem": "latn",
+    "languages": [
+      "ar",
+      "en",
+      "fr"
+    ],
+    "rules": [
+      "Arabic interface quantities also use international digits",
+      "Do not display Arabic-Indic digits in generated interface numbers",
+      "Decimal and grouping separators follow the selected locale",
+      "Identifiers retain their original characters and do not receive quantity formatting",
+      "Mixed-direction fields isolate identifiers and numbers without reversing them"
+    ]
+  },
+  "status": "Foundation baseline approved; consolidated review and final visual comparison pending"
+}

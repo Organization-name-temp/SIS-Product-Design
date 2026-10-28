@@ -1,0 +1,29 @@
+:root {
+  --sys-motion-duration-immediate: 0ms;
+  --sys-motion-duration-micro: 80ms;
+  --sys-motion-duration-fast: 120ms;
+  --sys-motion-duration-standard: 180ms;
+  --sys-motion-duration-slow: 240ms;
+  --sys-motion-duration-deliberate: 320ms;
+  --sys-motion-duration-emphasis: 480ms;
+  --sys-motion-easing-linear: linear;
+  --sys-motion-easing-ease-in: cubic-bezier(0.4, 0, 1, 1);
+  --sys-motion-easing-ease-out: cubic-bezier(0, 0, 0.2, 1);
+  --sys-motion-easing-ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
+  --sys-motion-easing-emphasized: cubic-bezier(0.2, 0, 0, 1);
+  --sys-motion-action-duration: var(--sys-motion-duration-fast);
+  --sys-motion-action-easing: var(--sys-motion-easing-ease-out);
+  --sys-motion-navigation-duration: var(--sys-motion-duration-standard);
+  --sys-motion-navigation-easing: var(--sys-motion-easing-ease-out);
+  --sys-motion-selection-duration: var(--sys-motion-duration-micro);
+  --sys-motion-selection-easing: var(--sys-motion-easing-ease-out);
+  --sys-motion-disclosure-duration: var(--sys-motion-duration-slow);
+  --sys-motion-disclosure-easing: var(--sys-motion-easing-ease-out);
+  --sys-motion-overlay-enter-duration: var(--sys-motion-duration-slow);
+  --sys-motion-overlay-enter-easing: var(--sys-motion-easing-emphasized);
+  --sys-motion-overlay-exit-duration: var(--sys-motion-duration-standard);
+  --sys-motion-overlay-exit-easing: var(--sys-motion-easing-ease-in);
+  --sys-motion-feedback-duration: var(--sys-motion-duration-standard);
+  --sys-motion-feedback-easing: var(--sys-motion-easing-ease-out);
+}
+@media(prefers-reduced-motion:reduce){:root{--sys-motion-duration-immediate:0ms;--sys-motion-duration-micro:0ms;--sys-motion-duration-fast:0ms;--sys-motion-duration-standard:0ms;--sys-motion-duration-slow:0ms;--sys-motion-duration-deliberate:0ms;--sys-motion-duration-emphasis:0ms;}}

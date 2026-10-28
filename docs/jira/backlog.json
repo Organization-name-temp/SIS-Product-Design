@@ -1,0 +1,1135 @@
+{
+  "version": 1,
+  "date": "2026-10-28",
+  "project": "KAN",
+  "repository": "https://github.com/Organization-name-temp/SIS-Product-Design",
+  "statusPolicy": "Create as To Do. Transition only after evidence verification. Visual acceptance remains In Progress.",
+  "epics": [
+    {
+      "id": "E01",
+      "type": "Epic",
+      "title": "Establish the design foundation",
+      "outcome": "The active bilingual profile uses consistent, documented foundation rules.",
+      "targetStatus": "Done",
+      "scope": [
+        "S01",
+        "S02",
+        "S03",
+        "S04",
+        "S05"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E02",
+      "type": "Epic",
+      "title": "Inspect reusable foundations",
+      "outcome": "The designer can inspect every foundation through a working catalog.",
+      "targetStatus": "Done",
+      "scope": [
+        "S06",
+        "S07",
+        "S08"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E03",
+      "type": "Epic",
+      "title": "Exercise component behavior",
+      "outcome": "The designer can exercise all sixteen component families before using them in flows.",
+      "targetStatus": "Done",
+      "scope": [
+        "S09",
+        "S10",
+        "S11",
+        "S12",
+        "S13",
+        "S14",
+        "S15",
+        "S16",
+        "S17",
+        "S18",
+        "S19",
+        "S20",
+        "S21",
+        "S22",
+        "S23",
+        "S24"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E04",
+      "type": "Epic",
+      "title": "Demonstrate SIS patterns",
+      "outcome": "Ten sample flows demonstrate component composition without claiming production SIS services.",
+      "targetStatus": "Done",
+      "scope": [
+        "S25",
+        "S26",
+        "S27",
+        "S28",
+        "S29",
+        "S30",
+        "S31",
+        "S32",
+        "S33",
+        "S34"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E05",
+      "type": "Epic",
+      "title": "Verify and hand off the workbench",
+      "outcome": "Verification evidence supports technical handoff and personal visual review.",
+      "targetStatus": "In Progress",
+      "scope": [
+        "S35",
+        "S36",
+        "S37",
+        "S38"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E06",
+      "type": "Epic",
+      "title": "Preserve the design project",
+      "outcome": "The private repository preserves sources, decisions, history, prototypes, and tracker links.",
+      "targetStatus": "Done",
+      "scope": [
+        "S39",
+        "S40",
+        "S41"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E07",
+      "type": "Epic",
+      "title": "Establish deterministic output rules",
+      "outcome": "A selected artifact profile produces a traceable output from bounded choices.",
+      "targetStatus": "To Do",
+      "scope": [
+        "S42",
+        "S43",
+        "S44"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E08",
+      "type": "Epic",
+      "title": "Produce reusable communication assets",
+      "outcome": "Approved profiles produce consistent presentations, documents, reports, and print output.",
+      "targetStatus": "To Do",
+      "scope": [
+        "S45",
+        "S46",
+        "S47",
+        "S48"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E09",
+      "type": "Epic",
+      "title": "Connect design delivery tools",
+      "outcome": "The approved system can be consumed through verified design and implementation libraries.",
+      "targetStatus": "To Do",
+      "scope": [
+        "S49",
+        "S50",
+        "S51"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    },
+    {
+      "id": "E10",
+      "type": "Epic",
+      "title": "Process later enhancements",
+      "outcome": "Requests enter a bounded backlog with explicit decisions and acceptance criteria.",
+      "targetStatus": "To Do",
+      "scope": [
+        "S52",
+        "S53"
+      ],
+      "outOfScope": [
+        "Production SIS services and university policy changes."
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": "S01",
+      "type": "Story",
+      "epic": "E01",
+      "title": "Apply E-JUST colors across light, dark, and system themes",
+      "story": "As the solo SIS designer, I use apply E-JUST colors across light, dark, and system themes, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The reference red remains #EA232B.",
+        "Both themes expose the same semantic and component names.",
+        "The system choice follows the operating-system preference."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S02",
+      "type": "Story",
+      "epic": "E01",
+      "title": "Use IBM Plex for Arabic RTL and English LTR",
+      "story": "As the solo SIS designer, I use use IBM Plex for Arabic RTL and English LTR, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Only IBM Plex appears in the active profile.",
+        "Both languages use international digits.",
+        "All ten typography roles and four approved weights render locally."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S03",
+      "type": "Story",
+      "epic": "E01",
+      "title": "Choose readable density and responsive layouts",
+      "story": "As the solo SIS designer, I use choose readable density and responsive layouts, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Comfortable and compact retain their required targets.",
+        "Task defaults support reading and dense work.",
+        "A user override takes precedence.",
+        "Layouts work at intermediate widths and at 320px."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S04",
+      "type": "Story",
+      "epic": "E01",
+      "title": "Explain every spacing, radius, and icon value",
+      "story": "As the solo SIS designer, I use explain every spacing, radius, and icon value, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "All eleven spacing values have a use, rendered example, and misuse rule.",
+        "All five radius roles and three icon sizes have equivalent guidance.",
+        "Copy controls return the exact token names."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S05",
+      "type": "Story",
+      "epic": "E01",
+      "title": "Apply deterministic motion across interactions",
+      "story": "As the solo SIS designer, I use apply deterministic motion across interactions, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Named easing curves and three spring profiles replay deterministically.",
+        "Replacement cancels prior motion.",
+        "Reduced motion removes non-essential movement.",
+        "Actions, navigation, feedback, disclosures, and overlays use named recipes."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S06",
+      "type": "Story",
+      "epic": "E02",
+      "title": "Inspect colors, contrast, and token layers",
+      "story": "As the solo SIS designer, I use inspect colors, contrast, and token layers, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The checker recalculates the selected pair.",
+        "Reference, semantic, and component mappings remain visible.",
+        "Values and aliases can be copied."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S07",
+      "type": "Story",
+      "epic": "E02",
+      "title": "Inspect typography, grids, layers, and accessibility examples",
+      "story": "As the solo SIS designer, I use inspect typography, grids, layers, and accessibility examples, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Each foundation destination renders its named examples.",
+        "The examples support keyboard input and international digits.",
+        "Reduced motion preserves essential feedback."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S08",
+      "type": "Story",
+      "epic": "E02",
+      "title": "Compare supported presentation settings without losing input",
+      "story": "As the solo SIS designer, I use compare supported presentation settings without losing input, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Light and dark treatments can be compared.",
+        "Comfortable and compact can be compared.",
+        "Theme, language, density, and width changes retain entered sample values."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S09",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Actions and button feedback",
+      "story": "As the solo SIS designer, I use actions and button feedback, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The buttons family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S10",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Text field validation and affixes",
+      "story": "As the solo SIS designer, I use text field validation and affixes, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The fields family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S11",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Numeric limits and formatting",
+      "story": "As the solo SIS designer, I use numeric limits and formatting, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The numbers family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S12",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Selection and searchable choices",
+      "story": "As the solo SIS designer, I use selection and searchable choices, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The selection family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S13",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Date, range, and academic-period selection",
+      "story": "As the solo SIS designer, I use date, range, and academic-period selection, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The dates family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S14",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Status badges and removable tags",
+      "story": "As the solo SIS designer, I use status badges and removable tags, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The badges family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S15",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Identity records and metadata",
+      "story": "As the solo SIS designer, I use identity records and metadata, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The identity family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S16",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Containers and disclosures",
+      "story": "As the solo SIS designer, I use containers and disclosures, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The containers family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S17",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Navigation, anchors, and overflow actions",
+      "story": "As the solo SIS designer, I use navigation, anchors, and overflow actions, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The navigation family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S18",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Lists and academic trees",
+      "story": "As the solo SIS designer, I use lists and academic trees, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The lists family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S19",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Table search, sorting, selection, and bulk actions",
+      "story": "As the solo SIS designer, I use table search, sorting, selection, and bulk actions, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The tables family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S20",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Pending, error, and recovery feedback",
+      "story": "As the solo SIS designer, I use pending, error, and recovery feedback, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The feedback family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S21",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Dialogs, drawers, menus, and focus return",
+      "story": "As the solo SIS designer, I use dialogs, drawers, menus, and focus return, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The overlays family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S22",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Local file validation, cancellation, and retry",
+      "story": "As the solo SIS designer, I use local file validation, cancellation, and retry, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The files family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S23",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Charts, legends, and accessible data",
+      "story": "As the solo SIS designer, I use charts, legends, and accessible data, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The charts family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S24",
+      "type": "Story",
+      "epic": "E03",
+      "title": "Messages, citations, and reviewed extraction",
+      "story": "As the solo SIS designer, I use messages, citations, and reviewed extraction, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The communication family renders every registered example.",
+        "Primary controls produce their documented local result.",
+        "Applicable exceptional states and keyboard behavior pass their verification cases."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S25",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Review bulk administration outcomes",
+      "story": "As the solo SIS designer, I use review bulk administration outcomes, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Individual blocked outcomes can be corrected and retried.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S26",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Complete a retained multi-step form",
+      "story": "As the solo SIS designer, I use complete a retained multi-step form, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Invalid steps cannot submit and backward navigation preserves input.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S27",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Map and review an import sample",
+      "story": "As the solo SIS designer, I use map and review an import sample, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Rows can be excluded and failed examples can be retried.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S28",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Review evidence and record a sample decision",
+      "story": "As the solo SIS designer, I use review evidence and record a sample decision, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "A reason and evidence support the local decision.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S29",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Review scoped access before saving",
+      "story": "As the solo SIS designer, I use review scoped access before saving, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Invalid scope combinations are rejected.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S30",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Inspect versioned academic structure",
+      "story": "As the solo SIS designer, I use inspect versioned academic structure, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Units expand and a sample effective date validates.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S31",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Resolve a timetable conflict",
+      "story": "As the solo SIS designer, I use resolve a timetable conflict, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Conflicting sample sections prevent confirmation.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S32",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Explain degree requirements and transcript results",
+      "story": "As the solo SIS designer, I use explain degree requirements and transcript results, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Unmet sample requirements include an explanation.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S33",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Reconcile sample finance and aid records",
+      "story": "As the solo SIS designer, I use reconcile sample finance and aid records, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Mismatched values show recovery feedback.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S34",
+      "type": "Story",
+      "epic": "E04",
+      "title": "Recover a sample provisioning step",
+      "story": "As the solo SIS designer, I use recover a sample provisioning step, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Requested and confirmed outcomes remain distinct after failure.",
+        "The complete local demonstration passes its browser flow.",
+        "Sample rules remain separate from university policy."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S35",
+      "type": "Story",
+      "epic": "E05",
+      "title": "Verify registry, tokens, and portable exports",
+      "story": "As the solo SIS designer, I use verify registry, tokens, and portable exports, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Every registered destination and named marker resolves.",
+        "Token aliases and exports match canonical sources.",
+        "The approved contrast pairs pass."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S36",
+      "type": "Story",
+      "epic": "E05",
+      "title": "Verify browser interactions and responsive accessibility",
+      "story": "As the solo SIS designer, I use verify browser interactions and responsive accessibility, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "All browser flow tests pass.",
+        "Default-page accessibility scans report their actual scope.",
+        "Narrow layouts preserve controls and readable content."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S37",
+      "type": "Story",
+      "epic": "E05",
+      "title": "Complete Adham visual acceptance",
+      "story": "As the solo SIS designer, I use complete Adham visual acceptance, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Adham reviews the current bilingual profile and motion examples.",
+        "Adham records accepted choices and remaining changes."
+      ],
+      "blockedBy": [],
+      "points": 2,
+      "pointsReason": "Uncertainty depends on personal visual feedback.",
+      "targetStatus": "In Progress",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S38",
+      "type": "Story",
+      "epic": "E05",
+      "title": "Review the system with a screen reader",
+      "story": "As the solo SIS designer, I use review the system with a screen reader, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "A reviewer checks key forms, tables, dialogs, and announcements.",
+        "The report records the assistive technology and unresolved findings."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Uncertainty depends on the available assistive technology.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S39",
+      "type": "Story",
+      "epic": "E06",
+      "title": "Preserve source history and its provenance",
+      "story": "As the solo SIS designer, I use preserve source history and its provenance, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The earlier prototype archive extracts successfully.",
+        "A manifest records source hashes and exclusions.",
+        "Historical proposals remain distinct from current decisions."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S40",
+      "type": "Story",
+      "epic": "E06",
+      "title": "Publish the complete private GitHub archive",
+      "story": "As the solo SIS designer, I use publish the complete private GitHub archive, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The initial repository commit remains in history.",
+        "The published commit contains the prototype, canonical sources, decisions, reports, and visual references.",
+        "The portable build passes."
+      ],
+      "blockedBy": [
+        "S39"
+      ],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S41",
+      "type": "Story",
+      "epic": "E06",
+      "title": "Link the verified Jira delivery record",
+      "story": "As the solo SIS designer, I use link the verified Jira delivery record, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Every created story has the correct parent epic.",
+        "Completion statuses match evidence.",
+        "The repository records issue keys and dependency links."
+      ],
+      "blockedBy": [
+        "S40"
+      ],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "Done",
+      "evidence": "The linked SIS-Product-Design repository contains the implementation and verification report.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S42",
+      "type": "Story",
+      "epic": "E07",
+      "title": "Save an artifact configuration",
+      "story": "As the solo SIS designer, I use save an artifact configuration, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "A profile records system version, output type, content, layout, locale, and state.",
+        "Invalid combinations receive a clear error."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Uncertainty concerns the cross-media profile schema.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S43",
+      "type": "Story",
+      "epic": "E07",
+      "title": "Release a versioned design baseline",
+      "story": "As the solo SIS designer, I use release a versioned design baseline, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Each release identifies compatible tokens, components, and templates.",
+        "Changes include migration and deprecation guidance."
+      ],
+      "blockedBy": [],
+      "points": 3,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S44",
+      "type": "Story",
+      "epic": "E07",
+      "title": "Verify reproducible output recipes",
+      "story": "As the solo SIS designer, I use verify reproducible output recipes, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The same inputs and pinned renderer produce the same structural result.",
+        "The report distinguishes structural equality from cross-engine pixel variation."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S45",
+      "type": "Story",
+      "epic": "E08",
+      "title": "Create presentation masters",
+      "story": "As the solo SIS designer, I use create presentation masters, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "A selected slide profile provides title, content, data, and closing layouts.",
+        "Adham selects and approves the medium-specific scale before implementation.",
+        "An example export passes its review checklist."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Uncertainty remains in the output format and selected template rules.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S46",
+      "type": "Story",
+      "epic": "E08",
+      "title": "Create documentation templates",
+      "story": "As the solo SIS designer, I use create documentation templates, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "A selected profile provides tutorial, how-to, reference, and explanation structures.",
+        "Adham selects and approves the medium-specific scale before implementation.",
+        "An example export passes its review checklist."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Uncertainty remains in the output format and selected template rules.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S47",
+      "type": "Story",
+      "epic": "E08",
+      "title": "Create evidence-led report templates",
+      "story": "As the solo SIS designer, I use create evidence-led report templates, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Reports include findings, evidence, confidence, risks, and appendices.",
+        "Adham selects and approves the medium-specific scale before implementation.",
+        "An example export passes its review checklist."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Uncertainty remains in the output format and selected template rules.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S48",
+      "type": "Story",
+      "epic": "E08",
+      "title": "Create accessible print and PDF templates",
+      "story": "As the solo SIS designer, I use create accessible print and PDF templates, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "The selected paper profile handles pagination, headings, tables, and reading order.",
+        "Adham selects and approves the medium-specific scale before implementation.",
+        "An example export passes its review checklist."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Uncertainty remains in the output format and selected template rules.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S49",
+      "type": "Story",
+      "epic": "E09",
+      "title": "Synchronize the approved Figma variables",
+      "story": "As the solo SIS designer, I use synchronize the approved Figma variables, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Inspect the existing file before changing it.",
+        "Variables, type styles, and modes match the active source.",
+        "Screenshots verify the synchronized result."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S50",
+      "type": "Story",
+      "epic": "E09",
+      "title": "Publish the reviewed Figma component library",
+      "story": "As the solo SIS designer, I use publish the reviewed Figma component library, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Component variants and states map to the catalog.",
+        "Consumers can find usage and accessibility guidance."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S51",
+      "type": "Story",
+      "epic": "E09",
+      "title": "Distribute reusable production components",
+      "story": "As the solo SIS designer, I use distribute reusable production components, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Define the supported package boundary.",
+        "Published components include behavior tests and version compatibility guidance."
+      ],
+      "blockedBy": [],
+      "points": 5,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S52",
+      "type": "Story",
+      "epic": "E10",
+      "title": "Capture enhancement requests without changing the baseline",
+      "story": "As the solo SIS designer, I use capture enhancement requests without changing the baseline, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Each request names the problem, affected flow, and expected outcome.",
+        "Proposals remain distinct from approved decisions."
+      ],
+      "blockedBy": [],
+      "points": 2,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    },
+    {
+      "id": "S53",
+      "type": "Story",
+      "epic": "E10",
+      "title": "Prioritize a reviewed enhancement slice",
+      "story": "As the solo SIS designer, I use prioritize a reviewed enhancement slice, so that I can reuse and verify the design decision.",
+      "acceptance": [
+        "Adham selects a single bounded outcome.",
+        "The story records dependencies and testable acceptance criteria."
+      ],
+      "blockedBy": [],
+      "points": 2,
+      "pointsReason": "Effort and complexity cover one working demonstration and its verification.",
+      "targetStatus": "To Do",
+      "evidence": "No completion evidence yet. This is planned work.",
+      "estimateStatus": "Proposed relative estimate. Historical points are not measured effort."
+    }
+  ]
+}

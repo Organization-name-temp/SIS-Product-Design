@@ -1,0 +1,42 @@
+# Implementation inventory
+
+- colors: Colors and themes
+- typography: Typography
+- spacing: Spacing and density
+- grid: Grid and responsiveness
+- borders: Borders and corners
+- icons: Icons
+- elevation: Elevation and layers
+- motion: Motion
+- accessibility: Accessibility and language
+- buttons: Buttons and actions
+- fields: Text fields
+- numbers: Numeric fields
+- selection: Selection
+- dates: Dates and time
+- badges: Badges and tags
+- identity: Identity and records
+- containers: Containers and layout
+- navigation: Navigation
+- lists: Lists and trees
+- tables: Tables
+- feedback: Feedback
+- overlays: Overlays
+- files: Files and documents
+- charts: Charts and progress
+- communication: Content and communication
+- bulk: Search and bulk administration
+- wizard: Multi-step form
+- import: Import review
+- approvals: Approval and review
+- access: Scoped access
+- academic: Academic structure
+- registration: Registration and timetable
+- results: Results and degree progress
+- finance: Finance and aid
+- operations: Platform operations
+- coverage: Catalog coverage
+- decisions: Approved decisions
+- exports: Exports
+
+The full user-approved plan is the originating spec in this chat. Every specimen needs a renderer, local interaction where applicable, token references, states, usage and accessibility notes.

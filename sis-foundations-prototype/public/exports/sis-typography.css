@@ -1,0 +1,82 @@
+:root {
+  --ref-font-family-ibm: "IBM Plex Sans Arabic", sans-serif;
+  --ref-font-weight-400: 400;
+  --ref-font-weight-500: 500;
+  --ref-font-weight-600: 600;
+  --ref-font-weight-700: 700;
+  --ref-font-size-14: 0.875rem;
+  --ref-font-size-16: 1rem;
+  --ref-font-size-18: 1.125rem;
+  --ref-font-size-20: 1.25rem;
+  --ref-font-size-28: 1.75rem;
+  --ref-line-height-20: 1.25rem;
+  --ref-line-height-24: 1.5rem;
+  --ref-line-height-26: 1.625rem;
+  --ref-line-height-28: 1.75rem;
+  --ref-line-height-30: 1.875rem;
+  --ref-line-height-32: 2rem;
+  --ref-line-height-36: 2.25rem;
+  --ref-line-height-40: 2.5rem;
+  --sys-font-weight-body: var(--ref-font-weight-400);
+  --sys-font-weight-help: var(--ref-font-weight-400);
+  --sys-font-weight-table: var(--ref-font-weight-400);
+  --sys-font-weight-label: var(--ref-font-weight-500);
+  --sys-font-weight-navigation: var(--ref-font-weight-500);
+  --sys-font-weight-button: var(--ref-font-weight-500);
+  --sys-font-weight-heading: var(--ref-font-weight-600);
+  --sys-font-weight-important-value: var(--ref-font-weight-600);
+  --sys-font-weight-emphasis: var(--ref-font-weight-700);
+  --sys-font-weight-page-title: var(--ref-font-weight-600);
+  --sys-font-weight-section-heading: var(--ref-font-weight-600);
+  --sys-font-weight-subsection-heading: var(--ref-font-weight-600);
+  --sys-font-weight-field-label: var(--ref-font-weight-500);
+  --sys-font-weight-table-heading: var(--ref-font-weight-500);
+  --sys-font-size-page-title: var(--ref-font-size-28);
+  --sys-line-height-page-title: var(--ref-line-height-36);
+  --sys-font-size-section-heading: var(--ref-font-size-20);
+  --sys-line-height-section-heading: var(--ref-line-height-28);
+  --sys-font-size-subsection-heading: var(--ref-font-size-18);
+  --sys-line-height-subsection-heading: var(--ref-line-height-26);
+  --sys-font-size-body: var(--ref-font-size-16);
+  --sys-line-height-body: var(--ref-line-height-24);
+  --sys-font-size-field-label: var(--ref-font-size-14);
+  --sys-line-height-field-label: var(--ref-line-height-20);
+  --sys-font-size-help: var(--ref-font-size-14);
+  --sys-line-height-help: var(--ref-line-height-20);
+  --sys-font-size-button: var(--ref-font-size-14);
+  --sys-line-height-button: var(--ref-line-height-20);
+  --sys-font-size-navigation: var(--ref-font-size-14);
+  --sys-line-height-navigation: var(--ref-line-height-24);
+  --sys-font-size-table-heading: var(--ref-font-size-14);
+  --sys-line-height-table-heading: var(--ref-line-height-20);
+  --sys-font-size-table: var(--ref-font-size-14);
+  --sys-line-height-table: var(--ref-line-height-20);
+  --sys-letter-spacing: 0em;
+}
+:root, [data-font="ibm"] {
+  --sys-font-family-ui: var(--ref-font-family-ibm);
+}
+[lang|="ar"] {
+  --sys-line-height-page-title: var(--ref-line-height-40);
+  --sys-line-height-section-heading: var(--ref-line-height-32);
+  --sys-line-height-subsection-heading: var(--ref-line-height-30);
+  --sys-line-height-body: var(--ref-line-height-28);
+  --sys-line-height-field-label: var(--ref-line-height-24);
+  --sys-line-height-help: var(--ref-line-height-24);
+  --sys-line-height-button: var(--ref-line-height-24);
+  --sys-line-height-navigation: var(--ref-line-height-24);
+  --sys-line-height-table-heading: var(--ref-line-height-24);
+  --sys-line-height-table: var(--ref-line-height-24);
+}
+[lang|="en"] {
+  --sys-line-height-page-title: var(--ref-line-height-36);
+  --sys-line-height-section-heading: var(--ref-line-height-28);
+  --sys-line-height-subsection-heading: var(--ref-line-height-26);
+  --sys-line-height-body: var(--ref-line-height-24);
+  --sys-line-height-field-label: var(--ref-line-height-20);
+  --sys-line-height-help: var(--ref-line-height-20);
+  --sys-line-height-button: var(--ref-line-height-20);
+  --sys-line-height-navigation: var(--ref-line-height-24);
+  --sys-line-height-table-heading: var(--ref-line-height-20);
+  --sys-line-height-table: var(--ref-line-height-20);
+}

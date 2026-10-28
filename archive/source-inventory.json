@@ -1,0 +1,159 @@
+{
+  "recordedOn": "2026-10-28",
+  "sourceWorkspace": "/Users/adhamhaithameid/.codex/visualizations/2026/10/27/01a17d33-8169-7311-bcd3-661d13de8341",
+  "baselineCommit": "c8001ec",
+  "extractionVerified": true,
+  "excluded": [
+    "dependencies",
+    "build caches",
+    "failed test artifacts",
+    "environment files",
+    "internal agent instructions"
+  ],
+  "files": [
+    {
+      "path": "archive/README.md",
+      "sha256": "2d7bff2d2bc1ffe174da51c6ccba292b4acf94a3537d4c7f724bb6a551c6d168",
+      "bytes": 1347,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/foundations-prototype.tar.gz",
+      "sha256": "4cd8140553ec3dae785e6552a4780fedb125dc1ccfd5a94e05b7ef815c098db2",
+      "bytes": 8114988,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/prototype-manifest.json",
+      "sha256": "095ae6456ed6d146deeac808bd436d3208a10d63db0def4bc36e3d3eb27687a3",
+      "bytes": 16223,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-build-palette.py",
+      "sha256": "2a8435a942c62d8e76f9058eea3cd5ab6402618283cd827f622c80deffca249e",
+      "bytes": 7374,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-design-execution-plan.md",
+      "sha256": "533017af3827ddb8da6c8301ad61a19fd4a7f06719cebce9d4fe957273fdfb2c",
+      "bytes": 20981,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-dark.tokens.json",
+      "sha256": "9d7faee00f242df77b0503f4b7832a806dd388f3b90706297bd8979be2be92c4",
+      "bytes": 44490,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-figma-modes.csv",
+      "sha256": "b98084bc1d0238a1f85a96ce2b456b554d856b8c3191dd5890f5f265a7ff8492",
+      "bytes": 8145,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-light.tokens.json",
+      "sha256": "c0d4615d702eaf1ba1a045b78e1915e7a0ea43b6a35db71daace196867b803f4",
+      "bytes": 44460,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-palette.contrast.json",
+      "sha256": "fd8915af86fef4f129b5920f3362c2d0a90c2fed822c791dd26732dfed6fcefd",
+      "bytes": 88008,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-palette.css",
+      "sha256": "22f8dc4ecc11b2cda0e4a1741eac4c8d6daec0ae3886e803112f4e51ffdd4cdc",
+      "bytes": 72666,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-palette.md",
+      "sha256": "fadcd63b7aa104e1b81db2979800e7d962565f15ecc4b9cd4195fe15dc515c56",
+      "bytes": 24637,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-ejust-palette.tokens.json",
+      "sha256": "5390359deeea9c12393a98b226363c73cb5ede1143f2d0571d4677c90f6b03c9",
+      "bytes": 26794,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-foundation-contract.md",
+      "sha256": "7309e914229ae100525dad9a3545a8955417e2887fb42e2e310c0455a455fdf0",
+      "bytes": 7086,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-foundation-decisions.json",
+      "sha256": "f0bebcac078e783325d3cbc0d9f1ae4338d2b72151d01c83136bacd172da341b",
+      "bytes": 6125,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-foundations.css",
+      "sha256": "427ac0ebb978c925686a7b8ff74354c20c660a4ce0144573c1157a83061e7e16",
+      "bytes": 1757,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-theme.js",
+      "sha256": "39cf6d84055836e8843e3c1f9c12bbec6b0af42dbfcb546b90880a834f1de876",
+      "bytes": 1374,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-typography.css",
+      "sha256": "62d133e0706c78208b66c5248dfa4cbc194e3c8b70ef7c9219843f658f8bd1e4",
+      "bytes": 4748,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-typography.md",
+      "sha256": "b1c6a97ec3d9bd17d9cf7b3a64e03299d0aa22c2015e473b49150779f4446016",
+      "bytes": 3824,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/baseline-2026-10-28/sis-typography.tokens.json",
+      "sha256": "af7af296719f3c7db625f22278a3c17d6cb6dd99410e33bbce74febf3c932443",
+      "bytes": 5468,
+      "provenance": "Baseline workspace and source commit c8001ec"
+    },
+    {
+      "path": "archive/original-agent-response.txt",
+      "sha256": "267a8e49efdf9c9f9ce396d1e5b4aa091f1bff4a5c36233f995fcbad9fd2d60a",
+      "bytes": 31322,
+      "provenance": "User attachment"
+    },
+    {
+      "path": "assets/visual-references/exec-0a0cf702-5f71-4319-b5e8-5016201baae1.png",
+      "sha256": "544d78fecc0710aefcadd8853f05b796d74a7d63c427dad3da2fbea6ec7ee1f8",
+      "bytes": 1313934,
+      "provenance": "Generated visual reference in this project chat"
+    },
+    {
+      "path": "assets/visual-references/exec-5b123d21-6631-41c9-82b3-ec37ae4b7177.png",
+      "sha256": "19448e4ef4c2cc634bfcfe20d9adf259f435c300ef3a94d4ff98240518d232f7",
+      "bytes": 1500133,
+      "provenance": "Generated visual reference in this project chat"
+    },
+    {
+      "path": "assets/visual-references/exec-a490b3a3-4b83-4bbe-814b-5343c3d0f458.png",
+      "sha256": "07afb117bcdfe7c99bfcd1b26ccc084f78529b33f2bf5630c250560290593eb7",
+      "bytes": 1396064,
+      "provenance": "Generated visual reference in this project chat"
+    },
+    {
+      "path": "assets/visual-references/exec-b4c7c4b8-c145-4960-bba7-891caed57b69.png",
+      "sha256": "c543d4f3ce638e89cce731be7bad1dc35362174796cb64b63b2b6f476fec0072",
+      "bytes": 1385343,
+      "provenance": "Generated visual reference in this project chat"
+    }
+  ]
+}

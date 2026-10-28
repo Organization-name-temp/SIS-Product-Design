@@ -1,0 +1,31 @@
+{
+  "errors": [],
+  "violations": [],
+  "overflow": [],
+  "samples": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1024,
+      "path": "qa/desktop-final.png"
+    },
+    {
+      "name": "arabic-dark",
+      "width": 1440,
+      "height": 1024,
+      "path": "qa/arabic-dark-final.png"
+    },
+    {
+      "name": "mobile",
+      "width": 320,
+      "height": 900,
+      "path": "qa/mobile-final.png"
+    },
+    {
+      "name": "table",
+      "width": 1440,
+      "height": 1024,
+      "path": "qa/table-final.png"
+    }
+  ]
+}

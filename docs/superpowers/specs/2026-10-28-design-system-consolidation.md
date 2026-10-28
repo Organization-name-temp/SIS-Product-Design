@@ -104,3 +104,5 @@ An epic is Done only when all its required stories are Done.
 An epic is In Progress when work is active or when completed technical work still awaits required acceptance.
 An epic remains To Do when all its stories are deferred.
 Keep individual technical stories Done when evidence supports completion. Do not merge visual acceptance into their status.
+
+Credential checks cover every commit reachable from the publication branch, including the retained e72b4350 initial commit.

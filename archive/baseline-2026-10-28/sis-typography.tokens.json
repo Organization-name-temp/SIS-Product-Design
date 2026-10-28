@@ -1,0 +1,227 @@
+{
+  "metadata": {
+    "date": "2026-10-27",
+    "status": "Family, weights, and typography scale confirmed; final visual review pending",
+    "scaleApprovedOn": "2026-10-27"
+  },
+  "fontCandidates": {
+    "ibm": {
+      "family": "IBM Plex Sans Arabic",
+      "status": "selected",
+      "source": "https://github.com/google/fonts/tree/main/ofl/ibmplexsansarabic"
+    },
+    "noto": {
+      "family": "Noto Sans Arabic",
+      "status": "comparison alternative",
+      "source": "https://github.com/google/fonts/tree/main/ofl/notosansarabic"
+    },
+    "cairo": {
+      "family": "Cairo",
+      "status": "comparison alternative",
+      "source": "https://github.com/google/fonts/tree/main/ofl/cairo"
+    }
+  },
+  "selectedFont": "ibm",
+  "weights": {
+    "body": 400,
+    "help": 400,
+    "table": 400,
+    "label": 500,
+    "navigation": 500,
+    "button": 500,
+    "heading": 600,
+    "important-value": 600,
+    "emphasis": 700,
+    "page-title": 600,
+    "section-heading": 600,
+    "subsection-heading": 600,
+    "field-label": 500,
+    "table-heading": 500
+  },
+  "openDecisions": [],
+  "finalPrototype": {
+    "fontSelector": [
+      "ibm",
+      "noto",
+      "cairo"
+    ],
+    "themes": [
+      "light",
+      "dark"
+    ],
+    "languages": [
+      "ar",
+      "en",
+      "fr"
+    ],
+    "comparisonRule": "Change the family while keeping content, width, semantic roles, and theme constant. Show approved weights. Check family-specific metrics separately.",
+    "samples": {
+      "ar": "التسجيل في الجامعة وإدارة المقررات الدراسية",
+      "en": "University registration and course management",
+      "fr": "Inscription universitaire et gestion des unités d’enseignement",
+      "mixed": "CS101 · أحمد Hassan · Émilie François",
+      "digits": "0123456789 · 1,250.50 · 3.75"
+    },
+    "checks": [
+      "Arabic shaping and diacritics",
+      "French accents",
+      "mixed-direction content",
+      "number distinction and alignment",
+      "small labels and table values",
+      "heading hierarchy",
+      "zoom and text expansion",
+      "font load success before comparison"
+    ]
+  },
+  "roles": {
+    "page-title": {
+      "sizeReferencePx": 28,
+      "sizeRem": 1.75,
+      "weight": 600,
+      "lineHeightReferencePx": {
+        "latin": 36,
+        "arabic": 40
+      },
+      "lineHeightRem": {
+        "latin": 2.25,
+        "arabic": 2.5
+      }
+    },
+    "section-heading": {
+      "sizeReferencePx": 20,
+      "sizeRem": 1.25,
+      "weight": 600,
+      "lineHeightReferencePx": {
+        "latin": 28,
+        "arabic": 32
+      },
+      "lineHeightRem": {
+        "latin": 1.75,
+        "arabic": 2.0
+      }
+    },
+    "subsection-heading": {
+      "sizeReferencePx": 18,
+      "sizeRem": 1.125,
+      "weight": 600,
+      "lineHeightReferencePx": {
+        "latin": 26,
+        "arabic": 30
+      },
+      "lineHeightRem": {
+        "latin": 1.625,
+        "arabic": 1.875
+      }
+    },
+    "body": {
+      "sizeReferencePx": 16,
+      "sizeRem": 1.0,
+      "weight": 400,
+      "lineHeightReferencePx": {
+        "latin": 24,
+        "arabic": 28
+      },
+      "lineHeightRem": {
+        "latin": 1.5,
+        "arabic": 1.75
+      }
+    },
+    "field-label": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 500,
+      "lineHeightReferencePx": {
+        "latin": 20,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.25,
+        "arabic": 1.5
+      }
+    },
+    "help": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 400,
+      "lineHeightReferencePx": {
+        "latin": 20,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.25,
+        "arabic": 1.5
+      }
+    },
+    "button": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 500,
+      "lineHeightReferencePx": {
+        "latin": 20,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.25,
+        "arabic": 1.5
+      }
+    },
+    "navigation": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 500,
+      "lineHeightReferencePx": {
+        "latin": 24,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.5,
+        "arabic": 1.5
+      }
+    },
+    "table-heading": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 500,
+      "lineHeightReferencePx": {
+        "latin": 20,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.25,
+        "arabic": 1.5
+      }
+    },
+    "table": {
+      "sizeReferencePx": 14,
+      "sizeRem": 0.875,
+      "weight": 400,
+      "lineHeightReferencePx": {
+        "latin": 20,
+        "arabic": 24
+      },
+      "lineHeightRem": {
+        "latin": 1.25,
+        "arabic": 1.5
+      }
+    }
+  },
+  "letterSpacing": {
+    "default": "0em",
+    "status": "approved starting value; final visual check pending"
+  },
+  "rules": [
+    "Same typography in light and dark themes",
+    "14px reference minimum for standard interface text",
+    "Compact density reduces surrounding spacing, not text size",
+    "Relative units follow browser preferences; px values assume a 16px root",
+    "No forced uppercase or added Arabic tracking",
+    "Weight 700 is reserved for limited emphasis"
+  ],
+  "numberFormatting": {
+    "numberingSystem": "latn",
+    "allInterfaceLanguages": true,
+    "localizedSeparators": true,
+    "formatIdentifiers": false,
+    "status": "approved"
+  }
+}

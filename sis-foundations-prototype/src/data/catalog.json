@@ -1,0 +1,4850 @@
+[
+  {
+    "group": "Foundations",
+    "id": "colors",
+    "name": {
+      "en": "Colors and themes",
+      "ar": "الألوان والسمات"
+    },
+    "description": {
+      "en": "Inspect the shared palette, semantic roles, and contrast pairs.",
+      "ar": "افحص لوحة الألوان والأدوار الدلالية والتباين."
+    },
+    "icon": "Palette",
+    "states": [
+      "default",
+      "selected"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "colors",
+      "Colors and themes",
+      "الألوان والسمات",
+      "Couleurs et thèmes",
+      "University brand scale",
+      "مقياس هوية الجامعة",
+      "Échelle de marque universitaire",
+      "Neutral scale",
+      "مقياس الألوان المحايدة",
+      "Échelle neutre",
+      "Semantic roles and copying",
+      "الأدوار الدلالية والنسخ",
+      "Rôles sémantiques et copie",
+      "Feedback roles",
+      "أدوار رسائل الحالة",
+      "Rôles des messages",
+      "Eight chart series",
+      "ثماني سلاسل للرسوم",
+      "Huit séries graphiques",
+      "Token reference chain",
+      "تسلسل مراجع الرموز",
+      "Chaîne de références des jetons",
+      "Live contrast checker",
+      "فاحص التباين المباشر",
+      "Vérificateur de contraste direct",
+      "Light and dark mapping",
+      "ربط السمات الفاتحة والداكنة",
+      "Correspondance claire et sombre"
+    ],
+    "tokens": [
+      "--ref-color-brand-500",
+      "--sys-color-brand-reference",
+      "--sys-color-text-primary",
+      "--sys-color-bg-canvas",
+      "--sys-color-bg-surface",
+      "--sys-color-action-primary-bg",
+      "--sys-color-action-primary-fg",
+      "--sys-color-focus-ring",
+      "--cmp-button-primary-background",
+      "--sys-color-chart-1",
+      "--sys-color-chart-2",
+      "--sys-color-chart-3",
+      "--sys-color-chart-4",
+      "--sys-color-chart-5",
+      "--sys-color-chart-6",
+      "--sys-color-chart-7",
+      "--sys-color-chart-8"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "colors-brand",
+        "name": {
+          "en": "University brand scale",
+          "ar": "مقياس هوية الجامعة",
+          "fr": "Échelle de marque universitaire"
+        },
+        "description": {
+          "en": "Inspect 11 approved E-JUST shades and copy each reference value.",
+          "ar": "افحص 11 درجة معتمدة لهوية E-JUST وانسخ كل قيمة مرجعية.",
+          "fr": "Examinez les 11 nuances E-JUST approuvées et copiez chaque référence."
+        }
+      },
+      {
+        "id": "colors-neutral",
+        "name": {
+          "en": "Neutral scale",
+          "ar": "مقياس الألوان المحايدة",
+          "fr": "Échelle neutre"
+        },
+        "description": {
+          "en": "Inspect all 12 neutral references for surfaces, text, and borders.",
+          "ar": "افحص المراجع المحايدة البالغ عددها 12 للأسطح والنصوص والحدود.",
+          "fr": "Examinez les 12 références neutres pour les surfaces, textes et bordures."
+        }
+      },
+      {
+        "id": "colors-semantic",
+        "name": {
+          "en": "Semantic roles and copying",
+          "ar": "الأدوار الدلالية والنسخ",
+          "fr": "Rôles sémantiques et copie"
+        },
+        "description": {
+          "en": "Search every approved semantic role and copy its current theme value.",
+          "ar": "ابحث في كل دور دلالي معتمد وانسخ قيمته في السمة الحالية.",
+          "fr": "Recherchez chaque rôle approuvé et copiez sa valeur dans le thème actuel."
+        }
+      },
+      {
+        "id": "colors-feedback",
+        "name": {
+          "en": "Feedback roles",
+          "ar": "أدوار رسائل الحالة",
+          "fr": "Rôles des messages"
+        },
+        "description": {
+          "en": "Select success, warning, danger, or information to inspect its contrast pair.",
+          "ar": "اختر النجاح أو التحذير أو الخطر أو المعلومات لفحص زوج التباين.",
+          "fr": "Sélectionnez un état pour examiner sa paire de contraste."
+        }
+      },
+      {
+        "id": "colors-charts",
+        "name": {
+          "en": "Eight chart series",
+          "ar": "ثماني سلاسل للرسوم",
+          "fr": "Huit séries graphiques"
+        },
+        "description": {
+          "en": "Compare eight theme-specific chart colors with visible series numbers.",
+          "ar": "قارن ثمانية ألوان رسوم خاصة بالسمة مع أرقام سلاسل مرئية.",
+          "fr": "Comparez huit couleurs propres au thème avec des numéros de série visibles."
+        }
+      },
+      {
+        "id": "colors-token-layers",
+        "name": {
+          "en": "Token reference chain",
+          "ar": "تسلسل مراجع الرموز",
+          "fr": "Chaîne de références des jetons"
+        },
+        "description": {
+          "en": "Inspect reference, semantic, and component mappings for every component alias.",
+          "ar": "افحص ربط المرجع والدلالة والمكوّن لكل اسم مستعار للمكوّن.",
+          "fr": "Examinez les correspondances de référence, de sémantique et de composant pour chaque alias."
+        }
+      },
+      {
+        "id": "colors-contrast",
+        "name": {
+          "en": "Live contrast checker",
+          "ar": "فاحص التباين المباشر",
+          "fr": "Vérificateur de contraste direct"
+        },
+        "description": {
+          "en": "Choose foreground and background roles, edit preview text, and copy the measured ratio.",
+          "ar": "اختر أدوار المقدمة والخلفية وعدل نص المعاينة وانسخ النسبة المحسوبة.",
+          "fr": "Choisissez deux rôles, modifiez le texte et copiez le rapport calculé."
+        }
+      },
+      {
+        "id": "colors-themes",
+        "name": {
+          "en": "Light and dark mapping",
+          "ar": "ربط السمات الفاتحة والداكنة",
+          "fr": "Correspondance claire et sombre"
+        },
+        "description": {
+          "en": "Compare both theme values for the active contrast roles and core surfaces.",
+          "ar": "قارن قيمتي السمتين لأدوار التباين الحالية والأسطح الأساسية.",
+          "fr": "Comparez les deux thèmes pour les rôles sélectionnés et les surfaces principales."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep the E-JUST reference red at #EA232B. Use semantic roles for interface content.",
+        "ar": "حافظ على مرجع E-JUST الأحمر #EA232B. استخدم الأدوار الدلالية لمحتوى الواجهة.",
+        "fr": "Conservez le rouge E-JUST #EA232B. Utilisez les rôles sémantiques pour l’interface."
+      },
+      {
+        "en": "Use component aliases when a component needs a stable role across themes.",
+        "ar": "استخدم الأسماء المستعارة للمكوّنات عند الحاجة إلى دور ثابت بين السمات.",
+        "fr": "Utilisez les alias de composant pour conserver un rôle stable entre les thèmes."
+      },
+      {
+        "en": "Inspect chart series and feedback independently. Reserve status meaning for visible labels and icons.",
+        "ar": "افحص سلاسل الرسوم ورسائل الحالة بصورة مستقلة. استخدم التسميات والأيقونات لتوضيح معنى الحالة.",
+        "fr": "Examinez séparément les séries et les messages. Donnez le sens des états par des libellés et icônes."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Normal text needs 4.5:1 for AA. Large text and interface graphics need 3:1.",
+        "ar": "يتطلب النص العادي 4.5:1 لمستوى AA. يتطلب النص الكبير ورسوم الواجهة 3:1.",
+        "fr": "Le texte courant exige 4,5:1 pour AA. Le grand texte et les éléments graphiques exigent 3:1."
+      },
+      {
+        "en": "The checker evaluates solid colors. Inspect composited effects separately.",
+        "ar": "يفحص الاختبار الألوان المصمتة. افحص تأثيرات التركيب بصورة منفصلة.",
+        "fr": "Le calcul évalue les couleurs unies. Examinez séparément les effets de composition."
+      },
+      {
+        "en": "Every swatch has a copy action and an accessible text name.",
+        "ar": "لكل عينة لون إجراء نسخ واسم نصي قابل للوصول.",
+        "fr": "Chaque nuance possède une action de copie et un nom textuel accessible."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "typography",
+    "name": {
+      "en": "Typography",
+      "ar": "الخطوط"
+    },
+    "description": {
+      "en": "Compare multilingual type, roles, weights, and wrapping.",
+      "ar": "قارن الخطوط والأوزان والتفاف النص."
+    },
+    "icon": "Type",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default",
+      "long-content"
+    ],
+    "keywords": [
+      "typography",
+      "Typography",
+      "الخطوط",
+      "Typographie",
+      "Ten typography roles",
+      "عشرة أدوار للخط",
+      "Dix rôles typographiques",
+      "Three families and four weights",
+      "ثلاث عائلات وأربعة أوزان",
+      "Trois familles et quatre graisses",
+      "Text and wrapping comparison",
+      "مقارنة النص والتفافه",
+      "Comparaison du texte et des retours",
+      "Multilingual marks and shaping",
+      "العلامات والتشكيل متعدد اللغات",
+      "Signes et tracé multilingues",
+      "Digits and identifiers",
+      "الأرقام والمعرفات",
+      "Chiffres et identifiants"
+    ],
+    "tokens": [
+      "--ref-font-family-ibm",
+      "--sys-font-family-ui",
+      "--sys-letter-spacing",
+      "--sys-font-size-page-title",
+      "--sys-font-size-section-heading",
+      "--sys-font-size-subsection-heading",
+      "--sys-font-size-body",
+      "--sys-font-size-field-label",
+      "--sys-font-size-help",
+      "--sys-font-size-button",
+      "--sys-font-size-navigation",
+      "--sys-font-size-table-heading",
+      "--sys-font-size-table",
+      "--sys-line-height-page-title",
+      "--sys-line-height-section-heading",
+      "--sys-line-height-subsection-heading",
+      "--sys-line-height-body",
+      "--sys-line-height-field-label",
+      "--sys-line-height-help",
+      "--sys-line-height-button",
+      "--sys-line-height-navigation",
+      "--sys-line-height-table-heading",
+      "--sys-line-height-table"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "typography-roles",
+        "name": {
+          "en": "Ten typography roles",
+          "ar": "عشرة أدوار للخط",
+          "fr": "Dix rôles typographiques"
+        },
+        "description": {
+          "en": "Inspect every approved size, weight, and locale-specific line height.",
+          "ar": "افحص كل حجم ووزن وارتفاع سطر معتمد حسب اللغة.",
+          "fr": "Examinez chaque taille, graisse et interligne approuvé selon la langue."
+        }
+      },
+      {
+        "id": "typography-fonts",
+        "name": {
+          "en": "Three families and four weights",
+          "ar": "ثلاث عائلات وأربعة أوزان",
+          "fr": "Trois familles et quatre graisses"
+        },
+        "description": {
+          "en": "Compare IBM Plex Sans Arabic, Noto Sans Arabic, and Cairo at weights 400, 500, 600, and 700.",
+          "ar": "قارن IBM Plex Sans Arabic وNoto Sans Arabic وCairo بالأوزان 400 و500 و600 و700.",
+          "fr": "Comparez IBM Plex Sans Arabic, Noto Sans Arabic et Cairo aux graisses 400, 500, 600 et 700."
+        }
+      },
+      {
+        "id": "typography-wrapping",
+        "name": {
+          "en": "Text and wrapping comparison",
+          "ar": "مقارنة النص والتفافه",
+          "fr": "Comparaison du texte et des retours"
+        },
+        "description": {
+          "en": "Edit shared comparison text and inspect text expansion from 100% to 200%.",
+          "ar": "عدل نص المقارنة المشترك وافحص تكبير النص من 100% إلى 200%.",
+          "fr": "Modifiez le texte commun et examinez son agrandissement de 100% à 200%."
+        }
+      },
+      {
+        "id": "typography-language",
+        "name": {
+          "en": "Multilingual marks and shaping",
+          "ar": "العلامات والتشكيل متعدد اللغات",
+          "fr": "Signes et tracé multilingues"
+        },
+        "description": {
+          "en": "Review Arabic marks, French accents, and mixed-language names.",
+          "ar": "راجع التشكيل العربي واللكنات الفرنسية والأسماء متعددة اللغات.",
+          "fr": "Examinez les signes arabes, accents français et noms multilingues."
+        }
+      },
+      {
+        "id": "typography-numbers",
+        "name": {
+          "en": "Digits and identifiers",
+          "ar": "الأرقام والمعرفات",
+          "fr": "Chiffres et identifiants"
+        },
+        "description": {
+          "en": "Compare international digits, localized separators, and unchanged course identifiers.",
+          "ar": "قارن الأرقام الدولية وفواصل اللغة ومعرفات المقررات الثابتة.",
+          "fr": "Comparez les chiffres internationaux, séparateurs locaux et identifiants inchangés."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep the content, width, and theme constant during family comparison.",
+        "ar": "أبقِ المحتوى والعرض والسمة ثابتة أثناء مقارنة العائلات.",
+        "fr": "Gardez le contenu, la largeur et le thème constants pendant la comparaison."
+      },
+      {
+        "en": "Use weight 700 for limited emphasis. Keep added letter spacing at zero.",
+        "ar": "استخدم الوزن 700 للتأكيد المحدود. أبقِ تباعد الحروف الإضافي صفراً.",
+        "fr": "Réservez la graisse 700 à une emphase limitée. Gardez un espacement ajouté nul."
+      },
+      {
+        "en": "Compact density changes surrounding space. It keeps the approved text sizes.",
+        "ar": "تغير الكثافة المدمجة المساحة المحيطة. وتحافظ على أحجام النص المعتمدة.",
+        "fr": "La densité compacte modifie l’espace autour du texte. Elle conserve les tailles approuvées."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Confirm font availability before visual comparison. A fallback font does not prove the selected family loaded.",
+        "ar": "تأكد من توفر الخط قبل المقارنة البصرية. لا يثبت الخط البديل تحميل العائلة المختارة.",
+        "fr": "Confirmez la disponibilité avant comparaison. Une police de secours ne prouve pas le chargement de la famille."
+      },
+      {
+        "en": "Inspect Arabic marks and French accents at the 14px reference size.",
+        "ar": "افحص التشكيل العربي واللكنات الفرنسية عند الحجم المرجعي 14px.",
+        "fr": "Examinez les signes arabes et accents français à la taille de référence de 14px."
+      },
+      {
+        "en": "Use relative units and inspect long labels at 200% text scale.",
+        "ar": "استخدم الوحدات النسبية وافحص التسميات الطويلة عند تكبير النص إلى 200%.",
+        "fr": "Utilisez des unités relatives et examinez les libellés longs à 200%."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "spacing",
+    "name": {
+      "en": "Spacing and density",
+      "ar": "المسافات والكثافة"
+    },
+    "description": {
+      "en": "See every spacing value and the relationships it creates.",
+      "ar": "شاهد كل قيمة للمسافات والعلاقات التي تنشئها."
+    },
+    "icon": "Space",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default",
+      "stacked"
+    ],
+    "keywords": [
+      "spacing",
+      "Spacing and density",
+      "المسافات والكثافة",
+      "Espacement et densité",
+      "All 11 spacing values",
+      "كل قيم المسافات البالغ عددها 11",
+      "Les 11 valeurs d’espacement",
+      "Measured padding and gaps",
+      "الحشو والفجوات المقاسة",
+      "Marges et écarts mesurés",
+      "Stacked and inline composition",
+      "الترتيب الرأسي والأفقي",
+      "Composition empilée et en ligne",
+      "Comfortable and compact density",
+      "الكثافة المريحة والمدمجة",
+      "Densité confortable et compacte"
+    ],
+    "tokens": [
+      "--ref-space-0",
+      "--ref-space-2",
+      "--ref-space-4",
+      "--ref-space-6",
+      "--ref-space-8",
+      "--ref-space-12",
+      "--ref-space-16",
+      "--ref-space-24",
+      "--ref-space-32",
+      "--ref-space-48",
+      "--ref-space-64",
+      "--sys-control-min-height-comfortable",
+      "--sys-control-min-height-compact",
+      "--sys-target-min-width",
+      "--sys-target-min-height"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "spacing-scale",
+        "name": {
+          "en": "All 11 spacing values",
+          "ar": "كل قيم المسافات البالغ عددها 11",
+          "fr": "Les 11 valeurs d’espacement"
+        },
+        "description": {
+          "en": "Inspect measured bars, relative units, and padded specimens for every approved value.",
+          "ar": "افحص الأشرطة المقاسة والوحدات النسبية وأمثلة الحشو لكل قيمة معتمدة.",
+          "fr": "Examinez les barres mesurées, unités relatives et marges pour chaque valeur."
+        }
+      },
+      {
+        "id": "spacing-measure",
+        "name": {
+          "en": "Measured padding and gaps",
+          "ar": "الحشو والفجوات المقاسة",
+          "fr": "Marges et écarts mesurés"
+        },
+        "description": {
+          "en": "Choose approved padding and gap values independently.",
+          "ar": "اختر قيم الحشو والفجوة المعتمدة بصورة مستقلة.",
+          "fr": "Choisissez indépendamment les marges et écarts approuvés."
+        }
+      },
+      {
+        "id": "spacing-composition",
+        "name": {
+          "en": "Stacked and inline composition",
+          "ar": "الترتيب الرأسي والأفقي",
+          "fr": "Composition empilée et en ligne"
+        },
+        "description": {
+          "en": "Switch the same content between stacked and inline layouts.",
+          "ar": "بدل المحتوى نفسه بين ترتيب رأسي وأفقي.",
+          "fr": "Passez le même contenu d’une disposition empilée à une disposition en ligne."
+        }
+      },
+      {
+        "id": "spacing-density",
+        "name": {
+          "en": "Comfortable and compact density",
+          "ar": "الكثافة المريحة والمدمجة",
+          "fr": "Densité confortable et compacte"
+        },
+        "description": {
+          "en": "Compare surrounding space and 48px or 44px controls with equal text sizes.",
+          "ar": "قارن المساحة المحيطة وعناصر بارتفاع 48px أو 44px مع أحجام نص متساوية.",
+          "fr": "Comparez l’espace et les commandes de 48px ou 44px avec des tailles de texte égales."
+        }
+      },
+      {
+        "id": "spacing-usage-guide",
+        "name": {
+          "en": "Usage for all eleven spacing values",
+          "ar": "استخدام القيم الإحدى عشرة للمسافات"
+        },
+        "description": {
+          "en": "Usage for all eleven spacing values",
+          "ar": "استخدام القيم الإحدى عشرة للمسافات"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use only named values from the approved 2px spacing base.",
+        "ar": "استخدم القيم المسماة فقط من أساس المسافات المعتمد 2px.",
+        "fr": "Utilisez uniquement les valeurs nommées de la base approuvée de 2px."
+      },
+      {
+        "en": "Choose padding and content gaps independently. Use stacked composition for narrow forms.",
+        "ar": "اختر الحشو وفجوات المحتوى بصورة مستقلة. استخدم الترتيب الرأسي للنماذج الضيقة.",
+        "fr": "Choisissez les marges et écarts séparément. Utilisez une composition empilée pour les formulaires étroits."
+      },
+      {
+        "en": "Comfortable density is the default. Compact staff views retain readable text.",
+        "ar": "الكثافة المريحة هي الافتراضية. تحافظ عروض الموظفين المدمجة على نص مقروء.",
+        "fr": "La densité confortable est le défaut. Les vues compactes du personnel conservent un texte lisible."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Density changes must preserve 44px interaction targets.",
+        "ar": "يجب أن تحافظ تغييرات الكثافة على مناطق تفاعل 44px.",
+        "fr": "Les changements de densité doivent conserver des cibles de 44px."
+      },
+      {
+        "en": "Do not reduce typography to fit compact controls.",
+        "ar": "لا تقلل حجم الخط ليلائم العناصر المدمجة.",
+        "fr": "Ne réduisez pas la typographie pour les commandes compactes."
+      },
+      {
+        "en": "Controls grow when labels wrap or text expands.",
+        "ar": "تتمدد العناصر عندما تلتف التسميات أو يكبر النص.",
+        "fr": "Les commandes grandissent lorsque les libellés passent à la ligne ou que le texte augmente."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "grid",
+    "name": {
+      "en": "Grid and responsiveness",
+      "ar": "الشبكة والاستجابة"
+    },
+    "description": {
+      "en": "Explore alignment across narrow, medium, and wide layouts.",
+      "ar": "استكشف المحاذاة عبر أحجام الشاشات."
+    },
+    "icon": "Grid2X2",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "grid",
+      "Grid and responsiveness",
+      "الشبكة والاستجابة",
+      "Grille et adaptation",
+      "Four, eight, and twelve columns",
+      "أربعة وثمانية واثنا عشر عموداً",
+      "Quatre, huit et douze colonnes",
+      "Viewport presets and resizing",
+      "إعدادات العرض وتغيير الحجم",
+      "Préréglages et redimensionnement",
+      "Wrapping and controlled overflow",
+      "الالتفاف والتمرير المتحكم به",
+      "Retours à la ligne et défilement maîtrisé",
+      "Breakpoint measurements",
+      "قياسات نقاط التوقف",
+      "Mesures des points de rupture"
+    ],
+    "tokens": [
+      "--sys-layout-columns",
+      "--sys-layout-inline-padding",
+      "--sys-layout-column-gap",
+      "--ref-space-16",
+      "--ref-space-24",
+      "--ref-space-32"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "grid-columns",
+        "name": {
+          "en": "Four, eight, and twelve columns",
+          "ar": "أربعة وثمانية واثنا عشر عموداً",
+          "fr": "Quatre, huit et douze colonnes"
+        },
+        "description": {
+          "en": "Inspect column overlays, gaps, and outer padding at the approved breakpoints.",
+          "ar": "افحص طبقات الأعمدة والفجوات والحشو الخارجي عند نقاط التوقف المعتمدة.",
+          "fr": "Examinez les colonnes, écarts et marges aux points de rupture approuvés."
+        }
+      },
+      {
+        "id": "grid-viewports",
+        "name": {
+          "en": "Viewport presets and resizing",
+          "ar": "إعدادات العرض وتغيير الحجم",
+          "fr": "Préréglages et redimensionnement"
+        },
+        "description": {
+          "en": "Choose narrow, medium, or wide presets, or inspect any width from 320px to 1440px.",
+          "ar": "اختر عرضاً ضيقاً أو متوسطاً أو واسعاً أو افحص أي عرض من 320px إلى 1440px.",
+          "fr": "Choisissez une largeur prédéfinie ou examinez toute largeur de 320px à 1440px."
+        }
+      },
+      {
+        "id": "grid-overflow",
+        "name": {
+          "en": "Wrapping and controlled overflow",
+          "ar": "الالتفاف والتمرير المتحكم به",
+          "fr": "Retours à la ligne et défilement maîtrisé"
+        },
+        "description": {
+          "en": "Switch long content between wrapping and contained horizontal scrolling.",
+          "ar": "بدل المحتوى الطويل بين الالتفاف والتمرير الأفقي داخل الحاوية.",
+          "fr": "Passez les contenus longs entre retour à la ligne et défilement horizontal contenu."
+        }
+      },
+      {
+        "id": "grid-breakpoints",
+        "name": {
+          "en": "Breakpoint measurements",
+          "ar": "قياسات نقاط التوقف",
+          "fr": "Mesures des points de rupture"
+        },
+        "description": {
+          "en": "Inspect the exact minimum viewport, column count, padding, and gap.",
+          "ar": "افحص أدنى عرض دقيق وعدد الأعمدة والحشو والفجوة.",
+          "fr": "Examinez les largeurs minimales, nombres de colonnes, marges et écarts exacts."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use 4 columns below 768px, 8 from 768px, and 12 from 1200px.",
+        "ar": "استخدم 4 أعمدة قبل 768px و8 من 768px و12 من 1200px.",
+        "fr": "Utilisez 4 colonnes avant 768px, 8 dès 768px et 12 dès 1200px."
+      },
+      {
+        "en": "Use outer padding of 16px, 24px, and 32px for the three layouts.",
+        "ar": "استخدم حشواً خارجياً 16px و24px و32px للتخطيطات الثلاثة.",
+        "fr": "Utilisez des marges extérieures de 16px, 24px et 32px."
+      },
+      {
+        "en": "Forms and tables can span several columns. The grid guides alignment.",
+        "ar": "يمكن للنماذج والجداول الامتداد عبر عدة أعمدة. توجه الشبكة المحاذاة.",
+        "fr": "Les formulaires et tableaux peuvent couvrir plusieurs colonnes. La grille guide l’alignement."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Inspect Arabic layouts in right-to-left direction.",
+        "ar": "افحص التخطيطات العربية من اليمين إلى اليسار.",
+        "fr": "Examinez les dispositions arabes de droite à gauche."
+      },
+      {
+        "en": "The diagram scales to fit. Its controls remain outside the scaled region.",
+        "ar": "يتغير حجم المخطط ليلائم المساحة. تبقى عناصر التحكم خارج المنطقة المصغرة.",
+        "fr": "Le schéma se réduit pour tenir dans l’espace. Les commandes restent hors de la zone réduite."
+      },
+      {
+        "en": "Contain horizontal scrolling within the affected sample. Preserve text wrapping elsewhere.",
+        "ar": "احصر التمرير الأفقي داخل المثال المعني. حافظ على التفاف النص في بقية المناطق.",
+        "fr": "Contenez le défilement horizontal dans l’exemple concerné. Conservez les retours à la ligne ailleurs."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "borders",
+    "name": {
+      "en": "Borders and corners",
+      "ar": "الحدود والزوايا"
+    },
+    "description": {
+      "en": "Inspect boundaries, rounded corners, and visible state indicators.",
+      "ar": "افحص الحدود والزوايا ومؤشرات الحالة."
+    },
+    "icon": "Square",
+    "states": [
+      "default",
+      "selected",
+      "invalid"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "borders",
+      "Borders and corners",
+      "الحدود والزوايا",
+      "Bordures et angles",
+      "Corner scale and avatars",
+      "مقياس الزوايا والصور الشخصية",
+      "Échelle des angles et avatars",
+      "Coordinated nested corners",
+      "زوايا داخلية منسقة",
+      "Angles imbriqués coordonnés",
+      "Semantic border purposes",
+      "استخدامات الحدود الدلالية",
+      "Rôles sémantiques des bordures",
+      "Focus, selection, and invalid state",
+      "التركيز والتحديد والحالة غير الصالحة",
+      "Focus, sélection et état invalide"
+    ],
+    "tokens": [
+      "--sys-radius-small",
+      "--sys-radius-control",
+      "--sys-radius-panel",
+      "--sys-radius-large-container",
+      "--sys-radius-avatar",
+      "--sys-border-width",
+      "--sys-focus-ring-width",
+      "--sys-focus-ring-gap",
+      "--sys-color-border-subtle",
+      "--sys-color-border-default",
+      "--sys-color-border-control",
+      "--sys-color-border-strong",
+      "--sys-color-border-selected",
+      "--sys-color-input-invalid-border"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "borders-corners",
+        "name": {
+          "en": "Corner scale and avatars",
+          "ar": "مقياس الزوايا والصور الشخصية",
+          "fr": "Échelle des angles et avatars"
+        },
+        "description": {
+          "en": "Inspect 4px, 8px, 12px, 16px, and circular shapes. Copy each radius.",
+          "ar": "افحص الأشكال بزوايا 4px و8px و12px و16px والدائرة. انسخ كل نصف قطر.",
+          "fr": "Examinez les formes de 4px, 8px, 12px, 16px et circulaires. Copiez chaque rayon."
+        }
+      },
+      {
+        "id": "borders-nested",
+        "name": {
+          "en": "Coordinated nested corners",
+          "ar": "زوايا داخلية منسقة",
+          "fr": "Angles imbriqués coordonnés"
+        },
+        "description": {
+          "en": "Inspect a 16px outer corner with 4px padding and a 12px inner corner.",
+          "ar": "افحص زاوية خارجية 16px وحشواً 4px وزاوية داخلية 12px.",
+          "fr": "Examinez un angle extérieur de 16px, une marge de 4px et un angle intérieur de 12px."
+        }
+      },
+      {
+        "id": "borders-purposes",
+        "name": {
+          "en": "Semantic border purposes",
+          "ar": "استخدامات الحدود الدلالية",
+          "fr": "Rôles sémantiques des bordures"
+        },
+        "description": {
+          "en": "Compare subtle, default, control, and strong 1px boundaries.",
+          "ar": "قارن الحدود الخافتة والافتراضية وحدود التحكم والقوية بسُمك 1px.",
+          "fr": "Comparez les limites discrètes, par défaut, de commande et fortes de 1px."
+        }
+      },
+      {
+        "id": "borders-states",
+        "name": {
+          "en": "Focus, selection, and invalid state",
+          "ar": "التركيز والتحديد والحالة غير الصالحة",
+          "fr": "Focus, sélection et état invalide"
+        },
+        "description": {
+          "en": "Focus an editable field and toggle selection or validation feedback.",
+          "ar": "ركز حقلاً قابلاً للتحرير وبدل التحديد أو رسالة التحقق.",
+          "fr": "Placez le focus dans un champ et modifiez la sélection ou la validation."
+        }
+      },
+      {
+        "id": "radius-usage-guide",
+        "name": {
+          "en": "Usage for every radius",
+          "ar": "استخدام كل نصف قطر"
+        },
+        "description": {
+          "en": "Usage for every radius",
+          "ar": "استخدام كل نصف قطر"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Match each radius to its purpose. Keep ordinary borders at 1px.",
+        "ar": "طابق كل نصف قطر مع غرضه. أبقِ الحدود العادية بسُمك 1px.",
+        "fr": "Associez chaque rayon à son rôle. Gardez les bordures ordinaires à 1px."
+      },
+      {
+        "en": "Coordinate nested radii with the padding between surfaces.",
+        "ar": "نسق الزوايا الداخلية مع الحشو بين الأسطح.",
+        "fr": "Coordonnez les rayons imbriqués avec la marge entre les surfaces."
+      },
+      {
+        "en": "Use semantic border roles rather than arbitrary colors.",
+        "ar": "استخدم أدوار الحدود الدلالية بدلاً من ألوان عشوائية.",
+        "fr": "Utilisez les rôles de bordure sémantiques plutôt que des couleurs arbitraires."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Keyboard focus uses a 2px ring with a 2px gap.",
+        "ar": "يستخدم تركيز لوحة المفاتيح حلقة 2px وفجوة 2px.",
+        "fr": "Le focus clavier utilise un anneau de 2px avec un écart de 2px."
+      },
+      {
+        "en": "Selected and invalid states include text or an icon alongside color.",
+        "ar": "تتضمن حالتا التحديد وعدم الصلاحية نصاً أو أيقونة بجانب اللون.",
+        "fr": "Les états sélectionnés et invalides incluent du texte ou une icône en plus de la couleur."
+      },
+      {
+        "en": "Validation feedback connects to its field through an accessible description.",
+        "ar": "تتصل رسالة التحقق بحقلها من خلال وصف وصول.",
+        "fr": "Le message de validation est associé au champ par une description accessible."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "icons",
+    "name": {
+      "en": "Icons",
+      "ar": "الأيقونات"
+    },
+    "description": {
+      "en": "One outline family, three sizes, consistent meaning.",
+      "ar": "عائلة واحدة وثلاثة أحجام ومعنى متسق."
+    },
+    "icon": "Shapes",
+    "states": [
+      "default",
+      "selected",
+      "no-results"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "icons",
+      "Icons",
+      "الأيقونات",
+      "Icônes",
+      "Searchable Lucide library",
+      "مكتبة Lucide قابلة للبحث",
+      "Bibliothèque Lucide consultable",
+      "Three proportional icon sizes",
+      "ثلاثة أحجام متناسبة للأيقونات",
+      "Trois tailles proportionnelles",
+      "Named icon-only actions",
+      "إجراءات أيقونات فقط بأسماء واضحة",
+      "Actions à icône seule nommées",
+      "Text alignment and reading direction",
+      "محاذاة النص واتجاه القراءة",
+      "Alignement du texte et sens de lecture"
+    ],
+    "tokens": [
+      "--ref-icon-stroke-width",
+      "--sys-icon-size-compact",
+      "--sys-icon-size-default",
+      "--sys-icon-size-prominent",
+      "--sys-target-min-width",
+      "--sys-target-min-height",
+      "--sys-color-icon-default",
+      "--sys-color-icon-muted"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "icons-library",
+        "name": {
+          "en": "Searchable Lucide library",
+          "ar": "مكتبة Lucide قابلة للبحث",
+          "fr": "Bibliothèque Lucide consultable"
+        },
+        "description": {
+          "en": "Search real icon names and localized meanings. Select a specimen.",
+          "ar": "ابحث بأسماء الأيقونات الحقيقية ومعانيها المترجمة. اختر مثالاً.",
+          "fr": "Recherchez les noms réels et les sens traduits. Sélectionnez un exemple."
+        }
+      },
+      {
+        "id": "icons-sizes",
+        "name": {
+          "en": "Three proportional icon sizes",
+          "ar": "ثلاثة أحجام متناسبة للأيقونات",
+          "fr": "Trois tailles proportionnelles"
+        },
+        "description": {
+          "en": "Inspect the selected icon at 16px, 20px, and 24px with 44px targets.",
+          "ar": "افحص الأيقونة المختارة بأحجام 16px و20px و24px داخل مناطق 44px.",
+          "fr": "Examinez l’icône à 16px, 20px et 24px dans des cibles de 44px."
+        }
+      },
+      {
+        "id": "icons-names",
+        "name": {
+          "en": "Named icon-only actions",
+          "ar": "إجراءات أيقونات فقط بأسماء واضحة",
+          "fr": "Actions à icône seule nommées"
+        },
+        "description": {
+          "en": "Save the selected icon locally, download its settings, or reset the sample.",
+          "ar": "احفظ الأيقونة المختارة محلياً أو نزل إعداداتها أو أعد ضبط المثال.",
+          "fr": "Enregistrez l’icône, téléchargez ses paramètres ou réinitialisez l’exemple."
+        }
+      },
+      {
+        "id": "icons-direction",
+        "name": {
+          "en": "Text alignment and reading direction",
+          "ar": "محاذاة النص واتجاه القراءة",
+          "fr": "Alignement du texte et sens de lecture"
+        },
+        "description": {
+          "en": "Compare label alignment and directional arrows while decorative symbols retain their shape.",
+          "ar": "قارن محاذاة التسميات والأسهم الاتجاهية مع احتفاظ الرموز الزخرفية بشكلها.",
+          "fr": "Comparez l’alignement et les flèches directionnelles. Les symboles décoratifs gardent leur forme."
+        }
+      },
+      {
+        "id": "icons-usage-guide",
+        "name": {
+          "en": "Usage for all icon sizes",
+          "ar": "استخدام جميع أحجام الأيقونات"
+        },
+        "description": {
+          "en": "Usage for all icon sizes",
+          "ar": "استخدام جميع أحجام الأيقونات"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use Lucide outlines with native proportions, a 24px canvas, and a 2px stroke.",
+        "ar": "استخدم خطوط Lucide بنسبها الأصلية ولوحة 24px وسُمك 2px.",
+        "fr": "Utilisez les contours Lucide avec leurs proportions natives, un canevas de 24px et un trait de 2px."
+      },
+      {
+        "en": "Use visible labels where they improve recognition. Inspect small icon optics separately.",
+        "ar": "استخدم التسميات المرئية عندما تحسن التعرف. افحص وضوح الأيقونات الصغيرة بصورة منفصلة.",
+        "fr": "Utilisez des libellés lorsque la reconnaissance s’améliore. Examinez séparément les petites tailles."
+      },
+      {
+        "en": "Mirror reading-direction arrows. Keep non-directional symbols in their native orientation.",
+        "ar": "اعكس الأسهم المرتبطة باتجاه القراءة. أبقِ الرموز غير الاتجاهية في اتجاهها الأصلي.",
+        "fr": "Inversez les flèches de lecture. Gardez l’orientation native des symboles non directionnels."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Icon-only controls need an accessible name on their interactive wrapper.",
+        "ar": "تحتاج عناصر الأيقونات فقط إلى اسم وصول على غلافها التفاعلي.",
+        "fr": "Les commandes à icône seule exigent un nom accessible sur leur enveloppe interactive."
+      },
+      {
+        "en": "Visible icon size does not reduce the minimum 44px target.",
+        "ar": "لا يقلل حجم الأيقونة المرئي الحد الأدنى لمنطقة التفاعل 44px.",
+        "fr": "La taille visible de l’icône ne réduit pas la cible minimale de 44px."
+      },
+      {
+        "en": "Decorative icons stay hidden from assistive technology when visible text conveys the meaning.",
+        "ar": "تبقى الأيقونات الزخرفية مخفية عن التقنيات المساعدة عندما يوضح النص المرئي المعنى.",
+        "fr": "Masquez les icônes décoratives aux aides techniques lorsque le texte visible donne le sens."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "elevation",
+    "name": {
+      "en": "Elevation and layers",
+      "ar": "الارتفاع والطبقات"
+    },
+    "description": {
+      "en": "Understand floating surfaces, stacking, and focus ownership.",
+      "ar": "افهم الأسطح العائمة وترتيب الطبقات والتركيز."
+    },
+    "icon": "Layers",
+    "states": [
+      "default",
+      "expanded"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "elevation",
+      "Elevation and layers",
+      "الارتفاع والطبقات",
+      "Élévation et calques",
+      "Flat, low, and high surfaces",
+      "الأسطح المسطحة والمنخفضة والمرتفعة",
+      "Surfaces plates, basses et hautes",
+      "Interactive dropdown layer",
+      "طبقة قائمة منسدلة تفاعلية",
+      "Couche de liste interactive",
+      "Dialog stack and focus ownership",
+      "طبقات الحوار والتحكم بالتركيز",
+      "Pile de dialogues et propriété du focus",
+      "Modal backdrop",
+      "خلفية الحوار المعتمة",
+      "Voile modal",
+      "Directional drawer",
+      "درج يتبع اتجاه الواجهة",
+      "Tiroir directionnel",
+      "Sticky surface",
+      "سطح ثابت أثناء التمرير",
+      "Surface fixe au défilement"
+    ],
+    "tokens": [
+      "--sys-shadow-flat",
+      "--sys-shadow-low",
+      "--sys-shadow-high",
+      "--sys-color-bg-surface",
+      "--sys-color-bg-raised",
+      "--sys-color-border-default",
+      "--sys-radius-panel",
+      "--sys-radius-large-container"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "elevation-levels",
+        "name": {
+          "en": "Flat, low, and high surfaces",
+          "ar": "الأسطح المسطحة والمنخفضة والمرتفعة",
+          "fr": "Surfaces plates, basses et hautes"
+        },
+        "description": {
+          "en": "Inspect geometry and both theme opacities for every elevation level.",
+          "ar": "افحص الأبعاد وعتامة السمتين لكل مستوى ارتفاع.",
+          "fr": "Examinez la géométrie et les opacités des deux thèmes pour chaque niveau."
+        }
+      },
+      {
+        "id": "elevation-dropdown",
+        "name": {
+          "en": "Interactive dropdown layer",
+          "ar": "طبقة قائمة منسدلة تفاعلية",
+          "fr": "Couche de liste interactive"
+        },
+        "description": {
+          "en": "Open a low surface, choose an action, and inspect the visible result.",
+          "ar": "افتح سطحاً منخفضاً واختر إجراءً وافحص النتيجة المرئية.",
+          "fr": "Ouvrez une surface basse, choisissez une action et examinez le résultat."
+        }
+      },
+      {
+        "id": "elevation-dialog",
+        "name": {
+          "en": "Dialog stack and focus ownership",
+          "ar": "طبقات الحوار والتحكم بالتركيز",
+          "fr": "Pile de dialogues et propriété du focus"
+        },
+        "description": {
+          "en": "Open a dialog, an inner popover, and a second dialog layer.",
+          "ar": "افتح حواراً ونافذة داخلية صغيرة وطبقة حوار ثانية.",
+          "fr": "Ouvrez un dialogue, une fenêtre interne et une seconde couche de dialogue."
+        }
+      },
+      {
+        "id": "elevation-backdrop",
+        "name": {
+          "en": "Modal backdrop",
+          "ar": "خلفية الحوار المعتمة",
+          "fr": "Voile modal"
+        },
+        "description": {
+          "en": "Inspect the backdrop and outside dismissal while the dialog owns focus.",
+          "ar": "افحص الخلفية والإغلاق من الخارج بينما يحتفظ الحوار بالتركيز.",
+          "fr": "Examinez le voile et la fermeture extérieure pendant que le dialogue garde le focus."
+        }
+      },
+      {
+        "id": "elevation-drawer",
+        "name": {
+          "en": "Directional drawer",
+          "ar": "درج يتبع اتجاه الواجهة",
+          "fr": "Tiroir directionnel"
+        },
+        "description": {
+          "en": "Open a review drawer, edit a note, and apply it to the sample result.",
+          "ar": "افتح درج المراجعة وعدل ملاحظة وطبقها على نتيجة المثال.",
+          "fr": "Ouvrez un tiroir, modifiez une note et appliquez-la au résultat."
+        }
+      },
+      {
+        "id": "elevation-sticky",
+        "name": {
+          "en": "Sticky surface",
+          "ar": "سطح ثابت أثناء التمرير",
+          "fr": "Surface fixe au défilement"
+        },
+        "description": {
+          "en": "Toggle the sticky header and scroll through sample records.",
+          "ar": "بدل ثبات العنوان ومرر عبر السجلات التجريبية.",
+          "fr": "Activez l’en-tête fixe et parcourez les dossiers d’exemple."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep pages, fields, tables, and ordinary cards flat.",
+        "ar": "أبقِ الصفحات والحقول والجداول والبطاقات العادية مسطحة.",
+        "fr": "Gardez les pages, champs, tableaux et cartes ordinaires plats."
+      },
+      {
+        "en": "Use low elevation for menus and popovers. Use high elevation for dialogs and floating panels.",
+        "ar": "استخدم الارتفاع المنخفض للقوائم والنوافذ الصغيرة. استخدم المرتفع للحوارات واللوحات العائمة.",
+        "fr": "Utilisez l’élévation basse pour les menus. Utilisez l’élévation haute pour les dialogues et panneaux flottants."
+      },
+      {
+        "en": "Dark mode relies on raised surfaces and clear borders for separation.",
+        "ar": "يعتمد الوضع الداكن على أسطح مرتفعة وحدود واضحة للفصل.",
+        "fr": "Le thème sombre sépare les couches par des surfaces surélevées et des bordures nettes."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Only the top modal owns focus. Close it to return to the previous layer.",
+        "ar": "يحتفظ الحوار العلوي وحده بالتركيز. أغلقه للعودة إلى الطبقة السابقة.",
+        "fr": "Seule la fenêtre supérieure possède le focus. Fermez-la pour revenir à la couche précédente."
+      },
+      {
+        "en": "Escape closes dismissible surfaces and returns focus to their trigger.",
+        "ar": "يغلق Escape الأسطح القابلة للإغلاق ويعيد التركيز إلى مشغلها.",
+        "fr": "Échap ferme les surfaces révocables et rend le focus au déclencheur."
+      },
+      {
+        "en": "The scroll region accepts keyboard focus. Sticky content must not cover focused controls.",
+        "ar": "تقبل منطقة التمرير تركيز لوحة المفاتيح. يجب ألا يغطي المحتوى الثابت العناصر المركزة.",
+        "fr": "La zone défilante reçoit le focus clavier. Le contenu fixe ne doit pas masquer les commandes ciblées."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "motion",
+    "name": {
+      "en": "Motion",
+      "ar": "الحركة"
+    },
+    "description": {
+      "en": "Purposeful transitions with immediate feedback.",
+      "ar": "انتقالات هادفة مع استجابة فورية."
+    },
+    "icon": "Play",
+    "states": [
+      "default",
+      "pending",
+      "success"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "motion",
+      "Motion",
+      "الحركة",
+      "Mouvement",
+      "Approved durations and replay",
+      "الأزمنة المعتمدة وإعادة التشغيل",
+      "Durées approuvées et relecture",
+      "Entry and exit transitions",
+      "انتقالات الدخول والخروج",
+      "Transitions d’entrée et de sortie",
+      "Reduced-motion comparison",
+      "مقارنة الحركة المخفضة",
+      "Comparaison du mouvement réduit",
+      "Immediate pending and confirmed feedback",
+      "استجابة الانتظار والتأكيد الفورية",
+      "Retours immédiats d’attente et de confirmation",
+      "Immediate theme switch",
+      "تبديل السمة الفوري",
+      "Changement de thème immédiat"
+    ],
+    "tokens": [
+      "--sys-motion-duration-fast",
+      "--sys-motion-duration-standard",
+      "--sys-motion-duration-slow",
+      "--sys-motion-duration-feedback",
+      "--sys-motion-duration-theme"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "motion-timing",
+        "name": {
+          "en": "Approved durations and replay",
+          "ar": "الأزمنة المعتمدة وإعادة التشغيل",
+          "fr": "Durées approuvées et relecture"
+        },
+        "description": {
+          "en": "Replay 120ms, 180ms, and 240ms examples. Inspect hover and pressed changes.",
+          "ar": "أعد تشغيل أمثلة 120ms و180ms و240ms. افحص تغيرات المرور والضغط.",
+          "fr": "Rejouez les exemples de 120ms, 180ms et 240ms. Examinez le survol et la pression."
+        }
+      },
+      {
+        "id": "motion-entry-exit",
+        "name": {
+          "en": "Entry and exit transitions",
+          "ar": "انتقالات الدخول والخروج",
+          "fr": "Transitions d’entrée et de sortie"
+        },
+        "description": {
+          "en": "Expand a 180ms section and open or close a 240ms panel.",
+          "ar": "وسع قسماً خلال 180ms وافتح أو أغلق لوحة خلال 240ms.",
+          "fr": "Développez une section de 180ms et ouvrez ou fermez un panneau de 240ms."
+        }
+      },
+      {
+        "id": "motion-reduced",
+        "name": {
+          "en": "Reduced-motion comparison",
+          "ar": "مقارنة الحركة المخفضة",
+          "fr": "Comparaison du mouvement réduit"
+        },
+        "description": {
+          "en": "Compare standard movement with immediate final states and respect the system preference.",
+          "ar": "قارن الحركة القياسية بالحالات النهائية الفورية واحترم إعداد النظام.",
+          "fr": "Comparez le mouvement standard aux états finaux immédiats en respectant le système."
+        }
+      },
+      {
+        "id": "motion-feedback",
+        "name": {
+          "en": "Immediate pending and confirmed feedback",
+          "ar": "استجابة الانتظار والتأكيد الفورية",
+          "fr": "Retours immédiats d’attente et de confirmation"
+        },
+        "description": {
+          "en": "Show pending or confirmed feedback without a delay.",
+          "ar": "اعرض استجابة الانتظار أو التأكيد دون تأخير.",
+          "fr": "Affichez un retour d’attente ou de confirmation sans délai."
+        }
+      },
+      {
+        "id": "motion-theme",
+        "name": {
+          "en": "Immediate theme switch",
+          "ar": "تبديل السمة الفوري",
+          "fr": "Changement de thème immédiat"
+        },
+        "description": {
+          "en": "Switch the local sample between approved light and dark mappings without animation.",
+          "ar": "بدل المثال المحلي بين الربط الفاتح والداكن المعتمد دون حركة.",
+          "fr": "Passez l’exemple local entre les thèmes approuvés sans animation."
+        }
+      },
+      {
+        "id": "motion-curves-springs",
+        "name": {
+          "en": "Easing and spring workbench",
+          "ar": "مختبر المنحنيات والنوابض"
+        },
+        "description": {
+          "en": "Easing and spring workbench",
+          "ar": "مختبر المنحنيات والنوابض"
+        }
+      },
+      {
+        "id": "motion-recipes",
+        "name": {
+          "en": "Interaction motion recipes",
+          "ar": "وصفات حركة التفاعل"
+        },
+        "description": {
+          "en": "Interaction motion recipes",
+          "ar": "وصفات حركة التفاعل"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use 120ms for small hover changes, 180ms for menus, and 240ms for dialogs or panels.",
+        "ar": "استخدم 120ms لتغيرات المرور الصغيرة و180ms للقوائم و240ms للحوارات أو اللوحات.",
+        "fr": "Utilisez 120ms pour le survol, 180ms pour les menus et 240ms pour les dialogues ou panneaux."
+      },
+      {
+        "en": "Show focus, pending feedback, and theme changes immediately.",
+        "ar": "اعرض التركيز واستجابة الانتظار وتغييرات السمة فوراً.",
+        "fr": "Affichez immédiatement le focus, les retours d’attente et les changements de thème."
+      },
+      {
+        "en": "Easing curves remain subject to visual review. The examples use provisional linear timing.",
+        "ar": "تظل منحنيات الحركة خاضعة للمراجعة البصرية. تستخدم الأمثلة توقيتاً خطياً مؤقتاً.",
+        "fr": "Les courbes restent soumises à l’examen visuel. Les exemples utilisent provisoirement un rythme linéaire."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "System reduced-motion preferences take precedence over the local switch.",
+        "ar": "تحظى إعدادات تقليل الحركة في النظام بالأولوية على المفتاح المحلي.",
+        "fr": "Les préférences système de mouvement réduit sont prioritaires sur le réglage local."
+      },
+      {
+        "en": "Remove non-essential movement while preserving the final state and immediate feedback.",
+        "ar": "أزل الحركة غير الضرورية مع الحفاظ على الحالة النهائية والاستجابة الفورية.",
+        "fr": "Supprimez le mouvement non essentiel en conservant l’état final et les retours immédiats."
+      },
+      {
+        "en": "Animation must never delay interaction or a confirmed result.",
+        "ar": "يجب ألا تؤخر الحركة التفاعل أو النتيجة المؤكدة.",
+        "fr": "L’animation ne doit jamais retarder une interaction ou un résultat confirmé."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Foundations",
+    "id": "accessibility",
+    "name": {
+      "en": "Accessibility and language",
+      "ar": "الإتاحة واللغة"
+    },
+    "description": {
+      "en": "Check focus, targets, text expansion, and mixed direction.",
+      "ar": "افحص التركيز والأهداف وتمدد النص واتجاهاته."
+    },
+    "icon": "Accessibility",
+    "states": [
+      "default",
+      "invalid"
+    ],
+    "variants": [
+      "default",
+      "long-content"
+    ],
+    "keywords": [
+      "accessibility",
+      "Accessibility and language",
+      "الإتاحة واللغة",
+      "Accessibilité et langue",
+      "Keyboard route and focus",
+      "مسار لوحة المفاتيح والتركيز",
+      "Parcours clavier et focus",
+      "Targets and visible icons",
+      "مناطق التفاعل والأيقونات المرئية",
+      "Cibles et icônes visibles",
+      "Long labels and text expansion",
+      "التسميات الطويلة وتكبير النص",
+      "Libellés longs et agrandissement",
+      "Language, mixed direction, and digits",
+      "اللغة والاتجاه المختلط والأرقام",
+      "Langue, sens mixte et chiffres",
+      "Observable status announcements",
+      "إعلانات حالة مرئية",
+      "Annonces d’état observables"
+    ],
+    "tokens": [
+      "--sys-target-min-width",
+      "--sys-target-min-height",
+      "--sys-control-min-height-comfortable",
+      "--sys-control-min-height-compact",
+      "--sys-focus-ring-width",
+      "--sys-focus-ring-gap",
+      "--sys-color-focus-ring",
+      "--sys-color-input-invalid-border",
+      "--sys-color-input-invalid-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "accessibility-keyboard",
+        "name": {
+          "en": "Keyboard route and focus",
+          "ar": "مسار لوحة المفاتيح والتركيز",
+          "fr": "Parcours clavier et focus"
+        },
+        "description": {
+          "en": "Use the skip link and inspect the sample form with Tab, Shift+Tab, Space, and Enter.",
+          "ar": "استخدم رابط التجاوز وافحص النموذج عبر Tab وShift+Tab والمسافة وEnter.",
+          "fr": "Utilisez le lien d’évitement et examinez le formulaire avec Tab, Maj+Tab, Espace et Entrée."
+        }
+      },
+      {
+        "id": "accessibility-targets",
+        "name": {
+          "en": "Targets and visible icons",
+          "ar": "مناطق التفاعل والأيقونات المرئية",
+          "fr": "Cibles et icônes visibles"
+        },
+        "description": {
+          "en": "Inspect 16px, 20px, and 24px icons inside separate 44px targets.",
+          "ar": "افحص أيقونات 16px و20px و24px داخل مناطق تفاعل منفصلة 44px.",
+          "fr": "Examinez des icônes de 16px, 20px et 24px dans des cibles séparées de 44px."
+        }
+      },
+      {
+        "id": "accessibility-expansion",
+        "name": {
+          "en": "Long labels and text expansion",
+          "ar": "التسميات الطويلة وتكبير النص",
+          "fr": "Libellés longs et agrandissement"
+        },
+        "description": {
+          "en": "Toggle long labels, scale text to 200%, and submit the accessible sample form.",
+          "ar": "بدل التسميات الطويلة وكبر النص إلى 200% وأرسل نموذج المثال المتاح.",
+          "fr": "Activez les libellés longs, agrandissez à 200% et validez le formulaire accessible."
+        }
+      },
+      {
+        "id": "accessibility-language",
+        "name": {
+          "en": "Language, mixed direction, and digits",
+          "ar": "اللغة والاتجاه المختلط والأرقام",
+          "fr": "Langue, sens mixte et chiffres"
+        },
+        "description": {
+          "en": "Inspect language declarations, isolated identifiers, and international digits in three languages.",
+          "ar": "افحص تعريف اللغات والمعرفات المعزولة والأرقام الدولية في ثلاث لغات.",
+          "fr": "Examinez les langues déclarées, identifiants isolés et chiffres internationaux dans trois langues."
+        }
+      },
+      {
+        "id": "accessibility-announcements",
+        "name": {
+          "en": "Observable status announcements",
+          "ar": "إعلانات حالة مرئية",
+          "fr": "Annonces d’état observables"
+        },
+        "description": {
+          "en": "Announce a sample result through the visible live status region.",
+          "ar": "أعلن نتيجة المثال عبر منطقة الحالة الحية المرئية.",
+          "fr": "Annoncez le résultat dans la zone d’état dynamique visible."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Inspect focus, targets, validation, language, and text expansion together.",
+        "ar": "افحص التركيز ومناطق التفاعل والتحقق واللغة وتكبير النص معاً.",
+        "fr": "Examinez ensemble le focus, les cibles, la validation, la langue et l’agrandissement."
+      },
+      {
+        "en": "Use international digits in all three languages. Preserve original identifiers.",
+        "ar": "استخدم الأرقام الدولية في اللغات الثلاث. احتفظ بالمعرفات الأصلية.",
+        "fr": "Utilisez les chiffres internationaux dans les trois langues. Conservez les identifiants d’origine."
+      },
+      {
+        "en": "Use the examples for manual review with your preferred assistive technology.",
+        "ar": "استخدم الأمثلة للمراجعة اليدوية مع التقنية المساعدة المفضلة.",
+        "fr": "Utilisez les exemples pour un examen manuel avec votre aide technique préférée."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Keep targets at least 44 by 44px without overlaps in both density modes.",
+        "ar": "أبقِ مناطق التفاعل 44 × 44px على الأقل دون تداخل في وضعي الكثافة.",
+        "fr": "Gardez des cibles d’au moins 44 par 44px sans chevauchement dans les deux densités."
+      },
+      {
+        "en": "Connect validation text to the invalid field and move focus to the field when submission fails.",
+        "ar": "اربط نص التحقق بالحقل غير الصالح وانقل التركيز إليه عند فشل الإرسال.",
+        "fr": "Associez le message au champ invalide et placez le focus dans ce champ si la validation échoue."
+      },
+      {
+        "en": "Declare the language and direction of mixed passages. Isolate identifiers with bidirectional markup.",
+        "ar": "حدد لغة المقاطع المختلطة واتجاهها. اعزل المعرفات بعلامات الاتجاه الثنائي.",
+        "fr": "Déclarez la langue et le sens des passages mixtes. Isolez les identifiants avec le balisage bidirectionnel."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "buttons",
+    "name": {
+      "en": "Buttons and actions",
+      "ar": "الأزرار والإجراءات"
+    },
+    "description": {
+      "en": "Primary, secondary, destructive, grouped, and pending actions.",
+      "ar": "إجراءات أساسية وثانوية وحذف وتجميع وانتظار."
+    },
+    "icon": "MousePointer2",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "pressed",
+      "selected",
+      "disabled",
+      "pending"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "buttons",
+      "Buttons and actions",
+      "الأزرار والإجراءات",
+      "Boutons et actions"
+    ],
+    "tokens": [
+      "action-primary-bg",
+      "action-primary-hover",
+      "action-primary-fg",
+      "border-control"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "buttons-actions-and-links",
+        "name": {
+          "en": "Actions and links",
+          "ar": "الإجراءات والروابط",
+          "fr": "Actions et liens"
+        },
+        "description": {
+          "en": "Primary, secondary, ghost, destructive, and link actions with local results.",
+          "ar": "إجراءات رئيسية وثانوية وخفيفة وحذف وروابط بنتائج محلية.",
+          "fr": "Actions principales, secondaires, discrètes, destructives et liens avec résultats locaux."
+        }
+      },
+      {
+        "id": "buttons-toggle-and-icon-actions",
+        "name": {
+          "en": "Toggle and icon actions",
+          "ar": "التبديل وأزرار الأيقونات",
+          "fr": "Boutons bascule et icônes"
+        },
+        "description": {
+          "en": "Toggle, icon-only, disabled, and pending buttons with named controls.",
+          "ar": "أزرار تبديل وأيقونات وتعطيل وانتظار مع تسميات.",
+          "fr": "Boutons bascule, icônes, désactivés et en attente avec noms accessibles."
+        }
+      },
+      {
+        "id": "buttons-split-action-and-button-group",
+        "name": {
+          "en": "Split action and button group",
+          "ar": "إجراء مقسم ومجموعة أزرار",
+          "fr": "Action divisée et groupe"
+        },
+        "description": {
+          "en": "Split export choices and a bounded decrement/increment group.",
+          "ar": "خيارات تصدير مقسمة ومجموعة زيادة وتقليل محددة.",
+          "fr": "Choix d’export divisés et groupe de diminution et augmentation limité."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use one primary action for the main task. Show immediate feedback during local pending operations.",
+        "ar": "استخدم إجراء رئيسيًا واحدًا للمهمة الأساسية. اعرض استجابة فورية خلال العمليات المحلية المعلقة.",
+        "fr": "Utilisez une action principale pour la tâche. Affichez une réponse immédiate pendant les opérations locales."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Icon buttons have accessible names. Toggle buttons expose their pressed state.",
+        "ar": "تملك أزرار الأيقونات أسماء متاحة. تعرض أزرار التبديل حالة الضغط.",
+        "fr": "Les boutons icônes ont un nom accessible. Les boutons bascule exposent leur état."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "fields",
+    "name": {
+      "en": "Text fields",
+      "ar": "حقول النص"
+    },
+    "description": {
+      "en": "Labels, help, validation, and editable text inputs.",
+      "ar": "تسميات ومساعدة وتحقق وحقول نص قابلة للتحرير."
+    },
+    "icon": "TextCursorInput",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "read-only",
+      "invalid",
+      "empty",
+      "success"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "fields",
+      "Text fields",
+      "حقول النص",
+      "Champs de texte"
+    ],
+    "tokens": [
+      "input-bg",
+      "input-border",
+      "input-focus-border",
+      "input-invalid-border",
+      "text-primary"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "fields-text-fields",
+        "name": {
+          "en": "Text fields",
+          "ar": "حقول النص",
+          "fr": "Champs de texte"
+        },
+        "description": {
+          "en": "Name, email, password visibility, search, clear, help, and validation.",
+          "ar": "اسم وبريد وإظهار كلمة المرور وبحث ومسح ومساعدة وتحقق.",
+          "fr": "Nom, courriel, visibilité du mot de passe, recherche, effacement, aide et validation."
+        }
+      },
+      {
+        "id": "fields-specialized-fields",
+        "name": {
+          "en": "Specialized fields",
+          "ar": "الحقول المتخصصة",
+          "fr": "Champs spécialisés"
+        },
+        "description": {
+          "en": "Phone, URL affix, verification code, textarea count, read-only, and disabled fields.",
+          "ar": "هاتف وبادئة رابط ورمز تحقق وعد نص وحقل قراءة فقط وحقل معطل.",
+          "fr": "Téléphone, préfixe URL, code de vérification, compteur de texte et champs en lecture seule ou désactivés."
+        }
+      },
+      {
+        "id": "fields-required-optional-and-suffix",
+        "name": {
+          "en": "Required, optional, and suffix fields",
+          "ar": "حقول مطلوبة واختيارية وذات لاحقة",
+          "fr": "Champs obligatoires, facultatifs et suffixes"
+        },
+        "description": {
+          "en": "Required, optional, and suffix fields",
+          "ar": "حقول مطلوبة واختيارية وذات لاحقة",
+          "fr": "Champs obligatoires, facultatifs et suffixes"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep labels visible. Preserve entered data when theme, font, language, or density changes.",
+        "ar": "أبق التسميات ظاهرة. احتفظ بالبيانات عند تغيير السمة والخط واللغة والكثافة.",
+        "fr": "Gardez les libellés visibles. Conservez les données lors des changements de présentation."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Labels, hints, and errors describe their native inputs. Password visibility buttons name their action.",
+        "ar": "تصف التسميات والتلميحات والأخطاء حقولها. تسمي أزرار إظهار كلمة المرور إجراءاتها.",
+        "fr": "Les libellés, aides et erreurs décrivent les champs. Les boutons du mot de passe nomment leur action."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "numbers",
+    "name": {
+      "en": "Numeric fields",
+      "ar": "الحقول الرقمية"
+    },
+    "description": {
+      "en": "Quantities, limits, currency, and international digits.",
+      "ar": "كميات وحدود وعملات وأرقام دولية."
+    },
+    "icon": "Hash",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled",
+      "invalid"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "numbers",
+      "Numeric fields",
+      "الحقول الرقمية",
+      "Champs numériques"
+    ],
+    "tokens": [
+      "input-bg",
+      "input-border",
+      "text-primary",
+      "text-secondary"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "numbers-numeric-entry",
+        "name": {
+          "en": "Numeric entry",
+          "ar": "إدخال الأرقام",
+          "fr": "Saisie numérique"
+        },
+        "description": {
+          "en": "Credit stepper, tuition currency, GPA limits, and percentage entry.",
+          "ar": "زيادة الساعات وعملة الرسوم وحدود المعدل وإدخال النسبة.",
+          "fr": "Compteur de crédits, frais, limites de moyenne et saisie du pourcentage."
+        }
+      },
+      {
+        "id": "numbers-locale-formatting",
+        "name": {
+          "en": "Locale formatting",
+          "ar": "تنسيق الأرقام حسب اللغة",
+          "fr": "Format des nombres"
+        },
+        "description": {
+          "en": "Locale currency, decimal, percentage, quantity, and isolated unchanged identifier.",
+          "ar": "عملة وأعداد عشرية ونسب وكميات حسب اللغة ومعرف معزول دون تغيير.",
+          "fr": "Devise, décimales, pourcentage, quantité et identifiant isolé inchangé."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Format quantities by locale. Keep identifiers separate from quantity formatting.",
+        "ar": "نسق الكميات حسب اللغة. افصل المعرفات عن تنسيق الكميات.",
+        "fr": "Formatez les quantités selon la langue. Séparez les identifiants du format des quantités."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Numeric controls expose limits and labels. Mixed-direction identifiers use bidirectional isolation.",
+        "ar": "تعرض حقول الأرقام الحدود والتسميات. تستخدم المعرفات عزل اتجاه النص.",
+        "fr": "Les champs numériques exposent leurs limites et libellés. Les identifiants utilisent l’isolation bidirectionnelle."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "selection",
+    "name": {
+      "en": "Selection",
+      "ar": "الاختيار"
+    },
+    "description": {
+      "en": "Choose one item, several items, or a range.",
+      "ar": "اختر عنصراً أو عدة عناصر أو نطاقاً."
+    },
+    "icon": "ListChecks",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled",
+      "invalid"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "selection",
+      "Selection",
+      "الاختيار",
+      "Sélection"
+    ],
+    "tokens": [
+      "action-primary-bg",
+      "input-border",
+      "bg-selected",
+      "input-focus-border"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "selection-checkboxes-and-indeterminate-state",
+        "name": {
+          "en": "Checkboxes and indeterminate state",
+          "ar": "مربعات الاختيار والحالة الجزئية",
+          "fr": "Cases à cocher et état partiel"
+        },
+        "description": {
+          "en": "Select all, partial selection, individual documents, and selected count.",
+          "ar": "تحديد الكل والاختيار الجزئي والمستندات المنفردة والعدد المحدد.",
+          "fr": "Tout sélectionner, sélection partielle, documents et compteur."
+        }
+      },
+      {
+        "id": "selection-radio-and-switch",
+        "name": {
+          "en": "Radio and switch",
+          "ar": "اختيار واحد ومفتاح تبديل",
+          "fr": "Boutons radio et interrupteur"
+        },
+        "description": {
+          "en": "Delivery radio group and an email notification switch.",
+          "ar": "مجموعة اختيار تسليم ومفتاح إشعارات البريد.",
+          "fr": "Groupe radio de réception et interrupteur des notifications."
+        }
+      },
+      {
+        "id": "selection-select-and-searchable-combo-box",
+        "name": {
+          "en": "Select and searchable combo box",
+          "ar": "قائمة واختيار قابل للبحث",
+          "fr": "Sélection et liste de recherche"
+        },
+        "description": {
+          "en": "Keyboard select and searchable React Aria course combo box.",
+          "ar": "قائمة باختصارات لوحة المفاتيح واختيار مقرر قابل للبحث باستخدام React Aria.",
+          "fr": "Sélection au clavier et liste de cours avec recherche React Aria."
+        }
+      },
+      {
+        "id": "selection-multiple-selection",
+        "name": {
+          "en": "Multiple selection",
+          "ar": "اختيار متعدد",
+          "fr": "Sélection multiple"
+        },
+        "description": {
+          "en": "Multiple research interests and removable selected tags.",
+          "ar": "اهتمامات بحث متعددة ووسوم محددة قابلة للحذف.",
+          "fr": "Plusieurs domaines de recherche et étiquettes amovibles."
+        }
+      },
+      {
+        "id": "selection-segmented-control-and-ranges",
+        "name": {
+          "en": "Segmented control and ranges",
+          "ar": "تحكم مقسم ونطاقات",
+          "fr": "Commande segmentée et plages"
+        },
+        "description": {
+          "en": "Day/week/month segments, study-load slider, and bounded time range.",
+          "ar": "أقسام يوم وأسبوع وشهر ومنزلق عبء دراسي ونطاق وقت محدد.",
+          "fr": "Segments jour, semaine et mois, curseur de charge et plage horaire limitée."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use radio for one visible choice. Use a searchable combo box for a longer option list.",
+        "ar": "استخدم الاختيار الواحد للخيارات الظاهرة. استخدم البحث للقوائم الطويلة.",
+        "fr": "Utilisez les boutons radio pour un choix visible. Utilisez la recherche pour une longue liste."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "React Aria provides keyboard selection, indeterminate state, list navigation, and focus behavior.",
+        "ar": "توفر React Aria الاختيار بلوحة المفاتيح والحالة الجزئية والتنقل والتركيز.",
+        "fr": "React Aria fournit la sélection au clavier, l’état partiel, la navigation et le focus."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "dates",
+    "name": {
+      "en": "Dates and time",
+      "ar": "التاريخ والوقت"
+    },
+    "description": {
+      "en": "Pick dates, ranges, times, and academic periods.",
+      "ar": "اختر التواريخ والنطاقات والأوقات والفترات الدراسية."
+    },
+    "icon": "CalendarDays",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "dates",
+      "Dates and time",
+      "التاريخ والوقت",
+      "Dates et heures"
+    ],
+    "tokens": [
+      "bg-selected",
+      "border-selected",
+      "bg-disabled",
+      "text-disabled",
+      "input-border"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "dates-calendar-and-date-range",
+        "name": {
+          "en": "Calendar and date range",
+          "ar": "التقويم ونطاق التاريخ",
+          "fr": "Calendrier et période"
+        },
+        "description": {
+          "en": "Month controls, single date, range, blocked weekends, holiday, and keyboard date navigation.",
+          "ar": "تحكم الأشهر وتاريخ واحد ونطاق وحظر العطلات وتنقل لوحة المفاتيح.",
+          "fr": "Mois, date unique, plage, week-ends bloqués, jour férié et navigation au clavier."
+        }
+      },
+      {
+        "id": "dates-date-time-and-academic-period",
+        "name": {
+          "en": "Date, time, and academic period",
+          "ar": "التاريخ والوقت والفترة الأكاديمية",
+          "fr": "Date, heure et période universitaire"
+        },
+        "description": {
+          "en": "Date fields, quarter-hour time, academic period, and explicit sample today.",
+          "ar": "حقول التاريخ ووقت ربع ساعة وفترة أكاديمية ويوم تجريبي صريح.",
+          "fr": "Dates, heure par quart d’heure, période universitaire et jour exemple."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep the timezone visible. Explain unavailable dates before the user selects a date.",
+        "ar": "أبق المنطقة الزمنية ظاهرة. اشرح التواريخ غير المتاحة قبل الاختيار.",
+        "fr": "Gardez le fuseau horaire visible. Expliquez les dates indisponibles avant le choix."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Calendar buttons support arrows, Home, End, Page Up, and Page Down. Dates have full accessible labels.",
+        "ar": "تدعم أزرار التقويم الأسهم وHome وEnd وPage Up وPage Down. للتواريخ تسميات كاملة.",
+        "fr": "Le calendrier accepte les flèches, Début, Fin et Page précédente ou suivante. Les dates ont un libellé complet."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "badges",
+    "name": {
+      "en": "Badges and tags",
+      "ar": "الشارات والوسوم"
+    },
+    "description": {
+      "en": "Compact status, categories, counts, and removable filters.",
+      "ar": "حالات وفئات وأعداد ومرشحات قابلة للإزالة."
+    },
+    "icon": "Tag",
+    "states": [
+      "default",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "badges",
+      "Badges and tags",
+      "الشارات والوسوم",
+      "Badges et étiquettes"
+    ],
+    "tokens": [
+      "success-text",
+      "warning-text",
+      "danger-text",
+      "info-text",
+      "border-default"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "badges-semantic-status",
+        "name": {
+          "en": "Semantic status",
+          "ar": "حالة ذات دلالة",
+          "fr": "Statut sémantique"
+        },
+        "description": {
+          "en": "Neutral, information, warning, success, and danger statuses with icons and text.",
+          "ar": "حالات محايدة ومعلومات وتحذير ونجاح وخطر مع أيقونات ونص.",
+          "fr": "Statuts neutre, information, avertissement, succès et danger avec icônes et texte."
+        }
+      },
+      {
+        "id": "badges-tags-chips-and-counts",
+        "name": {
+          "en": "Tags, chips, and counts",
+          "ar": "الوسوم والمرشحات والأعداد",
+          "fr": "Étiquettes, filtres et compteurs"
+        },
+        "description": {
+          "en": "Removable course tags, filter chips, unread count, and presence dot.",
+          "ar": "وسوم مقررات قابلة للحذف ومرشحات وعد غير المقروء ونقطة حضور.",
+          "fr": "Étiquettes de cours amovibles, filtres, compteur et point de présence."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use a short status label and an icon. Keep actions separate from passive status.",
+        "ar": "استخدم تسمية حالة قصيرة وأيقونة. افصل الإجراءات عن عرض الحالة.",
+        "fr": "Utilisez un statut court et une icône. Séparez les actions du statut passif."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Status meaning includes text. Tag removal buttons name the tag. Filter chips expose pressed state.",
+        "ar": "يتضمن معنى الحالة نصًا. تسمي أزرار الحذف الوسم. تعرض المرشحات حالة الضغط.",
+        "fr": "Le statut comprend du texte. Les boutons de suppression nomment l’étiquette. Les filtres exposent leur état."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "identity",
+    "name": {
+      "en": "Identity and records",
+      "ar": "الهوية والسجلات"
+    },
+    "description": {
+      "en": "Avatars, metadata, and readable record summaries.",
+      "ar": "صور رمزية وبيانات وملخصات سجلات واضحة."
+    },
+    "icon": "Contact",
+    "states": [
+      "default",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "identity",
+      "Identity and records",
+      "الهوية والسجلات",
+      "Identité et dossiers"
+    ],
+    "tokens": [
+      "bg-selected",
+      "text-brand",
+      "border-subtle",
+      "success-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "identity-avatar-and-presence",
+        "name": {
+          "en": "Avatar and presence",
+          "ar": "الصورة والحضور",
+          "fr": "Avatar et présence"
+        },
+        "description": {
+          "en": "Student avatar, fallback, presence choices, record identifier, and profile dialog.",
+          "ar": "صورة الطالب والبديل والحضور والمعرف وحوار الملف.",
+          "fr": "Avatar étudiant, remplacement, présence, identifiant et dialogue du profil."
+        }
+      },
+      {
+        "id": "identity-avatar-sizes-and-groups",
+        "name": {
+          "en": "Avatar sizes and groups",
+          "ar": "أحجام الصور والمجموعات",
+          "fr": "Tailles et groupes"
+        },
+        "description": {
+          "en": "Small, standard, large, and grouped avatars with an overflow action.",
+          "ar": "صور صغيرة وعادية وكبيرة ومجمعة وإجراء لعرض المزيد.",
+          "fr": "Avatars petits, standards, grands et groupés avec action supplémentaire."
+        }
+      },
+      {
+        "id": "identity-record-header-and-description-list",
+        "name": {
+          "en": "Record header and description list",
+          "ar": "عنوان السجل وقائمة بياناته",
+          "fr": "En-tête et liste descriptive"
+        },
+        "description": {
+          "en": "Record header and description list",
+          "ar": "عنوان السجل وقائمة بياناته",
+          "fr": "En-tête et liste descriptive"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Pair identity with readable names and identifiers. Use a fallback when an image is unavailable.",
+        "ar": "اربط الهوية بأسماء ومعرفات مقروءة. استخدم بديلًا عند غياب الصورة.",
+        "fr": "Associez l’identité à des noms et identifiants lisibles. Prévoyez un remplacement de l’image."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "The avatar group has an accessible team label. Presence includes a text label and icon.",
+        "ar": "تملك مجموعة الصور تسمية للفريق. يتضمن الحضور نصًا وأيقونة.",
+        "fr": "Le groupe d’avatars possède un nom accessible. La présence comprend du texte et une icône."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "containers",
+    "name": {
+      "en": "Containers and layout",
+      "ar": "الحاويات والتخطيط"
+    },
+    "description": {
+      "en": "Panels, accordions, divisions, and action regions.",
+      "ar": "لوحات ومناطق قابلة للطي وفواصل وإجراءات."
+    },
+    "icon": "PanelsTopLeft",
+    "states": [
+      "default",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "containers",
+      "Containers and layout",
+      "الحاويات والتخطيط",
+      "Conteneurs et disposition"
+    ],
+    "tokens": [
+      "bg-surface",
+      "bg-subtle",
+      "border-default",
+      "border-selected"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "containers-card-and-section",
+        "name": {
+          "en": "Card and section",
+          "ar": "البطاقة والقسم",
+          "fr": "Carte et section"
+        },
+        "description": {
+          "en": "Course card, section, metadata, selection action, and divider.",
+          "ar": "بطاقة مقرر وقسم وبيانات واختيار وفاصل.",
+          "fr": "Carte de cours, section, métadonnées, sélection et séparateur."
+        }
+      },
+      {
+        "id": "containers-accordion-and-disclosure",
+        "name": {
+          "en": "Accordion and disclosure",
+          "ar": "الأكورديون والكشف",
+          "fr": "Accordéon et détails"
+        },
+        "description": {
+          "en": "Independent accordion sections with disclosure controls and local actions.",
+          "ar": "أقسام أكورديون مستقلة مع كشف وإجراءات محلية.",
+          "fr": "Sections indépendantes avec commandes de détails et actions locales."
+        }
+      },
+      {
+        "id": "containers-tabs-and-panels",
+        "name": {
+          "en": "Tabs and panels",
+          "ar": "علامات التبويب واللوحات",
+          "fr": "Onglets et panneaux"
+        },
+        "description": {
+          "en": "Keyboard tabs for overview, documents, and history panels.",
+          "ar": "علامات تبويب للنظرة العامة والمستندات والسجل بلوحة المفاتيح.",
+          "fr": "Onglets au clavier pour aperçu, documents et historique."
+        }
+      },
+      {
+        "id": "containers-resizable-layout-and-banner",
+        "name": {
+          "en": "Resizable layout and banner",
+          "ar": "تخطيط قابل لتغيير الحجم ولافتة",
+          "fr": "Disposition réglable et bannière"
+        },
+        "description": {
+          "en": "Adjustable two-column layout and dismissible session banner.",
+          "ar": "تخطيط عمودين قابل للتعديل ولافتة قابلة للإغلاق.",
+          "fr": "Disposition réglable sur deux colonnes et bannière refermable."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Group related content with clear headings. Use a disclosure for secondary details.",
+        "ar": "اجمع المحتوى المرتبط بعناوين واضحة. استخدم الكشف للتفاصيل الثانوية.",
+        "fr": "Regroupez le contenu lié avec des titres clairs. Réservez les détails secondaires aux sections dépliables."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Tab panels connect to their tabs. Disclosure controls expose expanded state. Layout resize uses a labeled slider.",
+        "ar": "ترتبط اللوحات بعلامات تبويبها. تعرض أدوات الكشف حالة التوسيع. يملك منزلق الحجم تسمية.",
+        "fr": "Les panneaux sont liés aux onglets. Les détails exposent leur état. Le curseur de taille possède un libellé."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "navigation",
+    "name": {
+      "en": "Navigation",
+      "ar": "التنقل"
+    },
+    "description": {
+      "en": "Orient, move, search, and keep a clear current position.",
+      "ar": "حدد موقعك وتنقل وابحث بوضوح."
+    },
+    "icon": "PanelLeft",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "navigation",
+      "Navigation",
+      "التنقل",
+      "Navigation"
+    ],
+    "tokens": [
+      "nav-text",
+      "text-brand",
+      "action-primary-bg",
+      "border-default"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "navigation-breadcrumbs-and-navigation",
+        "name": {
+          "en": "Breadcrumbs and navigation",
+          "ar": "مسار التنقل والتنقل",
+          "fr": "Fil d’Ariane et navigation"
+        },
+        "description": {
+          "en": "Breadcrumbs, navbar, collapsible sidebar specimen, local page content, and action search dialog.",
+          "ar": "مسار تنقل وشريط علوي وشريط جانبي تجريبي ومحتوى محلي وحوار بحث.",
+          "fr": "Fil d’Ariane, barre supérieure, volet latéral exemple, contenu local et recherche d’actions."
+        }
+      },
+      {
+        "id": "navigation-pagination",
+        "name": {
+          "en": "Pagination",
+          "ar": "ترقيم الصفحات",
+          "fr": "Pagination"
+        },
+        "description": {
+          "en": "Bounded previous/next and numbered page controls.",
+          "ar": "إجراءات سابق وتال وأرقام صفحات محددة.",
+          "fr": "Commandes précédente, suivante et pages numérotées limitées."
+        }
+      },
+      {
+        "id": "navigation-step-navigation",
+        "name": {
+          "en": "Step navigation",
+          "ar": "التنقل بين الخطوات",
+          "fr": "Navigation par étapes"
+        },
+        "description": {
+          "en": "Three selectable steps and a local continue/restart action.",
+          "ar": "ثلاث خطوات قابلة للاختيار وإجراء متابعة وإعادة محلي.",
+          "fr": "Trois étapes sélectionnables et action locale pour continuer ou recommencer."
+        }
+      },
+      {
+        "id": "navigation-anchors-and-overflow",
+        "name": {
+          "en": "Anchors and overflow navigation",
+          "ar": "روابط داخلية وتنقل إضافي",
+          "fr": "Ancres et navigation supplémentaire"
+        },
+        "description": {
+          "en": "Anchors and overflow navigation",
+          "ar": "روابط داخلية وتنقل إضافي",
+          "fr": "Ancres et navigation supplémentaire"
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "These specimens evaluate component behavior. They do not approve product routes or navigation structure.",
+        "ar": "تقيس هذه الأمثلة سلوك المكونات. لا تعتمد مسارات المنتج أو هيكل التنقل.",
+        "fr": "Ces exemples évaluent les composants. Ils ne valident ni les routes ni la structure du produit."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Current links, pages, and steps expose their state. The action search uses a focus-managed dialog.",
+        "ar": "تعرض الروابط والصفحات والخطوات حالتها. يستخدم البحث حوارًا مع إدارة التركيز.",
+        "fr": "Les liens, pages et étapes courants exposent leur état. La recherche utilise un dialogue avec gestion du focus."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "lists",
+    "name": {
+      "en": "Lists and trees",
+      "ar": "القوائم والأشجار"
+    },
+    "description": {
+      "en": "Grouped collections and expandable hierarchies.",
+      "ar": "مجموعات مرتبة وتسلسلات قابلة للتوسيع."
+    },
+    "icon": "ListTree",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "lists",
+      "Lists and trees",
+      "القوائم والأشجار",
+      "Listes et arborescences"
+    ],
+    "tokens": [
+      "bg-selected",
+      "border-selected",
+      "text-primary",
+      "border-subtle"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "lists-selectable-and-reorderable-list",
+        "name": {
+          "en": "Selectable and reorderable list",
+          "ar": "قائمة قابلة للاختيار والترتيب",
+          "fr": "Liste sélectionnable et réorganisable"
+        },
+        "description": {
+          "en": "Searchable record list with selection, drag reorder, and keyboard-accessible move buttons.",
+          "ar": "قائمة سجلات قابلة للبحث والاختيار والسحب وأزرار تحريك بلوحة المفاتيح.",
+          "fr": "Liste de dossiers avec recherche, sélection, déplacement par glisser et boutons accessibles."
+        }
+      },
+      {
+        "id": "lists-hierarchy-and-description-list",
+        "name": {
+          "en": "Hierarchy and description list",
+          "ar": "التسلسل الهرمي وقائمة الوصف",
+          "fr": "Hiérarchie et descriptions"
+        },
+        "description": {
+          "en": "Expandable faculty/department hierarchy and a selected course description list.",
+          "ar": "تسلسل كلية وقسم قابل للتوسيع وقائمة وصف المقرر المحدد.",
+          "fr": "Hiérarchie faculté et département dépliable et descriptions du cours choisi."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Provide move buttons beside drag controls. Keep hierarchy labels visible.",
+        "ar": "وفر أزرار تحريك بجانب السحب. أبق تسميات التسلسل ظاهرة.",
+        "fr": "Prévoyez des boutons de déplacement avec le glisser. Gardez les libellés de hiérarchie visibles."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "All reorder actions work without drag. Hierarchy buttons expose expanded state.",
+        "ar": "تعمل جميع إجراءات الترتيب دون سحب. تعرض أزرار التسلسل حالة التوسيع.",
+        "fr": "Toutes les actions de déplacement fonctionnent sans glisser. La hiérarchie expose son état déplié."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "tables",
+    "name": {
+      "en": "Tables",
+      "ar": "الجداول"
+    },
+    "description": {
+      "en": "Search, sort, select, resize, and act on sample records.",
+      "ar": "ابحث ورتب وحدد وعدل الأعمدة والسجلات التجريبية."
+    },
+    "icon": "Table2",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "selected",
+      "disabled",
+      "pending",
+      "empty",
+      "no-results",
+      "error",
+      "success"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "tables",
+      "Tables",
+      "الجداول",
+      "Tableaux"
+    ],
+    "tokens": [
+      "bg-subtle",
+      "bg-selected",
+      "border-default",
+      "border-selected",
+      "text-primary"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "tables-student-records-table",
+        "name": {
+          "en": "Student records table",
+          "ar": "جدول سجلات الطلاب",
+          "fr": "Tableau des dossiers étudiants"
+        },
+        "description": {
+          "en": "Search, sorting, status/year filters, partial selection, pagination, column visibility, pointer/keyboard resizing, expansion, bulk updates, and CSV export.",
+          "ar": "بحث وترتيب ومرشحات حالة وسنة واختيار جزئي وصفحات وأعمدة وحجم بلوحة المفاتيح وتوسيع وتحديث جماعي وتصدير CSV.",
+          "fr": "Recherche, tri, filtres, sélection partielle, pagination, visibilité et taille des colonnes, détails, actions groupées et export CSV."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Keep filters and selection visible. Explain bulk results. Limit horizontal scroll to the table container.",
+        "ar": "أبق المرشحات والاختيار ظاهرين. اشرح نتائج التحديث الجماعي. احصر التمرير الأفقي داخل الجدول.",
+        "fr": "Gardez les filtres et la sélection visibles. Expliquez les résultats groupés. Limitez le défilement horizontal au tableau."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Native table headers expose sorting. Selection has names and partial state. Column handles support arrow keys.",
+        "ar": "تعرض رؤوس الجدول الترتيب. تملك الاختيارات أسماء وحالة جزئية. تدعم مقابض الأعمدة الأسهم.",
+        "fr": "Les en-têtes exposent le tri. La sélection possède des noms et un état partiel. Les poignées acceptent les flèches."
+      }
+    ],
+    "recommendedDensity": "compact"
+  },
+  {
+    "group": "Components",
+    "id": "feedback",
+    "name": {
+      "en": "Feedback",
+      "ar": "رسائل الاستجابة"
+    },
+    "description": {
+      "en": "Messages, progress, loading, and empty results.",
+      "ar": "رسائل وتقدم وتحميل ونتائج فارغة."
+    },
+    "icon": "MessageCircle",
+    "states": [
+      "default",
+      "disabled",
+      "pending",
+      "error",
+      "success"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "feedback",
+      "Feedback",
+      "رسائل الاستجابة",
+      "Messages et états"
+    ],
+    "tokens": [
+      "success-text",
+      "danger-text",
+      "warning-text",
+      "info-text",
+      "bg-pressed"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "feedback-inline-alerts-and-banners",
+        "name": {
+          "en": "Inline alerts and banners",
+          "ar": "تنبيهات ولافتات",
+          "fr": "Alertes et bannières"
+        },
+        "description": {
+          "en": "Semantic alerts, dismissible banner, toast controls, and inline email validation.",
+          "ar": "تنبيهات دلالية ولافتة قابلة للإغلاق وإشعارات وتحقق بريد.",
+          "fr": "Alertes sémantiques, bannière refermable, notifications et validation du courriel."
+        }
+      },
+      {
+        "id": "feedback-progress-pending-and-retry",
+        "name": {
+          "en": "Progress, pending, and retry",
+          "ar": "التقدم والانتظار وإعادة المحاولة",
+          "fr": "Progression, attente et nouvel essai"
+        },
+        "description": {
+          "en": "Deterministic progress, pending skeleton, cancellation, failure, and retry.",
+          "ar": "تقدم محدد ومحتوى بديل وانتظار وإلغاء وفشل وإعادة محاولة.",
+          "fr": "Progression déterministe, squelette, attente, annulation, échec et nouvel essai."
+        }
+      },
+      {
+        "id": "feedback-empty-and-no-results-states",
+        "name": {
+          "en": "Empty and no-results states",
+          "ar": "الحالة الفارغة وعدم وجود نتائج",
+          "fr": "État vide et aucun résultat"
+        },
+        "description": {
+          "en": "No-results explanation with a clear-filter recovery action.",
+          "ar": "شرح عدم النتائج مع إجراء لمسح المرشح.",
+          "fr": "Explication de l’absence de résultats avec action de rétablissement."
+        }
+      },
+      {
+        "id": "feedback-offline-and-connection-status",
+        "name": {
+          "en": "Offline and connection status",
+          "ar": "حالة الاتصال وانقطاعه",
+          "fr": "État de connexion"
+        },
+        "description": {
+          "en": "Offline simulation, reconnection, and confirmed connection feedback.",
+          "ar": "محاكاة انقطاع وإعادة اتصال واستجابة تأكيد.",
+          "fr": "Simulation hors ligne, reconnexion et confirmation de connexion."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Show immediate pending feedback. Keep recovery actions beside errors. Confirm only completed results.",
+        "ar": "اعرض الانتظار فورًا. ضع إجراءات الاستعادة بجانب الأخطاء. أكد النتائج المكتملة فقط.",
+        "fr": "Affichez l’attente immédiatement. Placez la récupération près des erreurs. Confirmez uniquement les résultats terminés."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Alerts announce errors. Status regions announce results. Progress controls expose numeric values and labels.",
+        "ar": "تعلن التنبيهات الأخطاء. تعلن مناطق الحالة النتائج. تعرض أدوات التقدم القيم والتسميات.",
+        "fr": "Les alertes annoncent les erreurs. Les zones de statut annoncent les résultats. Les progressions exposent valeurs et libellés."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "overlays",
+    "name": {
+      "en": "Overlays",
+      "ar": "النوافذ العائمة"
+    },
+    "description": {
+      "en": "Dialogs, drawers, menus, popovers, and tooltips.",
+      "ar": "حوارات وأدراج وقوائم ونوافذ وتلميحات."
+    },
+    "icon": "PanelsTopLeft",
+    "states": [
+      "default",
+      "hover",
+      "focus",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "overlays",
+      "Overlays",
+      "النوافذ العائمة",
+      "Superpositions"
+    ],
+    "tokens": [
+      "bg-raised",
+      "border-default",
+      "bg-inverse",
+      "text-on-inverse"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "overlays-dialog-drawer-and-confirmation",
+        "name": {
+          "en": "Dialog, drawer, and confirmation",
+          "ar": "الحوار واللوحة والتأكيد",
+          "fr": "Dialogue, panneau et confirmation"
+        },
+        "description": {
+          "en": "React Aria edit dialog, detail drawer, and focus-contained removal confirmation.",
+          "ar": "حوار تعديل React Aria ولوحة تفاصيل وتأكيد حذف مع حصر التركيز.",
+          "fr": "Dialogue React Aria, panneau de détails et confirmation avec focus contenu."
+        }
+      },
+      {
+        "id": "overlays-popover-and-tooltip",
+        "name": {
+          "en": "Popover and tooltip",
+          "ar": "النافذة المنبثقة والتلميح",
+          "fr": "Fenêtre contextuelle et infobulle"
+        },
+        "description": {
+          "en": "Interactive popover and hover/focus tooltip with named trigger.",
+          "ar": "نافذة تفاعلية وتلميح عند المرور والتركيز مع زر مسمى.",
+          "fr": "Fenêtre interactive et infobulle au survol ou au focus avec bouton nommé."
+        }
+      },
+      {
+        "id": "overlays-action-menu",
+        "name": {
+          "en": "Action menu",
+          "ar": "قائمة الإجراءات",
+          "fr": "Menu d’actions"
+        },
+        "description": {
+          "en": "Keyboard menu with copy, archive, separators, and disabled action.",
+          "ar": "قائمة بلوحة المفاتيح ونسخ وأرشفة وفواصل وإجراء معطل.",
+          "fr": "Menu au clavier avec copie, archivage, séparateur et action désactivée."
+        }
+      },
+      {
+        "id": "overlays-context-menu",
+        "name": {
+          "en": "Context menu",
+          "ar": "القائمة السياقية",
+          "fr": "Menu contextuel"
+        },
+        "description": {
+          "en": "Record context menu through right-click, Shift+F10, or activation.",
+          "ar": "قائمة سجل سياقية بالنقر الأيمن أو Shift+F10 أو التفعيل.",
+          "fr": "Menu contextuel du dossier par clic droit, Maj+F10 ou activation."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Use a dialog for decisions. Use a popover for short related controls. Keep tooltips informational.",
+        "ar": "استخدم الحوار للقرارات والنافذة للتحكم القصير. اجعل التلميحات للمعلومات.",
+        "fr": "Utilisez un dialogue pour les décisions et une fenêtre pour les commandes courtes. Réservez l’infobulle aux informations."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "React Aria manages focus, Escape, and menu keys. Confirmation initially focuses the safe action.",
+        "ar": "تدير React Aria التركيز وEscape ومفاتيح القائمة. يبدأ التأكيد بالإجراء الآمن.",
+        "fr": "React Aria gère le focus, Échap et les touches du menu. La confirmation cible l’action sûre."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "files",
+    "name": {
+      "en": "Files and documents",
+      "ar": "الملفات والمستندات"
+    },
+    "description": {
+      "en": "Choose, inspect, upload, cancel, and retry sample files.",
+      "ar": "اختر وافحص وارفع وألغ وأعد محاولة الملفات."
+    },
+    "icon": "FileUp",
+    "states": [
+      "default",
+      "disabled",
+      "pending",
+      "empty",
+      "error",
+      "success"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "files",
+      "Files and documents",
+      "الملفات والمستندات",
+      "Fichiers et documents"
+    ],
+    "tokens": [
+      "bg-subtle",
+      "border-control",
+      "border-selected",
+      "input-invalid-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "files-document-selection-and-validation",
+        "name": {
+          "en": "Document selection and validation",
+          "ar": "اختيار المستندات والتحقق",
+          "fr": "Sélection et validation des documents"
+        },
+        "description": {
+          "en": "File chooser and drop zone, type/size validation, progress, cancellation, failure, retry, image/PDF/text preview, download, and removal.",
+          "ar": "اختيار وإفلات ملفات وتحقق نوع وحجم وتقدم وإلغاء وفشل وإعادة ومعاينة صور وPDF ونص وتنزيل وحذف.",
+          "fr": "Sélection et dépôt, validation, progression, annulation, échec, nouvel essai, aperçu image/PDF/texte, téléchargement et suppression."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Explain accepted formats and limits. Keep all prototype files local. Separate invalid files from failed uploads.",
+        "ar": "اشرح الصيغ والحدود. أبق الملفات محلية. افصل الملفات غير الصالحة عن الرفع الفاشل.",
+        "fr": "Expliquez les formats et limites. Gardez les fichiers locaux. Séparez les fichiers non valides des échecs de chargement."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "File selection works without drag. Upload status includes text and progress. Each file has named actions.",
+        "ar": "يعمل الاختيار دون سحب. تتضمن حالة الرفع نصًا وتقدمًا. لكل ملف إجراءات مسماة.",
+        "fr": "La sélection fonctionne sans glisser. Le statut contient du texte et une progression. Chaque fichier possède des actions nommées."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "charts",
+    "name": {
+      "en": "Charts and progress",
+      "ar": "الرسوم والتقدم"
+    },
+    "description": {
+      "en": "Compare data visually and through accessible tables.",
+      "ar": "قارن البيانات بصرياً ومن خلال جداول واضحة."
+    },
+    "icon": "ChartNoAxesCombined",
+    "states": [
+      "default",
+      "disabled",
+      "empty"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "charts",
+      "Charts and progress",
+      "الرسوم والتقدم",
+      "Graphiques et progression"
+    ],
+    "tokens": [
+      "chart-1",
+      "chart-2",
+      "chart-grid",
+      "chart-axis",
+      "bg-raised"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "charts-chart-controls-and-legend",
+        "name": {
+          "en": "Chart controls and legend",
+          "ar": "عناصر الرسم والمفتاح",
+          "fr": "Commandes et légende"
+        },
+        "description": {
+          "en": "Cohort selection, independently toggled legend series, reset, and data export.",
+          "ar": "اختيار دفعة وتبديل مجموعات المفتاح وإعادة وتصدير بيانات.",
+          "fr": "Choix du groupe, séries indépendantes, restauration et export."
+        }
+      },
+      {
+        "id": "charts-bar-chart",
+        "name": {
+          "en": "Bar chart",
+          "ar": "رسم بالأعمدة",
+          "fr": "Diagramme en barres"
+        },
+        "description": {
+          "en": "Recharts enrollment bar chart with localized ticks and tooltip.",
+          "ar": "أعمدة قيد Recharts مع أرقام وتلميحات حسب اللغة.",
+          "fr": "Barres Recharts avec graduations et infobulle adaptées."
+        }
+      },
+      {
+        "id": "charts-line-chart",
+        "name": {
+          "en": "Line chart",
+          "ar": "رسم خطي",
+          "fr": "Courbes"
+        },
+        "description": {
+          "en": "Recharts line trends with distinct line patterns and data points.",
+          "ar": "اتجاهات خطوط Recharts بأنماط مختلفة ونقاط بيانات.",
+          "fr": "Courbes Recharts avec motifs et points distincts."
+        }
+      },
+      {
+        "id": "charts-area-chart",
+        "name": {
+          "en": "Area chart",
+          "ar": "رسم مساحي",
+          "fr": "Aires"
+        },
+        "description": {
+          "en": "Recharts area chart with semantic series colors.",
+          "ar": "رسم مساحة Recharts بألوان دلالية.",
+          "fr": "Aires Recharts avec couleurs sémantiques."
+        }
+      },
+      {
+        "id": "charts-donut-and-measured-progress",
+        "name": {
+          "en": "Donut and measured progress",
+          "ar": "رسم حلقي وتقدم مقاس",
+          "fr": "Anneau et progression mesurée"
+        },
+        "description": {
+          "en": "Recharts donut, editable measured credit completion, progress bar, and text total.",
+          "ar": "حلقة Recharts وإكمال ساعات قابل للتعديل وشريط تقدم وإجمالي نصي.",
+          "fr": "Anneau Recharts, crédits acquis réglables, barre de progression et total textuel."
+        }
+      },
+      {
+        "id": "charts-accessible-data-table",
+        "name": {
+          "en": "Accessible data table",
+          "ar": "جدول بيانات متاح",
+          "fr": "Tableau de données accessible"
+        },
+        "description": {
+          "en": "Accessible table mirrors the selected chart series and progress values.",
+          "ar": "يعكس الجدول المتاح مجموعات الرسم وقيم التقدم المحددة.",
+          "fr": "Le tableau accessible reprend les séries et valeurs de progression."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Label every chart as sample data. Provide the same values in a table. Avoid decorative rewards.",
+        "ar": "سم جميع الرسوم كبيانات تجريبية. قدم القيم نفسها في جدول. تجنب المكافآت الزخرفية.",
+        "fr": "Nommez les données exemples. Fournissez les mêmes valeurs dans un tableau. Évitez les récompenses décoratives."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Legend controls expose pressed state. Chart text remains at least 14px. The data table provides numeric equivalents.",
+        "ar": "تعرض أزرار المفتاح حالة الضغط. لا يقل النص عن 14 بكسل. يوفر الجدول القيم المكافئة.",
+        "fr": "La légende expose son état. Le texte mesure au moins 14px. Le tableau fournit les valeurs équivalentes."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Components",
+    "id": "communication",
+    "name": {
+      "en": "Content and communication",
+      "ar": "المحتوى والتواصل"
+    },
+    "description": {
+      "en": "Notifications, activity, citations, and assistant response states.",
+      "ar": "إشعارات وأنشطة ومصادر وحالات رد المساعد."
+    },
+    "icon": "MessagesSquare",
+    "states": [
+      "default",
+      "disabled"
+    ],
+    "variants": [
+      "default",
+      "alternate",
+      "long-content"
+    ],
+    "keywords": [
+      "communication",
+      "Content and communication",
+      "المحتوى والتواصل",
+      "Contenu et communication"
+    ],
+    "tokens": [
+      "bg-selected",
+      "border-selected",
+      "bg-subtle",
+      "success-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "specimens": [
+      {
+        "id": "communication-notifications",
+        "name": {
+          "en": "Notifications",
+          "ar": "الإشعارات",
+          "fr": "Notifications"
+        },
+        "description": {
+          "en": "Read/unread filters, per-item read state, dismiss, mark-all-read, and sample notification creation.",
+          "ar": "مرشحات المقروء وتبديل الحالة والحذف وتحديد الكل وإنشاء إشعار تجريبي.",
+          "fr": "Filtres de lecture, état par élément, suppression, lecture groupée et création d’exemples."
+        }
+      },
+      {
+        "id": "communication-messages-and-composer",
+        "name": {
+          "en": "Messages and composer",
+          "ar": "الرسائل وكتابتها",
+          "fr": "Messages et rédaction"
+        },
+        "description": {
+          "en": "Local conversation, message composer, sample reply, validation, and audit result.",
+          "ar": "محادثة محلية وكتابة رسالة ورد تجريبي وتحقق ونتيجة تدقيق.",
+          "fr": "Conversation locale, rédaction, réponse exemple, validation et événement d’audit."
+        }
+      },
+      {
+        "id": "communication-citations-and-streamed-content",
+        "name": {
+          "en": "Citations and streamed content",
+          "ar": "الاستشهادات والنص المتتابع",
+          "fr": "Sources et texte progressif"
+        },
+        "description": {
+          "en": "Source citations, source details, local text stream, stop, deterministic interruption, and retry.",
+          "ar": "استشهادات وتفاصيل مصدر ونص محلي متتابع وإيقاف وانقطاع محدد وإعادة.",
+          "fr": "Sources, détails, texte local progressif, arrêt, interruption déterministe et nouvel essai."
+        }
+      },
+      {
+        "id": "communication-reviewed-extraction-fields",
+        "name": {
+          "en": "Reviewed extraction fields",
+          "ar": "حقول مستخرجة مع مراجعة",
+          "fr": "Champs extraits à vérifier"
+        },
+        "description": {
+          "en": "Editable extracted name and credits, source confirmation, and gated local application.",
+          "ar": "اسم وساعات مستخرجة قابلة للتعديل وتأكيد مصدر وتطبيق محلي بعد المراجعة.",
+          "fr": "Nom et crédits extraits modifiables, confirmation de source et application locale après vérification."
+        }
+      },
+      {
+        "id": "communication-timeline-and-audit-log",
+        "name": {
+          "en": "Timeline and audit log",
+          "ar": "التسلسل الزمني وسجل التدقيق",
+          "fr": "Chronologie et journal d’audit"
+        },
+        "description": {
+          "en": "Chronological record events and a locally appendable audit log.",
+          "ar": "أحداث سجل زمنية وسجل تدقيق يمكن إضافة أحداث محلية إليه.",
+          "fr": "Événements chronologiques et journal d’audit local extensible."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Label simulated text and sample sources. Require a reviewer to confirm fields before local application.",
+        "ar": "سم النص المحاكى والمصادر التجريبية. اطلب تأكيد المراجع قبل التطبيق المحلي.",
+        "fr": "Nommez le texte simulé et les sources exemples. Exigez la confirmation avant l’application locale."
+      },
+      {
+        "en": "Alternate changes the sample surface. Long content adds a multilingual wrapping specimen.",
+        "ar": "يغير الشكل البديل سطح المثال. يضيف المحتوى الطويل مثال التفاف متعدد اللغات.",
+        "fr": "La variante alternative modifie la surface. Le contenu long ajoute un exemple multilingue."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "The conversation uses a log region. Source buttons open focus-managed dialogs. Reviewed fields keep explicit labels.",
+        "ar": "تستخدم المحادثة منطقة سجل. تفتح أزرار المصدر حوارًا بإدارة التركيز. تحتفظ الحقول بتسميات صريحة.",
+        "fr": "La conversation utilise une zone de journal. Les sources ouvrent un dialogue accessible. Les champs gardent leurs libellés."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "bulk",
+    "name": {
+      "en": "Search and bulk administration",
+      "ar": "البحث والإدارة الجماعية"
+    },
+    "description": {
+      "en": "Filter, select, review, and inspect per-record outcomes.",
+      "ar": "رشح وحدد وراجع نتائج كل سجل."
+    },
+    "icon": "Users",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "no-results",
+      "partial"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "bulk",
+      "Search and bulk administration",
+      "البحث والإدارة الجماعية",
+      "Recherche et actions groupées"
+    ],
+    "tokens": [
+      "table-header-bg",
+      "table-header-text",
+      "table-border",
+      "table-row-hover-bg",
+      "input-border",
+      "focus-ring",
+      "action-primary-bg",
+      "success-text",
+      "danger-text",
+      "warning-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "filters",
+        "name": {
+          "en": "Student search and evidence filter",
+          "ar": "البحث عن الطلاب وتصفية الأدلة",
+          "fr": "Recherche et filtre des justificatifs"
+        },
+        "description": {
+          "en": "Find a student and filter records by evidence.",
+          "ar": "ابحث عن طالب وصف السجلات حسب الأدلة.",
+          "fr": "Recherchez un étudiant et filtrez les dossiers par justificatif."
+        }
+      },
+      {
+        "id": "selection",
+        "name": {
+          "en": "Visible-row and individual selection",
+          "ar": "تحديد الصفوف الظاهرة والفردية",
+          "fr": "Sélection des lignes visibles et individuelles"
+        },
+        "description": {
+          "en": "Select visible records or individual rows.",
+          "ar": "حدد السجلات الظاهرة أو الصفوف الفردية.",
+          "fr": "Sélectionnez les dossiers visibles ou des lignes individuelles."
+        }
+      },
+      {
+        "id": "review",
+        "name": {
+          "en": "Pre-action record review",
+          "ar": "مراجعة السجلات قبل الإجراء",
+          "fr": "Vérification avant action"
+        },
+        "description": {
+          "en": "Review the selected records before the local update.",
+          "ar": "راجع السجلات المحددة قبل التحديث المحلي.",
+          "fr": "Vérifiez les dossiers sélectionnés avant la modification locale."
+        }
+      },
+      {
+        "id": "outcomes",
+        "name": {
+          "en": "Per-record success and missing evidence",
+          "ar": "نجاح كل سجل والأدلة المفقودة",
+          "fr": "Résultats individuels et justificatifs absents"
+        },
+        "description": {
+          "en": "Inspect a separate result for each selected record.",
+          "ar": "افحص نتيجة مستقلة لكل سجل محدد.",
+          "fr": "Examinez un résultat distinct pour chaque dossier sélectionné."
+        }
+      },
+      {
+        "id": "retry",
+        "name": {
+          "en": "Add sample evidence and retry one record",
+          "ar": "إضافة دليل تجريبي وإعادة محاولة سجل",
+          "fr": "Ajout de justificatif et reprise individuelle"
+        },
+        "description": {
+          "en": "Add sample evidence to recover the blocked record.",
+          "ar": "أضف دليلًا تجريبيًا لمعالجة السجل الموقوف.",
+          "fr": "Ajoutez un justificatif pour reprendre le dossier bloqué."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Review the selected record count before the sample update.",
+        "ar": "راجع عدد السجلات المحددة قبل التحديث التجريبي.",
+        "fr": "Vérifiez le nombre de dossiers sélectionnés avant la modification."
+      },
+      {
+        "en": "Inspect each outcome. Add sample evidence before you retry a blocked record.",
+        "ar": "افحص كل نتيجة. أضف دليلًا تجريبيًا قبل إعادة محاولة سجل موقوف.",
+        "fr": "Examinez chaque résultat. Ajoutez un justificatif avant de reprendre un dossier bloqué."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Use the visible-row checkbox to select filtered records.",
+        "ar": "استخدم مربع الصفوف الظاهرة لتحديد السجلات المصفاة.",
+        "fr": "Utilisez la case des lignes visibles pour sélectionner les dossiers filtrés."
+      },
+      {
+        "en": "Confirm each outcome through its text and icon.",
+        "ar": "تحقق من كل نتيجة بالنص والأيقونة.",
+        "fr": "Vérifiez chaque résultat avec son texte et son icône."
+      }
+    ],
+    "recommendedDensity": "compact"
+  },
+  {
+    "group": "Patterns",
+    "id": "wizard",
+    "name": {
+      "en": "Multi-step form",
+      "ar": "النموذج متعدد الخطوات"
+    },
+    "description": {
+      "en": "Validate, move backward, retain values, and review.",
+      "ar": "تحقق وارجع واحتفظ بالقيم وراجع."
+    },
+    "icon": "ListOrdered",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "wizard",
+      "Multi-step form",
+      "النموذج متعدد الخطوات",
+      "Formulaire à étapes"
+    ],
+    "tokens": [
+      "input-bg",
+      "input-fg",
+      "input-border",
+      "input-invalid-border",
+      "danger-text",
+      "focus-ring",
+      "action-primary-bg",
+      "action-disabled-bg",
+      "success-text"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "contact",
+        "name": {
+          "en": "Required email validation",
+          "ar": "التحقق من البريد الإلكتروني المطلوب",
+          "fr": "Validation de l’adresse obligatoire"
+        },
+        "description": {
+          "en": "Enter a valid sample email address.",
+          "ar": "أدخل بريدًا إلكترونيًا تجريبيًا صحيحًا.",
+          "fr": "Saisissez une adresse électronique de démonstration valide."
+        }
+      },
+      {
+        "id": "details",
+        "name": {
+          "en": "Programme and term selection",
+          "ar": "اختيار البرنامج والفصل",
+          "fr": "Choix du programme et de la période"
+        },
+        "description": {
+          "en": "Choose a programme and entry term.",
+          "ar": "اختر برنامجًا وفصل التحاق.",
+          "fr": "Choisissez un programme et une période d’entrée."
+        }
+      },
+      {
+        "id": "retention",
+        "name": {
+          "en": "Back navigation with retained input",
+          "ar": "العودة مع حفظ المدخلات",
+          "fr": "Retour avec conservation de la saisie"
+        },
+        "description": {
+          "en": "Return to an earlier step without losing input.",
+          "ar": "عد إلى خطوة سابقة دون فقد المدخلات.",
+          "fr": "Revenez à une étape précédente sans perdre la saisie."
+        }
+      },
+      {
+        "id": "review",
+        "name": {
+          "en": "Final application summary",
+          "ar": "الملخص النهائي للطلب",
+          "fr": "Résumé final de candidature"
+        },
+        "description": {
+          "en": "Read the complete draft before submission.",
+          "ar": "اقرأ المسودة الكاملة قبل الإرسال.",
+          "fr": "Lisez le brouillon complet avant l’envoi."
+        }
+      },
+      {
+        "id": "submission",
+        "name": {
+          "en": "Local submission receipt and edit",
+          "ar": "إيصال إرسال محلي وتعديل",
+          "fr": "Reçu local et modification"
+        },
+        "description": {
+          "en": "Submit locally, then return to the retained details.",
+          "ar": "أرسل محليًا، ثم عد إلى البيانات المحفوظة.",
+          "fr": "Envoyez localement, puis retrouvez les informations conservées."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Complete each step before the final review.",
+        "ar": "أكمل كل خطوة قبل المراجعة النهائية.",
+        "fr": "Terminez chaque étape avant la vérification finale."
+      },
+      {
+        "en": "Use Back to edit retained details. The receipt confirms only a local sample submission.",
+        "ar": "استخدم السابق لتعديل البيانات المحفوظة. يؤكد الإيصال إرسالًا تجريبيًا محليًا فقط.",
+        "fr": "Utilisez Retour pour modifier les informations conservées. Le reçu confirme uniquement une soumission locale."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Check the current-step marker and the email error association.",
+        "ar": "افحص مؤشر الخطوة الحالية وربط خطأ البريد بالحقل.",
+        "fr": "Vérifiez l’étape actuelle et l’association de l’erreur au champ électronique."
+      },
+      {
+        "en": "Use Enter to continue or submit the form.",
+        "ar": "استخدم Enter للمتابعة أو إرسال النموذج.",
+        "fr": "Utilisez Entrée pour continuer ou envoyer le formulaire."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "import",
+    "name": {
+      "en": "Import review",
+      "ar": "مراجعة الاستيراد"
+    },
+    "description": {
+      "en": "Map fields, inspect row errors, exclude, and retry.",
+      "ar": "اربط الحقول وافحص الأخطاء واستبعد وأعد المحاولة."
+    },
+    "icon": "FileSpreadsheet",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "partial"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "import",
+      "Import review",
+      "مراجعة الاستيراد",
+      "Vérification des imports"
+    ],
+    "tokens": [
+      "input-bg",
+      "input-border",
+      "table-header-bg",
+      "table-border",
+      "danger-text",
+      "success-text",
+      "warning-text",
+      "action-primary-bg",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "source",
+        "name": {
+          "en": "Local CSV file and built-in sample",
+          "ar": "ملف CSV محلي ومثال مضمن",
+          "fr": "Fichier CSV local et exemple intégré"
+        },
+        "description": {
+          "en": "Choose a small CSV file or load the built-in data.",
+          "ar": "اختر ملف CSV صغيرًا أو حمّل البيانات المضمنة.",
+          "fr": "Choisissez un petit fichier CSV ou chargez les données intégrées."
+        }
+      },
+      {
+        "id": "mapping",
+        "name": {
+          "en": "Distinct source-column mapping",
+          "ar": "ربط أعمدة المصدر المختلفة",
+          "fr": "Association de colonnes distinctes"
+        },
+        "description": {
+          "en": "Assign a distinct source column to each field.",
+          "ar": "عين عمود مصدر مختلفًا لكل حقل.",
+          "fr": "Associez une colonne source distincte à chaque champ."
+        }
+      },
+      {
+        "id": "validation",
+        "name": {
+          "en": "Row errors and duplicate identifiers",
+          "ar": "أخطاء الصفوف والمعرفات المكررة",
+          "fr": "Erreurs de lignes et identifiants en double"
+        },
+        "description": {
+          "en": "Validate required values, positive credits, and unique identifiers.",
+          "ar": "تحقق من القيم المطلوبة والساعات الموجبة والمعرفات الفريدة.",
+          "fr": "Vérifiez les valeurs obligatoires, les crédits positifs et les identifiants uniques."
+        }
+      },
+      {
+        "id": "exclusion",
+        "name": {
+          "en": "Exclude invalid source rows",
+          "ar": "استبعاد صفوف المصدر غير الصحيحة",
+          "fr": "Exclusion des lignes invalides"
+        },
+        "description": {
+          "en": "Exclude invalid rows before the local import.",
+          "ar": "استبعد الصفوف غير الصحيحة قبل الاستيراد المحلي.",
+          "fr": "Excluez les lignes invalides avant l’importation locale."
+        }
+      },
+      {
+        "id": "retry",
+        "name": {
+          "en": "Correct sample errors and retry import",
+          "ar": "تصحيح الأخطاء التجريبية وإعادة الاستيراد",
+          "fr": "Correction des erreurs et reprise de l’importation"
+        },
+        "description": {
+          "en": "Correct the built-in sample errors and validate the retry.",
+          "ar": "صحح الأخطاء التجريبية المضمنة وتحقق من الإعادة.",
+          "fr": "Corrigez les erreurs intégrées et vérifiez la reprise."
+        }
+      },
+      {
+        "id": "outcome",
+        "name": {
+          "en": "Local import count",
+          "ar": "عدد الصفوف المستوردة محليًا",
+          "fr": "Nombre de lignes importées localement"
+        },
+        "description": {
+          "en": "Inspect the local import result without changing the source file.",
+          "ar": "افحص نتيجة الاستيراد المحلي دون تغيير الملف المصدر.",
+          "fr": "Examinez le résultat local sans modifier le fichier source."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Map each field to a different source column, then validate the rows.",
+        "ar": "اربط كل حقل بعمود مختلف، ثم تحقق من الصفوف.",
+        "fr": "Associez chaque champ à une colonne distincte, puis vérifiez les lignes."
+      },
+      {
+        "en": "Exclude invalid rows or correct the sample errors before import. The source file remains unchanged.",
+        "ar": "استبعد الصفوف غير الصحيحة أو صحح الأخطاء قبل الاستيراد. يبقى الملف المصدر دون تغيير.",
+        "fr": "Excluez les lignes invalides ou corrigez les erreurs avant l’importation. Le fichier source reste inchangé."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Use the labelled file input and mapping selectors.",
+        "ar": "استخدم حقل الملف وقوائم الربط ذات التسميات.",
+        "fr": "Utilisez le champ de fichier et les sélecteurs associés aux libellés."
+      },
+      {
+        "en": "Inspect the row number, error text, and exclusion label together.",
+        "ar": "افحص رقم الصف ونص الخطأ وتسمية الاستبعاد معًا.",
+        "fr": "Examinez ensemble le numéro de ligne, le texte d’erreur et le libellé d’exclusion."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "approvals",
+    "name": {
+      "en": "Approval and review",
+      "ar": "الموافقة والمراجعة"
+    },
+    "description": {
+      "en": "Inspect evidence and simulate a reasoned decision.",
+      "ar": "افحص الأدلة وحاك قراراً مع سبب."
+    },
+    "icon": "ClipboardCheck",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "approvals",
+      "Approval and review",
+      "الموافقة والمراجعة",
+      "Approbation et révision"
+    ],
+    "tokens": [
+      "bg-raised",
+      "input-bg",
+      "input-border",
+      "input-invalid-border",
+      "danger-text",
+      "warning-text",
+      "success-text",
+      "destructive-bg",
+      "action-primary-bg",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "request",
+        "name": {
+          "en": "Sample request summary",
+          "ar": "ملخص الطلب التجريبي",
+          "fr": "Résumé de la demande"
+        },
+        "description": {
+          "en": "Inspect the request reference, student, and request type.",
+          "ar": "افحص مرجع الطلب والطالب ونوع الطلب.",
+          "fr": "Examinez la référence, l’étudiant et le type de demande."
+        }
+      },
+      {
+        "id": "evidence",
+        "name": {
+          "en": "Expandable evidence and document preview",
+          "ar": "أدلة قابلة للتوسيع ومعاينة المستند",
+          "fr": "Justificatifs dépliables et aperçu du document"
+        },
+        "description": {
+          "en": "Open the document preview and mark the evidence as reviewed.",
+          "ar": "افتح معاينة المستند وحدد الدليل كمراجع.",
+          "fr": "Ouvrez l’aperçu et marquez le justificatif comme consulté."
+        }
+      },
+      {
+        "id": "reason",
+        "name": {
+          "en": "Required decision reason",
+          "ar": "سبب القرار المطلوب",
+          "fr": "Motif de décision obligatoire"
+        },
+        "description": {
+          "en": "Enter a reason before every sample decision.",
+          "ar": "أدخل سببًا قبل كل قرار تجريبي.",
+          "fr": "Indiquez un motif avant chaque décision de démonstration."
+        }
+      },
+      {
+        "id": "changes",
+        "name": {
+          "en": "Request changes and revised submission",
+          "ar": "طلب تغييرات وإرسال معدل",
+          "fr": "Demande de modifications et nouvelle soumission"
+        },
+        "description": {
+          "en": "Request revisions and simulate a revised submission.",
+          "ar": "اطلب تعديلات وحاك إرسالًا معدلًا.",
+          "fr": "Demandez des modifications et simulez une nouvelle soumission."
+        }
+      },
+      {
+        "id": "decision",
+        "name": {
+          "en": "Approve or decline with a local outcome",
+          "ar": "موافقة أو رفض بنتيجة محلية",
+          "fr": "Approbation ou refus avec résultat local"
+        },
+        "description": {
+          "en": "Approve or decline the request with a visible local result.",
+          "ar": "وافق على الطلب أو ارفضه بنتيجة محلية ظاهرة.",
+          "fr": "Approuvez ou refusez la demande avec un résultat local visible."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Review the sample evidence before approval and enter a reason for every decision.",
+        "ar": "راجع الدليل التجريبي قبل الموافقة وأدخل سببًا لكل قرار.",
+        "fr": "Consultez le justificatif avant l’approbation et indiquez un motif pour chaque décision."
+      },
+      {
+        "en": "Use Request changes to inspect the revised-submission path. No university decision rule applies in this sample.",
+        "ar": "استخدم طلب تغييرات لفحص مسار الإرسال المعدل. لا يطبق المثال قاعدة قرار جامعية.",
+        "fr": "Utilisez Demander des modifications pour examiner la nouvelle soumission. Cet exemple n’applique aucune règle universitaire."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Open the evidence with the keyboard and check the dialog focus.",
+        "ar": "افتح الدليل بلوحة المفاتيح وافحص تركيز مربع الحوار.",
+        "fr": "Ouvrez le justificatif au clavier et vérifiez le focus du dialogue."
+      },
+      {
+        "en": "Check the reason error before each decision action.",
+        "ar": "افحص خطأ السبب قبل كل إجراء قرار.",
+        "fr": "Vérifiez l’erreur du motif avant chaque décision."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "access",
+    "name": {
+      "en": "Scoped access",
+      "ar": "الوصول المحدد بالنطاق"
+    },
+    "description": {
+      "en": "Inspect roles, scopes, and a pre-save impact report.",
+      "ar": "افحص الأدوار والنطاقات والأثر قبل الحفظ."
+    },
+    "icon": "ShieldCheck",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "access",
+      "Scoped access",
+      "الوصول المحدد بالنطاق",
+      "Accès limité"
+    ],
+    "tokens": [
+      "input-bg",
+      "input-border",
+      "bg-surface",
+      "border-default",
+      "danger-text",
+      "success-text",
+      "action-primary-bg",
+      "action-disabled-bg",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "draft",
+        "name": {
+          "en": "Independent role and scope draft",
+          "ar": "مسودة مستقلة للدور والنطاق",
+          "fr": "Brouillon indépendant du rôle et du périmètre"
+        },
+        "description": {
+          "en": "Change the proposed role and scope independently.",
+          "ar": "غير الدور والنطاق المقترحين بصورة مستقلة.",
+          "fr": "Modifiez séparément le rôle et le périmètre proposés."
+        }
+      },
+      {
+        "id": "abilities",
+        "name": {
+          "en": "Proposed abilities and affected-record count",
+          "ar": "الإمكانات المقترحة وعدد السجلات المتأثرة",
+          "fr": "Actions proposées et nombre de dossiers concernés"
+        },
+        "description": {
+          "en": "Inspect the proposed abilities and affected sample records.",
+          "ar": "افحص الإمكانات المقترحة والسجلات التجريبية المتأثرة.",
+          "fr": "Examinez les actions proposées et les dossiers concernés."
+        }
+      },
+      {
+        "id": "rejection",
+        "name": {
+          "en": "Invalid sample combination rejection",
+          "ar": "رفض الجمع التجريبي غير الصحيح",
+          "fr": "Rejet des combinaisons invalides"
+        },
+        "description": {
+          "en": "Attempt an invalid combination and inspect the rejection.",
+          "ar": "حاول جمعًا غير صحيح وافحص الرفض.",
+          "fr": "Essayez une combinaison invalide et examinez le rejet."
+        }
+      },
+      {
+        "id": "impact",
+        "name": {
+          "en": "Current and proposed access review",
+          "ar": "مراجعة الوصول الحالي والمقترح",
+          "fr": "Vérification des droits actuels et proposés"
+        },
+        "description": {
+          "en": "Compare current and proposed access before confirmation.",
+          "ar": "قارن الوصول الحالي والمقترح قبل التأكيد.",
+          "fr": "Comparez les droits actuels et proposés avant confirmation."
+        }
+      },
+      {
+        "id": "save",
+        "name": {
+          "en": "Explicit impact acknowledgement and local save",
+          "ar": "تأكيد صريح للأثر وحفظ محلي",
+          "fr": "Confirmation explicite de l’impact et enregistrement local"
+        },
+        "description": {
+          "en": "Acknowledge the impact and save only the local sample.",
+          "ar": "أكد الأثر واحفظ المثال المحلي فقط.",
+          "fr": "Confirmez l’impact et enregistrez uniquement l’exemple local."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Review the affected records before you save the proposed role and scope.",
+        "ar": "راجع السجلات المتأثرة قبل حفظ الدور والنطاق المقترحين.",
+        "fr": "Vérifiez les dossiers concernés avant d’enregistrer le rôle et le périmètre proposés."
+      },
+      {
+        "en": "Use the invalid combinations to inspect rejection. These permissions belong only to the sample.",
+        "ar": "استخدم الاختيارات غير الصحيحة لفحص الرفض. تخص هذه الصلاحيات المثال فقط.",
+        "fr": "Utilisez les combinaisons invalides pour examiner le rejet. Ces droits concernent uniquement cet exemple."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Inspect the validity text with its status icon.",
+        "ar": "افحص نص الصلاحية مع أيقونة الحالة.",
+        "fr": "Examinez le texte de validité avec son icône d’état."
+      },
+      {
+        "en": "Acknowledge the impact with the labelled checkbox before the save action.",
+        "ar": "أكد الأثر بمربع الاختيار ذي التسمية قبل إجراء الحفظ.",
+        "fr": "Confirmez l’impact avec la case associée au libellé avant l’enregistrement."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "academic",
+    "name": {
+      "en": "Academic structure",
+      "ar": "الهيكل الأكاديمي"
+    },
+    "description": {
+      "en": "Expand units and compare sample curriculum versions.",
+      "ar": "وسع الوحدات وقارن نسخ المناهج التجريبية."
+    },
+    "icon": "Network",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "academic",
+      "Academic structure",
+      "الهيكل الأكاديمي",
+      "Structure universitaire"
+    ],
+    "tokens": [
+      "text-primary",
+      "text-secondary",
+      "input-bg",
+      "input-border",
+      "table-header-bg",
+      "table-border",
+      "danger-text",
+      "success-text",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "units",
+        "name": {
+          "en": "Expandable faculties and departments",
+          "ar": "كليات وأقسام قابلة للتوسيع",
+          "fr": "Facultés et départements dépliables"
+        },
+        "description": {
+          "en": "Expand a faculty to inspect its departments.",
+          "ar": "وسع كلية لفحص أقسامها.",
+          "fr": "Dépliez une faculté pour consulter ses départements."
+        }
+      },
+      {
+        "id": "programmes",
+        "name": {
+          "en": "Sample programme counts",
+          "ar": "أعداد البرامج التجريبية",
+          "fr": "Nombre de programmes de démonstration"
+        },
+        "description": {
+          "en": "Inspect the programme count beside each sample department.",
+          "ar": "افحص عدد البرامج بجانب كل قسم تجريبي.",
+          "fr": "Consultez le nombre de programmes de chaque département."
+        }
+      },
+      {
+        "id": "versions",
+        "name": {
+          "en": "Curriculum version selection",
+          "ar": "اختيار نسخة الخطة الدراسية",
+          "fr": "Choix de version du cursus"
+        },
+        "description": {
+          "en": "Switch the draft curriculum between two sample versions.",
+          "ar": "بدل مسودة الخطة بين نسختين تجريبيتين.",
+          "fr": "Passez entre deux versions du cursus de démonstration."
+        }
+      },
+      {
+        "id": "courses",
+        "name": {
+          "en": "Required and elective curriculum courses",
+          "ar": "مقررات الخطة الإجبارية والاختيارية",
+          "fr": "Cours obligatoires et au choix"
+        },
+        "description": {
+          "en": "Inspect the credits and type of each sample course.",
+          "ar": "افحص ساعات كل مقرر تجريبي ونوعه.",
+          "fr": "Examinez les crédits et le type de chaque cours."
+        }
+      },
+      {
+        "id": "effective-date",
+        "name": {
+          "en": "Effective-date validation and local application",
+          "ar": "التحقق من تاريخ السريان والتطبيق المحلي",
+          "fr": "Validation de la date d’effet et application locale"
+        },
+        "description": {
+          "en": "Choose a valid effective date before local application.",
+          "ar": "اختر تاريخ سريان صحيحًا قبل التطبيق المحلي.",
+          "fr": "Choisissez une date d’effet valide avant l’application locale."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Expand each academic unit to inspect its sample departments.",
+        "ar": "وسع كل وحدة أكاديمية لفحص أقسامها التجريبية.",
+        "fr": "Dépliez chaque unité pour consulter ses départements de démonstration."
+      },
+      {
+        "en": "Compare the curriculum versions, then choose an effective date for the local draft.",
+        "ar": "قارن نسخ الخطة الدراسية، ثم اختر تاريخ سريان للمسودة المحلية.",
+        "fr": "Comparez les versions du cursus, puis choisissez une date d’effet pour le brouillon local."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Check each unit disclosure through its expanded state.",
+        "ar": "افحص كل وحدة من خلال حالة التوسيع.",
+        "fr": "Vérifiez chaque unité avec son état déplié."
+      },
+      {
+        "en": "Use the date field label and visible validation message.",
+        "ar": "استخدم تسمية حقل التاريخ ورسالة التحقق الظاهرة.",
+        "fr": "Utilisez le libellé du champ de date et le message de validation visible."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "registration",
+    "name": {
+      "en": "Registration and timetable",
+      "ar": "التسجيل والجدول"
+    },
+    "description": {
+      "en": "Select sample sections and inspect a schedule conflict.",
+      "ar": "اختر الشعب وافحص تعارض الجدول."
+    },
+    "icon": "CalendarRange",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "conflict"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "registration",
+      "Registration and timetable",
+      "التسجيل والجدول",
+      "Inscription et emploi du temps"
+    ],
+    "tokens": [
+      "table-header-bg",
+      "table-border",
+      "success-text",
+      "warning-text",
+      "danger-text",
+      "danger-border",
+      "action-primary-bg",
+      "action-primary-fg",
+      "action-disabled-bg",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "availability",
+        "name": {
+          "en": "Section seats and room availability",
+          "ar": "مقاعد الشعب والقاعات المتاحة",
+          "fr": "Places et salles des groupes"
+        },
+        "description": {
+          "en": "Inspect the sample seats, times, and rooms.",
+          "ar": "افحص المقاعد والمواعيد والقاعات التجريبية.",
+          "fr": "Examinez les places, horaires et salles de démonstration."
+        }
+      },
+      {
+        "id": "selection",
+        "name": {
+          "en": "Add and remove course sections",
+          "ar": "إضافة شعب المقررات وإزالتها",
+          "fr": "Ajout et retrait de groupes"
+        },
+        "description": {
+          "en": "Select or remove each available section.",
+          "ar": "اختر كل شعبة متاحة أو أزلها.",
+          "fr": "Choisissez ou retirez chaque groupe disponible."
+        }
+      },
+      {
+        "id": "timetable",
+        "name": {
+          "en": "Selected weekly timetable",
+          "ar": "الجدول الأسبوعي المحدد",
+          "fr": "Emploi du temps hebdomadaire sélectionné"
+        },
+        "description": {
+          "en": "Inspect selected sections in the weekly timetable.",
+          "ar": "افحص الشعب المحددة في الجدول الأسبوعي.",
+          "fr": "Examinez les groupes sélectionnés dans l’emploi du temps."
+        }
+      },
+      {
+        "id": "conflicts",
+        "name": {
+          "en": "Overlapping times and duplicate-course rejection",
+          "ar": "رفض تداخل المواعيد وتكرار المقرر",
+          "fr": "Rejet des horaires superposés et des cours en double"
+        },
+        "description": {
+          "en": "Resolve overlapping times and duplicate course selections.",
+          "ar": "عالج تداخل المواعيد وتكرار اختيار المقرر.",
+          "fr": "Résolvez les horaires superposés et les choix de cours en double."
+        }
+      },
+      {
+        "id": "waitlist",
+        "name": {
+          "en": "Local waitlist request",
+          "ar": "طلب قائمة انتظار محلي",
+          "fr": "Demande locale de liste d’attente"
+        },
+        "description": {
+          "en": "Record a local waitlist request for the full section.",
+          "ar": "سجل طلب انتظار محليًا للشعبة المكتملة.",
+          "fr": "Enregistrez une demande locale pour le groupe complet."
+        }
+      },
+      {
+        "id": "confirmation",
+        "name": {
+          "en": "Conflict-free registration review",
+          "ar": "مراجعة تسجيل خال من التعارض",
+          "fr": "Vérification d’une inscription sans conflit"
+        },
+        "description": {
+          "en": "Review the draft and confirm only after conflicts clear.",
+          "ar": "راجع المسودة وأكد بعد معالجة التعارضات فقط.",
+          "fr": "Vérifiez le brouillon et confirmez après résolution des conflits."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Select sections, then inspect the timetable before confirmation. Selection reserves no university seat.",
+        "ar": "اختر الشعب، ثم افحص الجدول قبل التأكيد. لا يحجز الاختيار مقعدًا جامعيًا.",
+        "fr": "Choisissez les groupes, puis examinez l’emploi du temps avant confirmation. La sélection ne réserve aucune place."
+      },
+      {
+        "en": "Remove overlapping sections and retain one section per sample course.",
+        "ar": "أزل الشعب المتداخلة واحتفظ بشعبة واحدة لكل مقرر تجريبي.",
+        "fr": "Retirez les groupes superposés et gardez un seul groupe par cours."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Check the pressed state of each section selection button.",
+        "ar": "افحص حالة الضغط لكل زر اختيار شعبة.",
+        "fr": "Vérifiez l’état enfoncé de chaque bouton de sélection."
+      },
+      {
+        "en": "Read each conflict explanation. Color alone does not identify a conflict.",
+        "ar": "اقرأ تفسير كل تعارض. لا يحدد اللون وحده التعارض.",
+        "fr": "Lisez chaque explication de conflit. La couleur seule ne signale pas le conflit."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "results",
+    "name": {
+      "en": "Results and degree progress",
+      "ar": "النتائج والتقدم الدراسي"
+    },
+    "description": {
+      "en": "Inspect grades, transcript rows, and unmet requirements.",
+      "ar": "افحص الدرجات والسجل والمتطلبات غير المكتملة."
+    },
+    "icon": "GraduationCap",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "partial"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "results",
+      "Results and degree progress",
+      "النتائج والتقدم الدراسي",
+      "Résultats et progression"
+    ],
+    "tokens": [
+      "text-primary",
+      "input-border",
+      "table-header-bg",
+      "table-border",
+      "action-primary-bg",
+      "success-text",
+      "warning-text",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "grades",
+        "name": {
+          "en": "Term grades and pending result",
+          "ar": "درجات الفصل والنتيجة المعلقة",
+          "fr": "Notes de période et résultat en attente"
+        },
+        "description": {
+          "en": "Switch sample terms and inspect completed or pending results.",
+          "ar": "بدل الفصول التجريبية وافحص النتائج المكتملة أو المعلقة.",
+          "fr": "Changez de période et consultez les résultats finaux ou en attente."
+        }
+      },
+      {
+        "id": "average",
+        "name": {
+          "en": "Unweighted sample average",
+          "ar": "المتوسط التجريبي غير المرجح",
+          "fr": "Moyenne de démonstration non pondérée"
+        },
+        "description": {
+          "en": "Inspect the average of the completed sample scores.",
+          "ar": "افحص متوسط الدرجات التجريبية المكتملة.",
+          "fr": "Consultez la moyenne des notes de démonstration disponibles."
+        }
+      },
+      {
+        "id": "transcript",
+        "name": {
+          "en": "Unofficial transcript preview, copy, and download",
+          "ar": "معاينة كشف غير رسمي ونسخه وتنزيله",
+          "fr": "Aperçu, copie et téléchargement du relevé non officiel"
+        },
+        "description": {
+          "en": "Preview, copy, or download the unofficial sample transcript.",
+          "ar": "عاين كشف الدرجات التجريبي غير الرسمي أو انسخه أو نزله.",
+          "fr": "Consultez, copiez ou téléchargez le relevé non officiel."
+        }
+      },
+      {
+        "id": "groups",
+        "name": {
+          "en": "Expandable requirement groups",
+          "ar": "مجموعات متطلبات قابلة للتوسيع",
+          "fr": "Groupes d’exigences dépliables"
+        },
+        "description": {
+          "en": "Expand core, elective, and project requirement groups.",
+          "ar": "وسع مجموعات المتطلبات الأساسية والاختيارية والمشروع.",
+          "fr": "Dépliez les exigences fondamentales, au choix et du projet."
+        }
+      },
+      {
+        "id": "unmet",
+        "name": {
+          "en": "Unmet course and credit explanations",
+          "ar": "تفسيرات المقررات والساعات غير المكتملة",
+          "fr": "Explications des cours et crédits à valider"
+        },
+        "description": {
+          "en": "Read why the sample course or credit requirement remains unmet.",
+          "ar": "اقرأ سبب عدم اكتمال متطلب المقرر أو الساعات التجريبية.",
+          "fr": "Lisez pourquoi un cours ou un crédit reste à valider."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Switch between grades, transcript, and requirements to inspect the same sample record.",
+        "ar": "تنقل بين الدرجات والكشف والمتطلبات لفحص السجل التجريبي نفسه.",
+        "fr": "Passez des notes au relevé et aux exigences pour examiner le même dossier."
+      },
+      {
+        "en": "Read the unmet explanations. These sample groups do not define graduation rules.",
+        "ar": "اقرأ تفسيرات المتطلبات غير المكتملة. لا تحدد هذه المجموعات قواعد التخرج.",
+        "fr": "Lisez les explications des exigences restantes. Ces groupes ne définissent pas les règles du diplôme."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Use arrow keys, Home, and End within the results tabs.",
+        "ar": "استخدم الأسهم وHome وEnd داخل تبويبات النتائج.",
+        "fr": "Utilisez les flèches, Début et Fin dans les onglets des résultats."
+      },
+      {
+        "en": "Inspect the selected tab and its labelled panel together.",
+        "ar": "افحص التبويب المحدد ولوحته ذات التسمية معًا.",
+        "fr": "Examinez ensemble l’onglet sélectionné et son panneau associé."
+      }
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Patterns",
+    "id": "finance",
+    "name": {
+      "en": "Finance and aid",
+      "ar": "المالية والدعم"
+    },
+    "description": {
+      "en": "Inspect ledgers, balances, holds, and reconciliation.",
+      "ar": "افحص القيود والأرصدة والحظر والتسوية."
+    },
+    "icon": "Wallet",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "no-results"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "finance",
+      "Finance and aid",
+      "المالية والدعم",
+      "Finances et aides"
+    ],
+    "tokens": [
+      "table-header-bg",
+      "table-border",
+      "input-bg",
+      "input-border",
+      "input-invalid-border",
+      "warning-text",
+      "success-text",
+      "danger-text",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "ledger",
+        "name": {
+          "en": "Ledger entries and type filter",
+          "ar": "قيود السجل وتصفية النوع",
+          "fr": "Écritures et filtre par type"
+        },
+        "description": {
+          "en": "Filter the local ledger by entry type.",
+          "ar": "صف السجل المحلي حسب نوع القيد.",
+          "fr": "Filtrez le journal local par type d’écriture."
+        }
+      },
+      {
+        "id": "balance",
+        "name": {
+          "en": "Account balance and sample hold",
+          "ar": "رصيد الحساب والقيد التجريبي",
+          "fr": "Solde du compte et blocage de démonstration"
+        },
+        "description": {
+          "en": "Inspect the balance and the explicit sample hold rule.",
+          "ar": "افحص الرصيد وقاعدة القيد التجريبية الصريحة.",
+          "fr": "Examinez le solde et la règle explicite du blocage."
+        }
+      },
+      {
+        "id": "award",
+        "name": {
+          "en": "Apply an award to the local ledger",
+          "ar": "تطبيق منحة في السجل المحلي",
+          "fr": "Application d’une bourse au journal local"
+        },
+        "description": {
+          "en": "Apply the sample award once to the local ledger.",
+          "ar": "طبق المنحة التجريبية مرة واحدة في السجل المحلي.",
+          "fr": "Appliquez une fois la bourse au journal local."
+        }
+      },
+      {
+        "id": "mismatch",
+        "name": {
+          "en": "Expected and imported payment mismatch",
+          "ar": "اختلاف الدفعة المتوقعة والمستوردة",
+          "fr": "Écart entre le paiement attendu et importé"
+        },
+        "description": {
+          "en": "Inspect the difference between expected and imported payment amounts.",
+          "ar": "افحص الفرق بين مبلغ الدفعة المتوقع والمستورد.",
+          "fr": "Examinez l’écart entre les montants attendu et importé."
+        }
+      },
+      {
+        "id": "reconcile",
+        "name": {
+          "en": "Source correction and payment reconciliation",
+          "ar": "تصحيح المصدر ومطابقة الدفعة",
+          "fr": "Correction du montant source et rapprochement"
+        },
+        "description": {
+          "en": "Correct the source amount before the local reconciliation.",
+          "ar": "صحح مبلغ المصدر قبل المطابقة المحلية.",
+          "fr": "Corrigez le montant source avant le rapprochement local."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Filter the ledger to inspect charges, payments, and awards.",
+        "ar": "صف السجل لفحص الرسوم والمدفوعات والمنح.",
+        "fr": "Filtrez le journal pour examiner les frais, paiements et bourses."
+      },
+      {
+        "en": "Match the payment amount before reconciliation. The visible hold rule belongs only to this sample.",
+        "ar": "طابق مبلغ الدفعة قبل المطابقة. تخص قاعدة القيد الظاهرة هذا المثال فقط.",
+        "fr": "Faites correspondre le montant avant le rapprochement. La règle de blocage concerne uniquement cet exemple."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Inspect currency values and status text without relying on color.",
+        "ar": "افحص قيم العملة ونص الحالة دون الاعتماد على اللون.",
+        "fr": "Examinez les montants et le texte d’état sans dépendre de la couleur."
+      },
+      {
+        "en": "Check the reconciliation error association with the source amount.",
+        "ar": "افحص ربط خطأ المطابقة بحقل مبلغ المصدر.",
+        "fr": "Vérifiez l’association de l’erreur au champ du montant source."
+      }
+    ],
+    "recommendedDensity": "compact"
+  },
+  {
+    "group": "Patterns",
+    "id": "operations",
+    "name": {
+      "en": "Platform operations",
+      "ar": "تشغيل المنصة"
+    },
+    "description": {
+      "en": "Inspect health, provisioning, recovery, and confirmed state.",
+      "ar": "افحص الصحة والتجهيز والاستعادة والحالة المؤكدة."
+    },
+    "icon": "Activity",
+    "states": [
+      "default",
+      "pending",
+      "empty",
+      "error",
+      "success",
+      "denied",
+      "unavailable",
+      "session-expired",
+      "partial"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "operations",
+      "Platform operations",
+      "تشغيل المنصة",
+      "Exploitation de la plateforme"
+    ],
+    "tokens": [
+      "table-header-bg",
+      "table-border",
+      "success-text",
+      "danger-text",
+      "warning-text",
+      "info-text",
+      "action-primary-bg",
+      "action-disabled-bg",
+      "focus-ring"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "validation and recovery",
+      "keyboard",
+      "theme",
+      "language",
+      "presentation retention"
+    ],
+    "specimens": [
+      {
+        "id": "health",
+        "name": {
+          "en": "Sample connector and mail health",
+          "ar": "حالة الموصل والبريد التجريبيين",
+          "fr": "État du connecteur et de la messagerie"
+        },
+        "description": {
+          "en": "Inspect connector availability and the simulated mail status.",
+          "ar": "افحص توفر الموصل وحالة البريد المحاكاة.",
+          "fr": "Examinez la disponibilité du connecteur et l’état de la messagerie."
+        }
+      },
+      {
+        "id": "steps",
+        "name": {
+          "en": "Identity, mail, and course provisioning steps",
+          "ar": "خطوات تجهيز الهوية والبريد والمقرر",
+          "fr": "Étapes de création de l’identité, messagerie et cours"
+        },
+        "description": {
+          "en": "Follow identity, mail, and course workspace steps.",
+          "ar": "اتبع خطوات الهوية والبريد ومساحة المقرر.",
+          "fr": "Suivez les étapes d’identité, de messagerie et d’espace de cours."
+        }
+      },
+      {
+        "id": "confirmation",
+        "name": {
+          "en": "Requested actions and confirmed results",
+          "ar": "الإجراءات المطلوبة والنتائج المؤكدة",
+          "fr": "Actions demandées et résultats confirmés"
+        },
+        "description": {
+          "en": "Distinguish requested actions from confirmed sample results.",
+          "ar": "ميز الإجراءات المطلوبة عن النتائج التجريبية المؤكدة.",
+          "fr": "Distinguez les actions demandées des résultats confirmés."
+        }
+      },
+      {
+        "id": "failure",
+        "name": {
+          "en": "Partial mail failure with retained identity",
+          "ar": "فشل جزئي للبريد مع حفظ الهوية",
+          "fr": "Échec partiel de messagerie avec identité conservée"
+        },
+        "description": {
+          "en": "Inspect the mail failure while the identity remains confirmed.",
+          "ar": "افحص فشل البريد مع بقاء الهوية مؤكدة.",
+          "fr": "Examinez l’échec de messagerie avec une identité toujours confirmée."
+        }
+      },
+      {
+        "id": "recovery",
+        "name": {
+          "en": "Failed-step retry, completion, and reset",
+          "ar": "إعادة الخطوة الفاشلة والإكمال وإعادة الضبط",
+          "fr": "Reprise de l’étape en échec, fin et réinitialisation"
+        },
+        "description": {
+          "en": "Retry the failed step, complete the sample, or reset it.",
+          "ar": "أعد الخطوة الفاشلة أو أكمل المثال أو أعد ضبطه.",
+          "fr": "Reprenez l’étape en échec, terminez l’exemple ou réinitialisez-le."
+        }
+      }
+    ],
+    "guidance": [
+      {
+        "en": "Inspect the requested and confirmed columns separately. A request does not prove service completion.",
+        "ar": "افحص عمودي المطلوب والمؤكد منفصلين. لا يثبت الطلب اكتمال الخدمة.",
+        "fr": "Examinez séparément les colonnes Demandé et Confirmé. Une demande ne prouve pas la création du service."
+      },
+      {
+        "en": "Retry the failed mail step without repeating the confirmed identity step. No live service receives a request.",
+        "ar": "أعد خطوة البريد الفاشلة دون تكرار خطوة الهوية المؤكدة. لا تستقبل خدمة حقيقية أي طلب.",
+        "fr": "Reprenez la messagerie sans répéter l’identité confirmée. Aucun service réel ne reçoit de demande."
+      }
+    ],
+    "accessibility": [
+      {
+        "en": "Read the service name with its requested and confirmed status.",
+        "ar": "اقرأ اسم الخدمة مع حالتي المطلوب والمؤكد.",
+        "fr": "Lisez le nom du service avec ses états Demandé et Confirmé."
+      },
+      {
+        "en": "Check the failure explanation before the labelled retry action.",
+        "ar": "افحص تفسير الفشل قبل إجراء الإعادة ذي التسمية.",
+        "fr": "Vérifiez l’explication de l’échec avant l’action de reprise associée au libellé."
+      }
+    ],
+    "recommendedDensity": "compact"
+  },
+  {
+    "group": "Review",
+    "id": "coverage",
+    "name": {
+      "en": "Catalog coverage",
+      "ar": "تغطية الكتالوج"
+    },
+    "description": {
+      "en": "Find every specimen, its states, and its verification checklist.",
+      "ar": "اعثر على كل مثال وحالاته وقائمة التحقق."
+    },
+    "icon": "ListChecks",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "coverage",
+      "Catalog coverage",
+      "تغطية الكتالوج",
+      "Couverture du catalogue"
+    ],
+    "tokens": [
+      "text-primary",
+      "bg-surface",
+      "border-control",
+      "action-primary-bg"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Review",
+    "id": "decisions",
+    "name": {
+      "en": "Approved decisions",
+      "ar": "القرارات المعتمدة"
+    },
+    "description": {
+      "en": "The shared foundation contract and visual-review notes.",
+      "ar": "عقد الأسس المشترك وملاحظات المراجعة البصرية."
+    },
+    "icon": "BookOpen",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "decisions",
+      "Approved decisions",
+      "القرارات المعتمدة",
+      "Décisions approuvées"
+    ],
+    "tokens": [
+      "text-primary",
+      "bg-surface",
+      "border-control",
+      "action-primary-bg"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "recommendedDensity": "comfortable"
+  },
+  {
+    "group": "Review",
+    "id": "exports",
+    "name": {
+      "en": "Exports",
+      "ar": "التصدير"
+    },
+    "description": {
+      "en": "Download tokens, CSS, mapping files, and copy examples.",
+      "ar": "نزل الرموز والأنماط والخرائط وانسخ الأمثلة."
+    },
+    "icon": "Download",
+    "states": [
+      "default"
+    ],
+    "variants": [
+      "default"
+    ],
+    "keywords": [
+      "exports",
+      "Exports",
+      "التصدير",
+      "Exports"
+    ],
+    "tokens": [
+      "text-primary",
+      "bg-surface",
+      "border-control",
+      "action-primary-bg"
+    ],
+    "verification": [
+      "render",
+      "primary interaction",
+      "keyboard",
+      "theme",
+      "language"
+    ],
+    "recommendedDensity": "comfortable"
+  }
+]

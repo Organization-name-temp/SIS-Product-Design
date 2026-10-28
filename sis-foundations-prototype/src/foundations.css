@@ -1,0 +1,70 @@
+@import url("./palette.css");
+@import url("./typography.css");
+
+:root {
+  --ref-space-0: 0rem;
+  --ref-space-2: 0.125rem;
+  --ref-space-4: 0.25rem;
+  --ref-space-6: 0.375rem;
+  --ref-space-8: 0.5rem;
+  --ref-space-12: 0.75rem;
+  --ref-space-16: 1rem;
+  --ref-space-24: 1.5rem;
+  --ref-space-32: 2rem;
+  --ref-space-48: 3rem;
+  --ref-space-64: 4rem;
+  --sys-radius-small: 4px;
+  --sys-radius-control: 8px;
+  --sys-radius-panel: 12px;
+  --sys-radius-large-container: 16px;
+  --sys-radius-avatar: 50%;
+  --ref-icon-stroke-width: 2;
+  --sys-icon-size-compact: 16px;
+  --sys-icon-size-default: 20px;
+  --sys-icon-size-prominent: 24px;
+  --sys-target-min-width: 44px;
+  --sys-target-min-height: 44px;
+  --sys-control-min-height-comfortable: 48px;
+  --sys-control-min-height-compact: 44px;
+  --sys-border-width: 1px;
+  --sys-focus-ring-width: 2px;
+  --sys-focus-ring-gap: 2px;
+}
+
+:root {
+  --sys-layout-columns: 4;
+  --sys-layout-inline-padding: var(--ref-space-16);
+  --sys-layout-column-gap: var(--ref-space-16);
+}
+
+@media (min-width: 768px) {
+  :root {
+    --sys-layout-columns: 8;
+    --sys-layout-inline-padding: var(--ref-space-24);
+    --sys-layout-column-gap: var(--ref-space-24);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --sys-layout-columns: 12;
+    --sys-layout-inline-padding: var(--ref-space-32);
+    --sys-layout-column-gap: var(--ref-space-24);
+  }
+}
+
+:root {
+  --sys-motion-duration-fast: 120ms;
+  --sys-motion-duration-standard: 180ms;
+  --sys-motion-duration-slow: 240ms;
+  --sys-motion-duration-feedback: 0ms;
+  --sys-motion-duration-theme: 0ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --sys-motion-duration-fast: 0ms;
+    --sys-motion-duration-standard: 0ms;
+    --sys-motion-duration-slow: 0ms;
+  }
+}

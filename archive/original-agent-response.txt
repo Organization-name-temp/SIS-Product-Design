@@ -1,0 +1,800 @@
+Adham, I approached this as if I were sitting with you as the Product Design Lead on the Modern SIS project — not just as someone helping you make attractive Figma screens.
+
+I accessed your private repository, [`Organization-name-temp/sis-docs`](https://github.com/Organization-name-temp/sis-docs?utm_source=chatgpt.com), through the connected GitHub integration. I inspected the module map, decision log, M01 Identity and Access Management PRD, and the archived development plan.
+
+My main recommendation is this:
+
+You should not try to design the entire SIS before the developers start building it. You should build a design process that lets you deliver the right parts of the product, at the right level of detail, at the right time.
+
+You are one person covering product design, UX, UI, design systems, visual identity, UX engineering, and design QA. Your workflow needs to protect your time, make your decisions visible, and allow the seven technical disciplines to move forward without waiting for every screen to be finished.
+
+# 1. First, understand what you are actually designing
+
+The product
+
+A complete Student Information System, supporting undergraduate and postgraduate journeys, with academic, administrative, financial, research, and AI capabilities.
+
+The product architecture
+
+Your [module map](https://github.com/Organization-name-temp/sis-docs/blob/main/00-product/module-map.md?utm_source=chatgpt.com) organizes the system into six groups and 20 modules, from Identity and Access Management to AI Assistant and other platform capabilities.
+
+The design challenge
+
+Turning those modules into coherent user journeys, permissions, workflows, screens, reusable components, responsive layouts, and interaction states.
+
+The first important distinction is that 20 backend modules do not mean 20 independent UI projects.
+
+For example, a course-registration journey could touch:
+
+- Identity and access.
+- Academic structure and calendar.
+- Program and curriculum management.
+- Course catalog.
+- Academic rules.
+- Course and section management.
+- Course registration.
+- Student notifications.
+
+From the user's perspective, however, this should feel like one coherent experience.
+
+Your job is to connect those domains into a product that makes sense to a student, administrator, or faculty member.
+
+The module map should inform your information architecture, but it should not dictate your navigation structure one-to-one. The repository itself distinguishes between its backend module map and the organization of the PRDs.
+
+## Your role as the design lead
+
+You own the experience contract: what the user can do, how the product behaves, what each state means, and how the experience stays consistent.
+
+You do not need to own the implementation of every technical detail.
+
+| Your responsibility | Your primary output                                                  |
+| ------------------- | -------------------------------------------------------------------- |
+| Product design      | User problems, priorities, journeys, scope                           |
+| UX design           | Information architecture, workflows, decisions, errors               |
+| UI design           | Screen layouts, visual hierarchy, responsive behavior                |
+| Design systems      | Tokens, components, patterns, usage rules                            |
+| UX engineering      | Feasibility, component mapping, interaction specifications           |
+| Graphic design      | Identity, iconography, illustrations, visual assets                  |
+| Design QA           | Verifying that the implemented product matches the agreed experience |
+
+The mistake would be trying to perform all seven responsibilities on every task. Each task needs only the subset relevant to its stage.
+
+# 2. Establish one design workflow for the whole team
+
+I would use a workflow that aligns with your repository's module-based requirements, rather than creating a completely separate design plan.
+
+### 1. Understand
+
+PRD · requirements · roles · constraints
+
+### 2. Structure
+
+User journeys · IA · screen inventory · dependencies
+
+### 3. Design the system
+
+Foundations · components · patterns · states
+
+### 4. Design a vertical slice
+
+Flow · wireframes · polished UI · prototype
+
+### 5. Validate and hand off
+
+Review · annotations · accessibility · acceptance criteria
+
+### 6. Verify implementation
+
+Developer review · UX QA · defects · system improvements
+
+Repeat per feature slice. Improve the system as real requirements emerge.
+
+This is not a waterfall process where you must finish an entire phase before anyone can do anything.
+
+It is a repeating cycle. Once one feature is sufficiently defined, you hand it off while designing the next feature.
+
+That is consistent with modern product-design practice: involve engineering early, begin at low fidelity, iterate as confidence grows, and treat handoff as ongoing collaboration rather than a one-time delivery.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://handbook.gitlab.com\&sz=32)
+
+The GitLab Handbook
+
++1
+
+
+
+## The rule that protects your time
+
+Design enough to unblock the next implementation step, not enough to predict every screen in the entire system.
+
+For instance, you might finish the complete identity-onboarding flow, including its edge cases, while the backend team starts implementing the corresponding endpoints. Meanwhile, you can move on to the next high-priority flow without waiting for the entire identity module to be completed.
+
+# 3. Organize the work at three different levels
+
+Do not track everything as a list of screens. You need three connected levels of planning.
+
+Level 1 — Product and release
+
+Question: What must the product deliver?
+
+Examples: release scope, user outcomes, priorities, dependencies, and acceptance criteria.
+
+Level 2 — Feature and user journey
+
+Question: How does the user accomplish the task?
+
+Examples: invite a user, configure permissions, register for courses, submit an application, or review a scholarship application.
+
+Level 3 — Screens and components
+
+Question: What does the user see and interact with?
+
+Examples: account form, user table, role editor, impact-preview dialog, empty state, error banner, confirmation dialog.
+
+A screen should exist because a user needs to accomplish something, not because a module name exists in the repository.
+
+## Build one master tracker
+
+Keep your existing project plan and role-specific views. Do not create seven competing master plans.
+
+Add a design view to the existing shared tracker, or create a dedicated design tracker that references the same module IDs and requirements.
+
+I recommend these fields:
+
+| Field                | What it tells you                             |
+| -------------------- | --------------------------------------------- |
+| Feature / journey    | The outcome being designed                    |
+| Module IDs           | The affected SIS domains                      |
+| Requirement / AC IDs | The source of truth                           |
+| User / role          | Who uses the feature                          |
+| Priority             | Must ship, should ship, or later              |
+| Dependencies         | APIs, rules, permissions, or other flows      |
+| Design status        | Current design stage                          |
+| Handoff link         | The exact Figma section or prototype          |
+| Developer owner      | Who is implementing it                        |
+| QA status            | Whether the implementation matches the design |
+
+The tracker should describe progress through the feature, not just the number of Figma frames you have created.
+
+# 4. Decide what to design first
+
+This is where I would be strict as your design lead.
+
+You have 20 modules. You cannot give all 20 the same level of design attention at the same time.
+
+Your repository's archived parallel development plan identifies the practical foundations as M20 Multi-Tenancy, M01 Identity and Access Management, M02 Institution Management, and M04 Academic Structure and Calendar. Treat that archived plan as a useful dependency reference, not as the sole authority for current release scope or deadlines.
+
+The current [decision log](https://github.com/Organization-name-temp/sis-docs/blob/main/00-product/decisions/decision-log.md?utm_source=chatgpt.com) and current module PRDs should govern decisions.
+
+I would organize your design backlog into these categories:
+
+A. Platform foundations
+
+Identity, sign-in, account recovery, access management, institution setup, tenancy boundaries, and academic configuration.
+
+Why first: these determine access, shared UI patterns, and prerequisites for other journeys.
+
+B. Core academic journeys
+
+Student lifecycle, programs, courses, registration, records, degree progress, and the relevant finance or admissions flows.
+
+Why next: these represent major user outcomes and exercise many shared components.
+
+C. Cross-cutting workflows
+
+Notifications, reporting, analytics, policy configuration, AI assistance, and reusable workflow patterns.
+
+Why alongside other work: design these when a concrete journey needs them rather than inventing every capability upfront.
+
+This is a dependency-based grouping, not a rigid sequence. You should design a downstream feature whenever its requirements are clear and it can be designed independently.
+
+## How to choose your next design task
+
+Score each candidate from 1–5 on:
+
+- Release importance: How essential is it to the next release?
+- Dependency value: How many other features does it unblock?
+- User impact: How important is the outcome to the user?
+- Readiness: Are the requirements and decisions clear enough to design?
+
+A simple prioritization score is:
+
+\\[ P = 3R + 2D + 2U + Q \\]
+
+Where \\(R\\) is release importance, \\(D\\) dependency value, \\(U\\) user impact, and \\(Q\\) readiness.
+
+This is a lightweight prioritization aid, not a substitute for release commitments or security requirements. Security-critical and prerequisite work can override the score.
+
+# 5. Start the design system before producing dozens of screens
+
+Here is the most important practical advice: build the minimum viable design system before designing your first polished feature, then expand it through real usage.
+
+Do not spend several weeks designing every possible component in isolation. You do not yet know every interaction pattern your SIS will need.
+
+Instead, build the foundations, the shared application shell, the first set of components, and a small number of representative patterns.
+
+## Your Figma file structure
+
+I would start with one primary Figma Design file called `Modern SIS — Product Design System & Experience`.
+
+## Modern SIS — Design Workspace
+
+00
+
+Cover & Design Governance
+
+Project status, links, conventions, decision log
+
+01
+
+Foundations
+
+Brand, colors, typography, spacing, grids, elevation, motion
+
+02
+
+Core Components
+
+Buttons, fields, selects, tables, dialogs, tabs, navigation
+
+03
+
+Patterns
+
+Search/filter, CRUD, bulk actions, approval, upload, review
+
+04
+
+Application Shell
+
+Global navigation, page headers, breadcrumbs, role-aware layouts
+
+05
+
+Product Flows
+
+User journeys and low-fidelity wireframes
+
+06
+
+High-Fidelity Screens
+
+Approved screens grouped by user journey
+
+07
+
+Prototypes
+
+Connected, testable end-to-end journeys
+
+08
+
+Handoff & QA
+
+Specifications, responsive rules, open questions, implementation review
+
+09
+
+Archive
+
+Superseded explorations and historical decisions
+
+If the file becomes too large, split the product screens into separate files by experience or major domain. Keep the design-system library and naming conventions consistent.
+
+## What to build in the design system
+
+### A. Foundations
+
+Establish these before extensive screen production:
+
+- Color primitives and semantic color tokens.
+- Typography scale, text roles, and font weights.
+- Spacing scale and layout grid.
+- Border radii, borders, and elevation.
+- Breakpoints and responsive layout rules.
+- Focus indicators and accessibility rules.
+- Icon style and sizing.
+- Light and dark themes, if required by product scope.
+- Localization conventions, including Arabic RTL and French text expansion.
+
+Don't choose colors purely because they look attractive. Define what each token means.
+
+For example, a semantic `color-text-danger` should mean the same thing wherever it appears. A destructive action, a failed form submission, and an academic warning should not all use red merely because they feel important.
+
+### B. Components
+
+Start with the shared components you can reasonably expect to use across many SIS domains.
+
+Inputs & actions
+
+Button, icon button, text field, select, checkbox, radio, switch, date picker.
+
+Navigation
+
+Sidebar, top bar, breadcrumbs, tabs, pagination, mobile navigation.
+
+Data display
+
+Table, status badge, avatar, card, statistic, tooltip, empty state.
+
+Feedback & overlays
+
+Dialog, drawer, toast, alert, confirmation, loading and error states.
+
+For each component, define its variants, states, usage rules, and accessibility behavior. Use Figma variables and component properties rather than manually maintaining many copies.
+
+### C. Patterns
+
+This is where the design system becomes genuinely useful for an enterprise SIS.
+
+Components are individual building blocks. Patterns are reusable solutions to recurring user problems.
+
+Build patterns for:
+
+- Search, filter, sort, and pagination.
+- Create, view, edit, and archive workflows.
+- Multi-step forms with save-and-resume.
+- Permission assignment and access review.
+- Bulk actions on large tables.
+- Approval, rejection, and requests for changes.
+- File upload, preview, and validation.
+- Audit history and activity timelines.
+- Empty, loading, error, success, and permission-denied states.
+- Data-heavy dashboards and reports.
+
+A well-designed permission editor can save you much more time than a beautifully polished standalone button because its interaction model can be reused across multiple modules.
+
+# 6. Make the design system match the actual frontend
+
+Since you are also acting as a UX engineer, don't let Figma and the implementation become two unrelated systems.
+
+The exact frontend stack and existing component architecture should be confirmed with the developers before you lock the implementation contract.
+
+I would establish a shared naming convention such as:
+
+| Figma                  | Frontend concept                 |
+| ---------------------- | -------------------------------- |
+| `color/action/primary` | Semantic primary-action token    |
+| `button/primary`       | Primary button component         |
+| `form/field/default`   | Standard form-field pattern      |
+| `table/data`           | Reusable data-table component    |
+| `navigation/sidebar`   | Application navigation component |
+| `feedback/empty-state` | Empty-state pattern              |
+
+The names do not have to be identical character-for-character, but every Figma component should map to a recognizable implementation concept.
+
+Ask the frontend lead to identify:
+
+1. Existing component libraries and primitives.
+2. Which components already exist.
+3. Which components are shared across the application.
+4. Which interaction behaviors are already implemented.
+5. Which design tokens the codebase already uses.
+
+Prefer extending an existing component over introducing a competing one without a reason. That is one of the key ways to reduce implementation friction.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://www.figma.com\&sz=32)
+
+Figma Blog
+
++1
+
+
+
+Your design system is not finished when the Figma library is finished. It becomes useful when the frontend team can implement it consistently and you can verify the result.
+
+# 7. How to design each feature, from requirements to screens
+
+Let's use M01 Identity and Access Management as your first practical example.
+
+I inspected its current PRD in the repository. It is marked Draft, was last reviewed on October 25, 2026, and points to an existing epic and ticket set as its source of truth. That means you should confirm the current acceptance criteria and unresolved decisions before finalizing the screens.
+
+The PRD covers identity, account lifecycle, authentication, recovery, scoped access, and administrative controls.
+
+Don't begin by drawing a dashboard. Begin by identifying the journeys.
+
+## Step 1 — Create the journey inventory
+
+IAM-01
+
+Register or invite a person
+
+Administrator → Invite → Verification → Account activation
+
+IAM-02
+
+Sign in and recover access
+
+User → Authenticate → Step-up if required → Recover
+
+IAM-03
+
+Manage roles and permissions
+
+Administrator → Role catalog → Configure → Validate
+
+IAM-04
+
+Assign scoped access
+
+Administrator → Select person → Set role and scope → Review impact
+
+IAM-05
+
+Review and revoke access
+
+Administrator → Inspect assignment → Review impact → Revoke
+
+IAM-06
+
+Manage active sessions
+
+User or administrator → Inspect sessions → Revoke when authorized
+
+Illustrative journey breakdown, not a claim that these six IDs are the PRD's official requirement IDs. Validate coverage against the current epic and acceptance criteria.
+
+For each journey, record:
+
+- User role and goal.
+- Preconditions and permissions.
+- Main success path.
+- Alternative and failure paths.
+- Business rules.
+- Relevant acceptance criteria.
+- Data required from backend.
+- Release priority.
+
+## Step 2 — Draw the flow before the interface
+
+For example, an access-assignment flow might be:
+
+Open person or role assignment
+
+Choose role, scope, and duration
+
+Validate authority and conflicts
+
+Show impact preview
+
+Valid
+
+Confirm assignment
+
+Invalid
+
+Explain conflict and recover
+
+This is an illustrative interaction flow, not a finalized security specification. The PRD's authorization rules, transition matrix, and acceptance criteria must determine the actual behavior.
+
+Notice how the flow already tells you which UI patterns you need: a selection control, a scope editor, validation feedback, an impact-preview dialog, and a confirmation state.
+
+That's how requirements drive components — rather than inventing components first and trying to find places to use them.
+
+## Step 3 — Turn the flow into a screen inventory
+
+A single journey can produce multiple screens, but not every step requires a separate page.
+
+For the example above, you might need:
+
+- Access-assignment table or detail view.
+- Assignment editor.
+- Scope and duration controls.
+- Impact-preview dialog.
+- Validation-error state.
+- Success confirmation.
+- Permission-denied state.
+
+You could implement the editor and preview in a drawer or modal if that is the best fit for the task. Do not create a new page just because a new step exists in the flow.
+
+## Step 4 — Produce wireframes
+
+Use low-fidelity wireframes to answer:
+
+- What information must be visible?
+- What is the primary action?
+- What does the user need to decide?
+- What can go wrong?
+- Where does the user go next?
+
+Only then invest time in polished UI.
+
+## Step 5 — Design the full state model
+
+For each interactive screen, check the relevant states:
+
+- Initial.
+- Loading.
+- Populated.
+- Empty.
+- Validation error.
+- Request failure.
+- Permission denied.
+- Success.
+- Disabled or unavailable.
+
+Not every screen needs all nine states, but every relevant state must be accounted for. Security-sensitive actions need particular care.
+
+## Step 6 — Prototype the critical path
+
+Connect the screens in Figma and test whether someone can complete the task without your explanation.
+
+Test the alternative path too. A beautiful successful path is not sufficient for an enterprise system where permissions, validation, and data integrity matter.
+
+# 8. Design the shared application shell early
+
+Before producing dozens of module-specific dashboards, establish a consistent shell.
+
+[NEDSIS | Inventra](https://images.openai.com/static-rsc-4/AmLwSx3-nU7qUgKgNOHUzREbGlEiWd4m5J7Af4PTDL7EgGl336CMS6X8g8-u3ek-o9j9MjN6pDZGND2IhqCqgb8x7EeqL3_bo-6BQioTlsKv4cLmN0NcPDCFxeeviy_EuTpg1odOpXzm4H0EDTPQRP9w_Y5dsaHVsr3v4bc3Fho?purpose=inline)
+
+[Admin Dashboard | SaasRock Documentation](https://images.openai.com/static-rsc-4/mXBDF98hQADCIkasmHFfu7oZ___X8VkuRyMrsRvMjBo_QKhD6OtUle0T1OCK0ONcm5dqOtBPosU6q7cZTrCHvdnzLq5ivvL5_-C1codA2hkA8nIelbnUL5gFAldaro9rcwmUbERffQ5bnnhFFuzAa3SSpNP59lJB3xDmeiKFGTI?purpose=inline)
+
+[Payment Options | MyUHINFO](https://images.openai.com/static-rsc-4/iquK68v6xDeQ7Lnh-deSmTDM40jvxZ5wLLP0vKZuc_Ifl_Oj8RW0C91b9SeJ8DgiqBlj1Ea1cpouD7bC45tXYtSR8JLfgxIcTl9QwKAI4RdpkW7c4Rh1HbwqbKGNF97W89GKM1zOfBayt2VshwLUhXXFkV6vgGtjbWw2P4EZsMk?purpose=inline)
+
+10
+
+Visual references for common enterprise SIS interface patterns, not designs from your repository.
+
+The shell should define:
+
+- Global navigation and role-aware navigation.
+- Page title, breadcrumbs, and contextual actions.
+- Search and notifications, where required by the product scope.
+- Content width and spacing.
+- Page-level actions and secondary actions.
+- Responsive behavior.
+- Consistent feedback and overlays.
+
+Then define page templates, such as:
+
+| Template             | Typical use                                   |
+| -------------------- | --------------------------------------------- |
+| Overview dashboard   | Student, staff, or institutional summaries    |
+| Data-management list | Students, users, courses, applications        |
+| Entity detail        | Student profile, course, program, application |
+| Form editor          | Create or update an entity                    |
+| Review workspace     | Approvals, eligibility, application review    |
+| Analytics workspace  | Reports, trends, performance                  |
+| Settings workspace   | Policies, permissions, configuration          |
+
+A template is not a universal layout to force onto every feature. It is a starting point that you adapt when the user task requires it.
+
+For a data-heavy SIS, consistency and scanability are more important than making every page visually unique.
+
+# 9. How to work as a solo designer without blocking developers
+
+This is where you need a deliberate operating model.
+
+I recommend maintaining three work queues.
+
+Queue A
+
+### Ready for development
+
+The feature has sufficient flow, screen designs, states, and implementation notes. The team can build it.
+
+Queue B
+
+### Currently being designed
+
+The flow and requirements are understood, but the detailed UI or interaction specification is not yet ready.
+
+Queue C
+
+### Discovery and backlog
+
+Future features, unresolved product questions, and work that does not need immediate design attention.
+
+Your aim is to keep at least one well-defined feature available to developers while you work on the next one. You don't need to keep every developer busy with design work at every moment, but you should make dependencies and waiting time visible.
+
+## A practical weekly cadence
+
+Assuming you can dedicate a meaningful but limited number of hours to design, use this as a starting template rather than a fixed quota.
+
+| Activity                            | Approximate share |
+| ----------------------------------- | ----------------- |
+| Current feature flows and UI        | 40%               |
+| Requirements and design-system work | 20%               |
+| Developer collaboration and handoff | 15%               |
+| Implementation QA and iteration     | 15%               |
+| Planning and stakeholder decisions  | 10%               |
+
+Adjust the shares to the current bottleneck. If developers are implementing several features, spend more time on QA and handoff. If requirements are still changing, spend more time on clarification and flows.
+
+### Your non-negotiable collaboration practices
+
+1. Hold a short design-development sync each week. Ask what is blocked, what is being implemented next, and which design decisions need engineering input.
+
+2. Agree on a near-term implementation window. Ask the technical lead which feature slices they expect to start next so you can prioritize the matching designs.
+
+3. Publish decisions, not just screenshots. Record the rationale and the requirements behind important interactions.
+
+4. Time-box feedback. Ask reviewers to respond within an agreed period; two business days can be a useful default for routine design reviews.&#x20;
+
+   [image](https://www.google.com/s2/favicons?domain=https://handbook.gitlab.com\&sz=32)
+
+   The GitLab Handbook
+
+5. Review the actual implementation. Reserve time for UX QA instead of assuming handoff means the work is finished.
+
+The goal is not to control every developer's pace. It is to coordinate the next useful handoff and prevent avoidable rework.
+
+# 10. Define a minimum handoff contract
+
+A Figma link alone is not a handoff.
+
+Every feature marked ready for development should have a small, consistent packet.
+
+## Feature handoff checklist
+
+Use this for every feature handoff.
+
+### 0/10
+
+Requirements and acceptance criteria linked
+
+User journey and primary flow documented
+
+Approved screen designs linked
+
+Relevant component and token references identified
+
+Interaction and validation behavior specified
+
+Loading, empty, error, and success states covered where relevant
+
+Responsive behavior and RTL considerations documented
+
+Permissions and security-sensitive actions clarified
+
+Open questions and assumptions recorded
+
+Implementation acceptance criteria agreed
+
+You can use this checklist in your tracker or in the team's documentation. The specific tool matters less than having a consistent standard. Strategic annotations, early collaboration, and implementation follow-up are key to reducing handoff friction.&#x20;
+
+[image](https://www.google.com/s2/favicons?domain=https://github.com\&sz=32)
+
+GitHub
+
++1
+
+
+
+# 11. The first two weeks: what I would actually do
+
+Do not start by drawing every dashboard or producing a complete component library. Use your first two weeks to establish a repeatable process and deliver a real feature slice.
+
+## Days 1–2
+
+Audit
+
+Understand the source of truth
+
+- Read the current release scope, module map, decision log, and selected module PRD.
+- Identify unresolved decisions and requirements that are not yet covered.
+- Ask frontend and backend for their current implementation priorities.
+- Establish the tracker and feature status definitions.
+
+Deliverable: A prioritized design backlog and a clear picture of dependencies.
+
+## Days 3–4
+
+Foundations
+
+Create the initial design system
+
+- Define the typography, colors, spacing, grid, and layout rules.
+- Build the core buttons, fields, dialogs, navigation, and feedback components.
+- Establish naming conventions and component states.
+- Review implementation constraints with frontend.
+
+Deliverable: A usable v0.1 design-system library, not a complete system.
+
+## Days 5–7
+
+Experience
+
+Design the first real journey
+
+- Select a high-priority feature with clear requirements and meaningful dependencies.
+- Map its flow and screen inventory.
+- Produce wireframes and review them with the team.
+- Resolve key interaction and permission questions.
+- Begin the polished UI and prototype.
+
+Deliverable: A reviewed journey and a coherent first set of screens.
+
+## Days 8–10
+
+Delivery
+
+Handoff, verify, and iterate
+
+- Complete relevant UI states and responsive behavior.
+- Review the design with the implementation owner.
+- Publish acceptance criteria and implementation notes.
+- Start the next independent feature while the first is being implemented.
+- Refine shared components based on what you learned.
+
+Deliverable: One implementation-ready feature slice and a repeatable handoff process.
+
+This schedule assumes the relevant requirements are available and stakeholders can make decisions promptly. If they are not, use the time to resolve the blocking questions rather than fabricate certainty in the design.
+
+# 12. How to keep the design work aligned with your documentation
+
+The [current decision log](https://github.com/Organization-name-temp/sis-docs/blob/main/00-product/decisions/decision-log.md?utm_source=chatgpt.com) identifies important product decisions and their status. Keep that distinction in your design workflow.
+
+For each feature, distinguish between:
+
+- Decided: Design can proceed against the approved product decision.
+- Proposed: Design can explore an option, but the proposal needs approval.
+- Open: A dependent interaction may need to wait for clarification, or you can design the parts that do not depend on the decision.
+- Superseded: Don't continue treating the old decision as current.
+
+Also, the current M01 PRD has its own source-of-truth references. Don't silently replace its detailed rules with a simplified interpretation from a Figma flow.
+
+A practical rule is:
+
+Every important design decision should be traceable to a requirement, a product decision, or an explicitly documented design proposal.
+
+That becomes particularly important for access control, financial decisions, academic eligibility, and AI-assisted functionality.
+
+For a system this large, I would keep one canonical design-system document and one design specification per major feature or module. Do not create a separate, competing master specification for each role.
+
+# 13. What I would avoid
+
+Designing all 20 modules before handoff
+
+You will create substantial work based on assumptions, and developers will be waiting for details they may not need yet.
+
+Perfecting branding before validating workflows
+
+Brand identity matters, but it should not delay core interaction patterns and implementation-critical decisions.
+
+Making every module use a different UI pattern
+
+Reuse shared components and patterns. Introduce a new pattern only when the user need justifies it.
+
+Handing off static screens without behavior
+
+Forms, tables, approvals, and permission editors need explicit interaction and failure states.
+
+Measuring productivity by frame count
+
+Measure readiness, decisions resolved, features handed off, and implementation quality.
+
+# 14. Let's turn this into your actual working plan
+
+My recommendation is to make the first milestone a Design Operations Foundation + First Vertical Slice. It gives you the system, the planning process, and an actual deliverable rather than leaving you with a beautiful design-system file and no product screens.
+
+I would like to narrow down one important thing before setting the exact first sprint: how far along is the frontend right now?
+
+1\. Current frontend status
+
+Developers are just starting or setting up the architecture.
+
+Some modules and screens are already being implemented.
+
+There is already a working application with established components.
+
+2\. Current design status
+
+No established design system or screen library yet.
+
+I have some explorations, wireframes, or individual screens.
+
+We already have a design system or existing Figma file.
+
+3\. What should we prioritize first?
+
+The design system and application shell.
+
+M01 Identity & Access Management, including authentication and permissions.
+
+The most urgent feature in the current release plan.
+
+The complete design roadmap and screen inventory for all modules.
+
+Build my actual design execution plan
+
+Once those details are established, the next step is to turn this framework into a prioritized, repository-aligned backlog: which flows to map first, which screens to create, which components to establish, and precisely what you should hand to the developers at each stage.

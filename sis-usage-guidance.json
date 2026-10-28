@@ -1,0 +1,313 @@
+{
+  "version": "1.0.0",
+  "spacing": [
+    {
+      "value": 0,
+      "token": "--ref-space-0",
+      "title": {
+        "en": "Connected groups",
+        "ar": "مجموعات متصلة"
+      },
+      "use": {
+        "en": "Join related segments without an internal gap.",
+        "ar": "صِل الأجزاء المرتبطة دون فجوة داخلية."
+      },
+      "avoid": {
+        "en": "Do not remove outer separation between unrelated controls.",
+        "ar": "لا تزل الفصل بين عناصر تحكم غير مرتبطة."
+      }
+    },
+    {
+      "value": 2,
+      "token": "--ref-space-2",
+      "title": {
+        "en": "Optical adjustment",
+        "ar": "ضبط بصري"
+      },
+      "use": {
+        "en": "Use for a small internal alignment correction.",
+        "ar": "استخدمه لضبط محاذاة داخلي صغير."
+      },
+      "avoid": {
+        "en": "Do not use as the sole separation between clickable targets.",
+        "ar": "لا تستخدمه فاصلاً وحيداً بين مناطق النقر."
+      }
+    },
+    {
+      "value": 4,
+      "token": "--ref-space-4",
+      "title": {
+        "en": "Label and hint",
+        "ar": "تسمية ومساعدة"
+      },
+      "use": {
+        "en": "Keep a short hint close to its label.",
+        "ar": "قرّب المساعدة القصيرة من تسميتها."
+      },
+      "avoid": {
+        "en": "Do not use for separation between independent fields.",
+        "ar": "لا تستخدمه للفصل بين حقول مستقلة."
+      }
+    },
+    {
+      "value": 6,
+      "token": "--ref-space-6",
+      "title": {
+        "en": "Badge content",
+        "ar": "محتوى الشارة"
+      },
+      "use": {
+        "en": "Separate an icon from a short badge label.",
+        "ar": "افصل الأيقونة عن نص الشارة القصير."
+      },
+      "avoid": {
+        "en": "Do not compress the interactive target to this spacing.",
+        "ar": "لا تضغط منطقة التفاعل إلى هذه المسافة."
+      }
+    },
+    {
+      "value": 8,
+      "token": "--ref-space-8",
+      "title": {
+        "en": "Icon and action label",
+        "ar": "أيقونة ونص إجراء"
+      },
+      "use": {
+        "en": "Use between an action icon and its visible label.",
+        "ar": "استخدمه بين أيقونة الإجراء وتسميته الظاهرة."
+      },
+      "avoid": {
+        "en": "Do not use instead of the 44px interaction area.",
+        "ar": "لا تستخدمه بدلاً من منطقة تفاعل 44px."
+      }
+    },
+    {
+      "value": 12,
+      "token": "--ref-space-12",
+      "title": {
+        "en": "Related controls",
+        "ar": "عناصر مرتبطة"
+      },
+      "use": {
+        "en": "Group related fields or actions with a clear gap.",
+        "ar": "جمّع الحقول أو الإجراءات المرتبطة بفجوة واضحة."
+      },
+      "avoid": {
+        "en": "Do not use between major page sections.",
+        "ar": "لا تستخدمه بين أقسام الصفحة الرئيسية."
+      }
+    },
+    {
+      "value": 16,
+      "token": "--ref-space-16",
+      "title": {
+        "en": "Compact group padding",
+        "ar": "حشو مجموعة مدمجة"
+      },
+      "use": {
+        "en": "Pad a compact panel or separate field groups.",
+        "ar": "أضف حشواً للوحة مدمجة أو افصل مجموعات الحقول."
+      },
+      "avoid": {
+        "en": "Do not reduce text size when the panel becomes compact.",
+        "ar": "لا تصغّر النص عند ضغط اللوحة."
+      }
+    },
+    {
+      "value": 24,
+      "token": "--ref-space-24",
+      "title": {
+        "en": "Comfortable panel padding",
+        "ar": "حشو لوحة مريحة"
+      },
+      "use": {
+        "en": "Pad a comfortable panel and separate its sections.",
+        "ar": "أضف حشواً للوحة المريحة وافصل أقسامها."
+      },
+      "avoid": {
+        "en": "Do not insert this gap inside a short icon label.",
+        "ar": "لا تضع هذه الفجوة داخل نص أيقونة قصير."
+      }
+    },
+    {
+      "value": 32,
+      "token": "--ref-space-32",
+      "title": {
+        "en": "Page sections",
+        "ar": "أقسام الصفحة"
+      },
+      "use": {
+        "en": "Separate major content sections on a wide layout.",
+        "ar": "افصل أقسام المحتوى الرئيسية في العرض الواسع."
+      },
+      "avoid": {
+        "en": "Do not use as the default gap in dense table rows.",
+        "ar": "لا تستخدمه فجوة افتراضية لصفوف جدول كثيف."
+      }
+    },
+    {
+      "value": 48,
+      "token": "--ref-space-48",
+      "title": {
+        "en": "Major content groups",
+        "ar": "مجموعات محتوى رئيسية"
+      },
+      "use": {
+        "en": "Separate a page introduction from a large content group.",
+        "ar": "افصل مقدمة الصفحة عن مجموعة محتوى كبيرة."
+      },
+      "avoid": {
+        "en": "Do not use between every field in a task form.",
+        "ar": "لا تستخدمه بين جميع حقول نموذج المهمة."
+      }
+    },
+    {
+      "value": 64,
+      "token": "--ref-space-64",
+      "title": {
+        "en": "Wide layout separation",
+        "ar": "فصل العرض الواسع"
+      },
+      "use": {
+        "en": "Separate large regions on spacious desktop layouts.",
+        "ar": "افصل المناطق الكبيرة في عروض سطح المكتب الواسعة."
+      },
+      "avoid": {
+        "en": "Use the responsive 16px outer padding on narrow screens.",
+        "ar": "استخدم الحشو الخارجي المتجاوب 16px في الشاشات الضيقة."
+      }
+    }
+  ],
+  "radius": [
+    {
+      "value": 4,
+      "token": "--sys-radius-small",
+      "title": {
+        "en": "Badges and small markers",
+        "ar": "الشارات والعلامات الصغيرة"
+      },
+      "use": {
+        "en": "Use for small non-interactive status elements.",
+        "ar": "استخدمه لعناصر الحالة الصغيرة غير التفاعلية."
+      },
+      "avoid": {
+        "en": "Do not apply to large dialogs.",
+        "ar": "لا تستخدمه للحوارات الكبيرة."
+      }
+    },
+    {
+      "value": 8,
+      "token": "--sys-radius-control",
+      "title": {
+        "en": "Buttons and fields",
+        "ar": "الأزرار والحقول"
+      },
+      "use": {
+        "en": "Use consistently on buttons, inputs, and selects.",
+        "ar": "استخدمه بصورة متسقة للأزرار والحقول والقوائم."
+      },
+      "avoid": {
+        "en": "Do not mix corner sizes within one control group.",
+        "ar": "لا تخلط أحجام الزوايا داخل مجموعة تحكم واحدة."
+      }
+    },
+    {
+      "value": 12,
+      "token": "--sys-radius-panel",
+      "title": {
+        "en": "Cards and panels",
+        "ar": "البطاقات واللوحات"
+      },
+      "use": {
+        "en": "Use for bounded groups of related content.",
+        "ar": "استخدمه لمجموعات المحتوى المرتبط ذات الحدود."
+      },
+      "avoid": {
+        "en": "Do not create nested corners that cross their outer boundary.",
+        "ar": "لا تجعل الزوايا الداخلية تتجاوز الحد الخارجي."
+      }
+    },
+    {
+      "value": 16,
+      "token": "--sys-radius-large-container",
+      "title": {
+        "en": "Dialogs and drawers",
+        "ar": "الحوارات واللوحات الجانبية"
+      },
+      "use": {
+        "en": "Use for a larger floating container.",
+        "ar": "استخدمه لحاوية عائمة كبيرة."
+      },
+      "avoid": {
+        "en": "A flush screen edge can stay square.",
+        "ar": "يمكن أن تبقى حافة الشاشة المتصلة مربعة."
+      }
+    },
+    {
+      "value": "50%",
+      "token": "--sys-radius-avatar",
+      "title": {
+        "en": "Identity circles",
+        "ar": "دوائر الهوية"
+      },
+      "use": {
+        "en": "Use for avatars and identity initials.",
+        "ar": "استخدمه للصور الشخصية والحروف التعريفية."
+      },
+      "avoid": {
+        "en": "Do not use circular clipping for document previews.",
+        "ar": "لا تستخدم القص الدائري لمعاينات المستندات."
+      }
+    }
+  ],
+  "icons": [
+    {
+      "value": 16,
+      "token": "--sys-icon-size-compact",
+      "title": {
+        "en": "Dense inline context",
+        "ar": "سياق داخلي كثيف"
+      },
+      "use": {
+        "en": "Use beside a 14px label or within a badge.",
+        "ar": "استخدمه بجوار نص 14px أو داخل شارة."
+      },
+      "avoid": {
+        "en": "Keep the full 44px target when the icon is interactive.",
+        "ar": "احتفظ بمنطقة 44px كاملة عندما تتفاعل الأيقونة."
+      }
+    },
+    {
+      "value": 20,
+      "token": "--sys-icon-size-default",
+      "title": {
+        "en": "Default actions and navigation",
+        "ar": "الإجراءات والتنقل الافتراضي"
+      },
+      "use": {
+        "en": "Use for standard controls and navigation items.",
+        "ar": "استخدمه للتحكم القياسي وعناصر التنقل."
+      },
+      "avoid": {
+        "en": "Keep the native 24px canvas proportions and 2px stroke.",
+        "ar": "احتفظ بنسب لوحة 24px الأصلية وسمك الخط 2px."
+      }
+    },
+    {
+      "value": 24,
+      "token": "--sys-icon-size-prominent",
+      "title": {
+        "en": "Prominent actions and empty states",
+        "ar": "إجراءات بارزة وحالات فارغة"
+      },
+      "use": {
+        "en": "Use for prominent meaning or a larger content cue.",
+        "ar": "استخدمه للمعنى البارز أو إشارة محتوى أكبر."
+      },
+      "avoid": {
+        "en": "Do not increase size only to fill empty space.",
+        "ar": "لا تكبّر الحجم لمجرد ملء مساحة فارغة."
+      }
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "name": "sis-foundations-prototype",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "npm run tokens:generate && vite build && node scripts/prepare-sites-build.mjs",
+    "preview": "vite preview",
+    "test:sites": "node --test tests/sites-worker.test.mjs",
+    "typecheck": "tsc --noEmit",
+    "test:catalog": "node scripts/check-catalog.mjs",
+    "test:browser": "playwright test",
+    "verify": "npm run tokens:generate && npm run typecheck && npm run test:motion && npm run test:catalog && npm run build && npm run test:sites",
+    "tokens:generate": "node scripts/generate-tokens.mjs",
+    "test:motion": "node --experimental-strip-types --test tests/motion.test.mjs"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "5.0.4",
+    "lucide-react": "1.47.0",
+    "react": "19.2.0",
+    "react-aria-components": "1.22.1",
+    "react-dom": "19.2.0",
+    "react-is": "19.2.0",
+    "recharts": "3.10.1",
+    "vite": "6.4.2"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@types/react": "19.2.2",
+    "@types/react-dom": "19.2.2",
+    "axe-core": "4.13.0",
+    "typescript": "5.9.3"
+  }
+}
