@@ -84,8 +84,7 @@ css.push(block('[data-theme="dark"], [data-theme="ejust-dark"]', themeBlock("dar
 css.push(`@media (prefers-color-scheme: dark) {\n${block('[data-theme="system"]', themeBlock("dark"))}\n}`);
 
 css.push(
-  block(":root", [
-      ]),
+  block(":root", [...decl(radius.sys.radius, "sys-radius-"), ...decl(opacity.sys.opacity, "sys-opacity-"), ...decl(zindex.sys.z, "sys-z-")]),
 );
 
 const sizes = [...new Set(Object.values(typography.roles).map((r) => r.$extensions["sis.arabic"].sizeReferencePx))].sort((a, b) => a - b);
@@ -125,6 +124,7 @@ for (const lang of ["ar", "en"]) {
 css.push(
   block(":root", [
     ...decl(motion.duration, "sys-motion-duration-"),
+    "--sys-motion-easing-standard: var(--sys-motion-action-easing);",
     ...Object.entries(motion.easing)
       .filter(([k]) => !k.startsWith("$"))
       .map(([k, token]) => `--sys-motion-easing-${k}: cubic-bezier(${token.$value.join(", ")});`),
@@ -138,11 +138,12 @@ css.push(
 );
 css.push(
   `@media(prefers-reduced-motion:reduce){:root{${Object.keys(motion.duration)
+    .filter((key) => !key.startsWith("$"))
     .map((k) => `--sys-motion-duration-${k}:0ms;`)
     .join("")}}}`,
 );
 const foundationsStatic = await readText("../../sis-foundations-prototype/src/foundations.css");
-const cssOut = [...css, foundationsStatic.trim()].join("\n\n") + "\n";
+const cssOut = [...css, foundationsStatic.replace(/^@import[^;]+;\s*/gm, "").trim()].join("\n\n") + "\n";
 
 // --- Tokens JS ---
 const flat = {};
@@ -190,7 +191,7 @@ const tailwind = {
       opacity: Object.fromEntries(Object.entries(opacity.sys.opacity).map(([k, t]) => [k, leaf(t)])),
       screens: Object.fromEntries(Object.entries(breakpoints.sys.breakpoint).map(([k, t]) => [k, leaf(t)])),
       fontFamily: { ui: [typography.ref.font.family.ibm.$value, "sans-serif"] },
-      transitionDuration: Object.fromEntries(Object.entries(motion.duration).map(([k, t]) => [k, leaf(t)])),
+      transitionDuration: Object.fromEntries(Object.entries(motion.duration).filter(([key]) => !key.startsWith("$")).map(([k, t]) => [k, leaf(t)])),
     },
   },
 };

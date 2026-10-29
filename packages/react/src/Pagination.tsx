@@ -1,3 +1,5 @@
+import { ChevronIcon } from "./component-icons";
+
 export interface PaginationProps {
   page: number;
   pageCount: number;
@@ -9,7 +11,9 @@ function pageWindow(page: number, pageCount: number): (number | "…")[] {
     return Array.from({ length: pageCount }, (_, i) => i + 1);
   }
   const pages = new Set<number>([1, pageCount, page - 1, page, page + 1]);
-  const sorted = [...pages].filter((p) => p >= 1 && p <= pageCount).sort((a, b) => a - b);
+  const sorted = [...pages]
+    .filter((p) => p >= 1 && p <= pageCount)
+    .sort((a, b) => a - b);
   const out: (number | "…")[] = [];
   let previous = 0;
   for (const p of sorted) {
@@ -30,11 +34,15 @@ export function Pagination({ page, pageCount, onChange }: PaginationProps) {
         aria-label="Previous page"
         onClick={() => onChange(page - 1)}
       >
-        ‹
+        <ChevronIcon previous />
       </button>
       {pageWindow(page, pageCount).map((entry, index) =>
         entry === "…" ? (
-          <span key={`gap-${index}`} className="sis-pagination-gap" aria-hidden="true">
+          <span
+            key={`gap-${index}`}
+            className="sis-pagination-gap"
+            aria-hidden="true"
+          >
             …
           </span>
         ) : (
@@ -56,7 +64,7 @@ export function Pagination({ page, pageCount, onChange }: PaginationProps) {
         aria-label="Next page"
         onClick={() => onChange(page + 1)}
       >
-        ›
+        <ChevronIcon />
       </button>
     </nav>
   );

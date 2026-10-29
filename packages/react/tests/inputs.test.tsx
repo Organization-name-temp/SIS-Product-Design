@@ -49,7 +49,7 @@ describe("NumberField", () => {
     render(<NumberField label="Credit hours" onChange={onChange} />);
     const input = screen.getByLabelText("Credit hours");
     await userEvent.type(input, "4a2");
-    expect(input).toHaveValue("42");
+    expect(input).toHaveValue(42);
   });
 
   it("marks invalid and announces the error", () => {

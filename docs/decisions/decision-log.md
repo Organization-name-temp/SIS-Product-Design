@@ -30,7 +30,13 @@ Adham controls design approval. User instructions outrank earlier proposals in t
 
 ## Acceptance boundaries
 
+Adham requested a local prototype correction on 28 October 2026.
+The [implementation review](../reports/2026-10-28-registrar-prototype.md) records the interface changes, checks, and preview images.
+The implementation retains D02, D04, D07, and D22. Personal visual acceptance remains pending.
+
 Technical checks support technical completion. They do not replace Adham's personal visual acceptance.
+The [October 29 component review](../reports/2026-10-29-component-system-review.md) records further interface corrections and the repaired screenshot fixture.
+Its token corners and interaction changes remain implementation proposals until Adham accepts the visual result.
 Screen-reader review remains a separate open task. Automated accessibility scans do not prove full accessibility.
 Figma synchronization and production distribution remain To Do.
 Legacy layer numbers and other documented proposals remain proposals until their review.

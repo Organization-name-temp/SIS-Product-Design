@@ -290,6 +290,8 @@ export function ContainersDemo(props: DemoProps) {
 export function NavigationDemo(props: DemoProps) {
   const t = useLabels(props);
   const anchorId = useId();
+  const variantLabel = props.variant === "alternate" ? t("Alternate", "البديل", "Alternative") : props.variant === "long-content" ? t("Long content", "المحتوى الطويل", "Contenu long") : t("Default", "الافتراضي", "Par défaut");
+  const navigationLabel = (en: string, ar: string, fr: string) => `${t(en, ar, fr)}, ${variantLabel}`;
   const [anchor, setAnchor] = useState("details");
   const [active, setActive] = useState("overview");
   const [page, setPage] = useState(1);
@@ -317,7 +319,7 @@ export function NavigationDemo(props: DemoProps) {
           </span>
         }
       >
-        <nav aria-label={t("Breadcrumb", "مسار التنقل", "Fil d’Ariane")}>
+        <nav aria-label={navigationLabel("Breadcrumb", "مسار التنقل", "Fil d’Ariane")}>
           <ol className="component-breadcrumb">
             {[
               ["home", t("Home", "الرئيسية", "Accueil")],
@@ -365,7 +367,7 @@ export function NavigationDemo(props: DemoProps) {
           {sidebar && (
             <nav
               className="component-sidebar"
-              aria-label={t(
+              aria-label={navigationLabel(
                 "Sample navigation",
                 "التنقل التجريبي",
                 "Navigation exemple",
@@ -406,7 +408,7 @@ export function NavigationDemo(props: DemoProps) {
         >
           <nav
             className="toolbar"
-            aria-label={t(
+            aria-label={navigationLabel(
               "Results pages",
               "صفحات النتائج",
               "Pages de résultats",
@@ -502,7 +504,7 @@ export function NavigationDemo(props: DemoProps) {
         <div className="toolbar">
           <nav
             className="component-anchor-links"
-            aria-label={t(
+            aria-label={navigationLabel(
               "Sample section links",
               "روابط أقسام المثال",
               "Liens des sections exemple",

@@ -1,10 +1,47 @@
 /* Charts (Batch C). */
 
-.sis-chart { display: block; }
-.sis-chart-grid { stroke: var(--sys-color-chart-grid); stroke-width: 1; }
-.sis-chart-bar { fill: var(--sys-color-chart-1); }
-.sis-chart-line { stroke: var(--sys-color-chart-2); }
-.sis-chart-marker { fill: var(--sys-color-chart-2); }
+.sis-chart {
+  display: block;
+}
+.sis-chart-grid {
+  stroke: var(--sys-color-chart-grid);
+  stroke-width: 1;
+}
+.sis-chart-bar {
+  fill: var(--sys-color-chart-1);
+}
+.sis-chart-line {
+  stroke: var(--sys-color-chart-2);
+}
+.sis-chart-marker {
+  fill: var(--sys-color-chart-2);
+}
 .sis-chart-axis,
-.sis-chart-tick { fill: var(--sys-color-text-secondary); font-size: 12px; }
-.sis-chart-value { fill: var(--sys-color-text-primary); font-size: 12px; font-variant-numeric: tabular-nums; }
+.sis-chart-tick {
+  fill: var(--sys-color-text-secondary);
+  font-size: var(--ref-font-size-14);
+}
+.sis-chart-value {
+  fill: var(--sys-color-text-primary);
+  font-size: var(--ref-font-size-14);
+  font-variant-numeric: tabular-nums;
+}
+
+.sis-chart-scroll {
+  max-inline-size: 100%;
+  min-inline-size: 0;
+  overflow-x: auto;
+  position: relative;
+}
+.sis-chart-scroll:focus-visible {
+  outline: var(--sys-focus-ring-width) solid var(--sys-color-focus-ring);
+  outline-offset: var(--sys-focus-ring-gap);
+}
+.sis-chart {
+  min-inline-size: calc(var(--ref-space-64) * 6 + var(--ref-space-16));
+}
+.sis-chart-empty {
+  font-family: var(--sys-font-family-ui);
+  font-size: var(--ref-font-size-14);
+  fill: var(--sys-color-text-secondary);
+}

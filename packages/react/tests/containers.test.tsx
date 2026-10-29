@@ -171,7 +171,6 @@ describe("Menu", () => {
   it("navigates items with arrow keys", async () => {
     render(<Menu trigger="Course actions" items={items} />);
     await userEvent.click(screen.getByRole("button", { name: "Course actions" }));
-    await userEvent.keyboard("{ArrowDown}");
     expect(screen.getByRole("menuitem", { name: "Edit" })).toHaveFocus();
     await userEvent.keyboard("{ArrowDown}");
     expect(screen.getByRole("menuitem", { name: "Drop" })).toHaveFocus();

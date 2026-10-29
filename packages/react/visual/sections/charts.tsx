@@ -11,7 +11,7 @@ const enrollment = [
 
 export function ChartsSection() {
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <BarChart data={enrollment} ariaLabel="Enrollment by year" />
       <LineChart data={enrollment} ariaLabel="Enrollment trend" />
     </div>

@@ -21,6 +21,10 @@
       "avatar": {
         "$type": "dimension",
         "$value": "50%"
+      },
+      "pill": {
+        "$type": "dimension",
+        "$value": "999px"
       }
     }
   }

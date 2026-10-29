@@ -6,7 +6,7 @@ import { Progress } from "../../src/Progress";
 
 export function InputsSection() {
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <FileUpload label="Attach transcript" maxSizeMb={5} />
       <NumberField label="Credit hours" hint="1 to 21" defaultValue="3" />
       <DateField label="Start date" hint="The term start." />

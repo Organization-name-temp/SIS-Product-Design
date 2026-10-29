@@ -1,3 +1,5 @@
+import { Drawer } from "../../src/Drawer";
+import { Toast } from "../../src/Toast";
 import { useState } from "react";
 import { DataTable, type Column } from "../../src/DataTable";
 import { Alert } from "../../src/Alert";
@@ -20,7 +22,7 @@ export function FeedbackSection() {
   const [toastOpen, setToastOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <Alert tone="danger" title="Registration blocked">A hold is on this account.</Alert>
       <Alert tone="success" title="Saved">Schedule updated.</Alert>
       <DataTable columns={columns} rows={rows} getRowId={(row) => row.id} selectable />
@@ -30,9 +32,11 @@ export function FeedbackSection() {
           <Skeleton lines={2} />
         </div>
         <Tooltip label="Enroll the selected student">
-          <button type="button">Enroll</button>
+          <button type="button" className="sis-btn sis-btn-secondary">Enroll</button>
         </Tooltip>
       </div>
+      {toastOpen && <Toast message="Sample saved" onDismiss={() => setToastOpen(false)}/>}
+      <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title="Course details">MATH 201 · 3 credit hours</Drawer>
       <button type="button" className="sis-btn sis-btn-secondary" onClick={() => setToastOpen(true)}>Show toast</button>
       <button type="button" className="sis-btn sis-btn-secondary" onClick={() => setDrawerOpen(true)}>Open drawer</button>
     </div>

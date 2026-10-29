@@ -9,7 +9,7 @@ export function OverlaysSection() {
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [toastOpen, setToastOpen] = useState(true);
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <Button onClick={() => setDialogOpen(true)}>Open dialog</Button>
       <Button variant="secondary" onClick={() => setDrawerOpen(true)}>Open drawer</Button>
       <Button variant="ghost" onClick={() => setToastOpen(true)}>Show toast</Button>

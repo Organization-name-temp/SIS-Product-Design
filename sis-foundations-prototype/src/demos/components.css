@@ -59,7 +59,7 @@
 .component-tab-panel { padding-block: var(--ref-space-16); }
 .component-split-panels { display: grid; gap: var(--ref-space-8); }
 .component-breadcrumb { list-style: none; padding: 0; margin: 0 0 var(--ref-space-16); flex-wrap: wrap; }
-.component-breadcrumb .component-link { text-decoration: none; padding-inline: 0; }
+.component-breadcrumb .component-link { text-decoration: none; padding-inline: 0; min-inline-size: var(--sys-target-min-height); }
 .component-breadcrumb [aria-current="page"] { color: var(--sys-color-text-primary); font-weight: 600; }
 .component-navbar { border: 1px solid var(--sys-color-border-default); border-radius: 8px; padding: var(--ref-space-8); flex-wrap: wrap; }
 .component-grow { flex: 1; min-width: 0; }

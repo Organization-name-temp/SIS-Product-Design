@@ -580,6 +580,8 @@ export function App() {
           className={`embed-view ${config.state === "hover" ? "force-hover" : config.state === "focus" ? "force-focus" : config.state === "pressed" ? "force-pressed" : ""}`}
           data-demo-state={config.state}
         >
+          <h1 className="embed-page-title">{label(entry.name, config.locale)}</h1>
+          <h2 className="embed-page-title">{t("Specimens", "الأمثلة", "Exemples")}</h2>
           {content}
         </main>
       </I18nProvider>

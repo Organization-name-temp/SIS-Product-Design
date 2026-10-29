@@ -1,0 +1,77 @@
+{
+  "phase": "confirm",
+  "scans": [
+    {
+      "name": "workbench-navigation-light",
+      "url": "http://localhost:4173/?embed=1&item=navigation&theme=light&lang=en&density=compact",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-dark",
+      "url": "http://localhost:4173/?embed=1&item=navigation&theme=dark&lang=ar&density=compact",
+      "width": 320,
+      "scrollWidth": 320,
+      "tokens": "#FAFAFA",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-variants",
+      "url": "http://localhost:4173/?item=navigation&tab=variants&theme=light&lang=en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-states",
+      "url": "http://localhost:4173/?item=navigation&tab=states&theme=light&lang=en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-tokens",
+      "url": "http://localhost:4173/?item=navigation&tab=tokens&theme=light&lang=en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-usage",
+      "url": "http://localhost:4173/?item=navigation&tab=usage&theme=light&lang=en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "name": "workbench-navigation-accessibility",
+      "url": "http://localhost:4173/?item=navigation&tab=accessibility&theme=light&lang=en",
+      "width": 1440,
+      "scrollWidth": 1440,
+      "tokens": "#18181B",
+      "font": "\"IBM Plex Sans Arabic\", sans-serif",
+      "violations": [],
+      "smallTargets": []
+    }
+  ],
+  "errors": [],
+  "captures": []
+}

@@ -1,6 +1,17 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
 import type { CatalogEntry } from "../../src/catalog";
+
+test("toolbar and disclosure controls retain full touch targets", async ({ page }) => {
+  await page.goto("/?item=colors&tab=tokens&theme=light");
+  const controls = await page.locator(".utility-control select, main summary").evaluateAll(nodes => nodes.map(node => ({width: node.getBoundingClientRect().width, height: node.getBoundingClientRect().height})));
+  expect(controls.length).toBeGreaterThanOrEqual(4);
+  expect(controls.every(control => control.width >= 44 && control.height >= 44)).toBe(true);
+  await page.goto("/?item=navigation&tab=variants&theme=light");
+  const breadcrumbs = await page.locator(".component-breadcrumb .component-link").evaluateAll(nodes => nodes.map(node => node.getBoundingClientRect().width));
+  expect(breadcrumbs.length).toBeGreaterThan(0);
+  expect(breadcrumbs.every(width => width >= 44)).toBe(true);
+});
 const catalog: CatalogEntry[] = JSON.parse(
   readFileSync(new URL("../../src/data/catalog.json", import.meta.url), "utf8"),
 );

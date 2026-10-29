@@ -10,8 +10,9 @@ import { List } from "../../src/List";
 export function ContainersSection() {
   const [page, setPage] = useState(2);
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <Breadcrumbs
+        ariaLabel="Course breadcrumb"
         items={[{ label: "Home", href: "#" }, { label: "Registration", href: "#" }, { label: "MATH 201" }]}
       />
       <Card title="Course: Applied Mathematics" actions={<Menu trigger="Actions" items={[{ id: "edit", label: "Edit" }, { id: "drop", label: "Drop" }]} />}>

@@ -1,0 +1,18 @@
+{
+  "phase": "confirm",
+  "scans": 325,
+  "errors": [],
+  "violations": [
+    {
+      "name": "workbench-navigation-variants",
+      "violations": [
+        {
+          "id": "landmark-unique",
+          "count": 4
+        }
+      ]
+    }
+  ],
+  "overflow": [],
+  "missingTokens": []
+}

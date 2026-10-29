@@ -1,6 +1,9 @@
 /* AI assistant chat family (Batch D). */
 
-.sis-chat { display: grid; gap: var(--ref-space-12); }
+.sis-chat {
+  display: grid;
+  gap: var(--ref-space-12);
+}
 .sis-chat-log {
   display: grid;
   gap: var(--ref-space-8);
@@ -11,9 +14,16 @@
   max-block-size: 420px;
   overflow-block: auto;
 }
-.sis-chat-message { display: grid; gap: var(--ref-space-4); }
-.sis-chat-message.sis-chat-user { justify-items: end; }
-.sis-chat-message.sis-chat-assistant { justify-items: start; }
+.sis-chat-message {
+  display: grid;
+  gap: var(--ref-space-4);
+}
+.sis-chat-message.sis-chat-user {
+  justify-items: end;
+}
+.sis-chat-message.sis-chat-assistant {
+  justify-items: start;
+}
 .sis-chat-bubble {
   max-inline-size: 85%;
   padding: var(--ref-space-8) var(--ref-space-12);
@@ -39,19 +49,69 @@
   vertical-align: text-bottom;
   animation: sis-blink 1s steps(2) infinite;
 }
-@keyframes sis-blink { 50% { opacity: 0; } }
-@media (prefers-reduced-motion: reduce) {
-  .sis-chat-cursor { animation: none; }
+@keyframes sis-blink {
+  50% {
+    opacity: 0;
+  }
 }
-.sis-chat-citations { display: flex; gap: var(--ref-space-4); flex-wrap: wrap; }
+@media (prefers-reduced-motion: reduce) {
+  .sis-chat-cursor {
+    animation: none;
+  }
+}
+.sis-chat-citations {
+  display: flex;
+  gap: var(--ref-space-4);
+  flex-wrap: wrap;
+}
 .sis-citation {
   font-size: var(--ref-font-size-14);
   color: var(--sys-color-link-default);
   border: 1px solid var(--sys-color-border-subtle);
-  border-radius: 999px;
+  border-radius: var(--sys-radius-pill);
   padding: 2px var(--ref-space-8);
   background: var(--sys-color-bg-surface);
 }
-.sis-citation:hover { color: var(--sys-color-link-hover); border-color: var(--sys-color-border-default); }
-.sis-chat-inputrow { display: flex; gap: var(--ref-space-8); align-items: center; }
-.sis-chat-input { flex: 1; resize: none; min-block-size: 44px; }
+.sis-citation:hover {
+  color: var(--sys-color-link-hover);
+  border-color: var(--sys-color-border-default);
+}
+.sis-chat-inputrow {
+  display: flex;
+  gap: var(--ref-space-8);
+  align-items: center;
+}
+.sis-chat-input {
+  flex: 1;
+  resize: none;
+  min-block-size: 44px;
+}
+
+.sis-chat {
+  min-inline-size: 0;
+}
+.sis-chat-log {
+  min-inline-size: 0;
+  overscroll-behavior: contain;
+}
+.sis-chat-bubble {
+  line-height: var(--sys-line-height-body);
+  overflow-wrap: anywhere;
+}
+.sis-citation {
+  display: inline-flex;
+  align-items: center;
+  min-block-size: var(--sys-target-min-height);
+  line-height: var(--sys-line-height-body);
+  text-decoration: none;
+  padding-inline: var(--ref-space-12);
+}
+.sis-citation:focus-visible {
+  outline: var(--sys-focus-ring-width) solid var(--sys-color-focus-ring);
+  outline-offset: var(--sys-focus-ring-gap);
+}
+.sis-chat-input {
+  min-inline-size: 0;
+  padding-block: var(--ref-space-12);
+  line-height: var(--sys-line-height-body);
+}

@@ -1,5 +1,8 @@
 # Registrar prototype review
 
+The [October 29 component review](2026-10-29-component-system-review.md) supersedes the component screenshot evidence below.
+That review corrects the fixture stylesheet and expands the browser coverage.
+
 The revised [local prototype](http://localhost:4680) expands the original four-page demo into a six-page registrar workspace.
 Adham requested this correction on October 28, 2026. Personal visual acceptance remains pending.
 

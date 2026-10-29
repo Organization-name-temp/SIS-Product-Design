@@ -567,3 +567,10 @@ test("required fields, optional suffixes, metadata, and anchored overflow naviga
     page.getByRole("heading", { name: "Fees", exact: true }),
   ).toBeVisible();
 });
+
+test('navigation variants expose distinct landmark names', async ({page})=>{
+  await page.goto('/?item=navigation&tab=variants&theme=light');
+  const names=await page.locator('main nav[aria-label]').evaluateAll(nodes=>nodes.map(node=>node.getAttribute('aria-label')));
+  expect(names.length).toBeGreaterThan(4);
+  expect(new Set(names).size).toBe(names.length);
+});

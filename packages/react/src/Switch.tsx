@@ -1,4 +1,4 @@
-import { forwardRef, useId, type ReactNode } from "react";
+import { forwardRef, useId, useState, type ReactNode } from "react";
 
 export interface SwitchProps {
   label: ReactNode;
@@ -13,6 +13,8 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>(function Switch(
   ref,
 ) {
   const id = useId();
+  const [internalChecked, setInternalChecked] = useState(defaultChecked ?? false);
+  const isChecked = checked ?? internalChecked;
   return (
     <label className="sis-choice sis-switch" htmlFor={id}>
       <input
@@ -21,9 +23,12 @@ export const Switch = forwardRef<HTMLInputElement, SwitchProps>(function Switch(
         type="checkbox"
         role="switch"
         className="sis-choice-input sis-switch-input"
-        checked={checked}
-        defaultChecked={defaultChecked}
-        onChange={(event) => onChange?.(event.target.checked)}
+        checked={isChecked}
+        aria-checked={isChecked}
+        onChange={(event) => {
+          setInternalChecked(event.target.checked);
+          onChange?.(event.target.checked);
+        }}
         disabled={disabled}
       />
       <span className="sis-switch-control" aria-hidden="true">

@@ -13,6 +13,16 @@ const data = [
 ];
 
 describe("BarChart", () => {
+  it("describes the actual values and renders an empty state", () => {
+    const view = render(<BarChart data={data} ariaLabel="Enrollment" />);
+    expect(
+      screen.getByRole("img", { name: "Enrollment" }),
+    ).toHaveAccessibleDescription(/2018: 120/);
+    view.rerender(<BarChart data={[]} ariaLabel="Enrollment" />);
+    expect(
+      screen.getByText("No data yet", { selector: "text" }),
+    ).toBeInTheDocument();
+  });
   it("renders one bar per data point with an accessible label", () => {
     render(<BarChart data={data} ariaLabel="Enrollment by year" />);
     const chart = screen.getByRole("img", { name: "Enrollment by year" });
@@ -20,7 +30,9 @@ describe("BarChart", () => {
   });
 
   it("passes axe", async () => {
-    const { container } = render(<BarChart data={data} ariaLabel="Enrollment by year" />);
+    const { container } = render(
+      <BarChart data={data} ariaLabel="Enrollment by year" />,
+    );
     expect(await axe(container)).toHaveNoViolations();
   });
 });
@@ -34,7 +46,9 @@ describe("LineChart", () => {
   });
 
   it("passes axe", async () => {
-    const { container } = render(<LineChart data={data} ariaLabel="Enrollment trend" />);
+    const { container } = render(
+      <LineChart data={data} ariaLabel="Enrollment trend" />,
+    );
     expect(await axe(container)).toHaveNoViolations();
   });
 });

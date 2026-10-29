@@ -1,5 +1,3 @@
-import { Fragment } from "react";
-
 export interface BreadcrumbItem {
   label: string;
   href?: string;
@@ -7,11 +5,15 @@ export interface BreadcrumbItem {
 
 export interface BreadcrumbsProps {
   items: BreadcrumbItem[];
+  ariaLabel?: string;
 }
 
-export function Breadcrumbs({ items }: BreadcrumbsProps) {
+export function Breadcrumbs({
+  items,
+  ariaLabel = "Breadcrumb",
+}: BreadcrumbsProps) {
   return (
-    <nav className="sis-breadcrumbs" aria-label="Breadcrumb">
+    <nav className="sis-breadcrumbs" aria-label={ariaLabel}>
       <ol>
         {items.map((item, index) => {
           const current = index === items.length - 1;

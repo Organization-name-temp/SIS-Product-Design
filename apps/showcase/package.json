@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
-    "test:browser": "playwright test"
+    "test:browser": "playwright test",
+    "test:system": "node scripts/audit-system.mjs confirm"
   },
   "dependencies": {
     "react": "^19.0.0",

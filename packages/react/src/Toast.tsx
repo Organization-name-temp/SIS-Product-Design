@@ -1,3 +1,4 @@
+import { CloseIcon } from "./component-icons";
 import { useEffect, useRef, type ReactNode } from "react";
 
 export type ToastTone = "success" | "warning" | "danger" | "info";
@@ -9,7 +10,12 @@ export interface ToastProps {
   durationMs?: number;
 }
 
-export function Toast({ message, tone = "success", onDismiss, durationMs = 5000 }: ToastProps) {
+export function Toast({
+  message,
+  tone = "success",
+  onDismiss,
+  durationMs = 5000,
+}: ToastProps) {
   const dismissRef = useRef(onDismiss);
   dismissRef.current = onDismiss;
 
@@ -29,8 +35,13 @@ export function Toast({ message, tone = "success", onDismiss, durationMs = 5000 
   return (
     <div className={`sis-toast sis-toast-${tone}`} role="status">
       <span className="sis-toast-message">{message}</span>
-      <button type="button" className="sis-toast-dismiss" aria-label="Dismiss" onClick={onDismiss}>
-        ×
+      <button
+        type="button"
+        className="sis-toast-dismiss"
+        aria-label="Dismiss"
+        onClick={onDismiss}
+      >
+        <CloseIcon />
       </button>
     </div>
   );

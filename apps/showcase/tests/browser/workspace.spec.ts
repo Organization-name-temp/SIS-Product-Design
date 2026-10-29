@@ -1,6 +1,18 @@
 import { test, expect } from "@playwright/test";
 import axe from "axe-core";
 
+test("mobile appearance control retains a full touch target", async ({
+  page,
+}) => {
+  await page.setViewportSize({ width: 320, height: 900 });
+  await page.goto("/#gallery");
+  const target = await page
+    .locator('summary[aria-label="Appearance controls"]')
+    .boundingBox();
+  expect(target?.width).toBeGreaterThanOrEqual(44);
+  expect(target?.height).toBeGreaterThanOrEqual(44);
+});
+
 for (const theme of ["light", "dark"]) {
   for (const route of [
     "students",
@@ -75,6 +87,13 @@ test("registration, keyboard focus, persistence, and CSV export", async ({
   await expect(trigger).toBeFocused();
   await trigger.click();
   const dialog = page.getByRole("dialog", { name: "New registration" });
+  const overlayZ = await page
+    .locator(".sis-dialog-overlay")
+    .evaluate((node) => getComputedStyle(node).zIndex);
+  const sidebarZ = await page
+    .locator(".sis-sidebar")
+    .evaluate((node) => getComputedStyle(node).zIndex);
+  expect(Number(overlayZ)).toBeGreaterThan(Number(sidebarZ));
   await dialog.getByLabel("Student name").fill("Nour Ahmed");
   await dialog.getByLabel("University email").fill("nour@ejust.edu.eg");
   await dialog.getByRole("button", { name: "Create registration" }).click();
@@ -188,5 +207,126 @@ for (const width of [360, 834]) {
     await expect(page).toHaveScreenshot(`courses-${width}.png`, {
       fullPage: true,
     });
+  });
+}
+
+for (const theme of ["light", "dark"])
+  for (const dir of ["ltr", "rtl"])
+    for (const density of ["comfortable", "compact"]) {
+      test(`gallery visual ${theme} ${dir} ${density}`, async ({ page }) => {
+        await page.goto(
+          `/?theme=${theme}&dir=${dir}&density=${density}#gallery`,
+        );
+        await page.evaluate(() => document.fonts.ready);
+        await expect(
+          page.getByRole("group", { name: "Component family" }),
+        ).toBeVisible();
+        await expect(page).toHaveScreenshot(
+          `gallery-${theme}-${dir}-${density}.png`,
+          { fullPage: true },
+        );
+      });
+    }
+
+test("component gallery connects filtering, numeric validation, uploads, and navigation", async ({
+  page,
+}) => {
+  await page.goto("/#gallery");
+  const families = page.getByRole("group", { name: "Component family" });
+  await families.getByRole("button", { name: "Data", exact: true }).click();
+  await page
+    .getByRole("searchbox", { name: "Filter sample students", exact: true })
+    .fill("Salma");
+  await expect(
+    page.getByRole("cell", { name: "Salma Hassan", exact: true }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole("cell", { name: "Omar Khaled", exact: true }),
+  ).toHaveCount(0);
+  await families.getByRole("button", { name: "Inputs", exact: true }).click();
+  await page
+    .getByRole("spinbutton", { name: "Credit hours", exact: true })
+    .fill("25");
+  expect(
+    await page
+      .getByRole("spinbutton", { name: "Credit hours", exact: true })
+      .evaluate((node: HTMLInputElement) => node.validity.rangeOverflow),
+  ).toBe(true);
+  await page.getByLabel("Attach transcript", { exact: true }).setInputFiles({
+    name: "notes.txt",
+    mimeType: "text/plain",
+    buffer: Buffer.from("notes"),
+  });
+  await expect(
+    page.getByRole("alert").filter({ hasText: "not an accepted file type" }),
+  ).toBeVisible();
+  await page.getByLabel("Attach transcript", { exact: true }).setInputFiles({
+    name: "transcript.pdf",
+    mimeType: "application/pdf",
+    buffer: Buffer.from("sample"),
+  });
+  await expect(page.getByText("transcript.pdf", { exact: true })).toBeVisible();
+  await page
+    .getByRole("button", { name: "Remove transcript.pdf", exact: true })
+    .click();
+  await families
+    .getByRole("button", { name: "Navigation", exact: true })
+    .click();
+  await page
+    .getByRole("button", { name: "Course actions", exact: true })
+    .click();
+  await expect(
+    page.getByRole("menuitem", { name: "View details", exact: true }),
+  ).toBeFocused();
+  await page.keyboard.press("Enter");
+  const drawer = page.getByRole("dialog", {
+    name: "Course details",
+    exact: true,
+  });
+  await expect(drawer).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(
+    page.getByRole("button", { name: "Course actions", exact: true }),
+  ).toBeFocused();
+});
+
+for (const route of [
+  "overview",
+  "students",
+  "courses",
+  "assistant",
+  "settings",
+  "gallery",
+]) {
+  test(`large text and narrow layout: ${route}`, async ({ page }) => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto(`/#${route}`);
+    await page.evaluate(
+      () => (document.documentElement.style.fontSize = "200%"),
+    );
+    const layout = await page.evaluate(() => ({
+      width: innerWidth,
+      scroll: document.documentElement.scrollWidth,
+      offenders: [...document.querySelectorAll("main *")]
+        .filter(
+          (node) =>
+            node.getBoundingClientRect().right > innerWidth + 1 &&
+            node.getBoundingClientRect().width > 0 &&
+            !node.closest(
+              ".sis-record-table-wrap,.sis-record-tabs,.sis-chart-scroll",
+            ),
+        )
+        .slice(0, 16)
+        .map((node) => ({
+          tag: node.tagName,
+          cls: node.className,
+          width: node.getBoundingClientRect().width,
+          right: node.getBoundingClientRect().right,
+          text: node.textContent?.slice(0, 70),
+        })),
+    }));
+    expect(layout.scroll, JSON.stringify(layout)).toBeLessThanOrEqual(
+      layout.width,
+    );
   });
 }

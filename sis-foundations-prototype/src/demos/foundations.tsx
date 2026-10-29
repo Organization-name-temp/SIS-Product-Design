@@ -591,7 +591,7 @@ function Colors(props: DemoProps) {
               "Correspondance des thèmes",
             )}
           </h3>
-          <div className="fd-table-scroll">
+          <div className="fd-table-scroll" tabIndex={0}>
             <table className="sample-table fd-mapping-table">
               <thead>
                 <tr>
@@ -1515,7 +1515,7 @@ function GridDemo({ locale }: DemoProps) {
           </span>
         }
       >
-        <div className="fd-table-scroll">
+        <div className="fd-table-scroll" tabIndex={0}>
           <table className="sample-table">
             <thead>
               <tr>
@@ -2284,7 +2284,7 @@ function ElevationDemo({ locale, theme, notify, state }: DemoProps) {
             </div>
           ))}
         </div>
-        <div className="fd-table-scroll">
+        <div className="fd-table-scroll" tabIndex={0}>
           <table className="sample-table">
             <thead>
               <tr>

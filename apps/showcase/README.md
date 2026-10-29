@@ -9,6 +9,9 @@ The local prototype uses SIS tokens and components. It includes six pages:
 - Institution settings
 - Component gallery
 
+The gallery includes all 38 public components across eight families.
+Each family includes functional examples and interaction states.
+
 ## Run
 
 Run these commands from the repository root:
@@ -47,4 +50,28 @@ npm run build -w apps/showcase
 The browser checks include accessibility scans, registration persistence, keyboard focus, CSV content, course filters, assistant replies, and appearance persistence.
 Visual baselines cover both themes, directions, and densities. Responsive baselines cover 360px and 834px widths.
 
-See the [review record](../../docs/reports/2026-10-28-registrar-prototype.md) for evidence and limits.
+The browser suite also covers component interactions, 320px layouts, 200% text scaling, and overlay layers.
+Screenshot baselines use Chromium on macOS. CI uses the same operating system for screenshot comparisons.
+
+## System audit
+
+Start these servers in separate terminals:
+
+```sh
+npm run dev -w apps/showcase -- --strictPort
+npm --prefix sis-foundations-prototype run dev -- --port 4173 --strictPort
+cd packages/react && npx vite visual --port 4677 --strictPort
+```
+
+Run the audit from the repository root:
+
+```sh
+npm run test:system -w apps/showcase
+```
+
+The audit inspects 325 configurations across the showcase, component fixtures, and workbench.
+It records accessibility findings, runtime errors, document overflow, unresolved tokens, and target dimensions.
+Results appear under `qa/system-confirm-artifacts/`.
+Use `-- --only=workbench-navigation` for a focused audit. Focused audits use separate output folders.
+
+See the [component review](../../docs/reports/2026-10-29-component-system-review.md) for evidence and limits.

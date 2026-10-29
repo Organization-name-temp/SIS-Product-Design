@@ -2,7 +2,6 @@ name: CI
 
 on:
   push:
-    branches: [main]
   pull_request:
 
 jobs:
@@ -19,7 +18,7 @@ jobs:
       - run: npm test -w packages/sis-tokens
 
   components:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -28,10 +27,32 @@ jobs:
           cache: npm
       - run: npm ci --legacy-peer-deps
       - run: npx playwright install chromium --with-deps
+      - run: npm run build -w packages/sis-tokens
       - run: npm run typecheck -w packages/react
       - run: npm run lint -w packages/react
       - run: npm test -w packages/react
       - run: npm run test:visual -w packages/react
+
+  showcase:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci --legacy-peer-deps
+      - run: npx playwright install chromium --with-deps
+      - run: npm run build -w packages/sis-tokens
+      - run: npm run typecheck -w apps/showcase
+      - run: npm test -w apps/showcase
+      - run: npm run build -w apps/showcase
+      - run: npm run test:browser -w apps/showcase
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: showcase-browser-failures
+          path: apps/showcase/test-results/
 
   workbench:
     runs-on: ubuntu-latest

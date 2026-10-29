@@ -1,0 +1,93 @@
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../../../sis-foundations-prototype/public/fonts/ibm-400.ttf")
+    format("truetype");
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../../../sis-foundations-prototype/public/fonts/ibm-500.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../../../sis-foundations-prototype/public/fonts/ibm-600.ttf")
+    format("truetype");
+  font-weight: 600;
+  font-display: swap;
+}
+@font-face {
+  font-family: "IBM Plex Sans Arabic";
+  src: url("../../../sis-foundations-prototype/public/fonts/ibm-700.ttf")
+    format("truetype");
+  font-weight: 700;
+  font-display: swap;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: var(--sys-font-family-ui);
+  font-size: var(--ref-font-size-16);
+  line-height: var(--sys-line-height-body);
+  background: var(--sys-color-bg-canvas);
+  color: var(--sys-color-text-primary);
+}
+.fixture-main {
+  display: grid;
+  gap: var(--ref-space-32);
+  padding: var(--ref-space-24);
+  max-inline-size: 470px;
+  margin-inline: auto;
+  min-inline-size: 0;
+}
+.fixture-main h1 {
+  font-size: var(--ref-font-size-28);
+  line-height: var(--sys-line-height-page-title);
+  margin: 0;
+}
+.fixture-section {
+  display: grid;
+  gap: var(--ref-space-16);
+  min-inline-size: 0;
+  border-block-start: var(--sys-border-width) solid
+    var(--sys-color-border-subtle);
+  padding-block-start: var(--ref-space-24);
+}
+.fixture-section > h2 {
+  font-size: var(--ref-font-size-20);
+  margin: 0;
+  font-weight: 600;
+}
+.fixture-stack {
+  display: grid;
+  gap: var(--ref-space-16);
+  min-inline-size: 0;
+}
+.fixture-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--ref-space-12);
+}
+.fixture-radio {
+  display: grid;
+  gap: var(--ref-space-8);
+  padding: var(--ref-space-16);
+  border: var(--sys-border-width) solid var(--sys-color-border-subtle);
+  border-radius: var(--sys-radius-control);
+}
+.fixture-feedback-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--ref-space-12);
+}
+@media (max-width: 390px) {
+  .fixture-main {
+    padding: var(--ref-space-16);
+  }
+}

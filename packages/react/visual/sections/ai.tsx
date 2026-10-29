@@ -19,7 +19,7 @@ const streamingMessages: ChatEntry[] = [
 
 export function AiSection() {
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <ChatPanel messages={messages} onSend={() => {}} ariaLabel="Assistant" />
       <ChatPanel messages={streamingMessages} onSend={() => {}} streaming ariaLabel="Assistant streaming" />
     </div>

@@ -8,7 +8,7 @@ import { SettingsForm } from "../../src/patterns/SettingsForm";
 
 export function PatternsSection() {
   return (
-    <div style={{ display: "grid", gap: 16, padding: 24, maxWidth: 430 }}>
+    <div className="fixture-stack">
       <PageHeader
         title="Registration"
         description="Term 2026 fall."

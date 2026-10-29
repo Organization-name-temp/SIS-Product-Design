@@ -1,4 +1,7 @@
-import type { CSSProperties } from "react";
+import "sis-tokens/css";
+import "../src/styles/sis-react.css";
+import "./fixture.css";
+import { CoreSection } from "./sections/core";
 import { createRoot } from "react-dom/client";
 import { ContainersSection } from "./sections/containers";
 import { FeedbackSection } from "./sections/feedback";
@@ -16,20 +19,32 @@ const overlay = params.get("overlay") === "1";
 document.documentElement.setAttribute("data-theme", theme);
 document.documentElement.setAttribute("dir", dir);
 document.documentElement.setAttribute("data-density", density);
-document.documentElement.setAttribute("lang", dir === "rtl" ? "ar" : "en");
-
-const grid: CSSProperties = { display: "grid", gap: 24, padding: 24, maxWidth: 470 };
+document.documentElement.setAttribute("lang", "en");
 
 function LibraryFixture() {
+  const sections = [
+    ["Actions and controls", CoreSection],
+    ["Containers and navigation", ContainersSection],
+    ["Feedback and tables", FeedbackSection],
+    ["Files and inputs", InputsSection],
+    ["Charts", ChartsSection],
+    ["Page patterns", PatternsSection],
+    ["Assistant", AiSection],
+  ] as const;
   return (
-    <div style={grid}>
-      <ContainersSection />
-      <FeedbackSection />
-      <InputsSection />
-      <ChartsSection />
-      <PatternsSection />
-      <AiSection />
-    </div>
+    <main className="fixture-main">
+      <h1>SIS component library</h1>
+      {sections.map(([title, Section]) => (
+        <section
+          className="fixture-section"
+          key={title}
+          aria-label={`${title} specimens`}
+        >
+          <h2>{title}</h2>
+          <Section />
+        </section>
+      ))}
+    </main>
   );
 }
 

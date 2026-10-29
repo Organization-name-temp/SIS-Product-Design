@@ -1,4 +1,4 @@
-import { useState, type KeyboardEvent, type ReactNode } from "react";
+import { useId, useState, type KeyboardEvent, type ReactNode } from "react";
 
 export interface TabItem {
   id: string;
@@ -12,15 +12,31 @@ export interface TabsProps {
 }
 
 export function Tabs({ tabs, label }: TabsProps) {
+  const baseId = useId();
   const [active, setActive] = useState(tabs[0]?.id);
 
   const onKeyDown = (event: KeyboardEvent<HTMLButtonElement>) => {
     const keys = ["ArrowRight", "ArrowLeft", "Home", "End"];
     if (!keys.includes(event.key)) return;
     event.preventDefault();
-    const tabButtons = Array.from(event.currentTarget.parentElement?.querySelectorAll<HTMLButtonElement>("[role=tab]") ?? []);
+    const tabButtons = Array.from(
+      event.currentTarget.parentElement?.querySelectorAll<HTMLButtonElement>(
+        "[role=tab]",
+      ) ?? [],
+    );
     const index = tabButtons.indexOf(event.currentTarget);
-    const offset = event.key === "ArrowRight" ? 1 : event.key === "ArrowLeft" ? -1 : undefined;
+    const rtl =
+      event.currentTarget.closest("[dir]")?.getAttribute("dir") === "rtl";
+    const offset =
+      event.key === "ArrowRight"
+        ? rtl
+          ? -1
+          : 1
+        : event.key === "ArrowLeft"
+          ? rtl
+            ? 1
+            : -1
+          : undefined;
     const next =
       offset === undefined
         ? event.key === "Home"
@@ -43,10 +59,10 @@ export function Tabs({ tabs, label }: TabsProps) {
             type="button"
             role="tab"
             data-tab-id={tab.id}
-            id={`sis-tab-${tab.id}`}
+            id={`${baseId}-tab-${tab.id}`}
             className="sis-tab"
             aria-selected={tab.id === activeTab?.id}
-            aria-controls={`sis-tabpanel-${tab.id}`}
+            aria-controls={`${baseId}-panel-${tab.id}`}
             tabIndex={tab.id === activeTab?.id ? 0 : -1}
             onClick={() => setActive(tab.id)}
             onKeyDown={onKeyDown}
@@ -58,8 +74,8 @@ export function Tabs({ tabs, label }: TabsProps) {
       <div
         className="sis-tabpanel"
         role="tabpanel"
-        id={`sis-tabpanel-${activeTab?.id}`}
-        aria-labelledby={`sis-tab-${activeTab?.id}`}
+        id={`${baseId}-panel-${activeTab?.id}`}
+        aria-labelledby={`${baseId}-tab-${activeTab?.id}`}
       >
         {activeTab?.content}
       </div>
