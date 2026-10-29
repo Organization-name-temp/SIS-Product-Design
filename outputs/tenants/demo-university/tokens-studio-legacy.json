@@ -1,0 +1,54 @@
+{
+  "ref.color.brand.50": {
+    "value": "#F1FAFE",
+    "type": "color"
+  },
+  "ref.color.brand.100": {
+    "value": "#E2F5FD",
+    "type": "color"
+  },
+  "ref.color.brand.200": {
+    "value": "#C0E9FB",
+    "type": "color"
+  },
+  "ref.color.brand.300": {
+    "value": "#95DAF9",
+    "type": "color"
+  },
+  "ref.color.brand.400": {
+    "value": "#5BC5F5",
+    "type": "color"
+  },
+  "ref.color.brand.500": {
+    "value": "#0EA5E9",
+    "type": "color"
+  },
+  "ref.color.brand.600": {
+    "value": "#0B83B9",
+    "type": "color"
+  },
+  "ref.color.brand.700": {
+    "value": "#0B81B7",
+    "type": "color"
+  },
+  "ref.color.brand.800": {
+    "value": "#096690",
+    "type": "color"
+  },
+  "ref.color.brand.900": {
+    "value": "#075273",
+    "type": "color"
+  },
+  "ref.color.brand.950": {
+    "value": "#05374D",
+    "type": "color"
+  },
+  "sys.color.light.action-primary-bg": {
+    "value": "{ref.color.brand.600}",
+    "type": "color"
+  },
+  "sys.color.dark.action-primary-bg": {
+    "value": "{ref.color.brand.500}",
+    "type": "color"
+  }
+}

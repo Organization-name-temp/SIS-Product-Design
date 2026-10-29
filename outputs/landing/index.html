@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" data-density="comfortable">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>E-JUST SIS — registration that stays out of your way</title>
+<link rel="stylesheet" href="/packages/sis-tokens/dist/sis-tokens.css">
+<style>
+  * { box-sizing: border-box; margin: 0; }
+  body {
+    font-family: var(--sys-font-family-ui);
+    background: var(--sys-color-bg-canvas);
+    color: var(--sys-color-text-primary);
+  }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  header { display: flex; align-items: center; justify-content: space-between; padding: 20px 0; }
+  .brand { font-weight: 700; font-size: 15px; letter-spacing: 0.02em; }
+  .brand span { color: var(--sys-color-text-brand); }
+  nav a { color: var(--sys-color-text-secondary); text-decoration: none; font-size: 14px; margin-inline-start: 24px; }
+  nav a:hover { color: var(--sys-color-text-primary); }
+  .hero { padding: 88px 0 72px; max-width: 680px; }
+  .hero h1 { font-size: 44px; font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; }
+  .hero h1 em { font-style: normal; color: var(--sys-color-text-brand); }
+  .hero p { margin: 20px 0 32px; font-size: 18px; line-height: 1.6; color: var(--sys-color-text-secondary); max-width: 52ch; }
+  .cta { display: inline-flex; gap: 12px; align-items: center; }
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; padding: 24px 0 72px; }
+  .stat { padding: 20px; border-radius: var(--sys-radius-large-container); background: var(--sys-color-bg-surface); border: 1px solid var(--sys-color-border-subtle); }
+  .stat strong { display: block; font-size: 28px; font-variant-numeric: tabular-nums; }
+  .stat span { font-size: 13px; color: var(--sys-color-text-secondary); }
+  .programs { padding: 64px 0; background: var(--sys-color-bg-surface); border-block: 1px solid var(--sys-color-border-subtle); }
+  .programs h2 { font-size: 24px; margin-bottom: 24px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+  .card { background: var(--sys-color-bg-canvas); border: 1px solid var(--sys-color-border-subtle); border-radius: var(--sys-radius-panel); padding: 24px; }
+  .card h3 { font-size: 16px; margin-bottom: 8px; }
+  .card p { font-size: 14px; line-height: 1.6; color: var(--sys-color-text-secondary); }
+  .cta-section { text-align: center; padding: 88px 0; }
+  .cta-section h2 { font-size: 32px; margin-bottom: 16px; }
+  footer { padding: 24px 0; border-top: 1px solid var(--sys-color-border-subtle); font-size: 13px; color: var(--sys-color-text-muted); display: flex; justify-content: space-between; }
+  .btn {
+    display: inline-flex; align-items: center; min-height: var(--sys-control-min-height-comfortable);
+    padding: 0 var(--ref-space-24); border-radius: 10px; font-size: 15px; font-weight: 600;
+    text-decoration: none; cursor: pointer; border: 1px solid transparent;
+    transition: transform var(--sys-motion-duration-fast) var(--sys-motion-easing-standard), box-shadow var(--sys-motion-duration-fast) var(--sys-motion-easing-standard);
+  }
+  .btn:hover { transform: translateY(-1px); box-shadow: 0 2px 6px rgb(9 9 11 / 0.10); }
+  .btn-primary { background: var(--sys-color-action-primary-bg); color: var(--sys-color-action-primary-fg); }
+  .btn-secondary { background: var(--sys-color-action-secondary-bg); color: var(--sys-color-action-secondary-fg); border-color: var(--sys-color-action-secondary-border); }
+  .btn:focus-visible { outline: 2px solid var(--sys-color-focus-ring); outline-offset: 2px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="brand">E-JUST <span>SIS</span></div>
+    <nav>
+      <a href="#programs">Programs</a>
+      <a href="#stats">Numbers</a>
+      <a href="#start" class="btn btn-primary" style="margin-inline-start: 16px;">Open registration</a>
+    </nav>
+  </header>
+  <section class="hero">
+    <h1>Registration that stays <em>out of your way</em>.</h1>
+    <p>One portal for schedules, holds, grades, and graduation tracking — built for the way E-JUST students actually register. Arabic and English, light and dark, fast on every device.</p>
+    <div class="cta">
+      <a href="#start" class="btn btn-primary">Start registration</a>
+      <a href="#programs" class="btn btn-secondary">Browse programs</a>
+    </div>
+  </section>
+  <section class="stats" id="stats">
+    <div class="stat"><strong>12,480</strong><span>students enrolled this term</span></div>
+    <div class="stat"><strong>94.1%</strong><span>average attendance</span></div>
+    <div class="stat"><strong>&lt; 90 s</strong><span>median registration time</span></div>
+  </section>
+</div>
+<section class="programs" id="programs">
+  <div class="wrap">
+    <h2>Every program, one system</h2>
+    <div class="cards">
+      <div class="card"><h3>Engineering</h3><p>Eleven departments from Computer Science to Materials Science, with plan-aware prerequisites.</p></div>
+      <div class="card"><h3>Science</h3><p>Laboratory scheduling and research credits handled beside your coursework.</p></div>
+      <div class="card"><h3>Graduate studies</h3><p>Thesis milestones, supervisor approvals, and publication tracking in one record.</p></div>
+    </div>
+  </div>
+</section>
+<section class="cta-section wrap" id="start">
+  <h2>Your term starts in one click.</h2>
+  <a href="#" class="btn btn-primary">Open the registration portal</a>
+</section>
+<div class="wrap">
+  <footer>
+    <span>© 2026 Egypt-Japan University of Science and Technology</span>
+    <span>Arabic · English</span>
+  </footer>
+</div>
+</body>
+</html>

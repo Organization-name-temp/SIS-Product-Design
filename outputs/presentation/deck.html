@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SIS design system — presentation profile</title>
+<style>
+  :root {
+    --brand: #CD1722; --brand-deep: #AB1420;
+    --canvas: #FAFAFA; --surface: #FFFFFF; --ink: #18181B; --muted: #52525B;
+    --border: #E4E4E7; --subtle: #F4F4F5;
+  }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #09090B; font-family: 'IBM Plex Sans Arabic', 'IBM Plex Sans', Arial, sans-serif; }
+  .stage { width: 1920px; height: 1080px; position: relative; transform-origin: top left; background: var(--canvas); color: var(--ink); overflow: hidden; }
+  .slide { position: absolute; inset: 0; padding: 120px 140px; display: none; flex-direction: column; }
+  .slide.active { display: flex; }
+  .eyebrow { font-size: 26px; font-weight: 700; letter-spacing: 0.14em; color: var(--brand); margin-bottom: 28px; }
+  h1 { font-size: 96px; font-weight: 700; line-height: 1.1; letter-spacing: -0.02em; max-width: 1300px; }
+  h2 { font-size: 72px; font-weight: 700; line-height: 1.15; margin-bottom: 64px; }
+  .sub { font-size: 34px; color: var(--muted); margin-top: 40px; max-width: 1200px; line-height: 1.5; }
+  .footer { position: absolute; bottom: 64px; left: 140px; right: 140px; display: flex; justify-content: space-between; font-size: 24px; color: var(--muted); }
+  .accent-bar { position: absolute; inset-block: 0; inset-inline-start: 0; inline-size: 24px; background: var(--brand); }
+  .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 24px; padding: 56px; box-shadow: 0 4px 16px rgb(9 9 11 / 0.08); }
+  .card h3 { font-size: 44px; margin-bottom: 24px; }
+  .card p { font-size: 28px; line-height: 1.55; color: var(--muted); }
+  .kpi-row { display: flex; gap: 64px; margin-top: 72px; }
+  .kpi strong { display: block; font-size: 110px; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--brand-deep); }
+  .kpi span { font-size: 30px; color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 32px; }
+  th { text-align: left; padding: 24px 32px; border-bottom: 3px solid var(--ink); font-weight: 600; }
+  td { padding: 28px 32px; border-bottom: 1px solid var(--border); font-variant-numeric: tabular-nums; }
+  .controls { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); display: flex; gap: 12px; z-index: 10; }
+  .controls button { font: inherit; font-size: 18px; padding: 10px 22px; border-radius: 10px; border: 1px solid #3F3F46; background: #18181B; color: #FAFAFA; cursor: pointer; }
+  .pagenum { position: absolute; bottom: 64px; inset-inline-end: 140px; font-size: 26px; color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="stage" id="stage">
+  <div class="accent-bar"></div>
+
+  <section class="slide active">
+    <div class="eyebrow">E-JUST · STUDENT INFORMATION SYSTEM</div>
+    <h1>One design system for every surface a student touches.</h1>
+    <div class="sub">462 design variables · 34 React components · Arabic RTL and English LTR · light and dark — from one token source.</div>
+    <div class="footer"><span>Design system review</span><span>October 2026</span></div>
+    <div class="pagenum">1</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow">FOUNDATIONS</div>
+    <h2>Tokens decide. Everything else follows.</h2>
+    <div class="cards">
+      <div class="card"><h3>Reference</h3><p>The E-JUST brand ramp, led by the university red, with neutral and feedback scales. Swappable per university.</p></div>
+      <div class="card"><h3>Semantic</h3><p>Every role a surface needs — canvas, ink, actions, feedback — resolved per theme. Names never change per tenant.</p></div>
+      <div class="card"><h3>Component</h3><p>Buttons, fields, tables, and charts read one layer deeper, so a brand change never touches product code.</p></div>
+    </div>
+    <div class="footer"><span>Token architecture</span><span>W3C DTCG format</span></div>
+    <div class="pagenum">2</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow">PROOF</div>
+    <h2>Built, tested, and verified.</h2>
+    <div class="kpi-row">
+      <div class="kpi"><div><strong>34</strong><span>production components</span></div></div>
+      <div class="kpi"><div><strong>103</strong><span>tests, axe-clean</span></div></div>
+      <div class="kpi"><div><strong>462</strong><span>Figma variables</span></div></div>
+      <div class="kpi"><div><strong>26</strong><span>visual baselines</span></div></div>
+    </div>
+    <div class="sub">Every component ships with keyboard support, RTL, two densities, and a Jest-axe accessibility gate. CI blocks raw colors and failing baselines.</div>
+    <div class="footer"><span>Component library</span><span>React 19 · TypeScript</span></div>
+    <div class="pagenum">3</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow">IN NUMBERS</div>
+    <h2>Term 2026 fall at a glance.</h2>
+    <table>
+      <tr><th>Faculty</th><th>Students</th><th>Courses</th><th>Fill rate</th></tr>
+      <tr><td>Engineering</td><td>6,204</td><td>412</td><td>96%</td></tr>
+      <tr><td>Science</td><td>3,180</td><td>246</td><td>91%</td></tr>
+      <tr><td>Graduate studies</td><td>3,096</td><td>188</td><td>88%</td></tr>
+    </table>
+    <div class="footer"><span>Sample data from the workbench</span></div>
+    <div class="pagenum">4</div>
+  </section>
+
+  <section class="slide">
+    <div class="eyebrow">NEXT</div>
+    <h1>Landing kits, email templates, print profiles, and mobile tokens — all from the same source.</h1>
+    <div class="footer"><span>Design system roadmap</span><span>E12 – E16</span></div>
+    <div class="pagenum">5</div>
+  </section>
+</div>
+
+<div class="controls">
+  <button onclick="go(-1)">‹ Prev</button>
+  <button onclick="go(1)">Next ›</button>
+</div>
+<script>
+  const slides = [...document.querySelectorAll(".slide")];
+  let i = 0;
+  function fit() {
+    const stage = document.getElementById("stage");
+    const scale = Math.min(window.innerWidth / 1920, window.innerHeight / 1080);
+    stage.style.transform = `scale(${scale})`;
+    document.body.style.height = 1080 * scale + "px";
+    document.body.style.overflow = "hidden";
+  }
+  function go(d) {
+    slides[i].classList.remove("active");
+    i = (i + d + slides.length) % slides.length;
+    slides[i].classList.add("active");
+  }
+  window.addEventListener("resize", fit);
+  window.addEventListener("keydown", e => {
+    if (e.key === "ArrowRight" || e.key === " ") go(1);
+    if (e.key === "ArrowLeft") go(-1);
+  });
+  fit();
+</script>
+</body>
+</html>
