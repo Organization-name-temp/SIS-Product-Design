@@ -13,6 +13,7 @@ The SIS design system: canonical design tokens in the W3C design tokens format (
 3. [docs/decisions/decision-log.md](docs/decisions/decision-log.md) for decisions D01 to D23.
 4. [docs/decisions/adr/0001-token-pipeline.md](docs/decisions/adr/0001-token-pipeline.md) for the token architecture.
 5. [packages/react/CONVENTIONS.md](packages/react/CONVENTIONS.md) before writing any component code.
+6. [docs/figma-workflow.md](docs/figma-workflow.md) before any Figma session: the design-to-code channel, connections, and workflows.
 
 ## Rules that are never optional
 
