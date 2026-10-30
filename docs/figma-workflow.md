@@ -85,6 +85,10 @@ and the report is the work list for Workflow A.
 
 ## State snapshot (update this date stamp when things change)
 
-- 2026-10-29: 462 variables imported; tokens in plugin set `global`; Core
-  Components page still empty of native components (the sync plugin builds them);
-  baseline not yet exported. React side complete through M6.
+- 2026-10-30: 462 variables imported; tokens in plugin set `global`; the sync
+  plugin (v2, full generator) is fixed and staged at
+  `~/Downloads/sis-sync-plugin/` but NOT yet imported into Figma — the manifest
+  networkAccess format was corrected (commit 7018f78). Import via Plugins →
+  Development → Import plugin from manifest… → select
+  `~/Downloads/sis-sync-plugin/manifest.json`, then run Build. React side
+  complete through M6; output kits shipped in outputs/.
