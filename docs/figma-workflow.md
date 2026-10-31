@@ -49,20 +49,44 @@ baseline lives at `qa/figma-baseline.json`; the sync plugin at
 4. For component changes, run the sync plugin (below) to rebuild the native
    Figma components, then re-export the baseline.
 
-## Workflow C — the sync plugin
+## Workflow C — direct authoring through the bridge (current, since 2026-10-31)
 
-`tools/figma-sync-plugin/` is a local Figma plugin (Development → Import plugin
-from manifest…). Its UI has three actions:
+The sync plugin is retired: its one-shot generator output was rejected
+(decision D24). The agent now authors the Figma library directly:
 
-- **Build components** — creates/updates the native Figma components on the
-  Core Components page from the embedded token values.
-- **Copy baseline** — serializes the current component tree to JSON; save it as
-  `qa/figma-baseline.json` and commit.
-- **Compare with baseline** — paste the saved baseline; the plugin reports added,
-  removed, and changed components.
+- **Write channel**: `cursor-talk-to-figma-mcp` (grab org, MIT). Three parts:
+  the MCP server (registered as `TalkToFigma` in `~/.zcode/cli/config.json`,
+  active from the next session), a WebSocket relay (`bun run src/socket.ts`,
+  port 3055, repo cloned at `~/Desktop/code/figma-bridge/`), and the connector
+  plugin inside Figma (dev-imported from
+  `~/Desktop/code/figma-bridge/cursor-talk-to-figma-mcp/src/cursor_mcp_plugin/`).
+- **Local patches to the plugin**: fixed channel `sis` (upstream generated a
+  random channel per run) and a `run_plugin_api` escape-hatch command that
+  runs arbitrary Plugin API code (covers createComponent, combineAsVariants,
+  variable binding — the gaps in the stock 43 commands).
+- **Driver**: `~/Desktop/code/figma-bridge/driver.mjs` speaks the relay
+  protocol directly (no MCP registration needed). Usage:
+  `node driver.mjs sis --code build/<script>.js`.
+- **Build scripts**: `~/Desktop/code/figma-bridge/build/` — `gen.py`/`gen5.py`/
+  `gen6.py` emit `f1`–`f6` scripts with token data embedded from
+  `tokens-studio-legacy.json` + `tokens-studio.json`. Each script is idempotent
+  and rebuilds one section: ramps, roles, scale, Button, Badge/TextField/
+  Alert/Checkbox, Switch/Radio/Avatar/Card/Progress/Toast.
+- **The loop** (this is what killed the "trash" failure mode): build one
+  section → screenshot through the read-only Dev Mode MCP (`figma-wire.sh call
+  get_screenshot`) → self-review → fix → rerun. No section ships unseen.
+- **Panel rule**: the connector plugin panel must stay open in Figma desktop;
+  closing it drops the WebSocket. The plugin joins channel `sis` on connect.
+- **All fills, strokes, and radii bind to the 462 Figma variables**
+  (`ref/color/*`, `sys/color/light|dark/*`, `sys/radius/*`) — no raw hex in
+  components.
 
-That compare step is the design-to-code diff: run it after Adham edits the design,
-and the report is the work list for Workflow A.
+### Baseline and compare (replaces the old Copy/Compare actions)
+
+The old baseline JSON flow is deferred. The compare channel for Workflow A is
+now: `get_metadata` + `get_design_context` on the changed nodes versus the
+React source — the code is the contract. A serialized baseline can be added
+later through the same bridge if a diff file is needed.
 
 ## Gotchas learned the hard way
 
@@ -85,10 +109,11 @@ and the report is the work list for Workflow A.
 
 ## State snapshot (update this date stamp when things change)
 
-- 2026-10-30: 462 variables imported; tokens in plugin set `global`; the sync
-  plugin (v2, full generator) is fixed and staged at
-  `~/Downloads/sis-sync-plugin/` but NOT yet imported into Figma — the manifest
-  networkAccess format was corrected (commit 7018f78). Import via Plugins →
-  Development → Import plugin from manifest… → select
-  `~/Downloads/sis-sync-plugin/manifest.json`, then run Build. React side
-  complete through M6; output kits shipped in outputs/.
+- 2026-10-31: Native Figma library rebuilt through the bridge (D24). The old
+  generator output is archived on page 1:10. Foundations page: 8 color ramps,
+  light + dark role cards, spacing, radius, type scale, motion — all bound to
+  variables. Core Components page: Button, Badge, TextField, Alert, Checkbox,
+  Switch, Radio, Avatar, Card, Progress, Toast as real component sets with
+  variant properties and instance examples. Remaining families (Tabs, Dialog,
+  Drawer, Tooltip, Pagination, Menu, DataTable, and the rest) follow the same
+  f-script pattern. React side complete through M6; output kits shipped in outputs/.
